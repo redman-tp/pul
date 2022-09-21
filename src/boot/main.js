@@ -1,17 +1,18 @@
 import { boot } from 'quasar/wrappers'
+import helpers from "src/plugins/helpers";
+import plugins from "src/plugins";
 import loadStore from "stores/loader";
-import helpers from "../plugins/helpers";
-import loader from "../plugins/loader";
-const $rootUrl = process.env.rootURL
-const $baseURL = process.env.baseURL
-require('../plugins/icons.js')
+import { useRouter, useRoute } from "vue-router";
+import * as fa from 'src/plugins/fa.pro'
+// require('src/plugins/fa.pro.js')
+
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
-export default boot(async ({ app, router, store }) => {
-  app.config.globalProperties.$store = loadStore
-   app.config.globalProperties.$rootUrl = $rootUrl
-  app.config.globalProperties.$baseURL = $baseURL
-  app.config.globalProperties.$helper = helpers
-  app.config.globalProperties.$loader = loader
-  
+export default boot(async ({ app, router }) => {
+  app.config.globalProperties = {
+    ...app.config.globalProperties,
+    $h: helpers,
+    $store: loadStore,
+    $plugins: plugins,
+  }
 })
