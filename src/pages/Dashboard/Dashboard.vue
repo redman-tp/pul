@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pt-xl">
+  <div id="#contentContainer" class="q-pt-xl">
     <q-table
       title="Spaces"
       class="q-pt-xl"

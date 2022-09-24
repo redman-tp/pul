@@ -2,7 +2,10 @@
   <q-page>
     <main class="main">
       <!-- === HOME === -->
-      <section class="home" id="home">
+      <section
+        class="home"
+        id="home"
+      >
         <img
           src="https://img.freepik.com/free-photo/system-developers-analyzing-code-wall-screen-tv-looking-errors-while-team-coders-collaborate-artificial-intelligence-project-programmers-working-together-machine-learning-software_482257-41819.jpg?t=st=1657026444~exp=1657027044~hmac=d6ab17b34b44d06a560a0a5aa8b45cc81c0fd932846a7d25c35df162f046c73d&w=2000"
           alt=""
@@ -24,7 +27,10 @@
         </div>
       </section>
 
-      <section class="about section" id="about">
+      <section
+        class="about section"
+        id="about"
+      >
         <div class="about__container container grid">
           <div class="about__data">
             <h2 class="section__title about__title">Call for Entry</h2>
@@ -34,9 +40,10 @@
               a lasting change in your community or globally. Imagine an idea
               that combats climate change (13) and restores terrestrial
               ecosystem (14). These ideas are in line with the
-              <a target="_blank" href="https://sdgs.un.org/goals"
-                >Sustainable Development Goals(SDG 13&14)</a
-              >
+              <a
+                target="_blank"
+                href="https://sdgs.un.org/goals"
+              >Sustainable Development Goals(SDG 13&14)</a>
               ; they preserve the sustainable future. <br />
               <br />
               The Kukah Prize for Young Innovators is for bright young minds who
@@ -50,14 +57,21 @@
               better place, then share the link.
             </p>
 
-            <img src="/pe/kuk.jpg" alt="" />
+            <img
+              src="/pe/kuk.jpg"
+              alt=""
+            />
           </div>
           <div class="experience__img">
             <h2 class="class">Start Entry</h2>
             <p class="about__description">
               Please ensure that your entries are correct and are in line with
               the
-              <q-btn @click="openTerms = true" class="modal__button" id="myBtn">
+              <q-btn
+                @click="openTerms = true"
+                class="modal__button"
+                id="myBtn"
+              >
                 Terms and Conditions
               </q-btn>
               before submission. Submission is final and irrevocable.
@@ -95,7 +109,7 @@
                 <div class="error" v-if="errors['data.firstname']">
                   {{ errors["data.firstname"][1] }}
                 </div>
-               
+
               </div>
               <div class="input">
                 <label for=""
@@ -112,7 +126,7 @@
                 <div class="error" v-if="errors['data.lastname']">
                   {{ errors["data.lastname"][1] }}
                 </div>
-               
+
               </div>
 
               <div class="input">
@@ -129,7 +143,7 @@
                     <div class="error" v-if="errors['data.website']">
                       {{ errors["data.website"][1] }}
                     </div>
-                    
+
                   </div>
                   <div class="input_wrap">
                     <label class="urls" for=""> LinkedIn URL</label>
@@ -142,7 +156,7 @@
                     <div class="error" v-if="errors['data.linkedin']">
                       {{ errors["data.linkedin"][1] }}
                     </div>
-                  
+
                   </div>
                   <div class="input_wrap">
                     <label class="urls" for="">Facebook URL</label>
@@ -155,7 +169,7 @@
                     <div class="error" v-if="errors['data.facebook']">
                       {{ errors["data.facebook"][1] }}
                     </div>
-                   
+
                   </div>
                   <div class="input_wrap">
                     <label class="urls" for="">Twitter URL</label>
@@ -168,7 +182,7 @@
                     <div class="error" v-if="errors['data.twitter']">
                       {{ errors["data.twitter"][1] }}
                     </div>
-                    
+
                   </div>
                   <div class="input_wrap">
                     <label class="urls" for="">GitHub URL</label>
@@ -181,7 +195,7 @@
                     <div class="error" v-if="errors['data.github']">
                       {{ errors["data.github"][1] }}
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -200,7 +214,7 @@
                   <div class="error" v-if="errors['data.email']">
                     {{ errors["data.email"][1] }}
                   </div>
-                 
+
                 </div>
               </div>
               <div class="input">
@@ -217,7 +231,7 @@
                   <div class="error" v-if="errors['data.phone']">
                     {{ errors["data.phone"][1] }}
                   </div>
-                  
+
                 </div>
               </div>
               <div class="input">
@@ -234,7 +248,7 @@
                   <div class="error" v-if="errors['data.gender']">
                     {{ errors["data.gender"][1] }}
                   </div>
-                  
+
                 </div>
               </div>
               <div class="input">
@@ -246,7 +260,7 @@
                   <div class="error" v-if="errors['data.dob']">
                     {{ errors["data.dob"][1] }}
                   </div>
-              
+
                 </div>
               </div>
               <div class="input">
@@ -263,7 +277,7 @@
 
                   <div class="error" v-if="errors['data.address']">
                     {{ errors["data.address"][1] }}
-              
+
                 </div>
               </div>
               <div class="input">
@@ -281,7 +295,7 @@
                   <div class="error" v-if="errors['data.qualification']">
                     {{ errors["data.qualification"][1] }}
                   </div>
-           
+
                 </div>
               </div>
               <div class="input">
@@ -298,7 +312,7 @@
                   <div class="error" v-if="errors['data.last_school']">
                     {{ errors["data.last_school"][1] }}
                   </div>
-                  
+
                 </div>
               </div>
               <div class="input">
@@ -312,7 +326,7 @@
                   <div class="error" v-if="errors['data.country']">
                     {{ errors["data.country"][1] }}
                   </div>
-                  
+
                 </div>
               </div>
               <div class="input">
@@ -330,7 +344,7 @@
                   <div class="error" v-if="errors['data.disabled']">
                     {{ errors["data.disabled"][1] }}
                   </div>
-                
+
                 </div>
               </div>
 
@@ -347,7 +361,7 @@
                   <div class="error" v-if="errors['data.disabilities']">
                     {{ errors["data.disabilities"][1] }}
                   </div>
-                 
+
                 </div>
               </div>
               <div class="input">
@@ -370,7 +384,7 @@
                   <div class="error" v-if="errors['data.problem']">
                     {{ errors["data.problem"][1] }}
                   </div>
-               
+
                 </div>
               </div>
               <div class="input">
@@ -391,7 +405,7 @@
                   <div class="error" v-if="errors['data.solution']">
                     {{ errors["data.solution"][1] }}
                   </div>
-           
+
                 </div>
               </div>
               <div class="input">
@@ -414,7 +428,7 @@
                   <div class="error" v-if="errors['data.uniquenes']">
                     {{ errors["data.uniquenes"][1] }}
                   </div>
-              
+
                 </div>
               </div>
               <div class="input">
@@ -436,7 +450,7 @@
                   <div class="error" v-if="errors['data.potential']">
                     {{ errors["data.potential"][1] }}
                   </div>
-                  
+
                 </div>
               </div>
 
@@ -454,7 +468,7 @@
                   <div class="error" v-if="errors['data.idea_link']">
                     {{ errors["data.idea_link"][1] }}
                   </div>
-                  
+
                 </div>
               </div>
               <div class="input">
@@ -472,7 +486,7 @@
                   <div class="error" v-if="errors['data.publication_link']">
                     {{ errors["data.publication_link"][1] }}
                   </div>
-             
+
                 </div>
               </div>
               <div class="input">
@@ -490,7 +504,7 @@
                   <div class="error" v-if="errors['data.resource_link']">
                     {{ errors["data.resource_link"][1] }}
                   </div>
-              
+
                 </div>
               </div>
 
@@ -512,7 +526,7 @@
                   <div class="error" v-if="errors['data.video_link']">
                     {{ errors["data.video_link"][1] }}
                   </div>
-                 
+
                 </div>
               </div>
 
@@ -555,7 +569,7 @@
                   target="_blank"
                   :loading="loading"
                   class="btn"
-                  
+
                   id="submitApp"
                   type="submit"
                 >
@@ -566,23 +580,30 @@
           </div>
         </div>
       </section>
-      <q-dialog v-model="openTerms" class="termsDialog">
-        <q-card class="modal containerr" id="myModal">
+      <q-dialog
+        v-model="openTerms"
+        class="termsDialog"
+      >
+        <q-card
+          class="modal containerr"
+          id="myModal"
+        >
           <div
             id=" modal-content modal-container"
             class="card modal__container"
           >
             <div class="modal__content">
-              <span @click="openTerms = false" class="close">&times;</span>
+              <span
+                @click="openTerms = false"
+                class="close"
+              >&times;</span>
               <h1 class="primary-heading">Terms and Conditions</h1>
               <p class="paragraph">
-                <span
-                  >Please read the following terms and conditions carefully. By
+                <span>Please read the following terms and conditions carefully. By
                   agreeing to these terms and conditions, you acknowledge that
                   you have read and you agree that the following terms and
                   conditions govern the Kukah Awards and any work related
-                  thereto.</span
-                >
+                  thereto.</span>
                 <br />
                 <br />
 
@@ -760,7 +781,10 @@
           </div>
         </q-card>
       </q-dialog>
-      <q-dialog v-model="responseModal" persistent>
+      <q-dialog
+        v-model="responseModal"
+        persistent
+      >
         <div class="hold_dia">
           <div class="top">
             <div class="icon">
@@ -787,7 +811,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       errors: [],
       responseModal: false,
@@ -835,7 +859,7 @@ export default {
   },
 
   methods: {
-    submit() {
+    submit () {
       if (this.terms === false) {
         alert("You need to agree to the Terms and Conditions");
         console.log(
@@ -937,7 +961,7 @@ export default {
       }
     },
 
-    goBack() {
+    goBack () {
       this.responseModal = false;
       location.reload();
     },

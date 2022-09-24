@@ -163,7 +163,7 @@
 </template>
 
 <script>
-import Footer from "../components/Footer.vue";
+import Footer from "../components/FooterMain.vue";
 
 export default {
   components: {

@@ -873,7 +873,7 @@
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import { ref } from "vue";
 import { defineComponent } from "vue";
-import Footer from "../components/Footer.vue";
+import Footer from "../components/FooterMain.vue";
 import "@splidejs/vue-splide/css";
 export default defineComponent({
   name: "IndexPage",

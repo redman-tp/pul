@@ -308,7 +308,7 @@
 </template>
 
 <script>
-import Boards from "../components/Boards.vue";
+import Boards from "../components/BoardsComponent.vue";
 export default {
   components: {
     Boards,

@@ -157,9 +157,9 @@ export default {
           this.$links = data.links;
           this.$emit("update:modelValue", this.$h.getPageNumber(url));
           this.$emit("loaded", this.data);
-          if (initial !== true && this.container) {
-            this.scrollToElement(this.container);
-          }
+          // if (initial !== true && this.container) {
+          //   this.scrollToElement(this.container);
+          // }
         })
         .catch((e) => {
           this.loading = false;
