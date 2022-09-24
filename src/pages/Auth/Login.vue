@@ -110,7 +110,7 @@ export default {
             position: "top",
           });
           this.$store.auth.setUserDetails(response.data);
-          this.$router.replace({ name: "dashboard" });
+          this.$router.replace({ name: "user.dashboard" });
           this.loading = false;
         })
         .catch(({ response }) => {

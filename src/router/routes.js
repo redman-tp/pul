@@ -43,6 +43,8 @@ const routes = [
     component: () => import('layouts/Dashboard.vue'),
     children: [ 
       { path: '/user/dashboard', component: () => import('pages/Dashboard/Dashboard.vue'), name:'user.dashboard'},
+      { path: '/reservations', component: () => import('pages/Dashboard/Reservations.vue'), name:'reservations'},
+      { path: '/paidReservations', component: () => import('pages/Dashboard/PaidReservations.vue'), name:'paidReservations'},
     ]
   },
 

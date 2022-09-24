@@ -50,8 +50,8 @@ module.exports = configure(function (ctx) {
     build: {
       vueRouterMode: 'hash', // available values: 'hash', 'history'
        env: {
-        baseURL: 'https://multiverse.greysoft.com.ng/api/v1/',
-        rootURL: 'https://multiverse.greysoft.com.ng/api/v1/',
+        baseURL: 'https://kadinvest-multiverse.greysoft.com.ng/api/v1/',
+        rootURL: 'https://kadinvest-multiverse.greysoft.com.ng/api/v1/',
         site_name: 'GreySoft Technologies',
         description: 'GreySoft',
         keywords: 'GreySoft',
