@@ -1,7 +1,7 @@
 import { api } from "boot/axios";
 import { defineStore } from "pinia";
-import { SessionStorage } from "quasar";
 import loader from "./loader";
+
 
 export const useAuthStore = defineStore("auth", {
   state: () => ({
@@ -17,13 +17,13 @@ export const useAuthStore = defineStore("auth", {
     windowToken: (state) => state.window_token,
   },
   actions: {
-    setRegStep(step) {
+    setRegStep (step) {
       this.reg_step = step;
     },
-    setToken(token, type = "token") {
+    setToken (token, type = "token") {
       this[type] = token;
     },
-    async logOut(user) {
+    async logOut (user) {
       return api
         .post("/logout")
         .then((e) => {
@@ -33,7 +33,6 @@ export const useAuthStore = defineStore("auth", {
           this.registration_form = {};
           loader.user.clearUser();
           loader.bootstrap.setLostPage(null);
-          SessionStorage.remove("window_token");
           return true;
         })
         .catch((e) => {
@@ -48,13 +47,13 @@ export const useAuthStore = defineStore("auth", {
           }
         });
     },
-    addRegistrationData(data) {
+    addRegistrationData (data) {
       this.registration_form = {
         ...this.registrationForm,
         ...data,
       };
     },
-    clearRegistrationData() {
+    clearRegistrationData () {
       this.reg_step = 1;
       this.registration_form = {};
     },

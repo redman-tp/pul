@@ -5,9 +5,9 @@
     <!-- (Optional) The Header -->
     <header class="header" data-header>
       <div class="container">
-        <a href="#" class="logo">
-          <img src="/pe/logo.svg" width="162" height="50" alt="EduWeb logo" />
-        </a>
+        <q-item :to="{name: 'bootcamp.home'}" class="logo">
+          Grey<span>Academy</span>
+        </q-item>
 
         <nav class="navbar" data-navbar>
           <div class="wrapper">
@@ -170,6 +170,10 @@ export default {
 
 .btn:is(:hover, :focus)::before {
   transform: translateX(0);
+}
+
+.logo {
+  min-height: unset;
 }
 
 .btn {

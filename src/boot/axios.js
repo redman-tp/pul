@@ -114,7 +114,7 @@ export default boot(async ({ app, router, redirect }) => {
     } else if (to.meta.requireGuest && store.auth.token) {
       // The user is currently loggedin so redirect them from the authentication pages
       return redirect({
-        name: store.bootstrap.getLostPage || "user.dashboard",
+        name: store.bootstrap.getLostPage || "index",
       });
     } else if ($user && store.auth.token) {
       if (store.bootstrap.getLostPage) {
@@ -143,7 +143,7 @@ export default boot(async ({ app, router, redirect }) => {
         to.meta.requireAdmin &&
         $user.privileges.indexOf("admin") < 0
       ) {
-        return router.replace({ name: "user.dashboard" });
+        return router.replace({ name: "index" });
       }
     }
 
@@ -158,7 +158,7 @@ export default boot(async ({ app, router, redirect }) => {
 
             router.replace({
               name:
-                store.bootstrap.getLostPage || "user.dashboard",
+                store.bootstrap.getLostPage || "index",
             });
             return response;
           }

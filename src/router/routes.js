@@ -1,11 +1,9 @@
-
 const routes = [
-
   {
-    path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: '/', component: () => import('pages/IndexPage.vue') },
+      { path: '/', component: () => import('pages/IndexPage.vue'), name: 'index' },
       { path: '/greyhobb', component: () => import('pages/GreyHobb.vue'), name: 'greyhobb' },
       { path: '/greytech', component: () => import('pages/GreyTech.vue'), name: 'greytech' },
       { path: '/greycreate', component: () => import('pages/GreyCreate.vue'), name: 'greycreate' },
@@ -14,7 +12,6 @@ const routes = [
       { path: '/about', component: () => import('pages/About.vue'), name: 'about' },
     ]
   },
-
   {
     path: '/auth' + Math.random() * 10,
     component: () => import('layouts/MainLayout.vue'),
@@ -33,8 +30,8 @@ const routes = [
     ]
   },
   {
-    path: '/kukahapplication',
-    component: () => import('layouts/MainLayout.vue'),
+    path: "/kukahapplication",
+    component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: '/kukah', component: () => import('pages/KukahPrize.vue'), name: 'kukah' },
       { path: '/application', component: () => import('pages/ApplicationPage.vue'), name: 'application' },
@@ -46,9 +43,9 @@ const routes = [
     children: [
 
       { path: '/bootcamp', component: () => import('pages/BootcampPage.vue'), name: 'bootcamp' },
-      { path: '/bootcampHome', component: () => import('pages/BootcampHome.vue'), name: 'bootcampHome' },
+      { path: '/bootcamp/home', component: () => import('pages/BootcampHome.vue'), name: 'bootcamp.home' },
       // { path: '/bootcampHome', component: () => import('pages/BootcampHome.vue'),name: 'bootcampHome' },
-      { path: '/bootcamphome2', component: () => import('pages/BootcampHome2.vue'), name: 'bootcamphome2' },
+      { path: '/bootcamp/home/expand', component: () => import('pages/BootcampHome2.vue'), name: 'bootcamp.home.expand' },
 
 
     ]
@@ -57,9 +54,9 @@ const routes = [
   // Always leave this as last one,
   // but you can also remove it
   {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/ErrorNotFound.vue')
-  }
-]
+    path: "/:catchAll(.*)*",
+    component: () => import("pages/ErrorNotFound.vue"),
+  },
+];
 
-export default routes
+export default routes;

@@ -46,10 +46,22 @@
       <!-- drawer content -->
 
       <q-list class="sidebar">
-        <q-item clickable v-ripple to="/profile">
+        <q-item clickable v-ripple to="/user/dashboard">
           <div class="wrapp">
             <i class="ri-user-line"></i>
-            <p class="q-ml-md">My Profile</p>
+            <p class="q-ml-md">Manage Spaces</p>
+          </div>
+        </q-item>
+        <q-item clickable v-ripple to="/reservations">
+          <div class="wrapp">
+            <i class="ri-user-line"></i>
+            <p class="q-ml-md">Reservations</p>
+          </div>
+        </q-item>
+        <q-item clickable v-ripple to="/paidReservations">
+          <div class="wrapp">
+            <i class="ri-user-line"></i>
+            <p class="q-ml-md">Paid Reservations</p>
           </div>
         </q-item>
 
