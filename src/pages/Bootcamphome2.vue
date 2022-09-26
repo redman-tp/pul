@@ -1,7 +1,7 @@
 <template>
   <main class="main">
     <article>
-      <!-- 
+      <!--
         - #HERO
       -->
 
@@ -69,7 +69,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #CATEGORY
       -->
 
@@ -189,7 +189,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #ABOUT
       -->
 
@@ -280,7 +280,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #COURSE
       -->
 
@@ -487,7 +487,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #VIDEO
       -->
 
@@ -537,7 +537,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #STATE
       -->
 
@@ -579,7 +579,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #BLOG
       -->
 
@@ -762,7 +762,7 @@
 </template>
 
 <script>
-import Edufooter from "../components/Edufooter.vue";
+import Edufooter from "../components/EduFooter.vue";
 export default {
   components: {
     Edufooter,

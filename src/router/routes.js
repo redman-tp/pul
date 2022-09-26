@@ -10,39 +10,47 @@ const routes = [
       { path: '/greytech', component: () => import('pages/GreyTech.vue'), name: 'greytech' },
       { path: '/greycreate', component: () => import('pages/GreyCreate.vue'), name: 'greycreate' },
       { path: '/greyacademy', component: () => import('pages/GreyAcademy.vue') },
-      { path: '/metaverse', component: () => import('pages/Metaverse.vue'), name: 'metaverse' },
+      { path: '/metaverse', component: () => import('pages/MetaVerse.vue'), name: 'metaverse' },
       { path: '/about', component: () => import('pages/About.vue'), name: 'about' },
+    ]
+  },
+
+  {
+    path: '/auth' + Math.random() * 10,
+    component: () => import('layouts/MainLayout.vue'),
+    meta: {
+      requireGuest: true
+    },
+    children: [
+      { path: '/login', component: () => import('pages/Auth/LoginPage.vue'), name: 'auth.login' },
+    ]
+  },
+  {
+    path: '/userdashboard',
+    component: () => import('layouts/DashboardLayout.vue'),
+    children: [
+      { path: '/user/dashboard', component: () => import('pages/Dashboard/DashboardPage.vue'), name: 'user.dashboard' },
     ]
   },
   {
     path: '/kukahapplication',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '/kukah', component: () => import('pages/Kukah.vue'), name: 'kukah' },
-      { path: '/application', component: () => import('pages/Application.vue'), name: 'application' },
-
-      { path: '/login', component: () => import('pages/Auth/Login.vue'), name: 'login' },
-
+      { path: '/kukah', component: () => import('pages/KukahPrize.vue'), name: 'kukah' },
+      { path: '/application', component: () => import('pages/ApplicationPage.vue'), name: 'application' },
     ]
   },
   {
     path: '/boot',
-    component: () => import('layouts/bootcamp.vue'),
+    component: () => import('layouts/BootcampLayout.vue'),
     children: [
 
-      { path: '/bootcamp', component: () => import('pages/Bootcamp.vue'), name: 'bootcamp' },
+      { path: '/bootcamp', component: () => import('pages/BootcampPage.vue'), name: 'bootcamp' },
       { path: '/bootcampHome', component: () => import('pages/BootcampHome.vue'), name: 'bootcampHome' },
       // { path: '/bootcampHome', component: () => import('pages/BootcampHome.vue'),name: 'bootcampHome' },
-      { path: '/bootcamphome2', component: () => import('pages/Bootcamphome2.vue'), name: 'bootcamphome2' },
+      { path: '/bootcamphome2', component: () => import('pages/BootcampHome2.vue'), name: 'bootcamphome2' },
 
 
-    ]
-  },
-  {
-    path: '/userdashboard',
-    component: () => import('layouts/Dashboard.vue'),
-    children: [
-      { path: '/user/dashboard', component: () => import('pages/Dashboard/Dashboard.vue'), name: 'user.dashboard' },
     ]
   },
 

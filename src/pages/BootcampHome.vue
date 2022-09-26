@@ -1,7 +1,7 @@
 <template>
   <main>
     <article>
-      <!-- 
+      <!--
         - #HERO
       -->
 
@@ -28,7 +28,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #ABOUT
       -->
 
@@ -68,7 +68,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #DEPARTMENTS
       -->
 
@@ -168,7 +168,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #INSTRUCTOR
       -->
 
@@ -318,7 +318,7 @@
         </div>
       </section>
 
-      <!-- 
+      <!--
         - #CTA
       -->
 
@@ -347,7 +347,7 @@
 </template>
 
 <script>
-import Edufooter from "../components/Edufooter.vue";
+import Edufooter from "../components/EduFooter.vue";
 export default {
   components: {
     Edufooter,
@@ -1140,7 +1140,7 @@ export default {
   }
 
   /**
-   * CTA 
+   * CTA
    */
 
   .cta .title-wrapper {

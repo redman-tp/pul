@@ -322,7 +322,7 @@
 <script>
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
 import "@splidejs/vue-splide/css";
-import Footer from "../components/Footer.vue";
+import Footer from "../components/FooterMain.vue";
 export default {
   components: {
     Footer,
