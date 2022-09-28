@@ -5,8 +5,25 @@
     <!-- (Optional) The Header -->
     <header class="header" data-header>
       <div class="container">
-        <q-item :to="{ name: 'bootcamp.home' }" class="logo">
-          Grey<span>Academy</span>
+        <q-item
+          :to="{ name: 'portal.home', params: { portal: $boot.portal.slug } }"
+          class="logo"
+        >
+          <highlighter
+            highlightClassName="transparent text-green-9 text-bold"
+            :searchWords="[
+              ($boot.portal.name || '')
+                .match(/([A-Z]?[^A-Z]*)/g)
+                .slice(0, -1)[1],
+            ]"
+            :textToHighlight="$boot.portal.name"
+            v-if="
+              ($boot.portal.name || '')
+                .match(/([A-Z]?[^A-Z]*)/g)
+                .slice(0, -1)[1]
+            "
+          />
+          <span v-else>{{ $boot.portal.name }}</span>
         </q-item>
 
         <nav class="navbar" data-navbar>
@@ -29,25 +46,32 @@
             </button>
           </div>
 
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>About</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
-            </li>
-
-            <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          <ul class="navbar-list" v-if="$boot.portal.navbar_pages">
+            <li
+              class="navbar-item"
+              v-for="page in $boot.portal.navbar_pages"
+              :key="page.id"
+            >
+              <router-link
+                :to="{
+                  name: 'portal.home',
+                  params: { portal: $boot.portal.slug },
+                }"
+                class="navbar-link"
+                v-if="page.index"
+              >
+                {{ page.title }}
+              </router-link>
+              <router-link
+                :to="{
+                  name: 'portal.page',
+                  params: { portal: $boot.portal.slug, page: page.slug },
+                }"
+                class="navbar-link"
+                v-else
+              >
+                {{ page.title }}
+              </router-link>
             </li>
           </ul>
         </nav>
@@ -67,11 +91,18 @@
             <span class="btn-badge">0</span>
           </button>
 
-          <a href="#" class="btn has-before">
-            <span class="span">Try for free</span>
+          <q-btn
+            :to="{
+              name: 'portal.register',
+              params: { portal: $boot.portal.slug },
+            }"
+            class="btn has-before"
+            v-if="$boot.portal.allow_registration"
+          >
+            <span class="span">{{ $boot.portal.reg_link_title }}</span>
 
             <i class="fa-duotone fa-arrow-right"></i>
-          </a>
+          </q-btn>
 
           <button
             class="header-action-btn"
@@ -97,9 +128,14 @@
 
 <script>
 import { ref } from "vue";
+import Highlighter from "vue-highlight-words";
 
 export default {
   // name: 'LayoutName',
+  name: "PortalLayout",
+  components: {
+    Highlighter,
+  },
 
   setup() {
     const leftDrawerOpen = ref(false);

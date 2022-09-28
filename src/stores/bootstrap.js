@@ -6,6 +6,7 @@ export const useBootstrapStore = defineStore("bootstrap", {
     settings: {},
     plans: [],
     booted: null,
+    portal: {},
     win_size: { width: "200px", height: "200px" },
     meta: {
       reboots: null,
@@ -14,29 +15,29 @@ export const useBootstrapStore = defineStore("bootstrap", {
   }),
 
   getters: {
-    getPlans (state) {
+    getPlans(state) {
       return state.plans;
     },
-    getSettings (state) {
+    getSettings(state) {
       return state.settings;
     },
-    getLostPage (state) {
+    getLostPage(state) {
       return state.lost_page;
     },
-    runtime (state) {
+    runtime(state) {
       return ((dt2, dt1) => {
         var diff = (dt2.getTime() - dt1.getTime()) / 1000;
         diff /= 60;
         return Math.abs(Math.round(diff));
       })(new Date(), new Date(state.booted));
     },
-    isBooted (state) {
+    isBooted(state) {
       return this.runtime <= 720;
     },
   },
 
   actions: {
-    boot ({ settings, plans, featured_companies }) {
+    boot({ settings, plans, featured_companies }) {
       if (featured_companies) {
         this.featured_companies = featured_companies;
       }
@@ -53,13 +54,13 @@ export const useBootstrapStore = defineStore("bootstrap", {
         this.meta.reboots++;
       }
     },
-    setLostPage (page) {
+    setLostPage(page) {
       this.lost_page = page;
     },
-    setSettings (settings) {
+    setSettings(settings) {
       this.settings = settings;
     },
-    setAttr (data, attr) {
+    setAttr(data, attr) {
       this[attr] = data;
     },
   },

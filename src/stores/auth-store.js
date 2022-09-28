@@ -2,7 +2,6 @@ import { api } from "boot/axios";
 import { defineStore } from "pinia";
 import loader from "./loader";
 
-
 export const useAuthStore = defineStore("auth", {
   state: () => ({
     registration_form: {},
@@ -17,13 +16,13 @@ export const useAuthStore = defineStore("auth", {
     windowToken: (state) => state.window_token,
   },
   actions: {
-    setRegStep (step) {
+    setRegStep(step) {
       this.reg_step = step;
     },
-    setToken (token, type = "token") {
+    setToken(token, type = "token") {
       this[type] = token;
     },
-    async logOut (user) {
+    async logOut(user) {
       return api
         .post("/logout")
         .then((e) => {
@@ -47,13 +46,13 @@ export const useAuthStore = defineStore("auth", {
           }
         });
     },
-    addRegistrationData (data) {
+    addRegistrationData(data) {
       this.registration_form = {
         ...this.registrationForm,
         ...data,
       };
     },
-    clearRegistrationData () {
+    clearRegistrationData() {
       this.reg_step = 1;
       this.registration_form = {};
     },

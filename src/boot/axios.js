@@ -157,8 +157,7 @@ export default boot(async ({ app, router, redirect }) => {
             store.user.setUser(data.data);
 
             router.replace({
-              name:
-                store.bootstrap.getLostPage || "index",
+              name: store.bootstrap.getLostPage || "index",
             });
             return response;
           }
@@ -167,15 +166,15 @@ export default boot(async ({ app, router, redirect }) => {
         // If the server responds with a data refresh we handle that here
         let refresh =
           response &&
-            response.data &&
-            response.data.data &&
-            typeof response.data.data.refresh === "object"
+          response.data &&
+          response.data.data &&
+          typeof response.data.data.refresh === "object"
             ? response.data.data.refresh
             : response &&
               response.data &&
               typeof response.data.refresh === "object"
-              ? response.data.refresh
-              : null;
+            ? response.data.refresh
+            : null;
 
         if (refresh) {
           const stores = {

@@ -6,7 +6,7 @@ export default {
    * @param { Object } error
    * @returns
    */
-  error (error, debug = true) {
+  error(error, debug = true) {
     if (error.response && error.response.data) {
       error = error.response.data;
     } else if (error.response) {

@@ -47,11 +47,12 @@
                     autocomplete="current-password"
                   />
 
-                <q-icon style="font-size: 1.5rem; color: #00bfa5; cursor: pointer;"
-                  :name="isPwd ? 'visibility_off' : 'visibility'"
-                  class="cursor-pointer"
-                  @click="isPwd = !isPwd"
-                />
+                  <q-icon
+                    style="font-size: 1.5rem; color: #00bfa5; cursor: pointer"
+                    :name="isPwd ? 'visibility_off' : 'visibility'"
+                    class="cursor-pointer"
+                    @click="isPwd = !isPwd"
+                  />
                 </div>
                 <div class="error" v-if="errors.password">
                   {{ errors.password[0] }}
@@ -86,10 +87,10 @@ import { ref } from "vue";
 
 export default {
   name: "LoginPage",
-  data () {
+  data() {
     return {
       form: {
-        remember: false
+        remember: false,
       },
       banner: true,
       isPwd: true,
@@ -98,21 +99,26 @@ export default {
     };
   },
   methods: {
-    attemptLogin () {
+    attemptLogin() {
       this.loading = true;
-      this.$api.post("login", this.form).then(({ data }) => {
-        this.loading = false;
-        this.errors = {};
-        this.$router.replace({ name: this.$store.bootstrap.getLostPage || "user.dashboard" });
-      }).catch(e => {
-        this.loading = false;
-        let error = this.$plugins.reader.error(e);
-        this.errors = error.errors || {};
-        this.$h.notify(error.message || error, error.status || "error");
-      });
-    }
+      this.$api
+        .post("login", this.form)
+        .then(({ data }) => {
+          this.loading = false;
+          this.errors = {};
+          this.$router.replace({
+            name: this.$store.bootstrap.getLostPage || "user.dashboard",
+          });
+        })
+        .catch((e) => {
+          this.loading = false;
+          let error = this.$plugins.reader.error(e);
+          this.errors = error.errors || {};
+          this.$h.notify(error.message || error, error.status || "error");
+        });
+    },
   },
-}
+};
 </script>
 <style scoped>
 label {

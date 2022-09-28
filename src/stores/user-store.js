@@ -10,10 +10,10 @@ export const useUserStore = defineStore("user", {
     getUser: (state) => state.data,
   },
   actions: {
-    clearUser (data) {
+    clearUser(data) {
       this.data = {};
     },
-    setUser (data) {
+    setUser(data) {
       this.data = {
         ...this.data,
         ...data,
