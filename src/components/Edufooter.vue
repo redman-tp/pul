@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="container">
-        <div class="footer-brand">
+        <!-- <div class="footer-brand">
           <a href="#" class="logo">
             <img src="/pe/logo.svg" alt="Eduland logo" />
           </a>
@@ -36,77 +36,6 @@
                 <i class="fa-brands fa-linkedin-in"></i>
               </a>
             </li>
-          </ul>
-        </div>
-
-        <div class="footer-link-box">
-          <ul class="footer-list">
-            <li>
-              <p class="footer-link-title">Services</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Design</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Development</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Marketing</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Content Writing</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-link-title">Company</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">About</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Terms</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Privacy Policy</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Careers</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-link-title">Job Info</p>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Select</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Services</a>
-            </li>
-
-            <li>
-              <a href="#" class="footer-link">Payment</a>
-            </li>
-          </ul>
-
-          <ul class="footer-list">
-            <li>
-              <p class="footer-link-title">Contact</p>
-            </li>
-
             <li class="contact-item">
               <span>Call : </span>
 
@@ -120,13 +49,139 @@
                 >example@gmail.com</a
               >
             </li>
+          </ul>
+        </div> -->
 
+        <div class="footer-link-box">
+          <div class="ol">
+            <ul class="footer-list q-mb-md">
+              <li>
+                <p class="footer-link">Powered By</p>
+              </li>
+
+              <li class="q-pb-md">
+                <p class="footer-link-title">
+                  GreySoft <br />
+                  Technologies
+                </p>
+              </li>
+              <ul class="social-list">
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-google"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#" class="social-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
+            </ul>
             <li class="contact-item">
-              <span>Address : </span>
+              <a href="tel:5463876387" class="contact-link">Tel: 09025234813</a>
+            </li>
+            <li class="contact-item">
+              <a href="tel:5463876387" class="contact-link">Tel: 07060998702</a>
+            </li>
 
-              <a href="#" class="contact-link">
-                <address>San Francisco, USA</address>
-              </a>
+            <!-- <li class="contact-item">
+              <span>Email : </span>
+
+              <a href="mailto:example@gmail.com" class="contact-link"
+                >example@gmail.com</a
+              >
+            </li> -->
+          </div>
+          <!-- <ul class="footer-list">
+            <li class="q-pb-md">
+              <p class="footer-link-title">Specializations</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Frontend Engineering</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Backend Engineering</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Product Design</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Data Science</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Digital Marketing</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Blockchain Technology</a>
+            </li>
+          </ul> -->
+
+          <ul class="footer-list">
+            <li class="q-pb-md">
+              <p class="footer-link-title">Companies</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Hire Our Grads</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Collaborate With Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li class="q-pb-sm">
+              <p class="footer-link-title">Resources</p>
+            </li>
+            <li>
+              <a href="#" class="footer-link">Privacy And Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">FAQs</a>
+            </li>
+            <!-- <li>
+              <a href="#" class="footer-link">Our Story</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li> -->
+          </ul>
+          <ul class="footer-list">
+            <li class="q-pb-sm">
+              <p class="footer-link-title">About us</p>
+            </li>
+            <!-- <li>
+              <a href="#" class="footer-link">Privacy And Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer-link">FAQs</a>
+            </li> -->
+            <li>
+              <a href="#" class="footer-link">Our Story</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
             </li>
           </ul>
         </div>
@@ -136,7 +191,9 @@
     <div class="footer-bottom">
       <div class="container">
         <p class="copyright">
-          &copy; 2022 <a href="">codewithsadee</a>. All right reserved
+          &copy; 2022
+          <a href="">2022 GreyAcademy, Nigeria. All rights reserved</a>. All
+          right reserved
         </p>
       </div>
     </div>
@@ -176,7 +233,7 @@ export default {};
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 2px;
 }
 
 .footer .social-link {
@@ -206,21 +263,26 @@ export default {};
   max-width: 230px;
 }
 
-.footer-list li:first-child {
+/* .footer-list li:first-child {
   margin-bottom: 10px;
-}
+} */
 
 .footer-link-title {
   color: var(--cultured);
   font-family: var(--ff-poppins);
-  font-size: var(--fs-4);
+  font-size: 30px;
+  /* font-size: var(--fs-4); */
 }
 
 .footer-link {
   color: var(--silver-chalice);
   font-family: var(--ff-rubik);
   padding-block: 10px;
+  font-size: 17px;
   transition: var(--transition);
+}
+.footer-list li {
+  margin: 0.5rem;
 }
 
 .footer-link:is(:hover, :focus) {
@@ -230,6 +292,7 @@ export default {};
 
 .footer .contact-item {
   padding-block: 10px;
+  list-style: none;
 }
 
 .footer .contact-item span {

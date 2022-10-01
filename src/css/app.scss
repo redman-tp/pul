@@ -349,9 +349,9 @@
   padding-top: 0 !important;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+// html {
+//   scroll-behavior: smooth;
+// }
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -374,6 +374,10 @@ body.none {
 
 .bootcamp .q-stepper__header--border {
   border-bottom: none;
+}
+
+.navbar-link::before {
+  box-shadow: none;
 }
 
 /* typing */
@@ -598,6 +602,22 @@ input {
   margin-right: var(--mb-1);
   width: 90%;
   margin: 0 auto;
+}
+
+.hero-banner .q-carousel__slide {
+  min-height: 100%;
+  background-size: contain;
+  background-position: 0%;
+  background-repeat: no-repeat;
+}
+
+.hero-banner .q-carousel {
+  height: 600px;
+  background: transparent;
+}
+
+.hero-banner .q-carousel__navigation-inner {
+  display: none;
 }
 
 .grid {

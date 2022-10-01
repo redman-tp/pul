@@ -11,14 +11,13 @@
 
         <nav class="navbar" data-navbar>
           <div class="wrapper">
-            <a href="#" class="logo">
-              <img
-                src="/pe/logo.svg"
-                width="162"
-                height="50"
-                alt="EduWeb logo"
-              />
-            </a>
+            <q-item
+              style="letter-spacing: 0.2em; padding: 0"
+              to="/bootcampHome"
+              class="logo"
+            >
+              Grey<span>Academy</span>
+            </q-item>
 
             <button
               class="nav-close-btn"
@@ -31,37 +30,44 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <a href="#home" class="navbar-link" data-nav-link>Home</a>
+              <div @click="goHome" class="navbar-link" data-nav-link>Home</div>
             </li>
 
             <li class="navbar-item">
-              <a href="#about" class="navbar-link" data-nav-link>About</a>
+              <div @click="gotoAbout" class="navbar-link" data-nav-link>
+                About
+              </div>
             </li>
 
             <li class="navbar-item">
-              <a href="#courses" class="navbar-link" data-nav-link>Courses</a>
+              <div @click="gotoservices" class="navbar-link" data-nav-link>
+                Service
+              </div>
             </li>
 
             <li class="navbar-item">
-              <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+              <div @click="gotocontact" class="navbar-link" data-nav-link>
+                Contact
+              </div>
             </li>
-
             <li class="navbar-item">
-              <a href="#" class="navbar-link" data-nav-link>Contact</a>
+              <q-btn to="/bootcamp" class="navbar-link enroll" data-nav-link
+                >ENROLL NOW</q-btn
+              >
             </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <button
+          <!-- <button
             class="header-action-btn"
             aria-label="toggle search"
             title="Search"
           >
             <i class="fa-duotone fa-magnifying-glass"></i>
-          </button>
+          </button> -->
 
-          <button class="header-action-btn" aria-label="cart" title="Cart">
+          <!-- <button class="header-action-btn" aria-label="cart" title="Cart">
             <i class="fa-duotone fa-cart-shopping"></i>
 
             <span class="btn-badge">0</span>
@@ -71,7 +77,7 @@
             <span class="span">Try for free</span>
 
             <i class="fa-duotone fa-arrow-right"></i>
-          </a>
+          </a> -->
 
           <button
             class="header-action-btn"
@@ -121,8 +127,8 @@ export default {
       const overlay = document.querySelector(".overlay");
 
       const toggleNavbar = function () {
-        navbar.classList.toggle("active");
-        overlay.classList.toggle("active");
+        navbar.classList.add("active");
+        overlay.classList.add("active");
       };
 
       menu.addEventListener("click", toggleNavbar);
@@ -134,15 +140,34 @@ export default {
 
       navTogglers.addEventListener("click", closeNavbar);
     },
+    goHome() {
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
+      document.querySelector(".navbar").classList.remove("active");
+      document.querySelector(".overlay").classList.remove("active");
+    },
+    gotoAbout() {
+      document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+      document.querySelector(".navbar").classList.remove("active");
+      document.querySelector(".overlay").classList.remove("active");
+    },
+    gotoservices() {
+      document.getElementById("service").scrollIntoView({ behavior: "smooth" });
+      document.querySelector(".navbar").classList.remove("active");
+      document.querySelector(".overlay").classList.remove("active");
+    },
+
+    gotocontact() {
+      document.getElementById("contact").scrollIntoView({
+        behavior: "smooth",
+      });
+      document.querySelector(".navbar").classList.remove("active");
+      document.querySelector(".overlay").classList.remove("active");
+    },
   },
 };
 </script>
 
 <style scoped>
-/*-----------------------------------*\
-  #HEADER
-\*-----------------------------------*/
-
 .header .btn {
   display: none;
 }
@@ -158,7 +183,12 @@ export default {
   position: absolute;
   content: "";
 }
-
+.enroll {
+  padding: 16px 10px;
+  background: #00ab30;
+  border-radius: 4px;
+  color: #fff !important;
+}
 .btn::before {
   inset: 0;
   background-image: var(--gradient);
@@ -174,6 +204,12 @@ export default {
 
 .logo {
   min-height: unset;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.5em;
+  color: #333333;
 }
 
 .btn {
@@ -268,6 +304,7 @@ export default {
   padding: 8px;
   border-radius: var(--radius-circle);
   height: 40px;
+  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -315,10 +352,6 @@ export default {
 }
 
 /*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
-/*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
@@ -326,6 +359,17 @@ export default {
  * responsive for large than 575px screen
  */
 
+@media (max-width: 500px) {
+  .logo {
+    min-height: unset;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.2em;
+    color: #333333;
+  }
+}
 @media (min-width: 768px) {
   /**
    * HEADER
@@ -348,20 +392,12 @@ export default {
   }
 
   /**
-   * STATS
-   */
-
-  /**
- * responsive for large than 768px screen
- */
-
-  /**
    * HEADER
    */
 
-  .header .container {
+  /* .header .container {
     padding-inline: 30px;
-  }
+  } */
 
   .header .btn {
     display: flex;
@@ -374,7 +410,7 @@ export default {
  * responsive for large than 992px screen
  */
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   /**
    * HEADER
    */
@@ -388,6 +424,9 @@ export default {
   .header.active {
     transform: translateY(-100%);
     animation: slideIn 0.5s ease forwards;
+  }
+  .header-actions {
+    display: none;
   }
 
   @keyframes slideIn {
@@ -406,7 +445,7 @@ export default {
 
   .navbar-list {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     padding: 0;
   }
 
