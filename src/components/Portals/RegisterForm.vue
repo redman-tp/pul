@@ -16,7 +16,6 @@
             <!-- <p class="enc pulse q-my-md text-weight-bold">
               Entry Submissions are now closed
             </p> -->
-
             <q-form
               ref="appformm"
               enctype="multipart/form-data"
@@ -42,7 +41,7 @@
                 >
                   <div
                     class="input"
-                    v-for="field in loadedForm.fields"
+                    v-for="field in activeForm.fields"
                     :key="field.field_id"
                   >
                     <label :for="field.field_id" v-if="!field.hidden"
@@ -220,20 +219,20 @@
                 <div class="input">
                   <label for=""
                     >Select payment plan <i class="fa-solid fa-asterisk"></i
-                  ></label>
+                  ></label>{{data.payment}}
                   <div class="input_wrap">
                     <select v-model="data.payment" name="course" id="course">
-                      <option value="Full payment">
-                        Full payment(One time)
+                      <option selected :value="1">
+                        Full payment (One time) {{$h.money(portal.reg_fee)}}
                       </option>
-                      <option value="Part payment">
-                        Part payment (Two time payment)
+                      <option :value="1/2">
+                        Part payment (Two time payment) {{$h.money(portal.reg_fee/2)}}
                       </option>
-                      <option value="Triad payment">
-                        Triad payment (Three time payment)
+                      <option :value="1/3">
+                        Triad payment (Three time payment) {{$h.money(portal.reg_fee/3)}}
                       </option>
-                      <option value="Quarter payment">
-                        Quarter payment (Four time payment)
+                      <option :value="1/4">
+                        Quarter payment (Four time payment) {{$h.money(portal.reg_fee/4)}}
                       </option>
                     </select>
                     <div class="error" v-if="errors['data.payment']">
@@ -242,14 +241,19 @@
                   </div>
                 </div>
                 <q-card-actions align="right">
-                  <q-btn
+            <t-paystack
                     style="border-radius: 8px"
                     class="bg-accent q-px-lg q-pt-xl q-pb-md text-white"
-                    flat
-                    @click="makePayment"
                     label="Make payment"
-                    color="primary"
-                  />
+              :data="{
+                type: 'portal',
+                portal_id: portal.id,
+                installment: data.payment,
+                redirect: `${location.origin}/${
+                  $router.resolve({ name: 'user.payment.verify' }).href
+                }`,
+              }"
+            />
                 </q-card-actions>
               </div>
             </q-dialog>
@@ -261,27 +265,18 @@
         <img src="/pe/devboot.jpeg" alt="" />
       </div>
     </main>
-    {{ errors }}
   </q-page>
 </template>
 
 <script>
 import { ref } from "vue";
-
+import stores from "src/stores/loader";
+import TPaystack from "../TPaystack.vue";
 export default {
-  data() {
-    return {
-      errors: [],
-      errorMsg: [],
-      loading: false,
-      data: { data: {} },
-      step: ref(1),
-      responseModal: false,
-    };
-  },
+  components: { TPaystack },
   computed: {
     loadedForm() {
-      let form = this.$boot.portal.reg_form;
+      let form = stores.bootstrap.portal.reg_form;
       if (form) {
         form.fields = this.processFields(form.fields, true);
       }
@@ -299,12 +294,27 @@ export default {
       deep: true,
     },
   },
-
+  setup() {
+    return {
+      location,
+    };
+  },
+  data() {
+    return {
+      errors: [],
+      errorMsg: [],
+      loading: false,
+      data: { data: {}, payment: 1 },
+      step: ref(1),
+      responseModal: true,
+      activeForm: {},
+    };
+  },
   created() {
     // console.log(this.$refs.disabled.value);
     // console.log(document.getElementById("disability").value);
+    this.loadForm();
   },
-
   methods: {
     next(ref) {
       this.$refs.appformm.validate().then((success) => {
@@ -381,6 +391,27 @@ export default {
           }
         });
       }
+    },
+    loadForm() {
+      if (this.loadedForm.id) {
+        this.activeForm = this.loadedForm;
+        // this.loadedForm.fields = this.processFields(this.loadedForm.fields, true);
+        return;
+      }
+      if (this.portal.reg_form_id) {
+        this.$router.go(0);
+      }
+      this.$api
+        .get(`get/forms/${this.portal.reg_form_id}`)
+        .then(({ data }) => {
+          this.loading = false;
+          this.activeForm = data.data;
+          console.log(this.activeForm);
+        })
+        .catch((e) => {
+          this.loading = false;
+          this.$plugins.reader.error(e);
+        });
     },
   },
 };

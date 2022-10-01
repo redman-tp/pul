@@ -1,13 +1,19 @@
 const routes = [
   {
-    path: "/" + Math.ceil(Math.random() * 1000000009),
-    component: () => import("layouts/PortalLayout.vue"),
+    path: "/portals" + Math.ceil(Math.random() * 1000000009),
+    component: () => import("layouts/MainLayout.vue"),
     children: [
       {
         path: "/portals",
         component: () => import("src/pages/PortalLoader.vue"),
         name: "portal",
       },
+    ],
+  },
+  {
+    path: "/" + Math.ceil(Math.random() * 1000000009),
+    component: () => import("layouts/PortalLayout.vue"),
+    children: [
       {
         path: "/portals/:portal",
         component: () => import("src/pages/PortalLoader.vue"),
@@ -30,6 +36,16 @@ const routes = [
         meta: {
           doRegistration: true,
         },
+      },
+      {
+        path: "/payment/verify",
+        component: () => import("pages/PaymentConfirmation.vue"),
+        name: "user.payment.verify",
+      },
+      {
+        path: "/payment/verify/:ref",
+        component: () => import("pages/PaymentConfirmation.vue"),
+        name: "user.payment.verify.ref",
       },
     ],
   },

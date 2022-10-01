@@ -48,6 +48,13 @@
               to="/metaverse"
               exact
             />
+            <q-route-tab
+              label="Portal"
+              ripple
+              no-caps
+              :to="{ name: 'portal' }"
+              exact
+            />
           </q-tabs>
         </div>
         <q-btn
@@ -102,6 +109,13 @@
             to="/metaverse"
             exact
           />
+            <q-route-tab
+              label="Portal"
+              ripple
+            class="q-my-sm text-dark addbor text-weight-bold"
+              :to="{ name: 'portal' }"
+              exact
+            />
         </div>
       </q-tabs>
     </q-drawer>
