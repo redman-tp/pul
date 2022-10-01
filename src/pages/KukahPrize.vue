@@ -313,6 +313,11 @@ export default {
   components: {
     Boards,
   },
+  data() {
+    return {
+      loading: false,
+    };
+  },
 };
 </script>
 

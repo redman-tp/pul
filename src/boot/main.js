@@ -1,9 +1,8 @@
-import { boot } from 'quasar/wrappers'
+import { boot } from "quasar/wrappers";
 import helpers from "src/plugins/helpers";
 import plugins from "src/plugins";
 import loadStore from "stores/loader";
-import { useRouter, useRoute } from "vue-router";
-import * as fa from 'src/plugins/fa.pro'
+import * as fa from "src/plugins/fa.pro";
 // require('src/plugins/fa.pro.js')
 
 // "async" is optional;
@@ -12,7 +11,8 @@ export default boot(async ({ app, router }) => {
   app.config.globalProperties = {
     ...app.config.globalProperties,
     $h: helpers,
+    $helper: helpers,
     $store: loadStore,
     $plugins: plugins,
-  }
-})
+  };
+});

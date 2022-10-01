@@ -1,9 +1,16 @@
+import portal from "./portal";
+
 const routes = [
+  ...portal,
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
     children: [
-      { path: "/", component: () => import("pages/IndexPage.vue") },
+      {
+        path: "/",
+        component: () => import("pages/IndexPage.vue"),
+        name: "index",
+      },
       {
         path: "/greyhobb",
         component: () => import("pages/GreyHobb.vue"),
@@ -25,7 +32,7 @@ const routes = [
       },
       {
         path: "/metaverse",
-        component: () => import("pages/Metaverse.vue"),
+        component: () => import("pages/MetaVerse.vue"),
         name: "metaverse",
       },
       {
@@ -36,67 +43,64 @@ const routes = [
     ],
   },
   {
-    path: "/kukahapplication",
+    path: "/auth" + Math.random() * 10,
     component: () => import("layouts/MainLayout.vue"),
+    meta: {
+      requireGuest: true,
+    },
     children: [
-      {
-        path: "/kukah",
-        component: () => import("pages/Kukah.vue"),
-        name: "kukah",
-      },
-      {
-        path: "/application",
-        component: () => import("pages/Application.vue"),
-        name: "application",
-      },
-
       {
         path: "/login",
-        component: () => import("pages/Auth/Login.vue"),
-        name: "login",
-      },
-    ],
-  },
-  {
-    path: "/boot",
-    component: () => import("layouts/bootcamp.vue"),
-    children: [
-      {
-        path: "/bootcamp",
-        component: () => import("pages/Bootcamp.vue"),
-        name: "bootcamp",
-      },
-      {
-        path: "/bootcampHome",
-        component: () => import("pages/BootcampHome.vue"),
-        name: "bootcampHome",
-      },
-      // { path: '/bootcampHome', component: () => import('pages/BootcampHome.vue'),name: 'bootcampHome' },
-      {
-        path: "/bootcamphome2",
-        component: () => import("pages/Bootcamphome2.vue"),
-        name: "bootcamphome2",
+        component: () => import("pages/Auth/LoginPage.vue"),
+        name: "auth.login",
       },
     ],
   },
   {
     path: "/userdashboard",
-    component: () => import("layouts/Dashboard.vue"),
+    component: () => import("layouts/DashboardLayout.vue"),
     children: [
       {
-        path: "/dashboard",
-        component: () => import("pages/Dashboard/Dashboard.vue"),
-        name: "dashboard",
+        path: "/user/dashboard",
+        component: () => import("pages/Dashboard/DashboardPage.vue"),
+        name: "user.dashboard",
+      },
+    ],
+  },
+  {
+    path: "/kukahapplication",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
+      {
+        path: "/kukah",
+        component: () => import("pages/KukahPrize.vue"),
+        name: "kukah",
       },
       {
-        path: "/reservations",
-        component: () => import("pages/Dashboard/Reservations.vue"),
-        name: "reservations",
+        path: "/application",
+        component: () => import("pages/ApplicationPage.vue"),
+        name: "application",
+      },
+    ],
+  },
+  {
+    path: "/boot",
+    component: () => import("layouts/BootcampLayout.vue"),
+    children: [
+      {
+        path: "/bootcamp",
+        component: () => import("pages/BootcampPage.vue"),
+        name: "bootcamp",
       },
       {
-        path: "/paidReservations",
-        component: () => import("pages/Dashboard/PaidReservations.vue"),
-        name: "paidReservations",
+        path: "/bootcamp/home",
+        component: () => import("pages/BootcampHome.vue"),
+        name: "bootcamp.home",
+      },
+      {
+        path: "/bootcamp/home/expand",
+        component: () => import("pages/BootcampHome2.vue"),
+        name: "bootcamp.home.expand",
       },
     ],
   },

@@ -91,7 +91,7 @@
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
-  name: "Dashboard",
+  name: "DashboardLayout",
   setup() {
     const rightDrawerOpen = ref(false);
 

@@ -27,7 +27,7 @@ module.exports = configure(function (/* ctx */) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli/boot-files
-    boot: ["axios", "main", "components"],
+    boot: ["axios", "main", "components", "bootstrap"],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
     css: ["app.scss"],
@@ -50,8 +50,7 @@ module.exports = configure(function (/* ctx */) {
     build: {
       vueRouterMode: "hash", // available values: 'hash', 'history'
       env: {
-        baseURL: "https://kadinvest-multiverse.greysoft.com.ng/api/v1/",
-        rootURL: "https://kadinvest-multiverse.greysoft.com.ng/api/v1/",
+        ...require("dotenv").config().parsed,
         site_name: "GreySoft Technologies",
         description: "GreySoft",
         keywords: "GreySoft",

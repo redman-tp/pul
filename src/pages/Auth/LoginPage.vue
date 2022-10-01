@@ -14,7 +14,7 @@
           </div>
 
           <div class="form_data">
-            <form @submit.prevent="login">
+            <form @submit.prevent="attemptLogin">
               <div class="input_wrap">
                 <label class="text-green text-weight-bold" for="email"
                   >Email</label
@@ -26,6 +26,7 @@
                     name="email"
                     placeholder="Enter your email..."
                     type="text"
+                    autocomplete="username"
                   />
                 </div>
                 <div class="error" v-if="errors.email">
@@ -42,10 +43,16 @@
                     v-model="form.password"
                     name="password"
                     placeholder="Enter your password"
-                    type="password"
+                    :type="isPwd ? 'password' : 'text'"
+                    autocomplete="current-password"
                   />
 
-                  <i class="fa-solid fa-eye-slash"></i>
+                  <q-icon
+                    style="font-size: 1.5rem; color: #00bfa5; cursor: pointer"
+                    :name="isPwd ? 'visibility_off' : 'visibility'"
+                    class="cursor-pointer"
+                    @click="isPwd = !isPwd"
+                  />
                 </div>
                 <div class="error" v-if="errors.password">
                   {{ errors.password[0] }}
@@ -60,7 +67,6 @@
                 <q-btn type="submit" class="login flex justify-center bg-green"
                   >Login</q-btn
                 >
-
                 <!-- <p class="no_acc">
                   Don’t have an account?
                   <q-btn to="/register" class="text-green text-weight-bold"
@@ -80,60 +86,40 @@
 import { ref } from "vue";
 
 export default {
-  setup() {
-    return {
-      val: ref(true),
-    };
-  },
+  name: "LoginPage",
   data() {
     return {
-      errors: [],
       form: {
-        email: "",
-        password: "",
+        remember: false,
       },
+      banner: true,
+      isPwd: true,
+      errors: {},
+      loading: false,
     };
   },
   methods: {
-    login() {
+    attemptLogin() {
       this.loading = true;
-      this.$q.loading.show();
       this.$api
-        .post("/login", this.form)
-        .then((response) => {
-          this.$q.loading.hide();
-
-          console.log(response);
-          this.$q.notify({
-            message: response.data.message,
-            color: "green",
-            position: "top",
-          });
-          this.$store.auth.setUserDetails(response.data);
-          this.$router.replace({ name: "dashboard" });
+        .post("login", this.form)
+        .then(({ data }) => {
           this.loading = false;
+          this.errors = {};
+          this.$router.replace({
+            name: this.$store.bootstrap.getLostPage || "user.dashboard",
+          });
         })
-        .catch(({ response }) => {
-          console.log(response);
-          this.$q.loading.hide();
-
-          this.$q.notify({
-            message: response.data.message,
-            color: "red",
-            position: "top",
-          });
-          this.errors = response.data.errors;
-          setTimeout(() => {
-            this.errors = [];
-          }, 7000);
-          console.log(response);
+        .catch((e) => {
           this.loading = false;
+          let error = this.$plugins.reader.error(e);
+          this.errors = error.errors || {};
+          this.$h.notify(error.message || error, error.status || "error");
         });
     },
   },
 };
 </script>
-
 <style scoped>
 label {
   color: #1abc9c;

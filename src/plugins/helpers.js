@@ -10,7 +10,7 @@ export default {
    * @param {Number} size
    * @returns
    */
-  chunk (arr, size = 2) {
+  chunk(arr, size = 2) {
     const chunkedArray = [];
     for (let i = 0; i < arr.length; i++) {
       const last = chunkedArray[chunkedArray.length - 1];
@@ -28,7 +28,7 @@ export default {
    * @param {Object|Number} item
    * @param {Array} list
    */
-  pull (item, list) {
+  pull(item, list) {
     let index;
     if (item instanceof Number) {
       index = item;
@@ -49,7 +49,7 @@ export default {
    * @param {string} key
    * @returns
    */
-  sum (items, key) {
+  sum(items, key) {
     key = typeof key === "object" && key[0] ? key[1] || key[0] : key;
     return items.reduce(function (Accumulated, item) {
       key = key.includes(".") ? key.split(".") : key;
@@ -65,12 +65,12 @@ export default {
    * @param {Number} startAt
    * @returns
    */
-  range (size, startAt = 0) {
+  range(size, startAt = 0) {
     if (!size) return [];
 
     return [...Array(size).keys()].map((i) => i + startAt);
   },
-  copy (str) {
+  copy(str) {
     if (typeof str !== "string") return false;
 
     copyToClipboard(str)
@@ -97,20 +97,35 @@ export default {
    *                                  Boolean "false" to only remove label
    * @returns
    */
-  notify (data, status = "info", alert = false, label = "OK", cancel = false) {
-    let msg = typeof data === "object" ? data.message || data.msg || null : data;
+  notify(data, status = "info", alert = false, label = "OK", cancel = false) {
+    let msg =
+      typeof data === "object" ? data.message || data.msg || null : data;
     status = typeof data === "object" ? data.status : status;
     alert = typeof data === "object" ? data.alert : alert;
     label = typeof data === "object" ? data.label : label;
     cancel = typeof data === "object" ? data.cancel : cancel;
 
     // create a new object from data without message and status
-    const options = typeof data === 'object' ? Object.keys(data)
-      .filter((key) => ["message", "msg", "status", "alert", "label", "cancel", "onDismiss"].indexOf(key) === -1)
-      .reduce((obj, key) => {
-        obj[key] = data[key];
-        return obj;
-      }, {}) : {};
+    const options =
+      typeof data === "object"
+        ? Object.keys(data)
+            .filter(
+              (key) =>
+                [
+                  "message",
+                  "msg",
+                  "status",
+                  "alert",
+                  "label",
+                  "cancel",
+                  "onDismiss",
+                ].indexOf(key) === -1
+            )
+            .reduce((obj, key) => {
+              obj[key] = data[key];
+              return obj;
+            }, {})
+        : {};
 
     if (msg === "" || !msg) {
       return false;
@@ -165,10 +180,10 @@ export default {
           /*label !== 'persistent' ||*/ cancel === false
             ? false
             : {
-              color: ne_cancel ? "negative" : tx_status.textColor,
-              "text-color": "white",
-              label: cancel,
-            },
+                color: ne_cancel ? "negative" : tx_status.textColor,
+                "text-color": "white",
+                label: cancel,
+              },
         ok:
           label === "persistent" || label === false
             ? false
@@ -188,21 +203,20 @@ export default {
       });
 
       if (data.onDismiss && typeof data.onDismiss === "function") {
-        if (data.timeout !== 'undefined') {
+        if (data.timeout !== "undefined") {
           let t = setTimeout(() => {
             data.onDismiss(notify);
-            notify()
-            clearTimeout(t)
+            notify();
+            clearTimeout(t);
           }, data.timeout);
         } else {
           data.onDismiss(notify);
         }
-
       }
       return notify;
     }
   },
-  cartable (data) {
+  cartable(data) {
     let cart = this.arrayClean(data, true),
       cartable = [];
     cart.map((i) => {
@@ -210,7 +224,7 @@ export default {
     });
     return cartable;
   },
-  nlText (str, lines = 2, breaker = "<br />") {
+  nlText(str, lines = 2, breaker = "<br />") {
     const splitext = this.chunk(str.split(" "), lines);
     let text = "";
     splitext.forEach((el) => {
@@ -219,10 +233,10 @@ export default {
 
     return text;
   },
-  goto (link) {
+  goto(link) {
     window.location = link;
   },
-  asset (url) {
+  asset(url) {
     if (process.env.PREFER_ASSET === "true" && url.indexOf("http") !== -1) {
       var base_url = document.createElement("a");
       base_url.href = url;
@@ -230,12 +244,12 @@ export default {
     }
     return process.env.ASSET_URL + url;
   },
-  nameFromPath (path) {
+  nameFromPath(path) {
     var base_url = document.createElement("a");
     base_url.href = path;
     return base_url.pathname.replace(/\/|\.|\/$/g, "");
   },
-  getPageNumber (path) {
+  getPageNumber(path) {
     const search = new URLSearchParams(path);
     return search.get("page");
   },
@@ -246,7 +260,7 @@ export default {
    * @param {*} state
    * @param {*} ids
    */
-  loadingState (prop = null, state = true, ids = null) {
+  loadingState(prop = null, state = true, ids = null) {
     if (ids && typeof ids === "object") {
       ids.map((e) => {
         prop[e] = state;
@@ -259,7 +273,7 @@ export default {
       }
     }
   },
-  arrayClean (array, getObj = false) {
+  arrayClean(array, getObj = false) {
     let obj = JSON.parse(JSON.stringify(array));
 
     if (getObj === true) {
@@ -267,7 +281,7 @@ export default {
     }
     return Object.keys(obj).map((i) => obj[i]);
   },
-  objMap (obj, func) {
+  objMap(obj, func) {
     obj = JSON.parse(JSON.stringify(obj));
     let newObj = {};
     Object.keys(obj).map((key) => {
@@ -275,15 +289,15 @@ export default {
     });
     return newObj;
   },
-  isEven (n) {
+  isEven(n) {
     if (!Number.isFinite(parseFloat(n))) return false;
     return n % 2 == 0;
   },
-  isOdd (n) {
+  isOdd(n) {
     if (!Number.isFinite(parseFloat(n))) return false;
     return Math.abs(n % 2) == 1;
   },
-  money (
+  money(
     amount,
     abbrev = false,
     curr = true,
@@ -324,7 +338,7 @@ export default {
       (abbrev === true ? this.intStr(amount) : parsedAmount)
     );
   },
-  humanize (num, slugify) {
+  humanize(num, slugify) {
     if (!num) {
       return false;
     }
@@ -404,7 +418,7 @@ export default {
       return ones[numString[0]] + " thousand " + this.humanize(end, slugify);
     }
   },
-  intStr (num) {
+  intStr(num) {
     num = num.toString().replace(/[^0-9.]/g, "");
     if (num < 1000) {
       return num;

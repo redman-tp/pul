@@ -366,7 +366,7 @@
                   clear impact of, making the environment hostile for any
                   member. We expect members to follow these rules at our
                   co-working space and social activities, and we encourage
-                  members to follow these guidelines outside of GreyHobb.  
+                  members to follow these guidelines outside of GreyHobb.
                 </p>
               </div>
             </div>

@@ -1,7 +1,7 @@
 <template>
   <main>
     <article>
-      <!-- 
+      <!--
         - #HERO
       -->
 

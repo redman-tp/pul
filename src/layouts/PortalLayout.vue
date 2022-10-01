@@ -5,19 +5,37 @@
     <!-- (Optional) The Header -->
     <header class="header" data-header>
       <div class="container">
-        <q-item to="/bootcampHome" class="logo">
-          Grey<span>Academy</span>
+        <q-item
+          :to="{ name: 'portal.home', params: { portal: $boot.portal.slug } }"
+          class="logo"
+        >
+          <highlighter
+            highlightClassName="transparent text-green-9 text-bold"
+            :searchWords="[
+              ($boot.portal.name || '')
+                .match(/([A-Z]?[^A-Z]*)/g)
+                .slice(0, -1)[1],
+            ]"
+            :textToHighlight="$boot.portal.name"
+            v-if="
+              ($boot.portal.name || '')
+                .match(/([A-Z]?[^A-Z]*)/g)
+                .slice(0, -1)[1]
+            "
+          />
+          <span v-else>{{ $boot.portal.name }}</span>
         </q-item>
 
         <nav class="navbar" data-navbar>
           <div class="wrapper">
-            <q-item
-              style="letter-spacing: 0.2em; padding: 0"
-              to="/bootcampHome"
-              class="logo"
-            >
-              Grey<span>Academy</span>
-            </q-item>
+            <a href="#" class="logo">
+              <img
+                src="/pe/logo.svg"
+                width="162"
+                height="50"
+                alt="EduWeb logo"
+              />
+            </a>
 
             <button
               class="nav-close-btn"
@@ -28,56 +46,63 @@
             </button>
           </div>
 
-          <ul class="navbar-list">
-            <li class="navbar-item">
-              <div @click="goHome" class="navbar-link" data-nav-link>Home</div>
-            </li>
-
-            <li class="navbar-item">
-              <div @click="gotoAbout" class="navbar-link" data-nav-link>
-                About
-              </div>
-            </li>
-
-            <li class="navbar-item">
-              <div @click="gotoservices" class="navbar-link" data-nav-link>
-                Service
-              </div>
-            </li>
-
-            <li class="navbar-item">
-              <div @click="gotocontact" class="navbar-link" data-nav-link>
-                Contact
-              </div>
-            </li>
-            <li class="navbar-item">
-              <q-btn to="/bootcamp" class="navbar-link enroll" data-nav-link
-                >ENROLL NOW</q-btn
+          <ul class="navbar-list" v-if="$boot.portal.navbar_pages">
+            <li
+              class="navbar-item"
+              v-for="page in $boot.portal.navbar_pages"
+              :key="page.id"
+            >
+              <router-link
+                :to="{
+                  name: 'portal.home',
+                  params: { portal: $boot.portal.slug },
+                }"
+                class="navbar-link"
+                v-if="page.index"
               >
+                {{ page.title }}
+              </router-link>
+              <router-link
+                :to="{
+                  name: 'portal.page',
+                  params: { portal: $boot.portal.slug, page: page.slug },
+                }"
+                class="navbar-link"
+                v-else
+              >
+                {{ page.title }}
+              </router-link>
             </li>
           </ul>
         </nav>
 
         <div class="header-actions">
-          <!-- <button
+          <button
             class="header-action-btn"
             aria-label="toggle search"
             title="Search"
           >
             <i class="fa-duotone fa-magnifying-glass"></i>
-          </button> -->
+          </button>
 
-          <!-- <button class="header-action-btn" aria-label="cart" title="Cart">
+          <button class="header-action-btn" aria-label="cart" title="Cart">
             <i class="fa-duotone fa-cart-shopping"></i>
 
             <span class="btn-badge">0</span>
           </button>
 
-          <a href="#" class="btn has-before">
-            <span class="span">Try for free</span>
+          <q-btn
+            :to="{
+              name: 'portal.register',
+              params: { portal: $boot.portal.slug },
+            }"
+            class="btn has-before"
+            v-if="$boot.portal.allow_registration"
+          >
+            <span class="span">{{ $boot.portal.reg_link_title }}</span>
 
             <i class="fa-duotone fa-arrow-right"></i>
-          </a> -->
+          </q-btn>
 
           <button
             class="header-action-btn"
@@ -103,9 +128,14 @@
 
 <script>
 import { ref } from "vue";
+import Highlighter from "vue-highlight-words";
 
 export default {
   // name: 'LayoutName',
+  name: "PortalLayout",
+  components: {
+    Highlighter,
+  },
 
   setup() {
     const leftDrawerOpen = ref(false);
@@ -127,8 +157,8 @@ export default {
       const overlay = document.querySelector(".overlay");
 
       const toggleNavbar = function () {
-        navbar.classList.add("active");
-        overlay.classList.add("active");
+        navbar.classList.toggle("active");
+        overlay.classList.toggle("active");
       };
 
       menu.addEventListener("click", toggleNavbar);
@@ -140,34 +170,15 @@ export default {
 
       navTogglers.addEventListener("click", closeNavbar);
     },
-    goHome() {
-      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
-    gotoAbout() {
-      document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
-    gotoservices() {
-      document.getElementById("service").scrollIntoView({ behavior: "smooth" });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
-
-    gotocontact() {
-      document.getElementById("contact").scrollIntoView({
-        behavior: "smooth",
-      });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
   },
 };
 </script>
 
 <style scoped>
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
 .header .btn {
   display: none;
 }
@@ -183,12 +194,7 @@ export default {
   position: absolute;
   content: "";
 }
-.enroll {
-  padding: 16px 10px;
-  background: #00ab30;
-  border-radius: 4px;
-  color: #fff !important;
-}
+
 .btn::before {
   inset: 0;
   background-image: var(--gradient);
@@ -204,12 +210,6 @@ export default {
 
 .logo {
   min-height: unset;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
-  letter-spacing: 0.5em;
-  color: #333333;
 }
 
 .btn {
@@ -304,7 +304,6 @@ export default {
   padding: 8px;
   border-radius: var(--radius-circle);
   height: 40px;
-  width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -352,6 +351,10 @@ export default {
 }
 
 /*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+/*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
@@ -359,17 +362,6 @@ export default {
  * responsive for large than 575px screen
  */
 
-@media (max-width: 500px) {
-  .logo {
-    min-height: unset;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0.2em;
-    color: #333333;
-  }
-}
 @media (min-width: 768px) {
   /**
    * HEADER
@@ -392,12 +384,20 @@ export default {
   }
 
   /**
+   * STATS
+   */
+
+  /**
+ * responsive for large than 768px screen
+ */
+
+  /**
    * HEADER
    */
 
-  /* .header .container {
+  .header .container {
     padding-inline: 30px;
-  } */
+  }
 
   .header .btn {
     display: flex;
@@ -410,7 +410,7 @@ export default {
  * responsive for large than 992px screen
  */
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   /**
    * HEADER
    */
@@ -424,9 +424,6 @@ export default {
   .header.active {
     transform: translateY(-100%);
     animation: slideIn 0.5s ease forwards;
-  }
-  .header-actions {
-    display: none;
   }
 
   @keyframes slideIn {
@@ -445,7 +442,7 @@ export default {
 
   .navbar-list {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     padding: 0;
   }
 
