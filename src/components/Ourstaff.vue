@@ -490,5 +490,8 @@ figure.effect-sadie:hover .watch {
   .grid {
     grid-template-columns: 1fr;
   }
+  .figure.effect-sadie h2 .title {
+    letter-spacing: 0.1em;
+  }
 }
 </style>
