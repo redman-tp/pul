@@ -327,7 +327,8 @@ export default {
   background: #0aafe3;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3);
+  /* box-shadow: 5px 10px 30px hsla(39, 100%, 50%, 0.3); */
+  box-shadow: 5px 10px 30px rgba(10, 175, 227, 0.7);
 }
 
 .btn-primary:is(:hover, :focus) {
