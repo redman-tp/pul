@@ -1069,7 +1069,7 @@ p.down {
     padding-bottom: 38rem;
   }
   .fillColor {
-    margin-top: -15%;
+    margin-top: -18%;
   }
 }
 
