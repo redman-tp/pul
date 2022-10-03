@@ -3,7 +3,7 @@
     <main class="main bootcamp">
       <!-- === HOME === -->
       <section class="q-py-lg" id="">
-        <img src="/pe/devboot2.jpeg" alt="" class="" />
+        <img class="img_width" src="/pe/devboot2.jpeg" alt="" />
 
         <div class=" ">
           <div class=""></div>
@@ -267,7 +267,7 @@
       </section>
 
       <div class="footer_img">
-        <img src="/pe/devboot.jpeg" alt="" />
+        <img class="img_width" src="/pe/devboot.jpeg" alt="" />
       </div>
     </main>
   </q-page>
@@ -563,7 +563,10 @@ label {
   font-weight: 400;
   margin-bottom: 1rem;
 }
-
+.img_width {
+  width: 70%;
+  margin: 0 auto;
+}
 .enc {
   font-size: 16px;
 }
@@ -721,6 +724,11 @@ p.control {
 
   .urls {
     font-size: 11px;
+  }
+
+  .img_width {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 

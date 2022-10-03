@@ -386,6 +386,9 @@ export default {
   .overlay {
     display: none;
   }
+  .enroll {
+    margin-top: 0rem;
+  }
 
   .header.active {
     transform: translateY(-100%);
