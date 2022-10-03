@@ -35,13 +35,21 @@
             </h6>
 
             <q-btn
+              to="/greyacademy"
+              class="q-mt-md"
+              color="green"
+              icon-right="fa-solid fa-arrow-right"
+              no-caps
+              label="Go Home"
+            />
+            <!-- <q-btn
               :to="successRoute.route"
               class="q-mt-md"
               color="green"
               icon-right="fa-solid fa-arrow-right"
               no-caps
               :label="successRoute.label"
-            />
+            /> -->
           </div>
         </q-card>
       </div>

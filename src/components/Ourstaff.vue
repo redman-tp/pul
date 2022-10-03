@@ -90,7 +90,7 @@ export default {
           // title: "HIS EXCELLENCY",
           title: "DIGITAL MARKETING",
           certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/MCy6WtYjI-8",
+          Video_link: "https://www.youtube.com/embed/FVOfhCxJ6DU",
         },
 
         {

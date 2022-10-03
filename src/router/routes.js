@@ -26,10 +26,10 @@ const routes = [
         component: () => import("pages/GreyCreate.vue"),
         name: "greycreate",
       },
-      {
-        path: "/greyacademy",
-        component: () => import("pages/GreyAcademy.vue"),
-      },
+      // {
+      //   path: "/greyacademy",
+      //   component: () => import("pages/GreyAcademy.vue"),
+      // },
       {
         path: "/metaverse",
         component: () => import("pages/MetaVerse.vue"),
@@ -93,7 +93,7 @@ const routes = [
         name: "bootcamp",
       },
       {
-        path: "/bootcamp/home",
+        path: "/greyacademy",
         component: () => import("pages/BootcampHome.vue"),
         name: "bootcamp.home",
       },

@@ -66,29 +66,38 @@
                 </p>
               </li>
               <ul class="social-list">
-                <li>
+                <!-- <li>
                   <a href="#" class="social-link">
                     <i class="fa-brands fa-google"></i>
                   </a>
-                </li>
+                </li> -->
 
-                <li>
+                <!-- <li>
                   <a href="#" class="social-link">
                     <i class="fa-brands fa-twitter"></i>
                   </a>
-                </li>
+                </li> -->
 
                 <li>
-                  <a href="#" class="social-link">
+                  <a
+                    target="_blank"
+                    href="https://t.me/+CEhAxL_QHaU3MGJk"
+                    class="social-link"
+                  >
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="social-link">
                     <i class="fa-brands fa-instagram"></i>
                   </a>
                 </li>
 
-                <li>
+                <!-- <li>
                   <a href="#" class="social-link">
                     <i class="fa-brands fa-linkedin-in"></i>
                   </a>
-                </li>
+                </li> -->
               </ul>
             </ul>
             <li class="contact-item">

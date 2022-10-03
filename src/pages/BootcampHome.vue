@@ -102,9 +102,13 @@
               not for the <span class="text-weight-bold">hotcakes</span>.
             </p>
 
-            <button @click="generator" class="btn btn-primary">
+            <a
+              target="_blank"
+              href="https://t.me/+CEhAxL_QHaU3MGJk"
+              class="btn btn-primary"
+            >
               Join the Hotcake Community
-            </button>
+            </a>
           </div>
         </div>
         <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -226,7 +230,9 @@
             </div>
 
             <div class="join_now">
-              <a href="">JOIN NOW</a>
+              <a target="_blank" href="https://t.me/+CEhAxL_QHaU3MGJk"
+                >JOIN NOW</a
+              >
             </div>
           </div>
         </section>

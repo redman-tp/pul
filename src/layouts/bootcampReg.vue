@@ -126,7 +126,7 @@ export default {
       navTogglers.addEventListener("click", closeNavbar);
     },
     goHome() {
-      this.$router.replace("/bootcamp/home");
+      this.$router.replace("/greyacademy");
     },
   },
 };
