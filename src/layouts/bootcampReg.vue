@@ -153,6 +153,7 @@ export default {
   background: #00ab30;
   border-radius: 4px;
   color: #fff !important;
+  margin-top: 1rem;
 }
 .btn::before {
   inset: 0;

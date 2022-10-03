@@ -50,7 +50,7 @@
                 Contact
               </div>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item addMa">
               <q-btn
                 to="/portals/bootcamp-2/register"
                 class="navbar-link enroll"
@@ -191,6 +191,7 @@ export default {
   background: #00ab30;
   border-radius: 4px;
   color: #fff !important;
+  margin-top: 1rem;
 }
 .btn::before {
   inset: 0;
