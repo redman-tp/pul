@@ -3,7 +3,8 @@ import helpers from "src/plugins/helpers";
 import plugins from "src/plugins";
 import loadStore from "stores/loader";
 import * as fa from "src/plugins/fa.pro";
-// require('src/plugins/fa.pro.js')
+// require("/icons.js");
+// require("../plugins/fa.pro.js");
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files

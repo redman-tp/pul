@@ -32,24 +32,6 @@
             <li class="navbar-item">
               <div @click="goHome" class="navbar-link" data-nav-link>Home</div>
             </li>
-
-            <li class="navbar-item">
-              <div @click="gotoAbout" class="navbar-link" data-nav-link>
-                About
-              </div>
-            </li>
-
-            <li class="navbar-item">
-              <div @click="gotoservices" class="navbar-link" data-nav-link>
-                Service
-              </div>
-            </li>
-
-            <li class="navbar-item">
-              <div @click="gotocontact" class="navbar-link" data-nav-link>
-                Contact
-              </div>
-            </li>
             <li class="navbar-item">
               <q-btn
                 to="/portals/bootcamp-2/register"
@@ -144,27 +126,7 @@ export default {
       navTogglers.addEventListener("click", closeNavbar);
     },
     goHome() {
-      document.getElementById("home").scrollIntoView({ behavior: "smooth" });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
-    gotoAbout() {
-      document.getElementById("about").scrollIntoView({ behavior: "smooth" });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
-    gotoservices() {
-      document.getElementById("service").scrollIntoView({ behavior: "smooth" });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
-    },
-
-    gotocontact() {
-      document.getElementById("contact").scrollIntoView({
-        behavior: "smooth",
-      });
-      document.querySelector(".navbar").classList.remove("active");
-      document.querySelector(".overlay").classList.remove("active");
+      this.$router.replace("/bootcamp/home");
     },
   },
 };

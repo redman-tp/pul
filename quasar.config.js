@@ -48,7 +48,6 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
-      vueRouterMode: "hash", // available values: 'hash', 'history'
       env: {
         ...require("dotenv").config().parsed,
         site_name: "GreySoft Technologies",
@@ -56,7 +55,7 @@ module.exports = configure(function (/* ctx */) {
         keywords: "GreySoft",
       },
 
-      vueRouterMode: "hash", // available values: 'hash', 'history'
+      vueRouterMode: "history", // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,

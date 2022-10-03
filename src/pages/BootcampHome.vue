@@ -8,7 +8,14 @@
       <section id="home" class="hero">
         <div class="container">
           <div class="hero-banner">
-            <q-carousel no animated v-model="slide" navigation infinite>
+            <q-carousel
+              autoplay
+              no
+              animated
+              v-model="slide"
+              navigation
+              infinite
+            >
               <q-carousel-slide :name="1" img-src="/pe/emmanuel.png">
                 <div class="quotes">
                   <div>
@@ -1132,6 +1139,13 @@ p.down {
   .fillColor {
     top: -5%;
   }
+  .join_hold .begin {
+    font-size: 20.418px;
+  }
+
+  .quotes {
+    display: none;
+  }
 }
 @media (max-width: 500px) {
   .what {
@@ -1159,11 +1173,19 @@ p.down {
     align-items: center;
     height: 60.08px;
   }
+
+  .hero .container {
+    gap: 1rem;
+  }
 }
 
 @media (max-width: 400px) {
   .hotcake_courses {
     margin: -125% auto 0;
+  }
+  .btn-primary {
+    width: 200px;
+    padding: 10px 20px;
   }
 }
 @media (max-width: 360px) {

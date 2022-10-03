@@ -94,9 +94,9 @@
             <li class="contact-item">
               <a href="tel:5463876387" class="contact-link">Tel: 09025234813</a>
             </li>
-            <li class="contact-item">
+            <!-- <li class="contact-item">
               <a href="tel:5463876387" class="contact-link">Tel: 07060998702</a>
-            </li>
+            </li> -->
 
             <!-- <li class="contact-item">
               <span>Email : </span>
