@@ -157,7 +157,7 @@
 
           <div class="hotcake_det container">
             <h2>
-              <div class="what">What’s the</div>
+              <div class="what">What is the</div>
               Hotcake Community?
             </h2>
             <p class="top">
