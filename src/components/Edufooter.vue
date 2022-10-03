@@ -61,7 +61,7 @@
 
               <li class="q-pb-md">
                 <p class="footer-link-title">
-                  GreySoft <br />
+                  Greysoft <br />
                   Technologies
                 </p>
               </li>

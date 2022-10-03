@@ -268,6 +268,7 @@ p.desc {
   height: 100%;
   z-index: 1;
 }
+
 .grid figure:nth-child(5)::before {
   content: "";
   background: #c58e00;
@@ -396,6 +397,10 @@ figure.effect-sadie h2 .title {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.grid figure:nth-child(4) h2 .title {
+  max-width: 150px !important;
 }
 figure.effect-sadie h2 .name {
   font-style: normal;

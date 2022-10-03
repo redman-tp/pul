@@ -1055,9 +1055,15 @@ p.down {
   }
 
   .hotcake_det {
-    padding-bottom: 29rem;
+    padding-bottom: 28rem;
   }
 }
+@media (min-width: 1600px) {
+  .hotcake_det {
+    padding-bottom: 38rem;
+  }
+}
+
 .hero .container {
   display: flex;
   /* flex-direction: row-reverse; */

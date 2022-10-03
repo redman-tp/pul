@@ -432,6 +432,9 @@ export default {
   .header-actions {
     display: none;
   }
+  .enroll {
+    margin-top: 0rem;
+  }
 
   @keyframes slideIn {
     0% {
