@@ -997,8 +997,9 @@ p.down {
    */
 
   .hero .container {
-    display: grid;
-    grid-template-columns: 4fr 4fr;
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: 4fr 4fr; */
     align-items: flex-start;
     gap: 50px;
   }
@@ -1069,7 +1070,12 @@ p.down {
     padding-bottom: 38rem;
   }
   .fillColor {
-    margin-top: -18%;
+    margin-top: -4%;
+  }
+}
+@media (min-width: 1800px) {
+  .hotcake_det {
+    padding-bottom: 45rem;
   }
 }
 
@@ -1079,7 +1085,7 @@ p.down {
   align-items: flex-start;
   gap: 4rem;
 }
-@media (max-width: 1026px) {
+@media (max-width: 1024px) {
   .quotes {
     right: 0%;
   }
