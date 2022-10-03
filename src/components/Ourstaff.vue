@@ -13,8 +13,15 @@
           <figcaption>
             <h2>
               <div class="title">{{ course.title }}</div>
-              <br />
-              <div class="name">{{ course.name }}</div>
+              <div class="name q-mt-sm">Hover to see the intro video</div>
+
+              <q-btn
+                to="/portals/bootcamp-2/register"
+                class="q-mt-lg bg-green text-white q-px-lg q-pt-sm"
+              >
+                Enroll
+              </q-btn>
+              <!-- <div class="name">{{ course.name }}</div> -->
             </h2>
             <div v-if="course.title === 'BLOCKCHAIN TECHNOLOGY'" class="watch">
               <q-spinner-hourglass color="primary" size="1.5em" />
@@ -405,20 +412,22 @@ figure.effect-sadie h2 .title {
 figure.effect-sadie h2 .name {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 122%;
+  font-size: 11px;
+  line-height: 1.4;
   text-align: center;
-  letter-spacing: 0.26em;
   color: #ffffff;
+  letter-spacing: 0.9rem;
 }
 
 figure.effect-sadie h2 {
   position: absolute;
   bottom: 0%;
   padding: 2rem 0;
+  /* padding: 1rem 0 4rem; */
   left: 0;
   width: 100%;
   z-index: 5;
+  top: 50%;
   -webkit-transition: -webkit-transform 0.35s, color 0.35s;
   transition: transform 0.35s, color 0.35s;
   -webkit-transform: translate3d(0, -50%, 0);
@@ -449,11 +458,16 @@ figure.effect-sadie:hover h2 {
   transform: translate3d(0, 25%, 0) translate3d(0, -40px, 0);
   background: none;
   transition: all 2s ease-in-out;
+  padding: 1rem 0 4rem;
+  top: 37%;
 }
 figure.effect-sadie:hover img {
   background: #051234;
   transition: all 2s ease-in-out;
   opacity: 0.3;
+}
+figure.effect-sadie:hover .name {
+  display: none;
 }
 
 figure.effect-sadie:hover figcaption::before,
