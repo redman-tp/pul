@@ -730,6 +730,10 @@ input {
   flex-wrap: wrap;
 }
 
+.dialog_wid{
+  background: transparent;
+}
+
 @media (min-width: 600px) {
   .activityModal .q-dialog__inner--minimized > div {
     max-width: 90%;

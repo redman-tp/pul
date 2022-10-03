@@ -65,8 +65,8 @@
                     course last week
                   </div>
                   <div>
-                    ...and she’s bagged a job in less <br />
-                    than four days
+                    ...and she’s bagged a job in no <br />
+                    time
                   </div>
                   <div>Sweet!!!</div>
                 </div>
@@ -272,6 +272,10 @@ export default {
     };
   },
 
+  // mounted() {
+  //   window.location.reload();
+  // },
+
   methods: {
     generator() {
       let hotcake_section = document.querySelector(".hotcake");
@@ -474,6 +478,7 @@ export default {
 }
 .hotcake_det {
   padding-bottom: 19rem;
+  position: relative;
 }
 .slide-fade-enter-active {
   transition: all 3s ease;
@@ -690,6 +695,7 @@ export default {
   text-align: center;
   letter-spacing: 0.72em;
   color: #888787;
+  text-transform: uppercase;
 }
 
 p.top {
@@ -1061,6 +1067,9 @@ p.down {
 @media (min-width: 1600px) {
   .hotcake_det {
     padding-bottom: 38rem;
+  }
+  .fillColor {
+    margin-top: -15%;
   }
 }
 

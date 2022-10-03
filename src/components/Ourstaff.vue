@@ -467,6 +467,8 @@ figure.effect-sadie:hover .watch {
 @media (min-width: 1300px) {
   .grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 0 auto;
+    max-width: 1300px;
   }
   .grid figure img {
     height: 500px;

@@ -176,6 +176,10 @@ export default {
   line-height: 29px;
   letter-spacing: 0.5em;
   color: #333333;
+  text-transform: uppercase;
+}
+.logo span {
+  font-weight: 500;
 }
 
 .btn {
