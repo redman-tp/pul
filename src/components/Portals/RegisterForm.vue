@@ -78,13 +78,14 @@
                           ['text', 'tel', 'number', 'date'].includes(field.type)
                         "
                       />
+
                       <q-select
                         filled
                         dense
                         square
                         emit-value
                         map-options
-                        :options="field.alias === 'learning_paths' ? learningPaths() : field.options"
+                        :options="field.options"
                         :id="field.field_id"
                         v-model="data.data[field.name]"
                         :name="field.name"
@@ -103,8 +104,33 @@
                             ? errors['data.' + field.name][0]
                             : ''
                         "
+                        @update:model-value="setLearningPath($event, field)"
                         v-if="field.element === 'select'"
                       >
+                        <template v-slot:option="{ itemProps, opt }">
+                          <q-item v-bind="itemProps">
+                            <q-item-section>
+                              <q-item-label>{{ opt.label }}</q-item-label>
+                            </q-item-section>
+                            <q-item-section side v-if="opt.price">
+                              <q-item-label>{{
+                                $helper.money(opt.price)
+                              }}</q-item-label>
+                            </q-item-section>
+                          </q-item>
+                        </template>
+                        <template v-slot:selected-item="{ opt, itemProps }">
+                          <q-item v-bind="itemProps" dense>
+                            <q-item-section>
+                              <q-item-label>{{ opt.label }}</q-item-label>
+                            </q-item-section>
+                            <q-item-section side v-if="opt.price">
+                              <q-item-label>{{
+                                $helper.money(opt.price)
+                              }}</q-item-label>
+                            </q-item-section>
+                          </q-item>
+                        </template>
                       </q-select>
                     </div>
                   </div>
@@ -225,19 +251,19 @@
                   <div class="input_wrap">
                     <select v-model="data.payment" name="course" id="course">
                       <option selected :value="1">
-                        Full payment (One time) {{ $h.money(portal.reg_fee) }}
+                        Full payment (One time) {{ $h.money(learning_path.price) }}
                       </option>
                       <option :value="1 / 2">
                         Part payment (Two time payment)
-                        {{ $h.money(portal.reg_fee / 2) }}
+                        {{ $h.money(learning_path.price / 2) }}
                       </option>
                       <option :value="1 / 3">
                         Triad payment (Three time payment)
-                        {{ $h.money(portal.reg_fee / 3) }}
+                        {{ $h.money(learning_path.price / 3) }}
                       </option>
                       <option :value="1 / 4">
                         Quarter payment (Four time payment)
-                        {{ $h.money(portal.reg_fee / 4) }}
+                        {{ $h.money(learning_path.price / 4) }}
                       </option>
                     </select>
                     <div class="error" v-if="errors['data.payment']">
@@ -253,6 +279,7 @@
                     :data="{
                       type: 'portal',
                       portal_id: portal.id,
+                      learning_path: learning_path.id,
                       installment: data.payment,
                       redirect: `${location.origin}${
                         $router.resolve({ name: 'user.payment.verify' }).href
@@ -263,9 +290,8 @@
               </div>
             </q-dialog>
           </div>
-        </div>{{activeForm.learning_paths}}
+        </div>
       </section>
-
       <div class="footer_img">
         <img class="img_width" src="/pe/devboot.jpeg" alt="" />
       </div>
@@ -281,22 +307,10 @@ export default {
   components: { TPaystack },
   computed: {
     loadedForm() {
-      let form = stores.bootstrap.portal.reg_form;
-      if (form) {
-        form.fields = this.processFields(form.fields, true);
-      }
-      return form || {};
+      return stores.bootstrap.portal.reg_form || {};
     },
     portal() {
       return this.$boot.portal;
-    },
-  },
-  watch: {
-    "data.data": {
-      handler(data) {
-        this.processFields(data);
-      },
-      deep: true,
     },
   },
   setup() {
@@ -313,11 +327,36 @@ export default {
       step: ref(1),
       responseModal: false,
       activeForm: {},
+      learning_path: {},
     };
   },
+  mounted() {
+    this.activeForm.fields = this.activeForm.fields.map((field) => {
+      // If this field depends on the value of another field to be true then make this field visible
+      if (field.options && field.options[0]) {
+        this.setLearningPath(field.options[0].id, field)
+      }
+      if (field.required_if) {
+        let dependency = field.required_if.split("=");
+        this.processFields(
+          field,
+          this.data.data[dependency[0]] == dependency[1]
+        );
+        this.$watch(
+          (e) => this.data.data[dependency[0]],
+          (val) => {
+            this.processFields(field, val == dependency[1]);
+          }
+        );
+      }
+      // If the field is a select field then select the first option
+      if (field.element == "select") {
+        this.data.data[field.name] = field.options[0].value;
+      }
+      return field;
+    });
+  },
   created() {
-    // console.log(this.$refs.disabled.value);
-    // console.log(document.getElementById("disability").value);
     this.loadForm();
   },
   methods: {
@@ -330,15 +369,21 @@ export default {
         }
       });
     },
-    learningPaths () {
-      console.log(this.activeForm.learning_paths)
-      return []
-    },
     submit() {
       this.$refs.appformm.validate().then((success) => {
         if (success) {
           this.loading = true;
           this.$q.loading.show();
+          // Map through data and if field type is select then get convert the value to string
+          this.data.data = Object.keys(this.data.data).reduce((acc, key) => {
+            let field = this.activeForm.fields.find((f) => f.name == key);
+            if (field && field.element == "select") {
+              acc[key] = this.data.data[key].toString();
+            } else {
+              acc[key] = this.data.data[key];
+            }
+            return acc;
+          }, {});
           this.$api
             .post(`portals/${this.portal.id}/register`, this.data)
             .then(({ data }) => {
@@ -366,45 +411,21 @@ export default {
         }
       });
     },
-    makePayment() {
-      console.log("first");
+    processFields(field, visible) {
+      // Find field in the active form fields and set the current visibility
+      let index = this.activeForm.fields.findIndex((f) => f.name == field.name);
+      if (index > -1) {
+        this.activeForm.fields[index].hidden = !visible;
+      }
     },
-    processFields(data, isForm = false) {
-      if (!data || (isForm === true && data.length)) {
-        data = data.map((field) => {
-          if (field && field.required_if) {
-            field.required_if.split(",").forEach((e) => {
-              let required_field = e.split("=");
-              if (this.data.data[required_field[0]] == required_field[1]) {
-                field.hidden = false;
-              } else {
-                field.hidden = true;
-              }
-            });
-          }
-          return field;
-        });
-        return data;
-      } else if (data && isForm === false) {
-        Object.keys(data).forEach((key) => {
-          let field = this.loadedForm.fields.find((e) => e.name === key);
-          if (field && field.required_if) {
-            field.required_if.split(",").forEach((e) => {
-              let required_field = e.split("=");
-              if (this.data.data[required_field[0]] == required_field[1]) {
-                field.hidden = false;
-              } else {
-                field.hidden = true;
-              }
-            });
-          }
-        });
+    setLearningPath (id, field) {
+      if (field.alias === "learning_paths") {
+        this.learning_path = field.options.find((f) => f.id == id);
       }
     },
     loadForm() {
       if (this.loadedForm.id) {
         this.activeForm = this.loadedForm;
-        // this.loadedForm.fields = this.processFields(this.loadedForm.fields, true);
         return;
       }
       if (this.portal.reg_form_id) {
