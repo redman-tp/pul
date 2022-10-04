@@ -1,7 +1,9 @@
 <template>
-  <q-inner-loading :showing="visible">
-    <q-spinner-puff size="5.5em" color="primary" />
-  </q-inner-loading>
+  <div>
+    <q-inner-loading :showing="visible">
+      <q-spinner-puff size="5.5em" color="primary" />
+    </q-inner-loading>
+  </div>
 </template>
 
 <script>

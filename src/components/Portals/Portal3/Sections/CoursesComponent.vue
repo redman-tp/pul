@@ -1,114 +1,89 @@
 <template>
-  <div class="">
-    <div class="team">
-      <!-- <h2 class="text-primary">Our Team</h2> -->
-      <!-- <p class="desc">Our tranined staff</p> -->
-      <div class="grid">
-        <figure
-          v-for="(course, index) in courses"
-          :key="index"
-          class="effect-sadie"
-        >
-          <img :src="course.img" alt="img02" />
-          <figcaption>
-            <h2>
-              <div class="title">{{ course.title }}</div>
-              <div class="name q-mt-sm">Hover to see the intro video</div>
+  <div id="about" class="pos_relative" v-if="courses">
+    <section id="service" class="hotcake_courses">
+      <h3>Our HotCake Courses</h3>
+      <div class="">
+        <div class="team">
+          <!-- <h2 class="text-primary">Our Team</h2> -->
+          <!-- <p class="desc">Our tranined staff</p> -->
+          <div class="grid">
+            <figure
+              v-for="course in courses"
+              :key="course.id"
+              class="effect-sadie"
+            >
+              <img :src="course.image" alt="img02" />
+              <figcaption>
+                <h2>
+                  <div class="title">{{ course.title }}</div>
+                  <div class="name q-mt-sm">Hover to see the intro video</div>
 
-              <q-btn
-                to="/portals/greyacademy/register"
-                class="q-mt-lg bg-green text-white q-px-lg q-pt-sm"
-              >
-                Enroll
-              </q-btn>
-              <!-- <div class="name">{{ course.name }}</div> -->
-            </h2>
-            <div v-if="course.title === 'BLOCKCHAIN TECHNOLOGY'" class="watch">
-              <q-spinner-hourglass color="primary" size="1.5em" />
+                  <q-btn
+                    :to="{
+                      name: 'portal.register',
+                      params: { portal: portal.slug },
+                    }"
+                    class="q-mt-lg bg-green text-white q-px-lg q-pt-sm"
+                  >
+                    Enroll
+                  </q-btn>
+                  <!-- <div class="name">{{ course.name }}</div> -->
+                </h2>
+                <div
+                  v-if="course.title === 'BLOCKCHAIN TECHNOLOGY'"
+                  class="watch"
+                >
+                  <q-spinner-hourglass color="primary" size="1.5em" />
 
-              <small>Coming soon</small>
-            </div>
-            <div v-else class="watch">
-              <p @click="toggleVideo(course.Video_link)">
-                <i class="fa-duotone fa-play"></i>
-              </p>
-              <small>Watch the intro</small>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    <q-dialog full-width v-model="videoDialog">
-      <q-card style="height: fit-content; width: 100%" class="dialog_wid">
-        <!-- {{ spin }} -->
-        <div v-if="load" class="spin q-py-xl text-center">
-          <q-spinner-cube size="100px" color="indigo" />
+                  <small>Coming soon</small>
+                </div>
+                <div v-else class="watch">
+                  <p @click="toggleVideo(course.video_link)">
+                    <i class="fa-duotone fa-play"></i>
+                  </p>
+                  <small>Watch the intro</small>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
         </div>
+        <q-dialog full-width v-model="videoDialog">
+          <q-card style="height: fit-content; width: 100%" class="dialog_wid">
+            <!-- {{ spin }} -->
+            <div v-if="load" class="spin q-py-xl text-center">
+              <q-spinner-cube size="100px" color="indigo" />
+            </div>
 
-        <q-video v-else :ratio="16 / 9" :src="video" />
-      </q-card>
-    </q-dialog>
+            <q-video v-else :ratio="16 / 9" :src="video" />
+          </q-card>
+        </q-dialog>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  data() {
+  props: {
+    page: {
+      type: Object,
+      default: () => ({}),
+    },
+    section: {
+      type: Object,
+      default: () => ({}),
+    },
+  },
+  setup(props) {
+    const portal = ref(props.page.portal || {});
     return {
-      video: [],
-      videoDialog: false,
-      load: true,
-      courses: [
-        {
-          img: "/pe/design.png",
-
-          title: "PRODUCT DESIGN",
-          certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/MCy6WtYjI-8",
-        },
-        {
-          img: "/pe/frontend.png",
-
-          // title: "HIS EXCELLENCY",
-          title: "FRONTEND ENGINEERING",
-          certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/3cEhOYvO9SM",
-        },
-        {
-          img: "/pe/backend.png",
-
-          // title: "HIS EXCELLENCY",
-          title: "BACKEND ENGINEERING",
-          certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/9IczM7y0Yc8",
-        },
-
-        {
-          img: "/pe/data.png",
-
-          // title: "HIS EXCELLENCY",
-          title: "DATA SCIENCE",
-          certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/NJvncopOC88",
-        },
-        {
-          img: "/pe/digital.png",
-
-          // title: "HIS EXCELLENCY",
-          title: "DIGITAL MARKETING",
-          certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/FVOfhCxJ6DU",
-        },
-
-        {
-          img: "/pe/blockchain.png",
-
-          // title: "HIS EXCELLENCY",
-          title: "BLOCKCHAIN TECHNOLOGY",
-          certificate: "PROFESSIONAL CERTIFICATE",
-          Video_link: "https://www.youtube.com/embed/MCy6WtYjI-8",
-        },
-      ],
+      portal,
+      courses: portal.value.learning_paths,
+      video: ref([]),
+      videoDialog: ref(false),
+      load: ref(true),
     };
   },
 
@@ -126,50 +101,149 @@ export default {
 </script>
 
 <style scoped>
+.hotcake_courses {
+  width: 80%;
+  margin: -40% auto 0;
+}
+
+@media (max-width: 1025px) {
+  .hotcake_courses {
+    width: 80%;
+    margin: -48% auto 0;
+  }
+}
+
+.hotcake_courses h3 {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 122%;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  padding: 1.5rem 0;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+/* .play .play-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #0aafe3;
+  border: 1px solid #ffc702;
+  animation: pulseAnim 2s forwards infinite;
+} */
+
+@keyframes pulseAnim {
+  0% {
+    transform: scale(1);
+    border-color: var(--black);
+  }
+
+  100% {
+    transform: scale(1.5);
+    border-color: transparent;
+  }
+}
+
+/*-----------------------------------*\
+ * #MEDIA QUERIES
+\*-----------------------------------*/
+
+/**
+ * responsive for larger than 550px screen
+ */
+
+/**
+ * responsive for larger than 768px screen
+ */
+
+@media (min-width: 768px) {
+  :root {
+    --fs-1: 55px;
+  }
+}
+
+/**
+ * responsive for larger than 1024px screen
+ */
+
+@media (min-width: 1024px) {
+  :root {
+    --fs-1: 65px;
+  }
+}
+
+@media (max-width: 980px) {
+  .pos_relative {
+    margin-top: -6%;
+  }
+}
+@media (max-width: 900px) {
+  .hotcake_courses {
+    width: 80%;
+    margin: -60% auto 0;
+  }
+  .pos_relative {
+    margin-top: -10%;
+  }
+}
+@media (max-width: 768px) {
+  .hotcake_courses {
+    width: 80%;
+    margin: -60% auto 0;
+  }
+
+  .pos_relative {
+    margin-top: -25%;
+  }
+}
+@media (max-width: 600px) {
+  .hotcake_courses {
+    width: 80%;
+    margin: -90% auto 0;
+  }
+}
+@media (max-width: 500px) {
+  .hotcake_courses {
+    margin: -110% auto 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .hotcake_courses {
+    margin: -125% auto 0;
+  }
+}
+@media (max-width: 330px) {
+  .pos_relative {
+    margin-top: -35%;
+  }
+}
+@media (max-width: 300px) {
+  .pos_relative {
+    margin-top: -55%;
+  }
+}
+</style>
+
+<style scoped>
 .team {
   padding: 2rem 0 0;
 }
-
-.delp p {
-  font-size: 1.1rem;
-  line-height: 1.5;
-}
-.delp h5 {
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 123.5%;
-  letter-spacing: 0.335em;
-  text-transform: capitalize;
-  color: #00a250;
-  margin-bottom: 1rem;
-}
-
-.delp img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-p {
-  font-size: 26px !important;
-}
-p.desc {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 179.4%;
-  color: rgba(51, 51, 51, 0.92);
-  text-align: center;
-  margin: 1rem 0;
-}
-.white {
-  color: white !important;
-}
 .team {
   position: relative;
-}
-
-.headingg {
-  padding: 0rem 0 1rem;
 }
 
 .grid {
@@ -510,9 +584,6 @@ figure.effect-sadie:hover .watch {
 @media (max-width: 400px) {
   .grid {
     grid-template-columns: 1fr;
-  }
-  .figure.effect-sadie h2 .title {
-    letter-spacing: 0.1em;
   }
 }
 </style>

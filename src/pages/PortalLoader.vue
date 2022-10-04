@@ -1,15 +1,15 @@
 <template>
   <!-- <q-page> -->
+  <template v-if="loading">
+    <loading-component />
+  </template>
   <component
     :is="LoadedComponent"
     :current-page="currentPage"
-    v-if="(currentPage && portal_id) || loading"
+    v-else-if="currentPage && portal_id"
   >
   </component>
-  <main
-    class="main"
-    v-if="(!currentPage && portal_list && !loading) || !portal_id"
-  >
+  <main class="main" v-else-if="(!currentPage && portal_list) || !portal_id">
     <div class="row justify-center items-center portal-selector">
       <div class="col-12">
         <h4 class="text-center text-h4">Choose Portal</h4>
@@ -59,6 +59,7 @@
 <script>
 import Portal1 from "src/components/Portals/Portal1/LoaderComponent.vue";
 import Portal2 from "src/components/Portals/Portal2/LoaderComponent.vue";
+import Portal3 from "src/components/Portals/Portal3/LoaderComponent.vue";
 import Register from "src/components/Portals/RegisterForm.vue";
 import LoadingComponent from "src/components/LoadingComponent.vue";
 
@@ -113,6 +114,7 @@ export default {
       components: {
         Portal1,
         Portal2,
+        Portal3,
         Register,
       },
     };
@@ -171,7 +173,6 @@ export default {
           portal_id: portal_id,
           portal: this.portal,
         };
-
         if (!this.portal.id) {
           this.resolvePortal(portal_id, this.currentPage, Register);
         } else {
@@ -181,7 +182,6 @@ export default {
         }
         return;
       }
-
       this.loading = true;
       this.$api
         .get(`portals/${portal_id}/pages/${page_id || "index"}`)
@@ -198,6 +198,7 @@ export default {
         });
     },
   },
+  components: { LoadingComponent },
 };
 </script>
 <style lang="scss" scoped>

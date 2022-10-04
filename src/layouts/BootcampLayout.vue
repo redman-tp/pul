@@ -52,7 +52,7 @@
             </li>
             <li class="navbar-item addMa">
               <q-btn
-                to="/portals/bootcamp-2/register"
+                to="/portals/greyacademy/register"
                 class="navbar-link enroll"
                 data-nav-link
                 >ENROLL NOW</q-btn

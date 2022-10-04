@@ -5,8 +5,25 @@
     <!-- (Optional) The Header -->
     <header class="header" data-header>
       <div class="container">
-        <q-item :to="{ name: 'bootcamp.home' }" class="logo">
-          Grey<span>Academy</span>
+        <q-item
+          :to="{ name: 'portal.home', params: { portal: $boot.portal.slug } }"
+          class="logo"
+        >
+          <highlighter
+            highlightClassName="transparent text-green-9-- text-bold"
+            :searchWords="[
+              ($boot.portal.name || '')
+                .match(/([A-Z]?[^A-Z]*)/g)
+                .slice(0, -1)[1],
+            ]"
+            :textToHighlight="$boot.portal.name"
+            v-if="
+              ($boot.portal.name || '')
+                .match(/([A-Z]?[^A-Z]*)/g)
+                .slice(0, -1)[1]
+            "
+          />
+          <span v-else>{{ $boot.portal.name }}</span>
         </q-item>
 
         <nav class="navbar" data-navbar>
@@ -16,7 +33,21 @@
               to="/bootcampHome"
               class="logo"
             >
-              Grey<span>Academy</span>
+              <highlighter
+                highlightClassName="transparent text-green-9-- text-bold"
+                :searchWords="[
+                  ($boot.portal.name || '')
+                    .match(/([A-Z]?[^A-Z]*)/g)
+                    .slice(0, -1)[1],
+                ]"
+                :textToHighlight="$boot.portal.name"
+                v-if="
+                  ($boot.portal.name || '')
+                    .match(/([A-Z]?[^A-Z]*)/g)
+                    .slice(0, -1)[1]
+                "
+              />
+              <span v-else>{{ $boot.portal.name }}</span>
             </q-item>
 
             <button
@@ -28,16 +59,58 @@
             </button>
           </div>
 
-          <ul class="navbar-list">
+          <ul class="navbar-list" v-if="$boot.portal.navbar_pages">
+            <li
+              class="navbar-item"
+              v-for="page in $boot.portal.navbar_pages"
+              :key="page.id"
+            >
+              <router-link
+                :to="{
+                  name: 'portal.home',
+                  params: { portal: $boot.portal.slug },
+                }"
+                class="navbar-link"
+                v-if="page.index"
+              >
+                {{ page.title }}
+              </router-link>
+              <router-link
+                :to="{
+                  name: 'portal.page',
+                  params: { portal: $boot.portal.slug, page: page.slug },
+                }"
+                class="navbar-link"
+                v-else
+              >
+                {{ page.title }}
+              </router-link>
+            </li>
+            <li class="navbar-item" v-if="$boot.portal.allow_registration">
+              <q-btn
+                :to="{
+                  name: 'portal.register',
+                  params: { portal: $boot.portal.slug },
+                }"
+                class="navbar-link enroll"
+                data-nav-link
+                >{{ $boot.portal.reg_link_title }}</q-btn
+              >
+            </li>
+          </ul>
+          <ul class="navbar-list" v-else>
             <li class="navbar-item">
               <div @click="goHome" class="navbar-link" data-nav-link>Home</div>
             </li>
-            <li class="navbar-item">
+            <li class="navbar-item" v-if="$boot.portal.allow_registration">
               <q-btn
-                to="/portals/greyacademy/register"
+                :to="{
+                  name: 'portal.register',
+                  params: { portal: $boot.portal.slug },
+                }"
                 class="navbar-link enroll"
                 data-nav-link
-                >ENROLL NOW</q-btn
+                >{{ $boot.portal.reg_link_title }}</q-btn
               >
             </li>
           </ul>
@@ -88,10 +161,14 @@
 
 <script>
 import { ref } from "vue";
+import Highlighter from "vue-highlight-words";
 
 export default {
   // name: 'LayoutName',
-
+  name: "PortalLayout",
+  components: {
+    Highlighter,
+  },
   setup() {
     const leftDrawerOpen = ref(false);
 
@@ -136,18 +213,6 @@ export default {
 .header .btn {
   display: none;
 }
-
-.has-before,
-.has-after {
-  position: relative;
-  z-index: 1;
-}
-
-.has-before::before,
-.has-after::after {
-  position: absolute;
-  content: "";
-}
 .enroll {
   padding: 16px 10px;
   background: #00ab30;
@@ -155,19 +220,6 @@ export default {
   color: #fff !important;
   margin-top: 1rem;
 }
-.btn::before {
-  inset: 0;
-  background-image: var(--gradient);
-  z-index: -1;
-  border-radius: inherit;
-  transform: translateX(-100%);
-  transition: var(--transition-2);
-}
-
-.btn:is(:hover, :focus)::before {
-  transform: translateX(0);
-}
-
 .logo {
   min-height: unset;
   font-style: normal;
@@ -180,20 +232,6 @@ export default {
 }
 .logo span {
   font-weight: 500;
-}
-
-.btn {
-  background-color: var(--kappel);
-  color: var(--white);
-  font-family: var(--ff-league_spartan);
-  font-size: var(--fs-4);
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  max-width: max-content;
-  padding: 10px 20px;
-  border-radius: var(--radius-5);
-  overflow: hidden;
 }
 
 .header {
@@ -351,14 +389,6 @@ export default {
 
   .header-actions {
     gap: 30px;
-  }
-
-  /**
-   * HERO
-   */
-
-  .hero-banner {
-    grid-template-columns: 1fr 0.9fr;
   }
 
   /**

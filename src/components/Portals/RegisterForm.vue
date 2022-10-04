@@ -84,7 +84,7 @@
                         square
                         emit-value
                         map-options
-                        :options="field.options"
+                        :options="field.alias === 'learning_paths' ? learningPaths() : field.options"
                         :id="field.field_id"
                         v-model="data.data[field.name]"
                         :name="field.name"
@@ -263,7 +263,7 @@
               </div>
             </q-dialog>
           </div>
-        </div>
+        </div>{{activeForm.learning_paths}}
       </section>
 
       <div class="footer_img">
@@ -329,6 +329,10 @@ export default {
           this.$helper.notify("Your form has errors", "error");
         }
       });
+    },
+    learningPaths () {
+      console.log(this.activeForm.learning_paths)
+      return []
     },
     submit() {
       this.$refs.appformm.validate().then((success) => {
@@ -411,7 +415,6 @@ export default {
         .then(({ data }) => {
           this.loading = false;
           this.activeForm = data.data;
-          console.log(this.activeForm);
         })
         .catch((e) => {
           this.loading = false;
