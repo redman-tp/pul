@@ -293,8 +293,10 @@ export default {
 
       const random_color = colors[Math.floor(Math.random() * colors.length)];
       console.log(random_color);
-      hotcake_section.style.backgroundColor = random_color;
-      fillColor.style.fill = random_color;
+      if (fillColor && hotcake_section) {
+        hotcake_section.style.backgroundColor = random_color;
+        fillColor.style.fill = random_color;
+      }
       // setInterval(() => {
       //   hotcake_section.style.backgroundColor = random_color;
       //   console.log(random_color);
@@ -464,7 +466,7 @@ export default {
 
 .fillColor {
   position: absolute;
-  top: -13%;
+  top: -14.3%;
 }
 .hotcake p {
   font-style: normal;

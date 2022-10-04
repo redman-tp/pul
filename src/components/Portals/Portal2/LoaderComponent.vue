@@ -30,7 +30,7 @@ import CoursesComponent from "components/Portals/Portal2/Sections/CoursesCompone
 import VideoComponent from "components/Portals/Portal2/Sections/VideoComponent.vue";
 import CounterComponent from "components/Portals/Portal2/Sections/CountersComponent.vue";
 import BlogComponent from "components/Portals/Portal2/Sections/BlogComponent.vue";
-import "src/css/portal2.scss";
+// import "src/css/portal2.scss";
 
 export default {
   name: "PageComponent2",

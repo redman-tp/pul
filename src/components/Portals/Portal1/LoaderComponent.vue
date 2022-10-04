@@ -27,7 +27,7 @@ import DepartmentsComponent from "components/Portals/Portal1/Sections/Department
 import TeamComponent from "components/Portals/Portal1/Sections/TeamComponent.vue";
 import CtaComponent from "components/Portals/Portal1/Sections/CtaComponent.vue";
 
-import "src/css/portal1.scss";
+// import "src/css/portal1.scss";
 
 export default {
   name: "PageComponent1",

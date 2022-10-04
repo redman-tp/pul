@@ -454,6 +454,7 @@ main {
 
 section {
   padding: 2rem 0;
+  display: grid;
 }
 
 .small_container {
@@ -461,6 +462,11 @@ section {
   max-width: 1440px;
   margin: 5rem auto 2rem;
 }
+
+.footer_img {
+  display: grid;
+}
+
 .hold_dia {
   background: white;
   padding: 3rem 1rem 1rem;
