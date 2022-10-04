@@ -1222,6 +1222,10 @@ p.down {
   .fillColor {
     top: -4%;
   }
+
+  .pos_relative {
+    margin-top: -30%;
+  }
 }
 @media (max-width: 330px) {
   .pos_relative {

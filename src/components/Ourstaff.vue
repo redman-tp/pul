@@ -417,6 +417,8 @@ figure.effect-sadie h2 .name {
   text-align: center;
   color: #ffffff;
   letter-spacing: 0.9rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
 }
 
 figure.effect-sadie h2 {
