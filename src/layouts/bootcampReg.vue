@@ -5,9 +5,12 @@
     <!-- (Optional) The Header -->
     <header class="header" data-header>
       <div class="container">
-        <q-item :to="{ name: 'bootcamp.home' }" class="logo">
+        <q-item :to="'/greyacademy'" class="logo">
           Grey<span>Academy</span>
         </q-item>
+        <!-- <q-item :to="{ name: 'bootcamp.home' }" class="logo">
+          Grey<span>Academy</span>
+        </q-item> -->
 
         <nav class="navbar" data-navbar>
           <div class="wrapper">

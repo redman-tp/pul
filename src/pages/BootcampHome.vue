@@ -168,7 +168,7 @@
             <p class="down">
               Hotcake is a community space led by Greysoft Technologies for
               people who are looking for a rewarding job and the training to get
-              them hired. Getting a job ike most things, can be a solitary
+              them hired. Getting a job like most things, can be a solitary
               endeavor, but if we can find the right support network, we can
               make it easier, more productive and more joyful. <br /><br />
 
@@ -1085,7 +1085,7 @@ p.down {
   align-items: flex-start;
   gap: 4rem;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .quotes {
     right: 0%;
   }

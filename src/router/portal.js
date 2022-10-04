@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: "/" + Math.ceil(Math.random() * 1000000009),
-    component: () => import("layouts/portalLayout2.vue"),
+    component: () => import("layouts/bootcampReg.vue"),
     children: [
       {
         path: "/portals/:portal",

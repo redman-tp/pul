@@ -34,13 +34,13 @@
               to="/greycreate"
               exact
             />
-            <!-- <q-route-tab
+            <q-route-tab
               label="GreyAcademy"
               ripple
               no-caps
               to="/greyacademy"
               exact
-            /> -->
+            />
             <q-route-tab
               label="Metaverse"
               ripple
@@ -48,13 +48,13 @@
               to="/metaverse"
               exact
             />
-            <q-route-tab
+            <!-- <q-route-tab
               label="Portal"
               ripple
               no-caps
               :to="{ name: 'portal' }"
               exact
-            />
+            /> -->
           </q-tabs>
         </div>
         <q-btn
