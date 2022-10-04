@@ -1065,7 +1065,7 @@ p.down {
     padding-bottom: 28rem;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .hotcake_det {
     padding-bottom: 38rem;
   }

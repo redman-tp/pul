@@ -342,6 +342,14 @@ export default {
     letter-spacing: 0.2em;
     color: #333333;
   }
+
+  .container {
+    padding-inline: 0;
+  }
+
+  .header-action-btn {
+    font-size: 4px;
+  }
 }
 @media (min-width: 768px) {
   /**

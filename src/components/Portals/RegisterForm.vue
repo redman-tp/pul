@@ -251,7 +251,8 @@
                   <div class="input_wrap">
                     <select v-model="data.payment" name="course" id="course">
                       <option selected :value="1">
-                        Full payment (One time) {{ $h.money(learning_path.price) }}
+                        Full payment (One time)
+                        {{ $h.money(learning_path.price) }}
                       </option>
                       <option :value="1 / 2">
                         Part payment (Two time payment)
@@ -334,7 +335,7 @@ export default {
     this.activeForm.fields = this.activeForm.fields.map((field) => {
       // If this field depends on the value of another field to be true then make this field visible
       if (field.options && field.options[0]) {
-        this.setLearningPath(field.options[0].id, field)
+        this.setLearningPath(field.options[0].id, field);
       }
       if (field.required_if) {
         let dependency = field.required_if.split("=");
@@ -418,7 +419,7 @@ export default {
         this.activeForm.fields[index].hidden = !visible;
       }
     },
-    setLearningPath (id, field) {
+    setLearningPath(id, field) {
       if (field.alias === "learning_paths") {
         this.learning_path = field.options.find((f) => f.id == id);
       }
@@ -829,6 +830,11 @@ p.control {
     max-width: 1440px;
     margin: 5rem auto;
   }
+
+  .img_width {
+    width: 90%;
+    margin: 5rem auto 0;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -843,6 +849,10 @@ p.control {
     max-width: 1440px;
     margin: 5rem auto;
   }
+  section {
+    padding: 0;
+  }
+
   .about__container {
     row-gap: 2.5rem;
     place-items: flex-start;
