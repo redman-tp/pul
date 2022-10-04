@@ -294,7 +294,7 @@
         </div>
       </section>
       <div class="footer_img">
-        <img class="img_width" src="/pe/devboot.jpeg" alt="" />
+        <img class="img_widthh" src="/pe/devboot.jpeg" alt="" />
       </div>
     </main>
   </q-page>
@@ -590,7 +590,12 @@ label {
 }
 .img_width {
   width: 70%;
-  margin: 0 auto;
+  margin: 5rem auto 0;
+}
+
+.img_widthh {
+  width: 70%;
+  margin: 0rem auto;
 }
 .enc {
   font-size: 16px;
@@ -750,11 +755,6 @@ p.control {
   .urls {
     font-size: 11px;
   }
-
-  .img_width {
-    width: 70%;
-    margin: 0 auto;
-  }
 }
 
 @media screen and (min-height: 721px) {
@@ -834,6 +834,9 @@ p.control {
   .img_width {
     width: 90%;
     margin: 5rem auto 0;
+  }
+  .img_widthh {
+    width: 90%;
   }
 }
 
