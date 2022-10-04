@@ -590,7 +590,7 @@ label {
 }
 .img_width {
   width: 70%;
-  margin: 5rem auto 0;
+  margin: 6rem auto 0;
 }
 
 .img_widthh {
@@ -833,7 +833,7 @@ p.control {
 
   .img_width {
     width: 90%;
-    margin: 5rem auto 0;
+    margin: 7rem auto 0;
   }
   .img_widthh {
     width: 90%;
@@ -850,7 +850,7 @@ p.control {
   .small_container {
     width: 90%;
     max-width: 1440px;
-    margin: 5rem auto;
+    margin: 5rem auto 1rem;
   }
   section {
     padding: 0;
