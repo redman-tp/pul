@@ -74,7 +74,7 @@
             data-nav-toggler
             @click="toggleMenu"
           >
-            <i class="fa-duotone fa-bars"></i>
+            <i style="font-size: 20px" class="fa-duotone fa-bars"></i>
           </button>
         </div>
 
