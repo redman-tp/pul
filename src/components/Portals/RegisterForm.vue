@@ -406,13 +406,14 @@ export default {
                 error.errors.email[0] === "The email has already been taken."
               ) {
                 this.responseModal = true;
-                this.$helper.notify("Continue your registration");
+                this.$helper.notify(`Welcome back, continue your registration`);
+              } else {
+                this.errors = error.errors ?? {};
+                this.$helper.notify(
+                  error.message || error,
+                  error.status || "error"
+                );
               }
-              this.errors = error.errors ?? {};
-              this.$helper.notify(
-                error.message || error,
-                error.status || "error"
-              );
             });
         } else {
           this.$helper.notify("Your form has errors", "error");
