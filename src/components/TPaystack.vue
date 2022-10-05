@@ -74,7 +74,7 @@ export default {
       let router = this.$router;
       const api = this.$api;
       return PaystackPop.setup({
-        key: $boot.settings.paystack_public_key, // Replace with your public key
+        key: this.$boot.settings.paystack_public_key, // Replace with your public key
         email: this.$user.email,
         amount: amount * 100,
         ref: ref,
