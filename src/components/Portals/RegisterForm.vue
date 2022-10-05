@@ -401,6 +401,13 @@ export default {
               this.loading = false;
               this.$q.loading.hide();
               let error = this.$plugins.reader.error(e);
+              console.log(error.errors.email[0]);
+              if (
+                error.errors.email[0] === "The email has already been taken."
+              ) {
+                this.responseModal = true;
+                this.$helper.notify("Continue your registration");
+              }
               this.errors = error.errors ?? {};
               this.$helper.notify(
                 error.message || error,
