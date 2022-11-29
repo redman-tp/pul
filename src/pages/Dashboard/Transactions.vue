@@ -214,19 +214,19 @@ const columns = [
     sortable: true,
   },
   {
-    name: "name",
-    required: true,
-    label: "Name",
-    align: "left",
-    field: "name",
-    sortable: true,
-  },
-  {
     name: "company",
     required: true,
     label: "Company",
     align: "left",
-    field: "company",
+    field: (e) => e.user.fullname,
+    sortable: true,
+  },
+  {
+    name: "amount",
+    required: true,
+    label: "Amount",
+    align: "left",
+    field: "amount",
     sortable: true,
   },
 
@@ -235,16 +235,16 @@ const columns = [
     required: true,
     label: "Email",
     align: "left",
-    field: "email",
+    field: (e) => e.user.email,
     // field: (row) => row.meta.substr(0, 50),
     sortable: true,
   },
   {
-    name: "paid",
+    name: "phone",
     required: true,
-    label: "Paid",
+    label: "Phone",
     align: "left",
-    field: "paid",
+    field: (e) => e.user.phone,
     // field: (row) => row.meta.substr(0, 50),
     sortable: true,
   },
@@ -254,15 +254,6 @@ const columns = [
     label: "Date",
     align: "left",
     field: "date",
-    // field: (row) => row.meta.substr(0, 50),
-    sortable: true,
-  },
-  {
-    name: "selected_space",
-    required: true,
-    label: "Selected space",
-    align: "left",
-    field: "selected_space",
     // field: (row) => row.meta.substr(0, 50),
     sortable: true,
   },
@@ -353,7 +344,7 @@ export default {
   methods: {
     onRequest(props) {
       this.loading = true;
-      const url = `admin/spaces/reservations/pending`;
+      const url = `admin/transactions`;
       this.curl = url;
       this.$api
         .get(url)
@@ -371,39 +362,7 @@ export default {
           this.rows = [];
         });
     },
-    EditReservation(reservation) {
-      this.editReserve = true;
-      this.editstate = true;
-      console.log(reservation);
-      let reserveid = reservation.id;
-      let spaceid = reservation.space_id;
-      this.reserveid = reserveid;
-      this.spaceid = spaceid;
-      this.data.company = reservation.company;
-      this.data.email = reservation.email;
-      this.data.name = reservation.name;
-    },
 
-    editedFunction(e) {
-      e.preventDefault();
-      let spaceid = this.spaceid;
-      let reserveid = this.reserveid;
-      this.editLoad = true;
-      let status = { status: "paid" };
-      this.$api
-        .put(`admin/spaces/${spaceid}/reservations/${reserveid}/status`, status)
-        .then(({ data }) => {
-          console.log("edited", data);
-          this.refreshPage();
-          this.editLoad = false;
-          this.editReserve = false;
-          this.errors = [];
-        })
-        .catch(({ response }) => {
-          this.editLoad = false;
-          console.log(response);
-        });
-    },
     refreshPage() {
       if (this.curl !== "") {
         this.loading = true;

@@ -198,7 +198,6 @@ export default {
       meta: {},
       links: {},
       currentPage: 1,
-      data: {},
       loading: false,
       editstate: false,
       editReserve: false,

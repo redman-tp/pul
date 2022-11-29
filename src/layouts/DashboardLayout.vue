@@ -64,6 +64,12 @@
             <p class="q-ml-md">Paid Reservations</p>
           </div>
         </q-item>
+        <q-item clickable v-ripple to="/transactions">
+          <div class="wrapp">
+            <i class="ri-user-line"></i>
+            <p class="q-ml-md">Transactions</p>
+          </div>
+        </q-item>
 
         <!-- <q-item clickable v-ripple to="/">
           <div class="wrapp">

@@ -4,13 +4,19 @@ const routes = [
   ...portal,
   {
     path: "/",
-    component: () => import("layouts/MainLayout.vue"),
+    component: () => import("layouts/newHome.vue"),
     children: [
       {
         path: "/",
-        component: () => import("pages/IndexPage.vue"),
+        component: () => import("pages/Home.vue"),
         name: "index",
       },
+    ],
+  },
+  {
+    path: "/",
+    component: () => import("layouts/MainLayout.vue"),
+    children: [
       {
         path: "/greyhobb",
         component: () => import("pages/GreyHobb.vue"),
@@ -37,7 +43,7 @@ const routes = [
       },
       {
         path: "/about",
-        component: () => import("pages/About.vue"),
+        component: () => import("pages/IndexPage.vue"),
         name: "about",
       },
     ],
@@ -45,9 +51,9 @@ const routes = [
   {
     path: "/auth" + Math.random() * 10,
     component: () => import("layouts/MainLayout.vue"),
-    meta: {
-      requireGuest: true,
-    },
+    // meta: {
+    //   requireGuest: true,
+    // },
     children: [
       {
         path: "/login",
@@ -65,8 +71,24 @@ const routes = [
         component: () => import("pages/Dashboard/DashboardPage.vue"),
         name: "user.dashboard",
       },
+      {
+        path: "/paidReservations",
+        component: () => import("pages/Dashboard/PaidReservations.vue"),
+        name: "user.paid",
+      },
+      {
+        path: "/reservations",
+        component: () => import("pages/Dashboard/Reservations.vue"),
+        name: "user.reservations",
+      },
+      {
+        path: "/transactions",
+        component: () => import("pages/Dashboard/Transactions.vue"),
+        name: "user.transactions",
+      },
     ],
   },
+
   {
     path: "/kukahapplication",
     component: () => import("layouts/MainLayout.vue"),

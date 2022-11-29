@@ -121,6 +121,10 @@ export default {
     };
   },
 
+  mounted() {
+    this.toggleMenu();
+  },
+
   methods: {
     toggleMenu() {
       const menu = document.getElementById("toggleMenu");
