@@ -70,6 +70,19 @@
         <q-btn flat class="bg-white">
           <div class="btn_text">JOIN OUR NEWSLETTER</div>
         </q-btn>
+        <br />
+        <q-btn
+          class="q-mt-sm text-white"
+          no-caps
+          small
+          outline
+          icon="mail"
+          type="a"
+          href="https://www.greysoft.ng/webmail/"
+          target="_blank"
+        >
+          <span class="q-pl-sm">Check Mail</span>
+        </q-btn>
       </div>
     </div>
 
@@ -125,6 +138,14 @@ p {
 }
 .top p {
   font-size: 1.25rem;
+}
+
+.mail {
+  padding: 0.75rem;
+  border: 1px solid white;
+  display: inline-block;
+  position: relative;
+  z-index: 2;
 }
 .footer_links {
   display: grid;

@@ -16,10 +16,20 @@
     </q-carousel>
     <div class="holder">
       <div class="left">
-        <a target="_blank" href=""><i class="fa-brands fa-facebook-f"></i></a>
-        <a target="_blank" href=""><i class="fa-brands fa-instagram"></i></a>
-        <a target="_blank" href=""><i class="fa-brands fa-twitter"></i></a>
-        <a target="_blank" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+        <a target="_blank" href="https://web.facebook.com/greysoftng"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/greyhobb/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a target="_blank" href="https://twitter.com/greyhobb"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/company/greysoft-tech/mycompany/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
       </div>
 
       <div class="right">
@@ -107,14 +117,14 @@ h1 {
   height: 178px;
 }
 
-.hero q {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 150%;
-  text-transform: capitalize;
-  color: #292929;
+.hero2 q {
+  font-family: "Inter" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 26px !important;
+  line-height: 150% !important;
+  text-transform: capitalize !important;
+  color: #292929 !important;
 }
 
 a {
@@ -137,6 +147,12 @@ i {
   color: #302e2e;
   font-size: 1.5rem;
 }
+
+@media (min-width: 1300px) {
+  .topic {
+    right: 45%;
+  }
+}
 @media (max-width: 768px) {
   strong {
     color: #fff;
@@ -155,15 +171,16 @@ i {
 
   .topic {
     right: 30%;
+    top: 30%;
     /* transform: translateX(-50%); */
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 
-  .hero q {
-    font-size: 22px;
+  .hero2 q {
+    font-size: 20px !important;
   }
 }
 </style>

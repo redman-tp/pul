@@ -37,10 +37,6 @@
         </figcaption>
       </figure>
     </div>
-
-    <div class="text-center">
-      <q-btn to="/team" class="view">View More</q-btn>
-    </div>
   </div>
 </template>
 
@@ -91,6 +87,104 @@ export default {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
           img: "/images/stef.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Mariya bilal",
+          position: "Community Manager",
+          img: "/images/mariya.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Favour Bulus",
+          position: "Production Lead",
+          img: "/images/bulus.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Emmanuel Nwabuodafi",
+          position: "Lead Frontend Engineer",
+          img: "/images/emma.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Joshua Nnamani",
+          position: " Backend Engineer",
+          img: "/images/josh.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Rico",
+          position: "VR Engineer",
+          img: "/images/rico.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Helen",
+          position: "Secretary",
+          img: "/images/helena.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Ademola Adewale",
+          position: "Lead Product Designer",
+          img: "/images/sirgappy.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "John",
+          position: "Lead Backend Engineer",
+          img: "/images/john.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Victor Idumufinide",
+          position: "Lead Photographer",
+          img: "/images/victor.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Abdull",
+          position: "UX/UI Design Intern",
+          img: "/images/abdul.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Tobi Ikupolati",
+          position: "Frontend Engineer",
+          img: "/images/tobi.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Kate Mcarthy",
+          position: "Videographer",
+          img: "/images/kate.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Ekoh",
+          position: "Digital Marketer",
+          img: "/images/ekoh.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Ayuba Dauda",
+          position: "Devops Engineer",
+          img: "/images/ayuba.png",
           linkedIn: "",
           twitter: "",
         },
@@ -147,15 +241,7 @@ img {
   gap: 0.4rem;
   z-index: 10;
 }
-.view {
-  background: linear-gradient(
-    285.19deg,
-    rgba(207, 2, 187, 0.94) -17.8%,
-    rgba(211, 172, 31, 0.94) 67.55%,
-    rgba(240, 13, 67, 0.94) 152.9%
-  );
-  color: #fff;
-}
+
 /* Common style */
 .grid figure {
   position: relative;

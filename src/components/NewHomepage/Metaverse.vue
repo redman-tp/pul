@@ -19,7 +19,7 @@
           <div class="carousel">
             <div class="left_side">
               <div class="section_image q-mt-lg">
-                <img src="metaverse1.svg" alt="WOman holding VR Controller" />
+                <img src="/metaverse1.svg" alt="WOman holding VR Controller" />
               </div>
             </div>
             <div class="right_side">
@@ -43,7 +43,7 @@
                 label="View "
                 to="/metaverse"
                 no-caps
-                icon-right="mdi-chevron-down"
+                icon-right="fa-solid fa-arrow-right"
                 size="1.1rem"
               />
             </div>
@@ -86,7 +86,10 @@
           <div class="carousel">
             <div class="left_side">
               <div class="section_image q-mt-lg">
-                <img src="metaverse1.svg" alt="WOman holding VR Controller" />
+                <img
+                  src="/images/greyc.png"
+                  alt="WOman holding VR Controller"
+                />
               </div>
             </div>
             <div class="right_side">
@@ -109,7 +112,7 @@
                 label="View"
                 to="/greycreate"
                 no-caps
-                icon-right="mdi-chevron-down"
+                icon-right="fa-solid fa-arrow-right"
                 size="1.1rem"
               />
             </div>
@@ -120,7 +123,10 @@
           <div class="carousel">
             <div class="left_side">
               <div class="section_image q-mt-lg">
-                <img src="metaverse1.svg" alt="WOman holding VR Controller" />
+                <img
+                  src="/images/teched.png"
+                  alt="WOman holding VR Controller"
+                />
               </div>
             </div>
             <div class="right_side">
@@ -143,7 +149,7 @@
                 label="View"
                 to="/greyacademy"
                 no-caps
-                icon-right="mdi-chevron-down"
+                icon-right="fa-solid fa-arrow-right"
                 size="1.1rem"
               />
             </div>

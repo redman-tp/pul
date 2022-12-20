@@ -1414,6 +1414,10 @@ input {
   );
 }
 
+.q-page-sticky.fixed-bottom-right {
+  z-index: 10 !important;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -1452,42 +1456,6 @@ h6 {
   max-width: 1440px;
   margin: 0 auto;
 }
-// .splide__arrow {
-//   top: 120% !important;
-//   padding: 16px 10px !important;
-//   border: 2px solid #ffffff !important;
-//   filter: drop-shadow(0px 4px 20px rgba(77, 77, 77, 0.18)) !important;
-//   border-radius: 100px !important;
-//   width: 50px !important;
-// }
-// .splide__pagination {
-//   bottom: -10% !important;
-//   left: 59% !important;
-//   gap: 2rem;
-// }
-
-// .splide__pagination__page {
-//   height: 8px;
-//   width: 50px !important;
-//   height: 8px !important;
-//   background: #fff !important;
-//   border-radius: 8px !important;
-// }
-// .splide__pagination__page.is-active {
-//   background: #ffba09 !important;
-//   transform: scale(1.1);
-//   z-index: 1;
-// }
-// .splide__arrow--next {
-//   right: 15% !important;
-// }
-// .splide__list {
-//   padding-bottom: 3rem;
-// }
-// .splide__arrow--prev {
-//   right: 22% !important;
-//   left: unset !important;
-// }
 
 .hero2 .q-carousel {
   background-color: black;
@@ -1559,6 +1527,9 @@ h6 {
 
   .splide__arrow--next {
     right: 10% !important;
+  }
+  .hero2 .q-carousel {
+    height: 712px;
   }
 }
 

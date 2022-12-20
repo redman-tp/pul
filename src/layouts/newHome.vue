@@ -26,6 +26,10 @@
           >
             <i class="fa-duotone fa-xmark-large"></i>
           </q-btn>
+          <q-item to="/" class="nav__logo logoRes">
+            <img src="/pe/greysoftNGicon-01.svg" alt="" /> Grey<span>soft</span
+            ><span class="ng">NG</span></q-item
+          >
 
           <ul class="navbar-list">
             <li>
@@ -194,14 +198,14 @@
         <q-fab
           icon="add"
           direction="up"
-          color="primary"
+          class="add"
           :disable="draggingFab"
           v-touch-pan.prevent.mouse="moveFab"
         >
-          <a target="_blank" href=""
+          <!-- <a target="_blank" href="https://web.facebook.com/greysoftng"
             ><q-fab-action color="primary" icon="mail" :disable="draggingFab"
-          /></a>
-          <a target="_blank" href=""
+          /></a> -->
+          <a target="_blank" href="https://web.facebook.com/greysoftng"
             ><q-fab-action
               color="primary"
               icon="facebook"
@@ -214,12 +218,26 @@
               icon="fab fa-instagram"
               :disable="draggingFab"
           /></a>
-          <a target="_blank" href=""
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/greysoft-tech/mycompany/"
+            ><q-fab-action
+              color="primary"
+              icon="fab fa-linkedin"
+              :disable="draggingFab"
+          /></a>
+          <a target="_blank" href="https://twitter.com/greyhobb"
+            ><q-fab-action
+              color="primary"
+              icon="fab fa-twitter"
+              :disable="draggingFab"
+          /></a>
+          <!-- <a target="_blank" href=""
             ><q-fab-action
               color="primary"
               icon="fa-brands fa-whatsapp"
               :disable="draggingFab"
-          /></a>
+          /></a> -->
         </q-fab>
       </q-page-sticky>
     </q-page-container>
@@ -311,6 +329,13 @@ img {
   width: 100%;
 }
 
+.logoRes {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-60%, -20%);
+}
+
 .item_sq {
   display: inline-block;
   padding: 0.7rem;
@@ -333,6 +358,19 @@ img {
   padding: 0.6rem 2rem;
   font-size: 18px;
   transition: all 0.5s ease-in-out;
+}
+.add {
+  background: linear-gradient(
+    285.19deg,
+    rgba(207, 2, 187, 0.94) -17.8%,
+    rgba(211, 172, 31, 0.94) 67.55%,
+    rgba(240, 13, 67, 0.94) 152.9%
+  );
+  color: #fff;
+}
+
+.nav__logo {
+  font-size: 2.5rem;
 }
 
 .vr:hover {
@@ -695,6 +733,12 @@ button {
   }
 }
 
+@media (max-width: 1000px) {
+  .nvbr .navbar-list {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .header {
     padding: 2px;
@@ -711,6 +755,10 @@ button {
     font-family: var(--ff-oswald);
     font-size: 2rem !important;
     text-transform: uppercase;
+  }
+  .vr {
+    padding: 0.3rem 1.3rem;
+    font-size: 14px;
   }
 }
 .logo img {

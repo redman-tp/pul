@@ -3,11 +3,7 @@
     <main class="main">
       <!-- === HOME === -->
       <section class="home" id="home">
-        <img
-          src="/pe/matthieu-comoy-koo_vYrlU_U-unsplash.jpg"
-          alt=""
-          class="home__img"
-        />
+        <img src="/images/greyc.png" alt="" class="home__img" />
         <div class="home__container container grid">
           <div class="home__data">
             <h1 class="home__data-title">GreyCreate</h1>

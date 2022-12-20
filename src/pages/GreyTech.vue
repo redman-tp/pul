@@ -3,11 +3,7 @@
     <main class="main">
       <!-- === HOME === -->
       <section class="home" id="home">
-        <img
-          src="/pe/software-developer-gdf383dd56_1920.jpg"
-          alt=""
-          class="home__img"
-        />
+        <img src="/images/greyt.png" alt="" class="home__img" />
         <div class="home__container container grid">
           <div class="home__data">
             <h1 class="home__data-title">GreyTech</h1>

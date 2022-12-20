@@ -30,6 +30,13 @@
           leveraging the Metaverse with partnership from Greysoft .we made it
           happen!
         </p>
+        <q-btn
+          class="q-mt-md view"
+          href="https://kadinvest.live"
+          target="_blank"
+        >
+          Visit
+        </q-btn>
       </div>
     </div>
     <div class="post three">
@@ -54,6 +61,8 @@
           Africans who show exceptional promise as developing leaders in digital
           transformation.
         </p>
+
+        <q-btn class="q-mt-md view" to="/kukah"> Visit </q-btn>
       </div>
     </div>
     <div class="post five">
@@ -111,6 +120,16 @@ img {
   object-position: top;
   /* border-radius: 10px; */
 }
+
+.view {
+  background: linear-gradient(
+    285.19deg,
+    rgba(207, 2, 187, 0.94) -17.8%,
+    rgba(211, 172, 31, 0.94) 67.55%,
+    rgba(240, 13, 67, 0.94) 152.9%
+  );
+  color: #fff;
+}
 .one {
   grid-area: one;
 }
@@ -136,12 +155,16 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: rgb(0, 0, 0, 0.6);
+  background: rgb(0, 0, 0, 0.7);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0 4% 7%;
+}
+
+.overlay .q-btn {
+  width: 50%;
 }
 .overlay p {
   color: rgb(255, 255, 255, 0.9);
@@ -186,8 +209,7 @@ img {
     gap: 5px;
   }
   .overlay p {
-    font-size: 0.85rem;
-    margin: 0.5% 0;
+    font-size: 1.2rem;
   }
   .overlay h4 {
     font-size: 1.5rem;
@@ -211,7 +233,7 @@ img {
       "five";
   }
   .overlay p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .overlay h4 {
     overflow: hidden;
@@ -238,11 +260,14 @@ img {
   }
   .posts {
     grid-template-areas:
+      "four"
+      "four"
+      "four"
+      "one"
       "one"
       "two"
-      "four"
+      "two"
       "three"
-      "four"
       "five";
   }
   .updates h6 {
@@ -250,7 +275,7 @@ img {
     /* text-align: center; */
   }
   .overlay p {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   .overlay h4 {
     font-size: 1.2rem;

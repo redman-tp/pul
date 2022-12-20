@@ -3,7 +3,7 @@
     <main class="main">
       <!-- === HOME === -->
       <section class="home" id="home">
-        <img src="/pe//unsplash_FPQlXQtjkqU.png" alt="" class="home__img" />
+        <img src="/images/greyh.png" alt="" class="home__img" />
         <div class="home__container container grid">
           <div class="home__data">
             <h1 class="home__data-title">GreyHobb</h1>
