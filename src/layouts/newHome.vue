@@ -73,6 +73,11 @@
                       <q-item-label>GreyAcademy</q-item-label>
                     </q-item-section>
                   </q-item>
+                  <q-item clickable to="/careers" v-close-popup>
+                    <q-item-section>
+                      <q-item-label>Careers</q-item-label>
+                    </q-item-section>
+                  </q-item>
                   <q-item clickable to="/metaverse" v-close-popup>
                     <q-item-section>
                       <q-item-label>Metaverse</q-item-label>

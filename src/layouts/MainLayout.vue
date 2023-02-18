@@ -41,6 +41,7 @@
               to="/greyacademy"
               exact
             />
+            <q-route-tab label="Careers" ripple no-caps to="/careers" exact />
             <q-route-tab
               label="Metaverse"
               ripple
@@ -113,7 +114,14 @@
             label="GreyAcademy"
             ripple
             class="q-my-sm text-dark addbor text-weight-bold"
-            to="greyacademy"
+            to="/greyacademy"
+            exact
+          />
+          <q-route-tab
+            label="Careers"
+            ripple
+            class="q-my-sm text-dark addbor text-weight-bold"
+            to="/careers"
             exact
           />
           <!-- <q-route-tab
