@@ -136,6 +136,11 @@
                       <q-item-label>GreyAcademy</q-item-label>
                     </q-item-section>
                   </q-item>
+                  <q-item clickable to="/careers" v-close-popup>
+                    <q-item-section>
+                      <q-item-label>Careers</q-item-label>
+                    </q-item-section>
+                  </q-item>
                   <q-item clickable to="/metaverse" v-close-popup>
                     <q-item-section>
                       <q-item-label>Metaverse</q-item-label>
@@ -170,10 +175,9 @@
                 class="item_sq"
               >
                 <q-item-section>
-                  <q-item-label>GreyHobb Tour</q-item-label>
+                  <q-item-label>MS Square Tour</q-item-label>
                 </q-item-section>
               </a>
-
               <a
                 href="https://kuula.co/share/collection/7vGlZ?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=-1"
                 clickable
@@ -181,7 +185,7 @@
                 class="item_sq"
               >
                 <q-item-section>
-                  <q-item-label>MS Square Tour</q-item-label>
+                  <q-item-label>GreyHobb Tour</q-item-label>
                 </q-item-section>
               </a>
             </q-list>

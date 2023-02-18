@@ -82,6 +82,7 @@ export default {};
 <style scoped>
 .updates {
   padding: 3% 10%;
+  font-family: "Poppins";
 }
 p,
 h4 {

@@ -55,7 +55,7 @@ export default {
         },
         {
           name: "Isah Raphael",
-          position: "Chief Executive Officer/Managing Director",
+          position: "CEO/CTO",
           linkedIn: "",
           img: "/images/ralph.png",
           twitter: "",
@@ -69,20 +69,20 @@ export default {
           twitter: "",
           quote: "",
         },
-        {
-          name: "Bilal Salau",
-          position: "Chief Creative Director",
-          img: "/images/bil.png",
-          linkedIn: "",
-          twitter: "",
-        },
-        {
-          name: "Victor Peter",
-          position: "Chief Technical Officer",
-          img: "/images/vic.png",
-          linkedIn: "",
-          twitter: "",
-        },
+        // {
+        //   name: "Bilal Salau",
+        //   position: "Chief Creative Director",
+        //   img: "/images/bil.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
+        // {
+        //   name: "Victor Peter",
+        //   position: "Chief Technical Officer",
+        //   img: "/images/vic.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
         {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
@@ -155,7 +155,7 @@ export default {
         },
         {
           name: "Abdull",
-          position: "UX/UI Design Intern",
+          position: "UX/UI Designer",
           img: "/images/abdul.png",
           linkedIn: "",
           twitter: "",

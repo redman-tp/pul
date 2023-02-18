@@ -45,7 +45,7 @@
 
 <script>
 import { ref } from "vue";
-import Emojis from "../../components/NewHomepage/Emojis.vue";
+// import Emojis from "../../components/NewHomepage/Emojis.vue";
 export default {
   components: {
     // Emojis,

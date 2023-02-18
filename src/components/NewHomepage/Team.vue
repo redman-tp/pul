@@ -59,7 +59,7 @@ export default {
         },
         {
           name: "Isah Raphael",
-          position: "Chief Executive Officer/Managing Director",
+          position: "CEO/CTO",
           linkedIn: "",
           img: "/images/ralph.png",
           twitter: "",
@@ -73,20 +73,20 @@ export default {
           twitter: "",
           quote: "",
         },
-        {
-          name: "Bilal Salau",
-          position: "Chief Creative Director",
-          img: "/images/bil.png",
-          linkedIn: "",
-          twitter: "",
-        },
-        {
-          name: "Victor Peter",
-          position: "Chief Technical Officer",
-          img: "/images/vic.png",
-          linkedIn: "",
-          twitter: "",
-        },
+        // {
+        //   name: "Bilal Salau",
+        //   position: "Chief Creative Director",
+        //   img: "/images/bil.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
+        // {
+        //   name: "Victor Peter",
+        //   position: "Chief Technical Officer",
+        //   img: "/images/vic.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
         {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
@@ -342,6 +342,15 @@ figure.effect-milo:hover p {
   }
   .wrapper {
     padding-top: 6rem;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    padding-top: 3rem;
+  }
+
+  .hold {
+    margin: 2rem auto 4.5rem;
   }
 }
 </style>

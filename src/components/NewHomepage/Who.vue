@@ -218,4 +218,23 @@ img {
     padding-top: 8rem;
   }
 }
+
+@media (max-width: 768px) {
+  .text {
+    height: 200px !important;
+  }
+
+  .text p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .wrapper {
+    padding-top: 4rem;
+  }
+
+  .grid {
+    padding-top: 4rem;
+  }
+}
 </style>

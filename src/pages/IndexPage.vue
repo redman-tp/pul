@@ -487,7 +487,7 @@
               </div>
             </div>
           </div>
-          <div class="box">
+          <!-- <div class="box">
             <div class="inner">
               <div class="front">
                 <img src="/pe/victor pete.jpg" alt="" />
@@ -562,7 +562,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="love-bubbles">

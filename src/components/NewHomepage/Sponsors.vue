@@ -72,6 +72,7 @@ export default {};
 <style scoped>
 .sponsors {
   padding: 3% 10%;
+  font-family: "Poppins";
 }
 p,
 h6 {

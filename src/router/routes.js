@@ -37,6 +37,11 @@ const routes = [
         component: () => import("pages/GreyCreate.vue"),
         name: "greycreate",
       },
+      {
+        path: "/careers",
+        component: () => import("pages/Careers.vue"),
+        name: "careers",
+      },
       // {
       //   path: "/greyacademy",
       //   component: () => import("pages/GreyAcademy.vue"),

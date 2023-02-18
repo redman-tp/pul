@@ -1505,7 +1505,28 @@ h6 {
     bottom: 0%;
   }
 }
+
 @media (max-width: 768px) {
+  .splide__pagination {
+    padding: 0 0.2em;
+    position: absolute;
+    flex-wrap: nowrap !important;
+    left: 50% !important;
+    gap: 1rem;
+  }
+
+  .splide__arrow--next {
+    right: 10% !important;
+  }
+
+  .splide__arrow--prev {
+    right: 30% !important;
+  }
+
+  .hero2 .q-carousel .q-carousel__thumbnail {
+    width: 80%;
+    object-fit: cover;
+  }
   .hero2 .q-panel {
     width: 100%;
   }
@@ -1533,26 +1554,9 @@ h6 {
   }
 }
 
-@media (max-width: 768px) {
-  .splide__pagination {
-    padding: 0 0.2em;
-    position: absolute;
-    flex-wrap: nowrap !important;
-    left: 50% !important;
-    gap: 1rem;
-  }
-
-  .splide__arrow--next {
-    right: 10% !important;
-  }
-
-  .splide__arrow--prev {
-    right: 30% !important;
-  }
-
-  .hero2 .q-carousel .q-carousel__thumbnail {
-    width: 80%;
-    object-fit: cover;
+@media (max-width: 500px) {
+  p.desc {
+    font-size: 18px !important;
   }
 }
 

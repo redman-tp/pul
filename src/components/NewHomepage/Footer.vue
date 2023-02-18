@@ -40,22 +40,22 @@
 
     <div class="contact_container">
       <div class="left_side">
-        <li class="row">
+        <li class="row items-center">
           <q-icon
-            name="mdi-email-outline"
+            name="fa-solid fa-envelope"
             color="white"
             size="1.8rem"
             class="q-mr-lg"
           />
           <p class="contact">hi@greysoft.ng</p>
         </li>
-        <li class="row">
+        <li class="row items-center">
           <q-icon name="phone" color="white" size="1.8rem" class="q-mr-lg" />
           <p class="contact">07060998702, 07025467470</p>
         </li>
-        <li class="row">
+        <li class="row no-wrap items-center">
           <q-icon
-            name="mdi-map-marker-outline"
+            name="fa-solid fa-location-dot"
             color="white"
             size="1.8rem"
             class="q-mr-lg"
@@ -117,6 +117,7 @@ p {
   color: white;
   padding: 2% 10%;
   position: relative;
+  font-family: "Poppins";
 }
 .bottom_svg {
   position: absolute;

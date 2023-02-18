@@ -178,6 +178,7 @@ p {
 .metaverse {
   padding: 5% 0;
   position: relative;
+  font-family: "Poppins";
 }
 .our_focus {
   font-size: 1.5rem;
