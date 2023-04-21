@@ -49,7 +49,7 @@ export default {};
 
 <style scoped>
 .wrapper {
-  padding: 10rem 0 30rem;
+  padding: 5rem 0 10rem;
   background: rgba(34, 34, 34, 0.1);
 }
 .who {
@@ -179,8 +179,8 @@ form {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 70%;
-  top: 80%;
+  width: 80%;
+  top: 40%;
   padding-bottom: 3rem;
   z-index: 1;
 }
@@ -238,13 +238,24 @@ form::before {
     width: 70%;
   }
   .wrapper {
-    padding: 3rem 0 30rem;
+    padding: 3rem 0 11rem;
+    background: rgba(34, 34, 34, 0.1);
+  }
+}
+@media (max-width: 600px) {
+  .wrapper {
+    padding: 3rem 0 16rem;
     background: rgba(34, 34, 34, 0.1);
   }
 }
 @media (max-width: 500px) {
   .left .q-btn {
     width: 100%;
+  }
+
+  .wrapper {
+    padding: 3rem 0 16rem;
+    background: rgba(34, 34, 34, 0.1);
   }
 
   form {

@@ -96,7 +96,8 @@ h1 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 52px;
+  font-size: 42px;
+  /* font-size: 52px; */
   line-height: 1.1;
   color: #ffffff;
   margin-top: 1.3rem;
@@ -114,14 +115,14 @@ h1 {
   padding: 1rem;
   padding-left: 5%;
   align-items: center;
-  height: 178px;
+  height: 138px;
 }
 
 .hero2 q {
   font-family: "Inter" !important;
   font-style: normal !important;
   font-weight: 300 !important;
-  font-size: 26px !important;
+  font-size: 20px !important;
   line-height: 150% !important;
   text-transform: capitalize !important;
   color: #292929 !important;

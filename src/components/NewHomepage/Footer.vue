@@ -12,28 +12,69 @@
       <div class="links_container">
         <h6>About Us</h6>
         <ul>
-          <li><a> Clients</a></li>
-          <li><a> Developers</a></li>
-          <li><a> Creatives</a></li>
-          <li><a> Products</a></li>
-          <li><a> News & Blog</a></li>
-          <li><a> Product Managers</a></li>
+          <li><router-link to="/about"> Clients</router-link></li>
+          <li><router-link to="/greyhobb"> GreyHobb</router-link></li>
+          <li><router-link to="/greytech"> GreyTech</router-link></li>
+          <li><router-link to="greycreate"> GreyCreate</router-link></li>
+          <li>
+            <router-link to="/kukah">
+              Kukah Prize for Young Innovators
+            </router-link>
+          </li>
+          <!-- <li><a> Product Managers</a></li> -->
         </ul>
       </div>
       <div class="links_container">
         <h6>Company</h6>
         <ul>
-          <li><a> Team</a></li>
-          <li><a> Campaigns</a></li>
-          <li><a> Greysoft HUb Mail</a></li>
+          <li><router-link to="/team"> Team</router-link></li>
+          <li><router-link to="/greyacademy"> GreyAcademy</router-link></li>
+          <li><router-link to="/training">AI Training</router-link></li>
+          <!-- <li><a> </a></li> -->
         </ul>
       </div>
       <div class="links_container">
-        <h6>Support</h6>
+        <h6>Follow Us</h6>
         <ul>
-          <li><a> FAQs</a></li>
-          <li><a> Support Center</a></li>
-          <li><a> Contact Us</a></li>
+          <li>
+            <div>
+              <a
+                href="https://web.facebook.com/greysoftng"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/greysoft-tech/mycompany/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/greyhobb"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/greyhobb/"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="https://youtube.com/@greysofttechnologies"
+                target="_blank"
+                class="footer__social"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </li>
         </ul>
       </div>
     </div>
@@ -47,7 +88,9 @@
             size="1.8rem"
             class="q-mr-lg"
           />
-          <p class="contact">hi@greysoft.ng</p>
+          <a href="mailto:hi@greysoft.ng" target="_blank"
+            ><p class="contact">hi@greysoft.ng</p></a
+          >
         </li>
         <li class="row items-center">
           <q-icon name="phone" color="white" size="1.8rem" class="q-mr-lg" />
@@ -87,11 +130,13 @@
     </div>
 
     <div class="bottom">
-      <p class="bottom_text">Copyright © 2022 Greysoft Technologies</p>
-      <div class="row terms">
+      <p class="bottom_text">
+        Copyright © {{ new Date().getFullYear() }} Greysoft Technologies
+      </p>
+      <!-- <div class="row terms">
         <p class="bottom_text">Terms & Condition</p>
         <p class="bottom_text">Privacy Policy</p>
-      </div>
+      </div> -->
     </div>
 
     <div class="bottom_svg">
@@ -130,15 +175,15 @@ p {
 }
 .footer .top {
   width: 40%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 .top h6 {
   margin: 3% 0;
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 900;
 }
 .top p {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .mail {
@@ -156,7 +201,7 @@ p {
 .links_container h6 {
   margin: 2% 0;
   border-bottom: 1px solid white;
-  font-size: 2.1rem;
+  font-size: 1.5rem;
   padding-bottom: 3.5%;
 }
 .links_container ul {
@@ -169,10 +214,16 @@ p {
   font-size: 1.25rem;
   font-weight: 400;
 }
+.links_container li a i {
+  margin: 1% 0;
+  font-size: 1.85rem;
+  font-weight: 400;
+}
 .btn_text {
   letter-spacing: 0.305em;
   line-height: 20px;
   font-weight: 400;
+  font-size: 0.5rem;
   background: linear-gradient(
     180deg,
     #8d354a 21.35%,
@@ -184,7 +235,7 @@ p {
   text-fill-color: transparent;
 }
 .contact_container {
-  margin: 7% 0 3%;
+  margin: 2% 0 1.5%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -199,10 +250,15 @@ p {
 .footer .bottom {
   display: flex;
   justify-content: space-between;
-  margin: 7% 0 3%;
+  margin: 3% 0 3%;
 }
 .terms {
   gap: 40px;
+}
+
+.right_side {
+  position: relative;
+  z-index: 5;
 }
 @media screen and (max-width: 1150px) {
   .footer .top {
@@ -210,15 +266,15 @@ p {
   }
   .top h6,
   .links_container h6 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .top p,
   .links_container li {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .contact,
   .bottom_text {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
   }
 }
 @media screen and (max-width: 1100px) {
@@ -229,7 +285,7 @@ p {
 @media screen and (max-width: 960px) {
   .top h6,
   .links_container h6 {
-    font-size: 1.75rem;
+    font-size: 1.1rem;
   }
   .top p,
   .links_container li {
@@ -246,7 +302,7 @@ p {
 @media screen and (max-width: 860px) {
   .top h6,
   .links_container h6 {
-    font-size: 1.55rem;
+    font-size: 1.15rem;
   }
   .links_container h6 {
     padding-bottom: 2.5%;
@@ -257,7 +313,7 @@ p {
   }
   .contact,
   .bottom_text {
-    font-size: 0.95rem;
+    font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 770px) {

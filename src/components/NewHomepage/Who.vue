@@ -15,7 +15,7 @@
 
     <div class="grid">
       <div class="img">
-        <img src="/images/sirgapppy.png" alt="" />
+        <img src="/images/ralphoculus.jpg" alt="" />
       </div>
 
       <div class="text text1">
@@ -52,7 +52,7 @@ export default {};
 <style scoped>
 .wrapper {
   background: rgba(34, 34, 34, 0.1);
-  padding-top: 12rem;
+  padding-top: 5rem;
 }
 .who {
   font-style: normal;
@@ -83,7 +83,7 @@ export default {};
   font-style: normal;
   font-weight: 700;
   /* font-size: 30px; */
-  font-size: 36px;
+  font-size: 25px;
   line-height: 100%;
   padding-right: 1.5rem;
   color: #ffffff;
@@ -94,7 +94,8 @@ p.desc {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 900;
-  font-size: 45px;
+  font-size: 25px;
+  /* font-size: 45px; */
   /* font-size: 45px; */
   line-height: 130%;
   text-align: justify;
@@ -118,13 +119,14 @@ h6 {
 
 .grid {
   display: grid;
-  /* gap: 1rem; */
   grid-template-areas:
     "img1 text1"
     "text2 img2";
   grid-auto-flow: dense;
-  padding-top: 10rem;
+  padding-top: 2rem;
   gap: 0 !important;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .grid .img {
@@ -157,7 +159,7 @@ h6 {
 
 img {
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .grid .q-btn {
@@ -176,6 +178,10 @@ img {
 @media (max-width: 1100px) {
   .hero .q-carousel__navigation--bottom {
     bottom: 0%;
+  }
+
+  .grid {
+    max-width: 800px;
   }
 }
 @media (max-width: 768px) {

@@ -16,6 +16,11 @@ const routes = [
         component: () => import("pages/Team.vue"),
         name: "team",
       },
+      {
+        path: "/greyacademy/ai-class",
+        component: () => import("pages/Training.vue"),
+        name: "training",
+      },
     ],
   },
   {

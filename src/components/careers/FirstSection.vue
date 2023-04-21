@@ -215,7 +215,6 @@ img {
     margin-top: 1em;
     font-size: 15px;
   }
-  .container3,
   .container2 {
     display: none;
   }
@@ -244,7 +243,14 @@ img {
   .container3 {
     position: absolute;
     left: 50%;
-    top: 300px;
+    top: 250px;
+  }
+  .skill {
+    padding: 0.5rem;
+  }
+
+  img {
+    width: 40px;
   }
   .skill3 {
     padding: 1em 12px;
@@ -263,7 +269,7 @@ img {
   .container4 {
     position: absolute;
     left: 15%;
-    top: 300px;
+    top: 250px;
   }
   .container {
     position: absolute;

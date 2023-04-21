@@ -174,16 +174,6 @@
           >
             <q-list class="list">
               <a
-                href="https://kuula.co/share/collection/7vbCd?logo=1&info=0&fs=1&vr=1&initload=0&thumbs=-1&alpha=0.90"
-                clickable
-                target="_blank"
-                class="item_sq"
-              >
-                <q-item-section>
-                  <q-item-label>MS Square Tour</q-item-label>
-                </q-item-section>
-              </a>
-              <a
                 href="https://kuula.co/share/collection/7vGlZ?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=-1"
                 clickable
                 target="_blank"
@@ -191,6 +181,16 @@
               >
                 <q-item-section>
                   <q-item-label>GreyHobb Tour</q-item-label>
+                </q-item-section>
+              </a>
+              <a
+                href="https://kuula.co/share/collection/7vbCd?logo=1&info=0&fs=1&vr=1&initload=0&thumbs=-1&alpha=0.90"
+                clickable
+                target="_blank"
+                class="item_sq"
+              >
+                <q-item-section>
+                  <q-item-label>MS Square Tour</q-item-label>
                 </q-item-section>
               </a>
             </q-list>
@@ -205,7 +205,7 @@
 
       <q-page-sticky position="bottom-right" :offset="fabPos">
         <q-fab
-          icon="add"
+          icon="fa-solid fa-at"
           direction="up"
           class="add"
           :disable="draggingFab"
@@ -581,7 +581,7 @@ button {
   justify-content: space-between;
   align-items: center;
   gap: 50px;
-  padding: 1rem 0;
+  // padding: 1rem 0;
 }
 
 .logo {
@@ -732,9 +732,9 @@ button {
   //   gap: 70px;
   // }
 
-  .header {
-    padding: 1rem;
-  }
+  // .header {
+  //   padding: 1rem;
+  // }
 
   .footer .container {
     margin-inline: 30px;

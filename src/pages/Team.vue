@@ -62,6 +62,14 @@ export default {
           quote: "",
         },
         {
+          name: "Dr. Dala Alphonso",
+          position: "Chief Information Officer",
+          linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104/",
+          img: "/images/dala.jpeg",
+          twitter: "https://twitter.com/RealRalphG",
+          quote: "",
+        },
+        {
           name: "Michael Ogungbe",
           position: "Chief Operations Officer",
           img: "/images/bigmike.png",
@@ -86,24 +94,24 @@ export default {
         {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
-          img: "/images/stef.png",
+          img: "/images/stef.jpeg",
           linkedIn: "",
           twitter: "",
         },
-        {
-          name: "Mariya bilal",
-          position: "Community Manager",
-          img: "/images/mariya.png",
-          linkedIn: "",
-          twitter: "",
-        },
-        {
-          name: "Favour Bulus",
-          position: "Production Lead",
-          img: "/images/bulus.png",
-          linkedIn: "",
-          twitter: "",
-        },
+        // {
+        //   name: "Mariya bilal",
+        //   position: "Community Manager",
+        //   img: "/images/mariya.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
+        // {
+        //   name: "Favour Bulus",
+        //   position: "Production Lead",
+        //   img: "/images/bulus.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
         {
           name: "Emmanuel Nwabuodafi",
           position: "Lead Frontend Engineer",
@@ -119,19 +127,19 @@ export default {
           twitter: "",
         },
         {
-          name: "Rico",
+          name: "Jerry Kaduma(Rico)",
           position: "VR Engineer",
           img: "/images/rico.png",
           linkedIn: "",
           twitter: "",
         },
-        {
-          name: "Helen",
-          position: "Secretary",
-          img: "/images/helena.png",
-          linkedIn: "",
-          twitter: "",
-        },
+        // {
+        //   name: "Helen",
+        //   position: "Secretary",
+        //   img: "/images/helena.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
         {
           name: "Ademola Adewale",
           position: "Lead Product Designer",
@@ -140,7 +148,7 @@ export default {
           twitter: "",
         },
         {
-          name: "John",
+          name: "John Obi",
           position: "Lead Backend Engineer",
           img: "/images/john.png",
           linkedIn: "",
@@ -154,7 +162,7 @@ export default {
           twitter: "",
         },
         {
-          name: "Abdull",
+          name: "Abdullahi Saidu",
           position: "UX/UI Designer",
           img: "/images/abdul.png",
           linkedIn: "",
@@ -167,20 +175,20 @@ export default {
           linkedIn: "",
           twitter: "",
         },
-        {
-          name: "Kate Mcarthy",
-          position: "Videographer",
-          img: "/images/kate.png",
-          linkedIn: "",
-          twitter: "",
-        },
-        {
-          name: "Ekoh",
-          position: "Digital Marketer",
-          img: "/images/ekoh.png",
-          linkedIn: "",
-          twitter: "",
-        },
+        // {
+        //   name: "Kate Mcarthy",
+        //   position: "Videographer",
+        //   img: "/images/kate.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
+        // {
+        //   name: "Ekoh",
+        //   position: "Digital Marketer",
+        //   img: "/images/ekoh.png",
+        //   linkedIn: "",
+        //   twitter: "",
+        // },
         {
           name: "Ayuba Dauda",
           position: "Devops Engineer",
@@ -196,12 +204,12 @@ export default {
 
 <style scoped>
 .wrapper {
-  padding-top: 7rem;
+  padding-top: 3rem;
   background: rgba(34, 34, 34, 0.1);
 }
 
 .hold {
-  margin: 5rem auto 14rem;
+  margin: 5rem auto 5rem;
 }
 .who {
   font-style: normal;
@@ -217,7 +225,7 @@ p.desc {
   font-style: normal;
   font-weight: 700;
   /* font-size: 35px; */
-  font-size: 45px;
+  font-size: 25px;
   line-height: 130%;
   text-align: justify;
   color: #000000;
@@ -262,6 +270,9 @@ img {
   display: block;
   min-height: 100%;
   max-width: 100%;
+  height: 300px;
+  object-position: top;
+  object-fit: cover;
   opacity: 0.8;
 }
 

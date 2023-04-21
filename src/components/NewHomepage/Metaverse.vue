@@ -201,8 +201,6 @@ p {
   position: absolute;
   right: 0;
   top: -20%;
-  /* background: red; */
-  /* height: 100%; */
   width: 22%;
   z-index: 3;
 }
@@ -216,9 +214,7 @@ p {
 .carousel_item {
   transition: 1s ease !important;
 }
-.left_side .right_side {
-  /* width: 50%; */
-}
+
 .section_image img {
   width: 100%;
 }
@@ -232,7 +228,7 @@ p {
   padding-right: 30%;
 }
 .carousel .right_side p {
-  font-size: 1.35rem;
+  font-size: 1rem;
   font-weight: 400;
   text-align: justify;
   margin: 1%;
@@ -260,7 +256,7 @@ p {
     padding: 0 !important;
   }
   .carousel .right_side p {
-    font-size: 1.28rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 1150px) {
@@ -268,7 +264,7 @@ p {
     margin-top: 1% !important;
   }
   .carousel .right_side p {
-    font-size: 1.18rem;
+    font-size: 1rem;
   }
   .view_portfolio {
     font-size: 0.9rem !important;

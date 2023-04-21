@@ -5,7 +5,7 @@
   </div>
   <div class="posts">
     <div class="post one">
-      <img src="/images/re5.png" />
+      <img src="/images/empower.jpeg" />
       <div class="overlay">
         <!-- <p>Technology <span>13 Sept, 2021</span></p> -->
         <!-- <h4>The Kukah Prize for Young Innovators</h4> -->
@@ -58,15 +58,14 @@
         <p>
           The Kukah Prize for Young Innovators is an award of recognition for
           outstanding innovators in the field of technology presented to young
-          Africans who show exceptional promise as developing leaders in digital
-          transformation.
+          Africans who show exceptional promise.
         </p>
 
         <q-btn class="q-mt-md view" to="/kukah"> Visit </q-btn>
       </div>
     </div>
     <div class="post five">
-      <img src="/images/re3.png" />
+      <img src="/images/oba.jpeg" />
       <div class="overlay">
         <!-- <p>Technology <span>13 Sept, 2021</span></p>
         <h4>The Kukah Innovation Prize and Awards</h4> -->
@@ -215,6 +214,14 @@ img {
   .overlay h4 {
     font-size: 1.5rem;
     line-height: 1.2;
+  }
+
+  .posts {
+    grid-template-areas:
+      "one two  two"
+      "four two  two"
+      "four five five"
+      "three three three";
   }
 }
 @media screen and (max-width: 750px) {

@@ -586,6 +586,10 @@ input {
     overflow: hidden;
     margin-top: 0rem !important;
   }
+  .splide__pagination__page {
+    width: 5px !important;
+    height: 5px !important;
+  }
 }
 
 .section__title {
@@ -1459,7 +1463,8 @@ h6 {
 
 .hero2 .q-carousel {
   background-color: black;
-  height: 912px;
+  height: 90vh;
+  // height: 912px;
   position: relative;
 }
 .hero2 .q-carousel::before {
@@ -1474,8 +1479,20 @@ h6 {
 }
 
 .hero2 .q-carousel .q-carousel__thumbnail {
+  height: 150px;
   height: 250px;
   width: auto;
+}
+
+.modal .q-carousel__slide {
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 1100px) {
+  .hero2 .q-carousel .q-carousel__thumbnail {
+    height: 150px;
+  }
 }
 
 .hero2 .q-carousel__navigation--bottom {
@@ -1512,7 +1529,8 @@ h6 {
     position: absolute;
     flex-wrap: nowrap !important;
     left: 50% !important;
-    gap: 1rem;
+    transform: translateX(-50%);
+    gap: 0.1rem;
   }
 
   .splide__arrow--next {
@@ -1542,9 +1560,9 @@ h6 {
     left: unset;
   }
 
-  .splide__pagination__page {
-    width: 30px !important;
-  }
+  // .splide__pagination__page {
+  //   width: 30px !important;
+  // }
 
   .splide__arrow--next {
     right: 10% !important;
@@ -1890,7 +1908,7 @@ h6 {
   background-color: #ffff;
   color: var(--text-color);
   border: 2px solid rgba(77, 77, 77, 0.18);
-  min-height: 680px;
+  min-height: 580px;
   min-width: 200px;
   box-shadow: 2px 10px 10px rgba(197, 190, 190, 0.97);
   transition: all 0.3s ease-in-out;

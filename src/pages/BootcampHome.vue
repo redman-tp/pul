@@ -18,9 +18,9 @@
             >
               <q-carousel-slide :name="1" img-src="/pe/emmanuel.png">
                 <div class="quotes">
-                  <div>
+                  <!-- <div>
                     How far <span class="chat">@gami</span>, u get the job?
-                  </div>
+                  </div> -->
                   <transition
                     appear
                     name="fade"
@@ -28,26 +28,26 @@
                     @enter="enter"
                     @after-enter="afterEnter"
                   >
-                    <div>You no give us gist</div>
+                    <!-- <div>You no give us gist</div> -->
                   </transition>
-                  <div>How was the interview?</div>
+                  <!-- <div>How was the interview?</div> -->
                 </div>
               </q-carousel-slide>
-              <q-carousel-slide :name="2" img-src="/pe/mariya.png">
+              <!-- <q-carousel-slide :name="2" img-src="/pe/mariya.png">
                 <div class="quotes">
                   <div>
                     Wow, so <span class="chat">@gami</span> had an interview?
                   </div>
                   <div>Abeg give us gist</div>
                 </div>
-              </q-carousel-slide>
-              <q-carousel-slide :name="3" img-src="/pe/joshchief.png">
-                <div class="quotes">
+              </q-carousel-slide> -->
+              <q-carousel-slide :name="2" img-src="/pe/joshchief.png">
+                <!-- <div class="quotes">
                   <div>Wait, she’s offline.</div>
                   <div>Make i call her</div>
-                </div>
+                </div> -->
               </q-carousel-slide>
-              <q-carousel-slide :name="5" img-src="/pe/helen.png">
+              <!-- <q-carousel-slide :name="5" img-src="/pe/helen.png">
                 <div class="quotes">
                   <div>lol, Yes i did ooo</div>
                   <div>... and it was awesome😀</div>
@@ -56,8 +56,8 @@
                     part of the HOTCAKE community
                   </div>
                 </div>
-              </q-carousel-slide>
-              <q-carousel-slide :name="4" img-src="/pe/bilal.png">
+              </q-carousel-slide> -->
+              <!-- <q-carousel-slide :name="4" img-src="/pe/bilal.png">
                 <div class="quotes">
                   <div>
                     Omoh <span class="chat">@gami</span> just finished her
@@ -70,16 +70,16 @@
                   </div>
                   <div>Sweet!!!</div>
                 </div>
-              </q-carousel-slide>
+              </q-carousel-slide> -->
 
-              <q-carousel-slide :name="6" img-src="/pe/mike.png">
-                <div class="quotes">
+              <q-carousel-slide :name="3" img-src="/pe/mike.png">
+                <!-- <div class="quotes">
                   <div>
                     There’s a reason we are <br />
                     called the HOTCAKES 😀
                   </div>
                   <div>Na them dey rush us</div>
-                </div>
+                </div> -->
               </q-carousel-slide>
             </q-carousel>
           </div>
@@ -748,7 +748,7 @@ p.down {
 .about-img {
   width: 100%;
 }
-/* 
+/*
 .play-btn {
   position: absolute;
   bottom: 24%;

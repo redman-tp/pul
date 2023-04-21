@@ -66,6 +66,14 @@ export default {
           quote: "",
         },
         {
+          name: "Dr. Dala Alphonso",
+          position: "Chief Information Officer",
+          linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104/",
+          img: "/images/dala.jpeg",
+          twitter: "https://twitter.com/RealRalphG",
+          quote: "",
+        },
+        {
           name: "Michael Ogungbe",
           position: "Chief Operations Officer",
           img: "/images/bigmike.png",
@@ -90,7 +98,7 @@ export default {
         {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
-          img: "/images/stef.png",
+          img: "/images/stef.jpeg",
           linkedIn: "",
           twitter: "",
         },
@@ -102,12 +110,13 @@ export default {
 
 <style scoped>
 .wrapper {
-  padding-top: 7rem;
+  padding-top: 2rem;
+  /* margin-bottom: 3rem; */
   background: rgba(34, 34, 34, 0.1);
 }
 
 .hold {
-  margin: 5rem auto 14rem;
+  margin: 3rem auto 5rem;
 }
 .who {
   font-style: normal;
@@ -123,7 +132,7 @@ p.desc {
   font-style: normal;
   font-weight: 700;
   /* font-size: 35px; */
-  font-size: 45px;
+  font-size: 25px;
   line-height: 130%;
   text-align: justify;
   color: #000000;
@@ -142,7 +151,7 @@ img {
   list-style: none;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
   gap: 0.4rem;
   z-index: 10;
@@ -177,6 +186,9 @@ img {
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8;
+  height: 250px;
+  object-position: top;
+  object-fit: cover;
 }
 
 .grid figure figcaption {

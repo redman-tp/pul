@@ -4,6 +4,7 @@
     <!-- <Slides /> -->
     <Who />
     <Team />
+    <OurOutings />
     <Newsletter />
 
     <Metaverse />
@@ -18,6 +19,7 @@
 import { defineComponent } from "vue";
 import Hero2 from "../components/NewHomepage/Hero2.vue";
 import Who from "../components/NewHomepage/Who.vue";
+import OurOutings from "../components/NewHomepage/OurOutings.vue";
 import Team from "../components/NewHomepage/Team.vue";
 import Newsletter from "../components/NewHomepage/Newsletter.vue";
 // import Testimonials from "../components/NewHomepage/Testimonials.vue";
@@ -36,6 +38,7 @@ export default defineComponent({
     Metaverse,
     Sponsors,
     RecentUpdates,
+    OurOutings,
     Footer,
   },
 });

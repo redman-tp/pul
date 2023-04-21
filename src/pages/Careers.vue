@@ -97,6 +97,7 @@ export default {
 }
 @media screen and (max-width: 390px) {
   .hero {
+    padding-top: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
