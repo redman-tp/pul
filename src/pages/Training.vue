@@ -9,6 +9,10 @@
           acceleration (Virtual & Physical)
         </div>
 
+        <div class="text-weight-bold q-mb-sm text-green text_price text-h5">
+          NGN 187, 500
+        </div>
+
         <div class="desc">
           This course is designed to be highly interactive, with plenty of
           opportunities for discussion and collaboration with other executives
@@ -20,9 +24,17 @@
           leveraging artificial intelligence for rapid business growth, and take
           your business to the next level!
         </div>
+        <div class="read">
+          <q-btn flat @click="read = true">
+            Read More <i class="fa-solid q-ml-sm fa-arrow-right"></i
+          ></q-btn>
+        </div>
 
         <div class="btn q-pt-md">
-          <q-btn>
+          <q-btn
+            target="_blank"
+            href="https://forms.gle/S1nqmdjUHTnUAd9P7"
+          >
             Enroll now <i class="fa-solid q-ml-sm fa-arrow-right"></i>
           </q-btn>
           <q-btn
@@ -90,7 +102,11 @@
             <img src="/images/ai.png" alt="" />
           </div>
           <div class="btn">
-            <q-btn color="red">
+            <q-btn
+              target="_blank"
+              href="https://forms.gle/S1nqmdjUHTnUAd9P7"
+              color="red"
+            >
               Enroll now <i class="fa-solid q-ml-sm fa-arrow-right"></i>
             </q-btn>
             <q-btn
@@ -205,7 +221,7 @@
     </div>
 
     <div class="hold">
-      <div class="max">
+      <div class="max container">
         <div class="row container right items-center justify-between">
           <div class="top_text">
             <div class="span">
@@ -226,10 +242,17 @@
           With this certification, you’ll be able to stand out from the
           competition and open up new opportunities for career advancement
         </div>
+        <div class="starts">Time: Saturdays 4.30 - 6.30pm</div>
+
 
         <div class="enroll container">
           <div class="">
-            <q-btn class="q-py-md q-px-xl" color="red">
+            <q-btn
+              target="_blank"
+              href="https://forms.gle/S1nqmdjUHTnUAd9P7"
+              class="q-py-md q-px-xl"
+              color="red"
+            >
               Enroll now <i class="fa-solid q-ml-sm fa-arrow-right"></i>
             </q-btn>
 
@@ -243,6 +266,16 @@
           </div>
 
           <div class="starts">class starts 29th april, 2023</div>
+        </div>
+
+        <div class="row q-mt-lg copy items-center justify-between">
+          <div>
+            Copyright © {{ new Date().getFullYear() }} Greysoft Technologies
+          </div>
+
+          <q-btn @click="refund = true" flat>
+            Refund Policy
+          </q-btn>
         </div>
       </div>
     </div>
@@ -287,6 +320,124 @@
         </q-card-actions>
       </q-card>
     </q-dialog>
+    <q-dialog v-model="refund">
+      <q-card>
+        <q-card-section>
+          <div class="text-h6">Our Refund Policy</div>
+        </q-card-section>
+
+        <q-separator />
+
+        <q-card-section style="max-height: 50vh" class="scroll">
+          <p>
+            At Greysoft, we strive to provide our clients with top-quality training programs that meet their needs and exceed their expectations. However, we understand that there may be circumstances where our clients may not be satisfied with our services. As such, we offer a refund policy that allows clients to reverse payments made for any of our courses after 45 days of payment, provided that they can verify that they are not satisfied with our services. Please note that refunds are subject to our verification process. We value our clients and are committed to ensuring their satisfaction with our services.
+          </p>
+        </q-card-section>
+
+        <q-separator />
+
+        <q-card-actions align="right">
+          <!-- <q-btn flat label="Decline" color="primary" v-close-popup /> -->
+          <q-btn flat label="Close" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
+    <q-dialog v-model="read">
+      <q-card>
+        <q-card-section>
+          <div class="text-h6">Read More</div>
+        </q-card-section>
+
+        <q-separator />
+
+        <q-card-section style="max-height: 50vh" class="scroll">
+          <p>
+              Executive Premium Weekend Class on Leveraging Artificial Intelligence for Rapid Business/Process Acceleration (Virtual & Physical)
+
+              As a leader in your organization, you are always looking for ways to grow your business faster, stay ahead of the competition, and drive innovation. Artificial Intelligence (AI) is a powerful tool that can help you achieve these goals, but many executives are still unsure how to leverage AI effectively.
+              <br> <br>
+              That's why we're excited to offer a premium weekend class on leveraging artificial intelligence for rapid business growth, exclusively for executives like you. This comprehensive course will give you a deep understanding of how AI works, how it can be used to optimize your business processes, and how to overcome the challenges of implementing AI in your organization.
+              <br> <br>
+
+              Over the course of 4 weekends (Saturdays), you'll learn from leading experts in the field of AI and business strategy, who will share their insights and expertise on topics such as: <br>
+              <ul>
+                <li>
+              • Understanding the basics of AI and its potential applications for business growth
+                </li>
+                <li>
+              • Identifying opportunities for AI implementation in your organization
+                </li>
+                <li>
+              • Developing an AI strategy that aligns with your business goals
+                </li>
+                <li>
+              • Creating a culture of innovation that supports AI adoption
+                </li>
+                <li>
+              • Overcoming common challenges and pitfalls in AI implementation
+                </li>
+                <li>
+              • Practical implementation of AI tools such as ChatGPT
+                </li>
+              </ul> <br>
+              This course is designed to be highly interactive, with plenty of opportunities for discussion and collaboration with other executives who are also looking to leverage AI for rapid business growth. Whether you're a seasoned AI expert or just getting started, this weekend class will give you the knowledge and skills you need to drive innovation and stay ahead of the competition in today's fast-paced business landscape. <br> <br>
+              Join us for this premium weekend class on leveraging artificial intelligence for rapid business growth, and take your business to the next level! <br>
+
+              <strong>Tutor: Isah Raphael (CEO, Greysoft Technologies)</strong>
+              <br> <br>
+             <strong> Understanding the basics of AI and its potential applications for business growth:</strong> <br> <br>
+              Artificial Intelligence (AI) is a broad field that encompasses a wide range of technologies and applications, from machine learning and natural language processing to computer vision and robotics. In order to leverage AI effectively for business growth, executives need to have a solid understanding of the basics of AI and its potential applications. This includes understanding the various types of AI technologies, their strengths and limitations, and how they can be used to automate and optimize business processes, enhance customer experience, and drive innovation.
+              <br> <br>
+              <strong>Identifying opportunities for AI implementation in your organization:</strong> <br>
+              The next step in leveraging AI for business growth is to identify opportunities for AI implementation in your organization. This requires a careful analysis of your business processes, customer needs, and competitive landscape to identify areas where AI can provide the greatest value. This could include automating routine tasks, improving customer service through chatbots and virtual assistants, predicting customer behavior and preferences, and optimizing supply chain operations through predictive analytics.
+              <br> <br>
+              <strong>Developing an AI strategy that aligns with your business goals:</strong> <br><br>
+              Once you have identified opportunities for AI implementation, the next step is to develop an AI strategy that aligns with your business goals. This requires a deep understanding of your organization's strategic priorities, customer needs, and competitive landscape, as well as the technical capabilities and limitations of different AI technologies. Your AI strategy should outline clear goals and objectives, identify the AI technologies and tools that are best suited to your business needs, and establish a roadmap for implementation and ongoing optimization.
+              <br> <br>
+              <strong>Creating a culture of innovation that supports AI adoption:</strong> <br>
+              One of the key challenges in leveraging AI for business growth is creating a culture of innovation that supports AI adoption. This requires a commitment to innovation and experimentation, a willingness to take risks, and a culture that values learning and continuous improvement. Executives can foster a culture of innovation by encouraging cross-functional collaboration, providing resources and training for employees to develop AI skills, and recognizing and rewarding innovative ideas and initiatives.
+              <br> <br>
+              <strong>Overcoming common challenges and pitfalls in AI implementation:</strong> <br>
+              Despite the potential benefits of AI, there are also many challenges and pitfalls that organizations can encounter in implementing AI. These include technical challenges such as data quality and integration, as well as ethical and regulatory challenges related to privacy, bias, and transparency. Executives need to be aware of these challenges and develop strategies for overcoming them, such as investing in data governance and quality assurance, conducting regular audits of AI systems to detect and address bias, and ensuring compliance with relevant regulations and standards.
+              <br> <br>
+              <strong>Practical implementation of AI tools such as ChatGPT:</strong> <br>
+              Finally, executives need to understand how to practically implement AI tools such as ChatGPT in their organization. This requires a deep understanding of the technical capabilities and limitations of the tool, as well as the use cases and applications where it can provide the most value. Executives should also consider factors such as data quality, user experience, and privacy and security considerations when implementing AI tools, and should be prepared to invest in ongoing monitoring and optimization to ensure that the tool continues to deliver value over time.
+              <br> <br>
+
+              You will be certified on completion of this class.
+              <br> <br>
+
+                <q-btn
+                  target="_blank"
+                  href="https://forms.gle/S1nqmdjUHTnUAd9P7"
+                  class="q-py-sm q-px-lg"
+                  color="red"
+                >
+                  Enroll now <i class="fa-solid q-ml-sm fa-arrow-right"></i>
+                </q-btn>
+
+                <q-btn
+                  class="q-py-sm q-ml-sm q-px-sm "
+                  target="_blank"
+                  href="https://paystack.com/pay/aiclass"
+                >
+                  Make Payment <i class="fa-solid q-ml-sm fa-arrow-right"></i>
+                </q-btn>
+
+              <br> <br>
+
+              <strong> Classes begin 29th April 2023</strong>
+          </p>
+        </q-card-section>
+
+        <q-separator />
+
+        <q-card-actions align="right">
+          <!-- <q-btn flat label="Decline" color="primary" v-close-popup /> -->
+          <q-btn flat label="Close" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 
@@ -296,6 +447,8 @@ export default {
     return {
       fixed: false,
       data: {},
+      read: false,
+      refund: false,
     };
   },
 
@@ -308,6 +461,11 @@ export default {
 <style lang="scss" scoped>
 .section {
   padding-top: 7rem;
+}
+
+
+.text_price {
+  font-weight: 800;
 }
 .max {
   max-width: 800px !important;
@@ -341,7 +499,8 @@ export default {
   font-weight: 700;
   font-size: 32px;
   line-height: 1.2;
-  color: #2964fc;
+  color: #0e1e5e;
+  // color: #2964fc;
 }
 
 .subtext {
@@ -383,7 +542,7 @@ p,
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 141.4%;
   letter-spacing: 0.145em;
   text-decoration-line: underline;
@@ -402,7 +561,8 @@ p,
   letter-spacing: 0.145em;
   font-variant: small-caps;
   color: #ffffff;
-  background: #2964fc;
+  background: #0e1e5e;
+  // background: #2964fc;
   padding: 0.4rem;
 }
 
@@ -566,12 +726,29 @@ p,
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 25.875px;
+  font-size: 18.875px;
+  line-height: 1.6;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: #0e1e5e;
+  margin-top: 2rem;
+}
+
+.copy{
+   font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.875px;
   line-height: 1.8;
   text-align: center;
   font-feature-settings: "salt" on, "liga" off;
   color: #0e1e5e;
   margin-top: 2rem;
+}
+.copy .q-btn{
+background: #0e1e5e;
+color: #ffffff;
+text-transform: capitalize;
 }
 
 .starts {
@@ -617,6 +794,12 @@ p,
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
   }
 
+  .desc,
+  p,
+  .text-h6 {
+    text-align: left;
+  }
+
   .desc_foot {
     font-size: 17.875px;
     padding: 0.5rem;
@@ -633,6 +816,22 @@ p,
 
   .enroll .q-btn {
     padding: 1rem;
+  }
+
+ .btn .q-btn{
+    padding: 0.6rem;
+    text-transform: capitalize;
+    font-size: 14px;
+  }
+
+  .scroll .q-btn {
+    padding: 5px;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+
+  .copy{
+    justify-content: center;
   }
 
   .desc {

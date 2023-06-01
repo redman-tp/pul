@@ -87,7 +87,7 @@
             <div class="left_side">
               <div class="section_image q-mt-lg">
                 <img
-                  src="/images/greyc.png"
+                  src="/images/greyc.jpg"
                   alt="WOman holding VR Controller"
                 />
               </div>

@@ -41,14 +41,15 @@
               to="/greyacademy"
               exact
             />
-            <q-route-tab label="Careers" ripple no-caps to="/careers" exact />
             <q-route-tab
-              label="Metaverse"
+              label="Greysoft XR"
               ripple
               no-caps
-              to="/metaverse"
+              :to="{ name: 'metaverse' }"
               exact
             />
+            <q-route-tab label="Careers" ripple no-caps to="/careers" exact />
+
             <!-- <q-route-tab
               label="Portal"
               ripple
@@ -104,10 +105,10 @@
             exact
           />
           <q-route-tab
-            label="Metaverse"
+            label="Greysoft XR"
             ripple
             class="q-my-sm text-dark addbor text-weight-bold"
-            to="/metaverse"
+            :to="{ name: 'metaverse' }"
             exact
           />
           <q-route-tab

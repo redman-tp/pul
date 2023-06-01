@@ -193,7 +193,7 @@ export default {
       modalImgs: [],
       options: {
         rewind: true,
-        // autoplay: true,
+        autoplay: true,
         arrows: false,
         perPage: 3,
         breakpoints: {
@@ -206,7 +206,7 @@ export default {
           800: {
             perPage: 2,
           },
-          800: {
+          500: {
             perPage: 1,
           },
         },

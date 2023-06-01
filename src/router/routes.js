@@ -21,6 +21,11 @@ const routes = [
         component: () => import("pages/Training.vue"),
         name: "training",
       },
+      {
+        path: "/greyacademy/courses",
+        component: () => import("pages/Courses.vue"),
+        name: "courses",
+      },
     ],
   },
   {
@@ -52,9 +57,14 @@ const routes = [
       //   component: () => import("pages/GreyAcademy.vue"),
       // },
       {
-        path: "/metaverse",
+        path: "/Greysoft-XR",
         component: () => import("pages/MetaVerse.vue"),
         name: "metaverse",
+      },
+      {
+        path: "/Greysoft-XXR",
+        component: () => import("pages/GreysoftXR.vue"),
+        name: "GreysoftXR",
       },
       {
         path: "/about",

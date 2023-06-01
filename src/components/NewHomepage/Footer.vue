@@ -29,7 +29,22 @@
         <ul>
           <li><router-link to="/team"> Team</router-link></li>
           <li><router-link to="/greyacademy"> GreyAcademy</router-link></li>
-          <li><router-link to="/training">AI Training</router-link></li>
+          <li>
+            <router-link
+              :to="{
+                name: 'training',
+              }"
+              >AI Training</router-link
+            >
+          </li>
+          <li>
+            <router-link
+              :to="{
+                name: 'courses',
+              }"
+              >Training courses</router-link
+            >
+          </li>
           <!-- <li><a> </a></li> -->
         </ul>
       </div>
@@ -94,7 +109,10 @@
         </li>
         <li class="row items-center">
           <q-icon name="phone" color="white" size="1.8rem" class="q-mr-lg" />
-          <p class="contact">07060998702, 07025467470</p>
+          <p class="contact">
+            <a href="tel:+2347060998702" target="_blank">07060998702</a>,
+            <a href="tel:+2347025467470" target="_blank">07025467470</a>
+          </p>
         </li>
         <li class="row no-wrap items-center">
           <q-icon

@@ -28,7 +28,7 @@
         <div class="about__container container grid">
           <div class="about__data">
             <h2 class="section__title about__title">
-              Dancingg in the Metaverse
+              Dancing in the Metaverse
             </h2>
             <!-- <h4>Dancing in the Metaverse</h4> -->
             <p class="about__description">

@@ -435,7 +435,7 @@ figure.effect-milo:hover p {
 }
 @media (max-width: 768px) {
   .hold {
-    margin: 2rem auto 9rem;
+    margin: 2rem auto 5rem;
   }
   .wrapper {
     padding-top: 6rem;

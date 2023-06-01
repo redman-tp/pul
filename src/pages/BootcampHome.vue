@@ -1,12 +1,48 @@
 <template>
   <main>
     <article>
-      <!--
-        - #HERO
-      -->
-
       <section id="home" class="hero">
-        <div class="container">
+        <div class="row max flexer items-center q-pb-xl q-mx-xl">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="dt q-pb-md">
+              <div class="text-h5 text-weight-bold text-black">
+                Upskill with GreyAcademy
+              </div>
+              <div class="text-h6 text-black">From Skills to Jobs</div>
+            </div>
+
+            <div class="text-black">
+              If you’re ready to upskill with GreyAcademy Now’s your chance to
+              roll with champions! GreyAcademy is thrilled to announce our
+              comprehensive training program starting on 1st May 2023. Our
+              program is designed to equip individuals with the skills needed to
+              succeed in today's fast-paced digital world. Join this cohort.
+            </div>
+
+            <div class="bt">
+              <q-btn
+                :to="{
+                  name: 'courses',
+                }"
+                text-color="white"
+                color="red"
+                class="q-mt-sm"
+                label="Enroll"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="show q-pb-md">
+              <div class="text-h5 text-weight-bold text-black">
+                Upskill with GreyAcademy
+              </div>
+              <div class="text-h6 text-black">From Skills to Jobs</div>
+            </div>
+            <img src="/images/course.jpg" alt="" />
+          </div>
+        </div>
+        <div class="max container">
           <div class="hero-banner">
             <q-carousel
               autoplay
@@ -16,11 +52,11 @@
               navigation
               infinite
             >
-              <q-carousel-slide :name="1" img-src="/pe/emmanuel.png">
-                <div class="quotes">
-                  <!-- <div>
+              <q-carousel-slide :name="1" img-src="/pe/emmanuel.png" />
+              <!-- <div class="quotes">
+                  <div>
                     How far <span class="chat">@gami</span>, u get the job?
-                  </div> -->
+                  </div>
                   <transition
                     appear
                     name="fade"
@@ -28,11 +64,11 @@
                     @enter="enter"
                     @after-enter="afterEnter"
                   >
-                    <!-- <div>You no give us gist</div> -->
+                    <div>You no give us gist</div>
                   </transition>
-                  <!-- <div>How was the interview?</div> -->
-                </div>
-              </q-carousel-slide>
+                  <div>How was the interview?</div>
+                </div> -->
+              <!-- </q-carousel-slide> -->
               <!-- <q-carousel-slide :name="2" img-src="/pe/mariya.png">
                 <div class="quotes">
                   <div>
@@ -41,12 +77,12 @@
                   <div>Abeg give us gist</div>
                 </div>
               </q-carousel-slide> -->
-              <q-carousel-slide :name="2" img-src="/pe/joshchief.png">
-                <!-- <div class="quotes">
+              <q-carousel-slide :name="2" img-src="/pe/joshchief.png" />
+              <!-- <div class="quotes">
                   <div>Wait, she’s offline.</div>
                   <div>Make i call her</div>
                 </div> -->
-              </q-carousel-slide>
+              <!-- </q-carousel-slide> -->
               <!-- <q-carousel-slide :name="5" img-src="/pe/helen.png">
                 <div class="quotes">
                   <div>lol, Yes i did ooo</div>
@@ -72,15 +108,15 @@
                 </div>
               </q-carousel-slide> -->
 
-              <q-carousel-slide :name="3" img-src="/pe/mike.png">
-                <!-- <div class="quotes">
+              <q-carousel-slide :name="3" img-src="/pe/mike.png" />
+              <!-- <div class="quotes">
                   <div>
                     There’s a reason we are <br />
                     called the HOTCAKES 😀
                   </div>
                   <div>Na them dey rush us</div>
                 </div> -->
-              </q-carousel-slide>
+              <!-- </q-carousel-slide> -->
             </q-carousel>
           </div>
 
@@ -261,11 +297,11 @@ export default {
       el.style.opacity = 1;
       el.style.transition = "all 1s ease-in";
     };
-    const afterEnter = (el) => {
-      console.log("after enter");
-    };
+    // const afterEnter = (el) => {
+    //   console.log("after enter");
+    // };
     return {
-      afterEnter,
+      // afterEnter,
       enter,
       beforeEnter,
       slide: ref(1),
@@ -281,7 +317,7 @@ export default {
       let hotcake_section = document.querySelector(".hotcake");
       // let fillColor = document.querySelector(".fillColor");
       let fillColor = document.getElementById("fillColor");
-      console.log((fillColor.style.fill = "fill"));
+      // console.log((fillColor.style.fill = "fill"));
       const colors = [
         "#100F21",
         "#100F21",
@@ -292,7 +328,7 @@ export default {
       ];
 
       const random_color = colors[Math.floor(Math.random() * colors.length)];
-      console.log(random_color);
+      // console.log(random_color);
       if (fillColor && hotcake_section) {
         hotcake_section.style.backgroundColor = random_color;
         fillColor.style.fill = random_color;
@@ -337,6 +373,17 @@ export default {
   box-shadow: 5px 10px 30px rgba(10, 175, 227, 0.7);
 }
 
+.max {
+  max-width: 800px !important;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .max {
+    max-width: 1000px !important;
+    margin: 0 auto;
+  }
+}
+
 .btn-primary:is(:hover, :focus) {
   background: var(--gambog);
   transform: translateY(-3px);
@@ -350,7 +397,7 @@ export default {
 }
 
 .h1 {
-  font-size: var(--fs-1);
+  font-size: 60px;
   line-height: 1.1;
   font-weight: var(--fw-700);
 }
@@ -378,9 +425,9 @@ export default {
 .section-text {
   font-style: normal;
   font-weight: 400;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 122%;
-  margin: 2rem 0 1rem;
+  margin: 1rem 0 0.5rem;
   color: #051234;
 }
 
@@ -674,13 +721,13 @@ export default {
   margin-bottom: 20px;
   font-style: normal;
   font-weight: 400;
-  font-size: 112.448px;
+  font-size: 82.448px;
   line-height: 82.5%;
 }
 
 @media (min-width: 1200px) {
   .hero-title {
-    font-size: 132.448px;
+    font-size: 50.448px;
   }
 }
 
@@ -747,6 +794,10 @@ p.down {
 
 .about-img {
   width: 100%;
+}
+
+.show {
+  display: none;
 }
 /*
 .play-btn {
@@ -1060,7 +1111,7 @@ p.down {
     max-width: 1150px;
   }
   .hero-title {
-    font-size: 132.448px;
+    font-size: 70.448px;
   }
 
   .hotcake_det {
@@ -1134,7 +1185,7 @@ p.down {
     margin: -60% auto 0;
   }
   .hero {
-    padding: 130px 0 0;
+    padding: 105px 0 0;
     position: relative;
   }
   .what {
@@ -1152,6 +1203,32 @@ p.down {
   }
   .fillColor {
     top: -8%;
+  }
+}
+
+@media (max-width: 810px) {
+  .flexer {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .flexer {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    width: ;
+  }
+
+  .flexer > div {
+    width: 100%;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .dt {
+    display: none;
   }
 }
 @media (max-width: 600px) {
@@ -1181,6 +1258,7 @@ p.down {
   .what {
     padding-top: 1rem;
   }
+
   p.top {
     font-size: 22.81px;
   }

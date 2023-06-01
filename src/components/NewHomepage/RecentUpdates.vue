@@ -65,7 +65,7 @@
       </div>
     </div>
     <div class="post five">
-      <img src="/images/oba.jpeg" />
+      <img src="/images/oba.jpg" />
       <div class="overlay">
         <!-- <p>Technology <span>13 Sept, 2021</span></p>
         <h4>The Kukah Innovation Prize and Awards</h4> -->

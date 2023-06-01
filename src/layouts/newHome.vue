@@ -119,36 +119,41 @@
                 label="Our Solutions"
               >
                 <q-list>
-                  <q-item clickable to="/greyhobb" v-close-popup>
+                  <q-item exact clickable to="/greyhobb" v-close-popup>
                     <q-item-section>
                       <q-item-label>GreyHobb</q-item-label>
                     </q-item-section>
                   </q-item>
 
-                  <q-item clickable to="/greytech" v-close-popup>
+                  <q-item exact clickable to="/greytech" v-close-popup>
                     <q-item-section>
                       <q-item-label>GreyTech</q-item-label>
                     </q-item-section>
                   </q-item>
 
-                  <q-item clickable to="/greycreate" v-close-popup>
+                  <q-item exact clickable to="/greycreate" v-close-popup>
                     <q-item-section>
                       <q-item-label>GreyCreate</q-item-label>
                     </q-item-section>
                   </q-item>
-                  <q-item clickable to="/greyacademy" v-close-popup>
+                  <q-item exact clickable to="/greyacademy" v-close-popup>
                     <q-item-section>
                       <q-item-label>GreyAcademy</q-item-label>
                     </q-item-section>
                   </q-item>
-                  <q-item clickable to="/careers" v-close-popup>
+                  <q-item
+                    clickable
+                    exact
+                    :to="{ name: 'metaverse' }"
+                    v-close-popup
+                  >
                     <q-item-section>
-                      <q-item-label>Careers</q-item-label>
+                      <q-item-label>Greysoft XR</q-item-label>
                     </q-item-section>
                   </q-item>
-                  <q-item clickable to="/metaverse" v-close-popup>
+                  <q-item exact clickable to="/careers" v-close-popup>
                     <q-item-section>
-                      <q-item-label>Metaverse</q-item-label>
+                      <q-item-label>Careers</q-item-label>
                     </q-item-section>
                   </q-item>
                 </q-list>
