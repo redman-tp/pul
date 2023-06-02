@@ -1110,4 +1110,10 @@ export default defineComponent({
   line-height: 1;
   letter-spacing: 0.00735em;
 }
+
+@media (max-width: 600px) {
+  .home__data-title {
+    font-size: 1.5rem;
+  }
+}
 </style>

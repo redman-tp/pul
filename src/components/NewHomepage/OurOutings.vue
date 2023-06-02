@@ -109,7 +109,7 @@ export default {
         {
           title: "Certiport Authorized Testing Center (CATC)",
           img: "/images/vr3.jpeg",
-          desc: `Experience the 7th Kaduna Investmwnt Summit from the metaverse, powered by Greysoft Technologies.`,
+          desc: `Experience the 7th Kaduna Investment Summit from the metaverse, powered by Greysoft Technologies.`,
         },
         {
           title: "Nigeria/Kaduna Startup Bill",

@@ -57,12 +57,12 @@ const routes = [
       //   component: () => import("pages/GreyAcademy.vue"),
       // },
       {
-        path: "/Greysoft-XR",
+        path: "/Greysoft-XRR",
         component: () => import("pages/MetaVerse.vue"),
         name: "metaverse",
       },
       {
-        path: "/Greysoft-XXR",
+        path: "/greysoftxr",
         component: () => import("pages/GreysoftXR.vue"),
         name: "GreysoftXR",
       },

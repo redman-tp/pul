@@ -601,7 +601,7 @@ input {
 }
 
 .container {
-  max-width: 1440px !important;
+  max-width: 1440px;
   margin-left: var(--mb-1);
   margin-right: var(--mb-1);
   width: 90%;
@@ -1340,7 +1340,7 @@ input {
   --pistachio_50: hsla(86, 45%, 54%, 0.5);
   --baby-powder: hsl(86, 41%, 97%);
   --light-gray: hsl(0, 0%, 80%);
-  --pistachio: #0496ff;
+  --pistachio: #ab042c;
   //   --pistachio: hsl(86, 45%, 54%);
   --platinum: hsl(0, 0%, 91%);
   --cultured: hsl(0, 0%, 94%);
@@ -1463,7 +1463,7 @@ h6 {
 
 .hero2 .q-carousel {
   background-color: black;
-  height: 90vh;
+  height: 80vh;
   // height: 912px;
   position: relative;
 }
@@ -1543,6 +1543,7 @@ h6 {
 
   .hero2 .q-carousel .q-carousel__thumbnail {
     width: 80%;
+    height: 120px;
     object-fit: cover;
   }
   .hero2 .q-panel {
@@ -1568,7 +1569,7 @@ h6 {
     right: 10% !important;
   }
   .hero2 .q-carousel {
-    height: 712px;
+    height: 70vh;
   }
 }
 

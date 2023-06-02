@@ -111,6 +111,7 @@ export default {
 <style scoped>
 .wrapper {
   padding-top: 2rem;
+
   /* margin-bottom: 3rem; */
   background: rgba(34, 34, 34, 0.1);
 }
@@ -145,9 +146,9 @@ img {
 
 .grid {
   position: relative;
-  margin: 0 0.5rem;
+  margin: 0 auto;
   padding: 1em 0 4em;
-  /* max-width: 1000px; */
+  max-width: 1200px;
   list-style: none;
   text-align: center;
   display: grid;
@@ -186,9 +187,10 @@ img {
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8;
-  height: 250px;
-  object-position: top;
-  object-fit: cover;
+  /* height: 250px; */
+  /* object-position: top; */
+  object-fit: contain;
+  /* object-fit: cover; */
 }
 
 .grid figure figcaption {
@@ -342,7 +344,7 @@ figure.effect-milo:hover p {
 
 @media (min-width: 1300px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   figure.effect-milo:hover .img::before {
     top: 62%;
@@ -363,6 +365,10 @@ figure.effect-milo:hover p {
 
   .hold {
     margin: 2rem auto 4.5rem;
+  }
+
+  .grid {
+    margin: 1rem;
   }
 }
 </style>

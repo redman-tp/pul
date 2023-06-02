@@ -129,7 +129,7 @@ export default {
         {
           name: "Jerry Kaduma(Rico)",
           position: "VR Engineer",
-          img: "/images/rico.png",
+          img: "/images/rico.jpg",
           linkedIn: "",
           twitter: "",
         },
@@ -158,6 +158,41 @@ export default {
           name: "Victor Idumufinide",
           position: "Lead Photographer",
           img: "/images/victor.png",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Nancy Baba-Al",
+          position: "Head of Marketing",
+          img: "/images/nancy.jpg",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Keren Bush",
+          position: "Administrative Assistant",
+          img: "/images/juju.jpg",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Chidinma Nwonye",
+          position: "Content Writer",
+          img: "/images/dinma.jpg",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Tadongyi Fyada",
+          position: "Assistant Creative Director",
+          img: "/images/juju1.jpg",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
+          name: "Freeman Gerard Alibaba",
+          position: "3D Animation and Design",
+          img: "/images/gerald.jpg",
           linkedIn: "",
           twitter: "",
         },
@@ -270,9 +305,9 @@ img {
   display: block;
   min-height: 100%;
   max-width: 100%;
-  height: 300px;
-  object-position: top;
-  object-fit: cover;
+  /* height: 300px; */
+  /* object-position: top; */
+  object-fit: contain;
   opacity: 0.8;
 }
 
@@ -427,7 +462,7 @@ figure.effect-milo:hover p {
 
 @media (min-width: 1300px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   figure.effect-milo:hover .img::before {
     top: 62%;
@@ -439,6 +474,9 @@ figure.effect-milo:hover p {
   }
   .wrapper {
     padding-top: 6rem;
+  }
+  .grid {
+    margin: 1rem;
   }
 }
 </style>

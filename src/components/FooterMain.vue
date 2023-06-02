@@ -132,7 +132,7 @@
     </button> -->
   </footer>
 
-  <div class="fixed_vr">
+  <div v-if="!this.$route.name === 'GreysoftXR'" class="fixed_vr">
     <div class="vr_btn_hold">
       <a
         href="https://kuula.co/share/collection/7vGlZ?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=-1"
@@ -146,7 +146,7 @@
       </a>
     </div>
   </div>
-  <div class="fixed_mvr">
+  <div v-if="!this.$route.name === 'GreysoftXR'" class="fixed_mvr">
     <div class="vr_btn_hold">
       <a
         href="https://kuula.co/share/collection/7vbCd?logo=1&info=0&fs=1&vr=1&initload=0&thumbs=-1&alpha=0.90"

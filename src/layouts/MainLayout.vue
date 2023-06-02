@@ -45,7 +45,7 @@
               label="Greysoft XR"
               ripple
               no-caps
-              :to="{ name: 'metaverse' }"
+              :to="{ name: 'GreysoftXR' }"
               exact
             />
             <q-route-tab label="Careers" ripple no-caps to="/careers" exact />

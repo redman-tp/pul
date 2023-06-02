@@ -73,14 +73,19 @@
                       <q-item-label>GreyAcademy</q-item-label>
                     </q-item-section>
                   </q-item>
+                  <q-item
+                    clickable
+                    exact
+                    :to="{ name: 'GreysoftXR' }"
+                    v-close-popup
+                  >
+                    <q-item-section>
+                      <q-item-label>Greysoft XR</q-item-label>
+                    </q-item-section>
+                  </q-item>
                   <q-item clickable to="/careers" v-close-popup>
                     <q-item-section>
                       <q-item-label>Careers</q-item-label>
-                    </q-item-section>
-                  </q-item>
-                  <q-item clickable to="/metaverse" v-close-popup>
-                    <q-item-section>
-                      <q-item-label>Metaverse</q-item-label>
                     </q-item-section>
                   </q-item>
                 </q-list>
@@ -144,7 +149,7 @@
                   <q-item
                     clickable
                     exact
-                    :to="{ name: 'metaverse' }"
+                    :to="{ name: 'GreysoftXR' }"
                     v-close-popup
                   >
                     <q-item-section>
