@@ -18,6 +18,104 @@
       <section class="about section" id="tour">
         <div class="about__container flexer container grid">
           <div class="about__img" data-aos="zoom-in">
+            <img src="/images/edo6.jpeg" alt="" />
+          </div>
+          <div class="about__data">
+            <h2 class="section__title about__title">GreyTech</h2>
+            <p class="about__description">
+              Step into the realm of cutting-edge technology with GreyTech, our
+              forward-thinking department dedicated to web and mobile
+              development, emerging technologies, and talent outsourcing. Our
+              team of industry professionals and creative experts is passionate
+              about crafting exceptional digital experiences through high-level
+              web and mobile app development. With expertise in emerging
+              technologies such as Extended Reality (Metaverse, VR, AR, MR),
+              Blockchain, Artificial Intelligence, and Internet of Things,
+              GreyTech stands at the forefront of innovation. Additionally, our
+              talent outsourcing services provide access to a pool of highly
+              skilled tech and creative professionals, ensuring that your
+              projects are executed with excellence and efficiency.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="tour">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Web and Mobile Apps Development at GreyTech
+            </h2>
+            <p class="about__description">
+              At Greysoft, we are passionate about crafting cutting-edge web and
+              mobile applications that drive innovation and elevate user
+              experiences. Our team of industry professionals and creative
+              experts work tirelessly to develop high-level web and mobile apps
+              that exceed expectations. With a focus on quality, usability, and
+              scalability, we collaborate closely with our clients to understand
+              their unique requirements and deliver tailor-made solutions. From
+              responsive websites to feature-rich mobile applications, Greysoft
+              combines technical expertise with creative flair to bring your
+              digital vision to life.
+            </p>
+          </div>
+          <div class="about__img" data-aos="zoom-in">
+            <img src="/images/openday1.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="tour">
+        <div class="about__container flexer container grid">
+          <div class="about__img" data-aos="zoom-in">
+            <img src="/images/kad12.jpeg" alt="" />
+          </div>
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Emerging Technologies at GreyTech
+            </h2>
+            <p class="about__description">
+              As a leading authority in web3 technologies, Greysoft is at the
+              forefront of innovation in Extended Reality (Metaverse, VR, AR,
+              MR), Blockchain, Artificial Intelligence, Internet of Things, and
+              more. We harness the power of emerging technologies to unlock new
+              possibilities for our clients and drive digital transformation.
+              Our team of experts stays ahead of the curve, continuously
+              exploring and implementing the latest advancements in these
+              fields. Whether it's creating immersive virtual reality
+              experiences, building decentralized applications, or leveraging AI
+              for data-driven insights, Greysoft empowers businesses to embrace
+              the future of technology.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="tour">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Talent Outsourcing at GreyTech
+            </h2>
+            <p class="about__description">
+              At Greysoft, we understand the importance of access to top-tier
+              talent in today's competitive landscape. Through our Talent
+              Outsourcing services, we provide access to a pool of professional
+              tech and creative talent available on demand, both locally and
+              internationally. Our extensive talent pool is nurtured through our
+              industry-leading training programs at GreyAcademy, ensuring that
+              we can provide skilled professionals who are equipped to tackle
+              any project. Whether you need developers, designers, or other tech
+              specialists, Greysoft can seamlessly integrate our talent with
+              your team, enabling you to scale your operations efficiently and
+              effectively.
+            </p>
+          </div>
+          <div class="about__img" data-aos="zoom-in">
+            <img src="/images/tmax2.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="tour">
+        <div class="about__container flexer container grid">
+          <div class="about__img" data-aos="zoom-in">
             <img src="/pe/testi.png" alt="" />
           </div>
           <div class="about__data">
@@ -35,7 +133,13 @@
       </section>
 
       <section class="about section" id="tour">
-        <div class="about__container container grid">
+        <div class="about__container flexer container grid">
+          <div class="about__img" data-aos="zoom-in">
+            <img
+              src="/pe/group-young-cheerful-african-friends-wearing-facemasks-social-distancing-park.jpg"
+              alt=""
+            />
+          </div>
           <div class="about__data">
             <h2 class="section__title about__title">Our Focus</h2>
             <p class="about__description">
@@ -47,12 +151,6 @@
               prosperous nation. Hence we have taken the challenge to increase
               the level of digital literacy throughout the African continent.
             </p>
-          </div>
-          <div class="about__img" data-aos="zoom-in">
-            <img
-              src="/pe/group-young-cheerful-african-friends-wearing-facemasks-social-distancing-park.jpg"
-              alt=""
-            />
           </div>
         </div>
       </section>

@@ -529,6 +529,30 @@ export default {
         {
           img: "/images/kad4.jpeg",
         },
+        {
+          img: "/images/kad5.jpeg",
+        },
+        {
+          img: "/images/kad6.jpeg",
+        },
+        {
+          img: "/images/kad7.jpeg",
+        },
+        {
+          img: "/images/kad8.jpeg",
+        },
+        {
+          img: "/images/kad9.jpeg",
+        },
+        {
+          img: "/images/kad10.jpeg",
+        },
+        {
+          img: "/images/kad11.jpeg",
+        },
+        {
+          img: "/images/kad12.jpeg",
+        },
       ],
       ulockImages: [
         {
@@ -549,6 +573,12 @@ export default {
         },
         {
           img: "/images/edo5.jpeg",
+        },
+        {
+          img: "/images/edo8.jpeg",
+        },
+        {
+          img: "/images/edo9.jpeg",
         },
       ],
       options: {
@@ -645,16 +675,21 @@ p.control {
   color: #8d345a;
   text-align: left;
   margin-bottom: 0.5rem;
+  line-height: 1.3;
   font-weight: 500;
+}
+
+.about__data {
+  text-align: left;
 }
 @media screen and (max-width: 912px) {
   .about {
     padding-top: 3rem;
   }
 
-  .section__title {
+  /* .section__title {
     text-align: center;
-  }
+  } */
 }
 @media screen and (min-height: 721px) {
   .home__container,
@@ -670,7 +705,8 @@ p.control {
   width: 100%;
   height: 90vh;
   object-fit: cover;
-  object-position: 40%;
+  /* object-position: 40%; */
+  object-position: 30% 40%;
   /* object-position: 9%; */
 }
 .home::before {
@@ -773,11 +809,11 @@ p.control {
     margin: 2rem auto 0;
   }
 }
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
   .section__title {
     text-align: center;
   }
-}
+} */
 @media screen and (max-width: 500px) {
   .home__container {
     position: relative;
@@ -791,6 +827,7 @@ p.control {
   }
   .home__img {
     height: 70vh;
+    object-position: 55% 40%;
   }
   .columnn {
     flex: 100%;

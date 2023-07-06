@@ -3,7 +3,7 @@
     <main class="main">
       <!-- === HOME === -->
       <section class="home" id="home">
-        <img src="/images/greyh.png" alt="" class="home__img" />
+        <img src="/images/ralphoculus.jpg" alt="" class="home__img" />
         <div class="home__container container grid">
           <div class="home__data">
             <h1 class="home__data-title">GreyHobb</h1>
@@ -14,9 +14,36 @@
       </section>
 
       <section class="about section" id="tour">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">GreyHobb</h2>
+            <p class="about__description">
+              Welcome to GreyHobb, our vibrant innovation hub where ideas come
+              to life and collaborations thrive. As a co-working space, we
+              provide a dynamic and inspiring environment for remote workers to
+              flourish, equipped with top-notch amenities, 24/7 electricity, and
+              high-speed internet access. Whether you're a freelancer,
+              entrepreneur, or remote team, GreyHobb offers the perfect setting
+              to fuel your productivity and connect with like-minded
+              individuals. Join our community of innovative minds, leverage our
+              supportive infrastructure, and unlock your full potential at
+              GreyHobb.
+            </p>
+            <!-- <a href="#" class="button"
+              >Join us <i class="fas fa-arrow-right"></i
+            ></a> -->
+          </div>
+
+          <div class="about__img" data-aos="zoom-in">
+            <img src="/images/edo5.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="tour">
         <div class="about__container flexer container grid">
           <div class="about__img" data-aos="zoom-in">
-            <img src="/pe/pexels-tima-miroshnichenko-5685821.jpg" alt="" />
+            <img src="/images/tmax1.jpeg" alt="" />
           </div>
           <div class="about__data">
             <h2 class="section__title about__title">
@@ -38,26 +65,91 @@
       <section class="about section" id="tour">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">Co-working</h2>
+            <h2 class="section__title about__title">Co-working at GreyHobb</h2>
             <p class="about__description">
-              Our Co-working space embodies tech-driven startups which have
-              access to our incubation and acceleration programs. The creative
-              arm covers creative content development, fashion, films, art,
-              music and general traditional/cultural content.
+              At GreyHobb, we provide a vibrant and conducive co-working space
+              for professionals seeking a productive and collaborative
+              environment. Our co-working space offers the perfect setting for
+              remote workers, freelancers, and entrepreneurs to thrive. With
+              24-hour electricity and high-speed internet service, you can focus
+              on your work without any interruptions. Our diverse community of
+              co-workers fosters networking opportunities and cross-industry
+              collaborations, allowing you to expand your network and tap into
+              new opportunities. Join GreyHobb and experience the synergy of
+              working alongside like-minded individuals in a dynamic and
+              inspiring atmosphere.
             </p>
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
             ></a> -->
           </div>
           <div class="about__img" data-aos="zoom-in">
-            <img src="/pe/pexels-kindel-media-6773652 (1).jpg" alt="" />
+            <img src="/images/coworking.jpeg" alt="" />
           </div>
         </div>
       </section>
       <section class="about section" id="tour">
         <div class="about__container flexer container grid">
           <div class="about__img" data-aos="zoom-in">
-            <img src="/pe/unsplash_34GZCgaVksk.png" alt="" />
+            <img src="/images/smallbusi.jpeg" alt="" />
+          </div>
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Startup Incubation and Acceleration Program at GreyHobb
+            </h2>
+            <p class="about__description">
+              At GreyHobb, we are committed to nurturing and empowering startups
+              on their journey to success. Our Startup Incubation and
+              Acceleration Program offers comprehensive support to early-stage
+              ventures, providing them with the necessary tools, resources, and
+              mentorship to thrive in a competitive market. Through our business
+              clinics, we help startups structure their operations, refine their
+              business models, and develop investor-ready strategies. Our
+              experienced team of experts guides entrepreneurs through the
+              challenges of scaling their businesses, equipping them with the
+              knowledge and skills needed to attract funding and achieve
+              sustainable growth. Join our program and unlock the full potential
+              of your startup.
+            </p>
+            <!-- <a href="#" class="button"
+              >Join us <i class="fas fa-arrow-right"></i
+            ></a> -->
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="tour">
+        <div class="about__container container grid">
+          <div class="about__data">
+            <h2 class="section__title about__title">
+              Community Building at GreyHobb
+            </h2>
+            <p class="about__description">
+              At GreyHobb, we believe in the power of community. We are
+              dedicated to building a vibrant ecosystem of innovative minds and
+              fostering connections that lead to meaningful collaborations. Our
+              community- building initiatives provide opportunities for
+              networking, knowledge-sharing, and skill development. From
+              interactive workshops and industry events to panel discussions and
+              networking sessions, GreyHobb brings together professionals from
+              various backgrounds and industries. Join our community and connect
+              with like-minded individuals, expand your horizons, and access a
+              wealth of opportunities. Whether you are looking for co-founders,
+              mentors, or potential clients, GreyHobb is the place to forge
+              valuable relationships and make a lasting impact.
+            </p>
+            <!-- <a href="#" class="button"
+              >Join us <i class="fas fa-arrow-right"></i
+            ></a> -->
+          </div>
+          <div class="about__img" data-aos="zoom-in">
+            <img src="/images/openday2.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="about section" id="tour">
+        <div class="about__container flexer container grid">
+          <div class="about__img" data-aos="zoom-in">
+            <img src="/images/empower.jpeg" alt="" />
           </div>
           <div class="about__data">
             <h2 class="section__title about__title">Our Goal</h2>
@@ -70,26 +162,6 @@
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
             ></a> -->
-          </div>
-        </div>
-      </section>
-      <section class="about section" id="tour">
-        <div class="about__container container grid">
-          <div class="about__data">
-            <h2 class="section__title about__title">GreyHobb</h2>
-            <p class="about__description">
-              At GreyHobb, students, developers, entrepreneurs, content
-              creators, digital marketers etc. are welcome to join a growing
-              ecosystem with a view to making life changing connections that can
-              transform an idea into a profitable venture.
-            </p>
-            <!-- <a href="#" class="button"
-              >Join us <i class="fas fa-arrow-right"></i
-            ></a> -->
-          </div>
-
-          <div class="about__img" data-aos="zoom-in">
-            <img src="/pe/unsplash_wT-xJyLHcNA.png" alt="" />
           </div>
         </div>
       </section>
@@ -460,7 +532,7 @@ export default {
           800: {
             perPage: 2,
           },
-          800: {
+          500: {
             perPage: 1,
           },
         },
@@ -689,7 +761,7 @@ export default {
 
 @media (max-width: 400px) {
   .swiper-card {
-    width: 100% !important;
+    width: 90% !important;
   }
 }
 

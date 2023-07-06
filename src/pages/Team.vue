@@ -142,7 +142,7 @@ export default {
         // },
         {
           name: "Ademola Adewale",
-          position: "Lead Product Designer",
+          position: "Lead Product Design",
           img: "/images/sirgappy.png",
           linkedIn: "",
           twitter: "",
@@ -163,21 +163,21 @@ export default {
         },
         {
           name: "Nancy Baba-Al",
-          position: "Head of Marketing",
+          position: "Head. Marketing",
           img: "/images/nancy.jpg",
           linkedIn: "",
           twitter: "",
         },
         {
           name: "Keren Bush",
-          position: "Administrative Assistant",
+          position: "Head. Admin",
           img: "/images/juju.jpg",
           linkedIn: "",
           twitter: "",
         },
         {
           name: "Chidinma Nwonye",
-          position: "Content Writer",
+          position: "Lead Content Writer",
           img: "/images/dinma.jpg",
           linkedIn: "",
           twitter: "",
@@ -190,6 +190,13 @@ export default {
           twitter: "",
         },
         {
+          name: "Nafisa Lawal Idris",
+          position: "Lead Data Scientist",
+          img: "/images/meefesa.jpg",
+          linkedIn: "",
+          twitter: "",
+        },
+        {
           name: "Freeman Gerard Alibaba",
           position: "3D Animation and Design",
           img: "/images/gerald.jpg",
@@ -198,7 +205,7 @@ export default {
         },
         {
           name: "Abdullahi Saidu",
-          position: "UX/UI Designer",
+          position: "Ast. Lead Product Design",
           img: "/images/abdul.png",
           linkedIn: "",
           twitter: "",
@@ -226,7 +233,7 @@ export default {
         // },
         {
           name: "Ayuba Dauda",
-          position: "Devops Engineer",
+          position: "Devops Engineer & Scrum Master",
           img: "/images/ayuba.png",
           linkedIn: "",
           twitter: "",
@@ -273,7 +280,7 @@ img {
 
 .grid {
   position: relative;
-  margin: 0 0.5rem;
+  margin: 0 2rem;
   padding: 1em 0 4em;
   /* max-width: 1000px; */
   list-style: none;
@@ -305,9 +312,13 @@ img {
   display: block;
   min-height: 100%;
   max-width: 100%;
+  max-height: 250px;
+  height: 250px;
+  object-position: top;
+  object-fit: cover;
   /* height: 300px; */
   /* object-position: top; */
-  object-fit: contain;
+  /* object-fit: contain; */
   opacity: 0.8;
 }
 
@@ -462,7 +473,7 @@ figure.effect-milo:hover p {
 
 @media (min-width: 1300px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   figure.effect-milo:hover .img::before {
     top: 62%;

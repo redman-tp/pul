@@ -38,7 +38,7 @@
       </figure>
     </div>
 
-    <div class="text-center">
+    <div class="text-center q-pb-lg">
       <q-btn to="/team" class="view">View More</q-btn>
     </div>
   </div>
@@ -102,6 +102,14 @@ export default {
           linkedIn: "",
           twitter: "",
         },
+
+        {
+          name: "Chidinma Nwonye",
+          position: "Lead Content Writer",
+          img: "/images/dinma.jpg",
+          linkedIn: "",
+          twitter: "",
+        },
       ],
     };
   },
@@ -147,16 +155,17 @@ img {
 .grid {
   position: relative;
   margin: 0 auto;
-  padding: 1em 0 4em;
+  padding: 1em 2rem 4em;
   max-width: 1200px;
   list-style: none;
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   gap: 0.4rem;
   z-index: 10;
 }
+
 .view {
   background: linear-gradient(
     285.19deg,
@@ -187,9 +196,13 @@ img {
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8;
+  max-height: 250px;
+  height: 250px;
+  object-position: top;
+  object-fit: cover;
   /* height: 250px; */
   /* object-position: top; */
-  object-fit: contain;
+  /* object-fit: contain; */
   /* object-fit: cover; */
 }
 
@@ -342,12 +355,23 @@ figure.effect-milo:hover p {
   transform: translate3d(0, 0, 0);
 }
 
+/* @media (min-width: 1500px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+} */
 @media (min-width: 1300px) {
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
   figure.effect-milo:hover .img::before {
     top: 62%;
+  }
+}
+
+@media (min-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 @media (max-width: 768px) {

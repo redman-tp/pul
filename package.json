@@ -1,8 +1,8 @@
 {
-  "name": "greysoft-website",
+  "name": "greysoft-technologies-empowering-digital-innovation",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "GreySoftNG",
+  "description": "Discover the limitless possibilities with Greysoft Technologies. Explore our comprehensive suite of services, including GreyTech for cutting-edge technology solutions, GreyCreate for innovative design and development, GreyAcademy for upskilling and knowledge enhancement, and GreyHobb for a collaborative working space. Unleash your potential with Greysoft Technologies today.",
+  "productName": "greysoft-technologies-empowering-digital-innovation",
   "author": "greysoft<hi@greysoft.ng>",
   "private": true,
   "scripts": {
