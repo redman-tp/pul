@@ -23,6 +23,9 @@
         </div>
 
         <div class="btn q-pt-md">
+          <q-btn target="_blank" href="https://forms.gle/ZyBUPbfC2UPGa7Wd7">
+            Enroll Kids Bootcamp <i class="fa-solid q-ml-sm fa-arrow-right"></i>
+          </q-btn>
           <q-btn target="_blank" href="https://forms.gle/UN4GGjH74Va6v3aV9">
             Enroll now <i class="fa-solid q-ml-sm fa-arrow-right"></i>
           </q-btn>
@@ -47,7 +50,8 @@
 
           <div class="subtext">From Skills to Jobs</div>
         </div>
-        <img src="/images/course.jpg" alt="" />
+        <img src="/pe/kids4.jpeg" alt="" />
+        <!-- <img src="/images/course.jpg" alt="" /> -->
       </div>
     </div>
     <div class="max cour">
@@ -388,7 +392,9 @@ p,
 
 .btn {
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
 .courses_wrap .enrolll {

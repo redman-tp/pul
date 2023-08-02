@@ -15,22 +15,6 @@
             >
               <SplideSlide>
                 <div class="dett">
-                  <img src="/pe/kukahflyer.jpeg" alt="" />
-
-                  <strong class="text-white"
-                    >Kukah Prize For Young Innovators</strong
-                  >
-                  <br />
-
-                  <q-btn to="/kukah" class="buttonn center"
-                    >Click here to submit entry
-                    <i class="fas fa-arrow-right"></i
-                  ></q-btn>
-                  <br />
-                </div>
-              </SplideSlide>
-              <SplideSlide>
-                <div class="dett">
                   <img src="/pe/kidssummer.jpg" alt="" />
 
                   <strong class="text-white">Kids Summer Bootcamp</strong>
@@ -38,11 +22,34 @@
 
                   <a
                     target="_blank"
-                    href="https://paystack.com/pay/greysoftkcc"
+                    href="https://forms.gle/ZyBUPbfC2UPGa7Wd7"
                     class="buttonn center"
                     >Click here to register now
                     <i class="fas fa-arrow-right"></i
                   ></a>
+                  <!-- <a
+                    target="_blank"
+                    href="https://paystack.com/pay/greysoftkcc"
+                    class="buttonn center"
+                    >Click here to register now
+                    <i class="fas fa-arrow-right"></i
+                  ></a> -->
+                  <br />
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                <div class="dett">
+                  <img src="/pe/kukahflyer.jpeg" alt="" />
+
+                  <strong class="text-white"
+                    >Kukah Prize For Young Innovators</strong
+                  >
+                  <br />
+
+                  <q-btn to="/kukah" no-caps class="buttonn center"
+                    >Click here to submit entry
+                    <i class="fas fa-arrow-right"></i
+                  ></q-btn>
                   <br />
                 </div>
               </SplideSlide>
@@ -1111,6 +1118,24 @@ export default defineComponent({
   letter-spacing: 0.00735em;
 }
 
+.home {
+  height: 100vh;
+}
+.home::before {
+  height: 100vh;
+}
+.home__img {
+  height: 100vh;
+}
+.home__container {
+  height: calc(100vh - var(--header-height));
+}
+
+@media (min-width: 1000px) {
+  .home__container {
+    height: calc(80vh - var(--header-height));
+  }
+}
 @media (max-width: 600px) {
   .home__data-title {
     font-size: 1.5rem;

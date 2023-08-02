@@ -47,7 +47,7 @@ export default {
       staffs: [
         {
           name: "Dr. Manzo Maigari",
-          position: "Chairman, Greysoft Technologies",
+          position: "Chairman",
           linkedIn: "",
           img: "/images/dr.png",
           twitter: "",
@@ -63,7 +63,7 @@ export default {
         },
         {
           name: "Dr. Dala Alphonso",
-          position: "Chief Information Officer",
+          position: "CIO",
           linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104/",
           img: "/images/dala.jpeg",
           twitter: "https://twitter.com/RealRalphG",
@@ -71,7 +71,7 @@ export default {
         },
         {
           name: "Michael Ogungbe",
-          position: "Chief Operations Officer",
+          position: "COO",
           img: "/images/bigmike.png",
           linkedIn: "",
           twitter: "",
@@ -169,7 +169,7 @@ export default {
           twitter: "",
         },
         {
-          name: "Keren Bush",
+          name: "Tadongyi Fyada",
           position: "Head. Admin",
           img: "/images/juju.jpg",
           linkedIn: "",
@@ -183,7 +183,7 @@ export default {
           twitter: "",
         },
         {
-          name: "Tadongyi Fyada",
+          name: "Keren Bush",
           position: "Assistant Creative Director",
           img: "/images/juju1.jpg",
           linkedIn: "",

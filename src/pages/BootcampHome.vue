@@ -1,53 +1,53 @@
 <template>
   <main>
     <article>
-      <section id="home" class="hero">
-        <div class="row max flexer items-center q-pb-xl q-mx-xl">
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="dt q-pb-md">
-              <div class="text-h5 text-weight-bold text-black">
-                Upskill with GreyAcademy
-              </div>
-              <div class="text-h6 text-black">From Skills to Jobs</div>
+      <div class="row upskill max flexer items-center q-pt-xl q-mx-xl">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="dt q-pb-md">
+            <div class="text-h5 text-weight-bold text-black">
+              Upskill with GreyAcademy
             </div>
-
-            <div class="text-black">
-              If you’re ready to upskill with GreyAcademy Now’s your chance to
-              roll with champions! GreyAcademy is thrilled to announce our
-              comprehensive training program starting on 1st May 2023. Our
-              program is designed to equip individuals with the skills needed to
-              succeed in today's fast-paced digital world. Join this cohort.
-            </div>
-
-            <div class="bt">
-              <q-btn
-                :to="{
-                  name: 'courses',
-                }"
-                text-color="white"
-                color="red"
-                class="q-mt-sm"
-                label="Enroll"
-              />
-            </div>
+            <div class="text-h6 text-black">From Skills to Jobs</div>
           </div>
 
-          <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="show q-pb-md">
-              <div class="text-h5 text-weight-bold text-black">
-                Upskill with GreyAcademy
-              </div>
-              <div class="text-h6 text-black">From Skills to Jobs</div>
-            </div>
-            <img src="/images/course.jpg" alt="" />
+          <div class="text-black">
+            If you’re ready to upskill with GreyAcademy Now’s your chance to
+            roll with champions! GreyAcademy is thrilled to announce our
+            comprehensive training program starting on 1st May 2023. Our program
+            is designed to equip individuals with the skills needed to succeed
+            in today's fast-paced digital world. Join this cohort.
+          </div>
+
+          <div class="bt">
+            <q-btn
+              :to="{
+                name: 'courses',
+              }"
+              text-color="white"
+              color="red"
+              class="q-mt-sm"
+              label="Enroll"
+            />
           </div>
         </div>
+
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="show q-pb-md">
+            <div class="text-h5 text-weight-bold text-black">
+              Upskill with GreyAcademy
+            </div>
+            <div class="text-h6 text-black">From Skills to Jobs</div>
+          </div>
+          <img src="/images/course.jpg" alt="" />
+        </div>
+      </div>
+      <section id="home" class="hero">
         <div class="max container">
           <div class="hero-banner">
             <q-carousel
-              autoplay
               no
               animated
+              autoplay
               v-model="slide"
               navigation
               infinite
@@ -83,16 +83,16 @@
                   <div>Make i call her</div>
                 </div> -->
               <!-- </q-carousel-slide> -->
-              <!-- <q-carousel-slide :name="5" img-src="/pe/helen.png">
-                <div class="quotes">
+              <q-carousel-slide :name="5" img-src="/pe/helen.png">
+                <!-- <div class="quotes">
                   <div>lol, Yes i did ooo</div>
                   <div>... and it was awesome😀</div>
                   <div>
                     Honestly guys i am glad to be <br />
                     part of the HOTCAKE community
                   </div>
-                </div>
-              </q-carousel-slide> -->
+                </div> -->
+              </q-carousel-slide>
               <!-- <q-carousel-slide :name="4" img-src="/pe/bilal.png">
                 <div class="quotes">
                   <div>
@@ -699,8 +699,13 @@ export default {
 \*-----------------------------------*/
 
 .hero {
-  padding: 150px 0 0;
+  /* padding: 150px 0 0;   */
+  padding-top: 3rem;
   position: relative;
+}
+
+.upskill {
+  padding: 150px 0 0;
 }
 .hero svg {
   position: absolute;
@@ -1053,7 +1058,8 @@ p.down {
     display: flex;
     flex-direction: row;
     /* grid-template-columns: 4fr 4fr; */
-    align-items: flex-start;
+    align-items: center;
+    /* align-items: flex-start; */
     gap: 50px;
   }
 
@@ -1135,7 +1141,7 @@ p.down {
 .hero .container {
   display: flex;
   /* flex-direction: row-reverse; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 4rem;
 }
 @media (max-width: 1023px) {
