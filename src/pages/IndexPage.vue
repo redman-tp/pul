@@ -1111,6 +1111,24 @@ export default defineComponent({
   letter-spacing: 0.00735em;
 }
 
+.home {
+  height: 100vh;
+}
+.home::before {
+  height: 100vh;
+}
+.home__img {
+  height: 100vh;
+}
+.home__container {
+  height: calc(100vh - var(--header-height));
+}
+
+@media (min-width: 1000px) {
+  .home__container {
+    height: calc(80vh - var(--header-height));
+  }
+}
 @media (max-width: 600px) {
   .home__data-title {
     font-size: 1.5rem;

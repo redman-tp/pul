@@ -61,6 +61,9 @@
       <div class="sponsor_item">
         <img src="sponsors/pan.svg" alt="" />
       </div>
+      <div class="sponsor_item">
+        <img src="pe/NITDA-logo-newest-1-removebg-preview 1.png" alt="" />
+      </div>
     </div>
   </div>
 </template>

@@ -20,10 +20,18 @@
 
         <figcaption>
           <span class="socials row items-center">
-            <a href="">
+            <a
+              v-if="staff.twitter !== ''"
+              target="_blank"
+              :href="staff.twitter"
+            >
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="">
+            <a
+              v-if="staff.linkedin !== ''"
+              target="_blank"
+              :href="staff.linkedin"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </span>
@@ -47,23 +55,23 @@ export default {
       staffs: [
         {
           name: "Dr. Manzo Maigari",
-          position: "Chairman, Greysoft Technologies",
-          linkedIn: "",
+          position: "Chairman",
+          linkedIn: "https://www.linkedin.com/in/manzo-maigari-2071b1257/",
           img: "/images/dr.png",
-          twitter: "",
+          twitter: "https://twitter.com/MaigariManzo",
           quote: "",
         },
         {
           name: "Isah Raphael",
           position: "CEO/CTO",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104",
           img: "/images/ralph.png",
-          twitter: "",
+          twitter: "https://twitter.com/realralphg",
           quote: "",
         },
         {
-          name: "Dr. Dala Alphonso",
-          position: "Chief Information Officer",
+          name: "Dala Alphonso",
+          position: "CIO",
           linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104/",
           img: "/images/dala.jpeg",
           twitter: "https://twitter.com/RealRalphG",
@@ -71,10 +79,10 @@ export default {
         },
         {
           name: "Michael Ogungbe",
-          position: "Chief Operations Officer",
+          position: "COO",
           img: "/images/bigmike.png",
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/michaelogungbe/",
+          twitter: "https://twitter.com/Micheal632",
           quote: "",
         },
         // {
@@ -95,8 +103,8 @@ export default {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
           img: "/images/stef.jpeg",
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/stephanieakut",
+          twitter: "https://twitter.com/Stefphilz",
         },
         // {
         //   name: "Mariya bilal",
@@ -116,21 +124,22 @@ export default {
           name: "Emmanuel Nwabuodafi",
           position: "Lead Frontend Engineer",
           img: "/images/emma.png",
-          linkedIn: "",
-          twitter: "",
+          linkedIn:
+            "https://www.linkedin.com/in/emmanuel-nwabuodafi-42502b190/",
+          twitter: "https://twitter.com/Nwabuodafi",
         },
         {
           name: "Joshua Nnamani",
           position: " Backend Engineer",
           img: "/images/josh.png",
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/joshua-nnamani-42204b180/",
+          twitter: "https://twitter.com/nnxmxni",
         },
         {
           name: "Jerry Kaduma(Rico)",
           position: "VR Engineer",
           img: "/images/rico.jpg",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/jeremiah-kaduma-43255912a/",
           twitter: "",
         },
         // {
@@ -144,32 +153,33 @@ export default {
           name: "Ademola Adewale",
           position: "Lead Product Design",
           img: "/images/sirgappy.png",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/ademolaadewale/",
           twitter: "",
         },
         {
           name: "John Obi",
           position: "Lead Backend Engineer",
           img: "/images/john.png",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/neweminence/",
           twitter: "",
         },
         {
           name: "Victor Idumufinide",
           position: "Lead Photographer",
           img: "/images/victor.png",
-          linkedIn: "",
-          twitter: "",
+          linkedIn:
+            "https://www.linkedin.com/in/tamaramiede-idumufinide-834566173/",
+          twitter: "https://twitter.com/victortamara_",
         },
         {
           name: "Nancy Baba-Al",
           position: "Head. Marketing",
           img: "/images/nancy.jpg",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/nancy-baba-ali-ab4565253",
           twitter: "",
         },
         {
-          name: "Keren Bush",
+          name: "Tadongyi Fyada",
           position: "Head. Admin",
           img: "/images/juju.jpg",
           linkedIn: "",
@@ -179,42 +189,42 @@ export default {
           name: "Chidinma Nwonye",
           position: "Lead Content Writer",
           img: "/images/dinma.jpg",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/chidinma-nwonye-43725619a",
           twitter: "",
         },
         {
-          name: "Tadongyi Fyada",
+          name: "Keren Bush",
           position: "Assistant Creative Director",
           img: "/images/juju1.jpg",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/keren-bush-144546249/",
           twitter: "",
         },
         {
           name: "Nafisa Lawal Idris",
           position: "Lead Data Scientist",
           img: "/images/meefesa.jpg",
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/nafisa-lawal-idris",
+          twitter: "https://twitter.com/FeenahNafeesah",
         },
         {
           name: "Freeman Gerard Alibaba",
           position: "3D Animation and Design",
           img: "/images/gerald.jpg",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/gerard-freeman-410659242/",
           twitter: "",
         },
         {
           name: "Abdullahi Saidu",
           position: "Ast. Lead Product Design",
           img: "/images/abdul.png",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/abdullahi-saidu-2a5749224/",
           twitter: "",
         },
         {
           name: "Tobi Ikupolati",
           position: "Frontend Engineer",
           img: "/images/tobi.png",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/tobi-ikupolati/",
           twitter: "",
         },
         // {
@@ -235,7 +245,7 @@ export default {
           name: "Ayuba Dauda",
           position: "Devops Engineer & Scrum Master",
           img: "/images/ayuba.png",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/ayuba-dauda/",
           twitter: "",
         },
       ],

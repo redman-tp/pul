@@ -20,10 +20,18 @@
 
         <figcaption>
           <span class="socials row items-center">
-            <a href="">
+            <a
+              v-if="staff.twitter !== ''"
+              target="_blank"
+              :href="staff.twitter"
+            >
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="">
+            <a
+              v-if="staff.linkedin !== ''"
+              target="_blank"
+              :href="staff.linkedin"
+            >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>
           </span>
@@ -51,34 +59,34 @@ export default {
       staffs: [
         {
           name: "Dr. Manzo Maigari",
-          position: "Chairman, Greysoft Technologies",
-          linkedIn: "",
+          position: "Chairman",
+          linkedIn: "https://www.linkedin.com/in/manzo-maigari-2071b1257/",
           img: "/images/dr.png",
-          twitter: "",
+          twitter: "https://twitter.com/MaigariManzo",
           quote: "",
         },
         {
           name: "Isah Raphael",
           position: "CEO/CTO",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104",
           img: "/images/ralph.png",
-          twitter: "",
+          twitter: "https://twitter.com/realralphg",
           quote: "",
         },
         {
-          name: "Dr. Dala Alphonso",
-          position: "Chief Information Officer",
-          linkedIn: "https://www.linkedin.com/in/raphael-isah-93a98a104/",
+          name: "Dala Alphonso",
+          position: "CIO",
+          linkedIn: "https://www.linkedin.com/in/dalaisms/",
           img: "/images/dala.jpeg",
-          twitter: "https://twitter.com/RealRalphG",
+          twitter: "https://twitter.com/dalaisms",
           quote: "",
         },
         {
           name: "Michael Ogungbe",
-          position: "Chief Operations Officer",
+          position: "COO",
           img: "/images/bigmike.png",
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/michaelogungbe/",
+          twitter: "https://twitter.com/Micheal632",
           quote: "",
         },
         // {
@@ -99,15 +107,15 @@ export default {
           name: "Stephanie Akut",
           position: "Human Resource Manager",
           img: "/images/stef.jpeg",
-          linkedIn: "",
-          twitter: "",
+          linkedIn: "https://www.linkedin.com/in/stephanieakut",
+          twitter: "https://twitter.com/Stefphilz",
         },
 
         {
           name: "Chidinma Nwonye",
           position: "Lead Content Writer",
           img: "/images/dinma.jpg",
-          linkedIn: "",
+          linkedIn: "https://www.linkedin.com/in/chidinma-nwonye-43725619a",
           twitter: "",
         },
       ],
