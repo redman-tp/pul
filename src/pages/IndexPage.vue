@@ -15,22 +15,6 @@
             >
               <SplideSlide>
                 <div class="dett">
-                  <img src="/pe/kukahflyer.jpeg" alt="" />
-
-                  <strong class="text-white"
-                    >Kukah Prize For Young Innovators</strong
-                  >
-                  <br />
-
-                  <q-btn to="/kukah" class="buttonn center"
-                    >Click here to submit entry
-                    <i class="fas fa-arrow-right"></i
-                  ></q-btn>
-                  <br />
-                </div>
-              </SplideSlide>
-              <SplideSlide>
-                <div class="dett">
                   <img src="/pe/kidssummer.jpg" alt="" />
 
                   <strong class="text-white">Kids Summer Bootcamp</strong>
@@ -38,11 +22,34 @@
 
                   <a
                     target="_blank"
-                    href="https://paystack.com/pay/greysoftkcc"
+                    href="https://forms.gle/ZyBUPbfC2UPGa7Wd7"
                     class="buttonn center"
                     >Click here to register now
                     <i class="fas fa-arrow-right"></i
                   ></a>
+                  <!-- <a
+                    target="_blank"
+                    href="https://paystack.com/pay/greysoftkcc"
+                    class="buttonn center"
+                    >Click here to register now
+                    <i class="fas fa-arrow-right"></i
+                  ></a> -->
+                  <br />
+                </div>
+              </SplideSlide>
+              <SplideSlide>
+                <div class="dett">
+                  <img src="/pe/kukahflyer.jpeg" alt="" />
+
+                  <strong class="text-white"
+                    >Kukah Prize For Young Innovators</strong
+                  >
+                  <br />
+
+                  <q-btn to="/kukah" no-caps class="buttonn center"
+                    >Click here to submit entry
+                    <i class="fas fa-arrow-right"></i
+                  ></q-btn>
                   <br />
                 </div>
               </SplideSlide>

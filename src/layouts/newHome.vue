@@ -91,16 +91,37 @@
                 </q-list>
               </q-btn-dropdown>
             </li>
-            <!-- <li>
-              <q-btn
-                exact
-                @click="gotocontact"
-                class="navbar-link"
-                data-nav-link
+            <li>
+              <q-btn-dropdown
+                class="text-white navbar-link"
+                style="text-transfrom: capitalize"
+                label="VR Tour"
+                no-caps
               >
-                <span>Blog</span>
-              </q-btn>
-            </li> -->
+                <q-list class="list">
+                  <a
+                    href="https://kuula.co/share/collection/7vGlZ?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=-1"
+                    clickable
+                    target="_blank"
+                    class="item_sq"
+                  >
+                    <q-item-section>
+                      <q-item-label>GreyHobb Tour</q-item-label>
+                    </q-item-section>
+                  </a>
+                  <a
+                    href="https://kuula.co/share/collection/7vbCd?logo=1&info=0&fs=1&vr=1&initload=0&thumbs=-1&alpha=0.90"
+                    clickable
+                    target="_blank"
+                    class="item_sq"
+                  >
+                    <q-item-section>
+                      <q-item-label>MS Square Tour</q-item-label>
+                    </q-item-section>
+                  </a>
+                </q-list>
+              </q-btn-dropdown>
+            </li>
           </ul>
         </nav>
         <nav class="nvbr" data-navbar>
@@ -161,50 +182,62 @@
                       <q-item-label>Careers</q-item-label>
                     </q-item-section>
                   </q-item>
+                  <q-item
+                    exact
+                    clickable
+                    :to="{ name: 'courses' }"
+                    v-close-popup
+                  >
+                    <q-item-section>
+                      <q-item-label>Courses</q-item-label>
+                    </q-item-section>
+                  </q-item>
                 </q-list>
               </q-btn-dropdown>
             </li>
-            <!-- <li>
-              <q-btn
-                exact
-                @click="gotocontact"
-                class="navbar-link"
-                data-nav-link
+            <li>
+              <q-btn-dropdown
+                class="text-white navbar-link"
+                style="text-transfrom: capitalize"
+                label="VR Tour"
+                no-caps
               >
-                <span>Blog</span>
-              </q-btn>
-            </li> -->
+                <q-list class="list">
+                  <a
+                    href="https://kuula.co/share/collection/7vGlZ?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=-1"
+                    clickable
+                    target="_blank"
+                    class="item_sq"
+                  >
+                    <q-item-section>
+                      <q-item-label>GreyHobb Tour</q-item-label>
+                    </q-item-section>
+                  </a>
+                  <a
+                    href="https://kuula.co/share/collection/7vbCd?logo=1&info=0&fs=1&vr=1&initload=0&thumbs=-1&alpha=0.90"
+                    clickable
+                    target="_blank"
+                    class="item_sq"
+                  >
+                    <q-item-section>
+                      <q-item-label>MS Square Tour</q-item-label>
+                    </q-item-section>
+                  </a>
+                </q-list>
+              </q-btn-dropdown>
+            </li>
           </ul>
         </nav>
-        <div class="tour">
-          <q-btn-dropdown
-            class="text-black vr"
-            style="text-transfrom: capitalize"
-            label="VR Tour"
+        <div class="tour row no-wrap">
+          <q-btn
+            color="primary"
+            no-caps
+            style="white-space: nowrap; padding: 5px"
+            target="_blank"
+            href="https://forms.gle/ZyBUPbfC2UPGa7Wd7"
           >
-            <q-list class="list">
-              <a
-                href="https://kuula.co/share/collection/7vGlZ?logo=-1&info=0&fs=1&vr=1&sd=1&initload=0&thumbs=-1"
-                clickable
-                target="_blank"
-                class="item_sq"
-              >
-                <q-item-section>
-                  <q-item-label>GreyHobb Tour</q-item-label>
-                </q-item-section>
-              </a>
-              <a
-                href="https://kuula.co/share/collection/7vbCd?logo=1&info=0&fs=1&vr=1&initload=0&thumbs=-1&alpha=0.90"
-                clickable
-                target="_blank"
-                class="item_sq"
-              >
-                <q-item-section>
-                  <q-item-label>MS Square Tour</q-item-label>
-                </q-item-section>
-              </a>
-            </q-list>
-          </q-btn-dropdown>
+            Kids Bootcamp <i class="fa-solid q-ml-sm fa-arrow-right"></i>
+          </q-btn>
         </div>
       </div>
     </header>
@@ -683,6 +716,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
   padding-inline: 10px 5px;
   padding-block: 8px;
   transition: var(--transition-1);
