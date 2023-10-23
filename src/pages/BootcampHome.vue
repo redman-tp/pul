@@ -700,7 +700,7 @@ export default {
 
 .hero {
   /* padding: 150px 0 0;   */
-  padding-top: 3rem;
+  padding-top: 10rem;
   position: relative;
 }
 
@@ -782,6 +782,7 @@ p.down {
   /* align-items: center; */
   justify-content: center;
   /* text-align: center; */
+  margin-bottom: 23%;
 }
 
 /*-----------------------------------*\

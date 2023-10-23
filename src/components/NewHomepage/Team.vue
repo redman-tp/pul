@@ -30,7 +30,7 @@
             <a
               v-if="staff.linkedin !== ''"
               target="_blank"
-              :href="staff.linkedin"
+              :href="staff.linkedIn"
             >
               <i class="fa-brands fa-linkedin-in"></i>
             </a>

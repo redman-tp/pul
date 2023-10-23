@@ -30,25 +30,66 @@
 
           <ul class="navbar-list">
             <li class="navbar-item">
-              <div @click="goHome" class="navbar-link" data-nav-link>Home</div>
+              <q-btn
+                flat
+                no-wrap
+                no-caps
+                @click="goHome"
+                class="navbar-link text-weight-bold"
+                data-nav-link
+                >Home</q-btn
+              >
             </li>
 
             <li class="navbar-item">
-              <div @click="gotoAbout" class="navbar-link" data-nav-link>
+              <q-btn
+                flat
+                no-wrap
+                no-caps
+                @click="gotoAbout"
+                class="navbar-link text-weight-bold"
+                data-nav-link
+              >
                 About
-              </div>
+              </q-btn>
             </li>
 
             <li class="navbar-item">
-              <div @click="gotoservices" class="navbar-link" data-nav-link>
+              <q-btn
+                flat
+                no-caps
+                no-wrap
+                @click="gotoservices"
+                class="navbar-link text-weight-bold"
+                data-nav-link
+              >
                 Service
-              </div>
+              </q-btn>
             </li>
 
             <li class="navbar-item">
-              <div @click="gotocontact" class="navbar-link" data-nav-link>
+              <q-btn
+                flat
+                no-wrap
+                no-caps
+                @click="gotocontact"
+                class="navbar-link text-weight-bold"
+                data-nav-link
+              >
                 Contact
-              </div>
+              </q-btn>
+            </li>
+            <li class="navbar-item">
+              <q-btn
+                flat
+                no-wrap
+                :to="{ name: 'trainers' }"
+                no-caps
+                class="navbar-link text-weight-bold"
+                data-nav-link
+              >
+                Trainers
+              </q-btn>
             </li>
             <li class="navbar-item addMa">
               <q-btn
@@ -183,6 +224,10 @@ export default {
 .has-after {
   position: relative;
   z-index: 1;
+}
+
+.q-btn {
+  padding: 1px;
 }
 
 .has-before::before,
