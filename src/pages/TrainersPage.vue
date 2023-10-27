@@ -1,6 +1,9 @@
 <template>
   <div>
     <section class="section-team">
+      <div class="container q-mt-xl">
+        <img src="/images/flow2.png" alt="" />
+      </div>
       <div v-for="(trainer, index) in trainers" :key="index" class="container">
         <div class="row justify-center text-center">
           <div class="col-md-12 col-lg-6">
@@ -42,6 +45,7 @@
         </div>
       </div>
     </section>
+    <TrainingGalleryVue />
     <q-dialog v-model="readModal">
       <q-card>
         <q-card-section>
@@ -66,6 +70,7 @@
 </template>
 
 <script setup>
+import TrainingGalleryVue from "src/components/TrainingGallery.vue";
 import { computed, ref } from "vue";
 let readModal = ref(false);
 let tutorObj = ref({});
@@ -89,46 +94,46 @@ const classObject = (param) => {
   }
 };
 let trainers = ref([
-  {
-    title: "Master Trainer",
-    trainersData: [
-      {
-        name: "Michael Ogungbe",
-        role: "",
-        img: "/images/bigmike.png",
-        icon: "",
-        role_icon: false,
-      },
-    ],
-  },
-  {
-    title: "Cordinator and Accessor",
-    trainersData: [
-      {
-        name: "Michael Ogungbe",
-        role: "",
-        role_icon: false,
-        img: "/images/bigmike.png",
-      },
-      {
-        name: "Ayuba Dauda",
-        role: "",
-        role_icon: false,
-        img: "/images/ayuba.png",
-      },
-    ],
-  },
-  {
-    title: "GESI and Safe guarding personel",
-    trainersData: [
-      {
-        name: "Michael Ogungbe",
-        role: "",
-        role_icon: false,
-        img: "/images/bigmike.png",
-      },
-    ],
-  },
+  // {
+  //   title: "Master Trainer",
+  //   trainersData: [
+  //     {
+  //       name: "Michael Ogungbe",
+  //       role: "",
+  //       img: "/images/bigmike.png",
+  //       icon: "",
+  //       role_icon: false,
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Cordinator and Accessor",
+  //   trainersData: [
+  //     {
+  //       name: "Michael Ogungbe",
+  //       role: "",
+  //       role_icon: false,
+  //       img: "/images/bigmike.png",
+  //     },
+  //     {
+  //       name: "Ayuba Dauda",
+  //       role: "",
+  //       role_icon: false,
+  //       img: "/images/ayuba.png",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "GESI and Safe guarding personel",
+  //   trainersData: [
+  //     {
+  //       name: "Michael Ogungbe",
+  //       role: "",
+  //       role_icon: false,
+  //       img: "/images/bigmike.png",
+  //     },
+  //   ],
+  // },
   {
     title: "Trainers",
     trainersData: [
@@ -325,11 +330,12 @@ let trainers = ref([
     title: "Digital Marketing",
     trainersData: [
       {
-        name: "Michael Ogungbe",
+        name: "Kehinde Odeyemi",
         role: "",
         role_icon: true,
-        img: "/images/bigmike.png",
+        img: "/images/kehind.jpeg",
         icon: "fa-solid fa-globe",
+        bio: "Kehinde ODEYEMI is a humanitarian and a digital marketer. He is the Founder of The Echo Digital Marketing Company (the organizer of T.E.D Invasion Conference). He founded T.E.D company on the 1st of August 2017 and has led the company to handle over 1700 jobs or solved over 1700 problems for companies, businesses and individuals within 75 months of inception.",
       },
     ],
   },
@@ -504,9 +510,6 @@ let trainers = ref([
   }
 }
 @media (max-width: 700px) {
-  .section-team {
-    margin-top: 3rem !important;
-  }
   .section-team .header-section .title {
     font-size: 30px;
   }
