@@ -2,6 +2,19 @@
   <div>
     <section class="section-team">
       <div class="container q-mt-xl">
+        <div class="header-section">
+          <h2 class="title">Training Structure</h2>
+        </div>
+        <p class="text-center q-mb-lg">
+          At GreyAcademy, we take pride in our comprehensive and meticulously
+          designed training structure. Our commitment to providing the highest
+          quality education is reflected in the way we structure our training
+          programs. Whether you're a newcomer looking to start your educational
+          journey or a seasoned professional seeking to enhance your skills, our
+          training structure is tailored to meet your needs. We ensure that
+          every participant gains a strong foundation and is equipped with the
+          knowledge and tools necessary to excel in their chosen field.
+        </p>
         <img src="/images/flow2.png" alt="" />
       </div>
       <div v-for="(trainer, index) in trainers" :key="index" class="container">
@@ -9,6 +22,7 @@
           <div class="col-md-12 col-lg-6">
             <div class="header-section">
               <h2 class="title">{{ trainer.title }}</h2>
+              <p>{{ trainer.paragraph }}</p>
             </div>
           </div>
         </div>
@@ -136,6 +150,8 @@ let trainers = ref([
   // },
   {
     title: "Trainers",
+    paragraph:
+      "Our trainers are the heart and soul of GreyAcademy. We believe that the expertise and experience of our instructors play a crucial role in shaping the learning experience. Our team of trainers consists of industry experts, scholars, and professionals who bring a wealth of knowledge to the table. They are dedicated to nurturing talent, sharing their expertise, and guiding our students through their educational journey. Get to know our trainers and their impressive profiles, as they are the driving force behind the success stories of our students.",
     trainersData: [
       {
         name: "Paul Udo",
@@ -519,6 +535,11 @@ let trainers = ref([
   }
   .q-card {
     min-width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  p {
+    font-size: 14px;
   }
 }
 </style>

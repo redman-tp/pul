@@ -3,7 +3,18 @@
     <div class="row justify-center text-center">
       <div class="col-md-12 col-lg-6">
         <div class="header-section">
-          <h2 class="title">Gallery</h2>
+          <h2 class="title">Pictorials showing past training programs</h2>
+          <p class="q-mt-lg">
+            A picture is worth a thousand words, and at GreyAcademy, we believe
+            that showcasing our past training programs through captivating
+            pictorials is a testament to the quality of education we provide.
+            These visuals provide a glimpse into the dynamic and engaging
+            learning experiences our participants have enjoyed in the past.
+            Explore our pictorial gallery to see the vibrancy, enthusiasm, and
+            learning that have characterized our training programs over the
+            years. These images are a reflection of the real impact GreyAcademy
+            has made on the lives and careers of our students.
+          </p>
         </div>
       </div>
     </div>
@@ -190,6 +201,10 @@ img {
 @media (max-width: 500px) {
   .grid-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  p {
+    font-size: 14px;
   }
 }
 </style>
