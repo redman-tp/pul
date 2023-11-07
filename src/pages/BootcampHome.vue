@@ -1,43 +1,32 @@
 <template>
   <main>
     <article>
-      <div class="row upskill max flexer items-center q-pt-xl q-mx-xl">
-        <div class="col-md-6 col-sm-6 col-xs-12">
+      <div
+        style="gap: 1rem"
+        class="upskill max flexer items-center q-pt-xl q-mx-xl"
+      >
+        <div class="">
           <div class="dt q-pb-md">
             <div class="text-h5 text-weight-bold text-black">
-              Upskill with GreyAcademy
+              Empowering Tech Talents for the Future: GreyAcademy's Innovative
+              Learning Ecosystem
             </div>
-            <div class="text-h6 text-black">From Skills to Jobs</div>
+            <div class="text-h6 text-black">Introduction</div>
           </div>
 
           <div class="text-black">
-            If you’re ready to upskill with GreyAcademy Now’s your chance to
-            roll with champions! GreyAcademy is thrilled to announce our
-            comprehensive training program starting on 1st May 2023. Our program
-            is designed to equip individuals with the skills needed to succeed
-            in today's fast-paced digital world. Join this cohort.
-          </div>
-
-          <div class="bt">
-            <q-btn
-              :to="{
-                name: 'courses',
-              }"
-              text-color="white"
-              color="red"
-              class="q-mt-sm"
-              label="Enroll"
-            />
+            GreyAcademy is dedicated to empowering individuals with premium tech
+            skills and preparing them for successful careers in the digital era.
+            We offer a range of comprehensive bootcamp programs designed by
+            industry experts in collaboration with top companies, providing
+            learners with hands-on experiences and real-world projects. With a
+            focus on immersive learning, lifelong skill development and
+            international work experiences, GreyAcademy aims to shape the next
+            generation of tech professionals.
           </div>
         </div>
 
-        <div class="col-md-6 col-sm-6 col-xs-12">
-          <div class="show q-pb-md">
-            <div class="text-h5 text-weight-bold text-black">
-              Upskill with GreyAcademy
-            </div>
-            <div class="text-h6 text-black">From Skills to Jobs</div>
-          </div>
+        <div class="">
           <img src="/images/course.jpg" alt="" />
         </div>
       </div>
@@ -241,6 +230,278 @@
         <section id="service" class="hotcake_courses">
           <h3>Our HotCake Courses</h3>
           <Ourstaff />
+        </section>
+
+        <section class="info container">
+          <h4 class="text-h4 q-mt-lg text-black text-weight-bold">
+            Here are some specific features, support and materials for the
+            courses offered by GreyAcademy
+          </h4>
+
+          <div class="q-my-xl">
+            <div class="text-h5 text-weight-bold text-black">
+              Specific Features
+            </div>
+            <ul>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    AI Avatar Instructors:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Introductory videos and course overviews delivered by AI
+                    avatars, providing an innovative learning experience.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Immersive Learning Platform:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >An intuitive and collaborative online platform powered by
+                    analytics, enabling learners to access course content and
+                    track progress.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Project-Based Learning:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Hands-on projects and real-world business cases to apply
+                    theoretical knowledge to practical scenarios, ensuring
+                    learners gain relevant skills.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Engaging Introductions:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >GreyAcademy employs AI avatars as instructors to deliver
+                    engaging and interactive course introductions, setting the
+                    tone for a dynamic learning experience.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Clear Communication:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >AI avatars present course overviews and key information
+                    with clarity, ensuring learners comprehend the objectives
+                    and expectations of each program.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Personalised Experience:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >AI avatars can adapt their instructional style to cater to
+                    individual learner preferences, promoting a more
+                    personalised and effective learning journey.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Continuously Updated Content:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >AI avatars facilitate the integration of the latest
+                    industry trends and advancements into the courses, keeping
+                    the content relevant and up-to-date.</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="q-my-xl">
+            <div class="text-h5 text-weight-bold text-black">
+              Hotcake Community Access:
+            </div>
+            <ul>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Community Access:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Participation in an online community of tech enthusiasts
+                    and professionals, offering networking opportunities and
+                    peer feedback.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Collaborative Space:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >GreyAcademy's Hotcake Community provides a supportive
+                    network for aspiring tech professionals, enabling peer
+                    learning and collaboration.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Training & Interview Prep:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Members of the Hotcake Community have access to exclusive
+                    training programs, personalised interview coaching and
+                    informative webinars to enhance their job readiness.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Talent Showcase:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >The Hotcake Community platform allows members to showcase
+                    their portfolios and projects, increasing their visibility
+                    to potential employers.</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="q-my-xl">
+            <div class="text-h5 text-weight-bold text-black">Support:</div>
+            <ul>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Experiential Learning:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Our bootcamps follow a 2 to 6 months experiential learning
+                    model that combines self-paced content and interactive live
+                    classes to reinforce learning outcomes.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Dedicated Learner Support Team:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Learners have access to a dedicated support team to assist
+                    with technical or administrative issues related to the
+                    virtual courses.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Real-life Business Cases:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Each program is centred around real-world business
+                    scenarios, allowing learners to apply their skills and gain
+                    practical experience.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Portfolio Building:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Throughout the bootcamps, participants will work on live
+                    projects and capstone assignments, creating a portfolio to
+                    showcase their abilities to potential employers.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Personalised Mentoring:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >One-on-one guidance and feedback from instructors to
+                    address individual learning needs and provide ongoing
+                    support.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Career Coaching Services:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Job and career coaching services, including Linkedin
+                    optimisation, crafting impressive CVs tailored for the tech
+                    industry, interview preparation and access to job
+                    opportunities in the tech industry.</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="q-my-xl">
+            <div class="text-h5 text-weight-bold text-black">Materials:</div>
+            <ul>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Comprehensive Course Content:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Access to high-quality course materials, including video
+                    lectures, reading materials, and supplementary
+                    resources.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Live Coding Sessions:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Real-time coding sessions for programming-related courses,
+                    allowing learners to code along with instructors and
+                    practise their skills.</span
+                  >
+                </p>
+              </li>
+              <li>
+                <p>
+                  <span class="text-weight-bold text-h6 text-black">
+                    Capstone Projects:
+                  </span>
+                  <span class="text-h6 text-black"
+                    >Opportunities to work on capstone projects to build a
+                    professional portfolio and demonstrate proficiency in the
+                    chosen field.</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section class="join">
@@ -492,6 +753,11 @@ export default {
   color: #0008c5;
 }
 
+.info li {
+  margin: 0.5rem 0;
+  max-width: 1000px;
+}
+
 .quotes div {
   background: #ebebeb;
   border-radius: 25.6531px;
@@ -706,6 +972,16 @@ export default {
 
 .upskill {
   padding: 150px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.upskill div:nth-child(2) {
+  height: 100%;
+}
+.upskill img {
+  height: 100%;
+  border-radius: 6px;
 }
 .hero svg {
   position: absolute;
@@ -1234,9 +1510,9 @@ p.down {
     display: block;
   }
 
-  .dt {
+  /* .dt {
     display: none;
-  }
+  } */
 }
 @media (max-width: 600px) {
   .hotcake_courses {
@@ -1256,7 +1532,9 @@ p.down {
   .join_hold .begin {
     font-size: 20.418px;
   }
-
+  .upskill {
+    grid-template-columns: 1fr;
+  }
   .quotes {
     display: none;
   }

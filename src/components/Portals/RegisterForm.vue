@@ -132,6 +132,14 @@
                           </q-item>
                         </template>
                       </q-select>
+                      <q-select
+                        filled
+                        dense
+                        square
+                        :options="locationOptions"
+                        v-model="data.data[location.name]"
+                        name="location"
+                      />
                     </div>
                   </div>
                 </q-step>
@@ -323,6 +331,7 @@ export default {
     return {
       errors: [],
       errorMsg: [],
+      locationOptions: ["Physical", "Online"],
       loading: false,
       data: { data: {}, payment: 1 },
       step: ref(1),

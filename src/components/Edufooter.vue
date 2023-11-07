@@ -149,11 +149,15 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Hire Our Grads</a>
+              <a href="javascript:void(0)" class="footer-link"
+                >Hire Our Grads</a
+              >
             </li>
 
             <li>
-              <a href="#" class="footer-link">Collaborate With Us</a>
+              <a href="javascript:void(0)" class="footer-link"
+                >Collaborate With Us</a
+              >
             </li>
           </ul>
 
@@ -162,10 +166,12 @@
               <p class="footer-link-title">Resources</p>
             </li>
             <li>
-              <a href="#" class="footer-link">Privacy And Policy</a>
+              <a href="javascript:void(0)" class="footer-link"
+                >Privacy And Policy</a
+              >
             </li>
             <li>
-              <a href="#" class="footer-link">FAQs</a>
+              <a href="javascript:void(0)" class="footer-link">FAQs</a>
             </li>
             <!-- <li>
               <a href="#" class="footer-link">Our Story</a>
@@ -186,12 +192,12 @@
               <a href="#" class="footer-link">FAQs</a>
             </li> -->
             <li>
-              <a href="#" class="footer-link">Our Story</a>
+              <a href="javascript:void(0)" class="footer-link">Our Story</a>
             </li>
 
-            <li>
+            <!-- <li>
               <a href="#" class="footer-link">Blog</a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>
@@ -200,9 +206,11 @@
     <div class="footer-bottom">
       <div class="container">
         <p class="copyright">
-          &copy; 2022
-          <a href="">2022 GreyAcademy, Nigeria. All rights reserved</a>. All
-          right reserved
+          &copy;
+          <a href=""
+            >{{ new Date().getFullYear() }} GreyAcademy, Nigeria. All rights
+            reserved</a
+          >. All right reserved
         </p>
       </div>
     </div>
