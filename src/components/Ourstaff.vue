@@ -1062,7 +1062,7 @@ figure.effect-sadie {
 }
 figure.effect-sadie:hover {
   opacity: 0.9;
-  transition: 2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
 
 .grid figure h2,
@@ -1163,7 +1163,7 @@ figure.effect-sadie .watch {
   transform: translate3d(0, 10px, 0);
 }
 
-figure.effect-sadie:hover h2 {
+/* figure.effect-sadie:hover h2 {
   color: #fff;
   -webkit-transform: translate3d(0, 25%, 0) translate3d(0, -70px, 0);
   transform: translate3d(0, 25%, 0) translate3d(0, -70px, 0);
@@ -1171,23 +1171,24 @@ figure.effect-sadie:hover h2 {
   transition: all 2s ease-in-out;
   padding: 1rem 0 4rem;
   top: 37%;
-}
+} */
 figure.effect-sadie:hover img {
   background: #051234;
-  transition: all 2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  /* transition: all 2s ease-in-out; */
   opacity: 0.3;
 }
 figure.effect-sadie:hover .name {
   display: none;
 }
 
-figure.effect-sadie:hover figcaption::before,
+/* figure.effect-sadie:hover figcaption::before,
 figure.effect-sadie:hover .watch {
   opacity: 1;
   -webkit-transform: translate3d(0, -180px, 0);
   transform: translate3d(0, -180px, 0);
   transition: all 2s ease-in-out;
-}
+} */
 
 @media (min-width: 1200px) {
   .grid {
