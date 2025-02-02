@@ -24,13 +24,7 @@
           class="q-mr-xs"
         />
 
-        <q-input
-          outlined
-          dense
-          debounce="300"
-          v-model="filter"
-          placeholder="Search"
-        >
+        <q-input outlined dense debounce="300" v-model="filter" placeholder="Search">
           <template v-slot:append>
             <q-icon name="search" />
           </template>
@@ -45,7 +39,7 @@
           v-if="mode === 'list'"
         >
           <q-tooltip :disable="$q.platform.is.mobile">
-            {{ props.inFullscreen ? "Exit Fullscreen" : "Toggle Fullscreen" }}
+            {{ props.inFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen' }}
           </q-tooltip>
         </q-btn>
 
@@ -55,13 +49,13 @@
           dense
           :icon="mode === 'grid' ? 'list' : 'grid_on'"
           @click="
-            mode = mode === 'grid' ? 'list' : 'grid';
-            separator = mode === 'grid' ? 'none' : 'horizontal';
+            mode = mode === 'grid' ? 'list' : 'grid'
+            separator = mode === 'grid' ? 'none' : 'horizontal'
           "
           v-if="!props.inFullscreen"
         >
           <q-tooltip :disable="$q.platform.is.mobile">{{
-            mode === "grid" ? "List" : "Grid"
+            mode === 'grid' ? 'List' : 'Grid'
           }}</q-tooltip>
         </q-btn>
 
@@ -136,7 +130,7 @@
         container="#contentContainer"
         v-model="currentPage"
         @loading="loadingMore = true"
-        @loaded="(items = $event), (loadingMore = false)"
+        @loaded="((items = $event), (loadingMore = false))"
       />
     </q-card-actions>
   </div>
@@ -180,13 +174,7 @@
           <div class="row q-gutter-sm">
             <div class="col">
               <q-item-label class="q-pb-xs">Name</q-item-label>
-              <q-input
-                dense
-                outlined
-                name="name"
-                v-model="data.name"
-                label="Name"
-              />
+              <q-input dense outlined name="name" v-model="data.name" label="Name" />
               <div class="error" v-if="errors.name">{{ errors.name[0] }}</div>
             </div>
             <div class="col">
@@ -207,13 +195,7 @@
           <div class="row q-gutter-sm">
             <div class="col">
               <q-item-label class="q-pb-xs">Price</q-item-label>
-              <q-input
-                dense
-                outlined
-                name="price"
-                v-model="data.price"
-                label="price"
-              />
+              <q-input dense outlined name="price" v-model="data.price" label="price" />
               <div class="error" v-if="errors.price">
                 {{ errors.price[0] }}
               </div>
@@ -263,77 +245,76 @@
 </template>
 
 <script>
-import { ref, computed } from "vue";
-import { exportFile, useMeta } from "quasar";
-import TPagination from "../../components/TPagination.vue";
+import { ref, computed } from 'vue'
+import { exportFile, useMeta } from 'quasar'
+import TPagination from '../../components/TPagination.vue'
 const columns = [
   {
-    name: "id",
+    name: 'id',
     required: true,
-    label: "ID",
-    align: "left",
-    field: "id",
+    label: 'ID',
+    align: 'left',
+    field: 'id',
     sortable: true,
   },
   {
-    name: "name",
+    name: 'name',
     required: true,
-    label: "Name",
-    align: "left",
-    field: "name",
+    label: 'Name',
+    align: 'left',
+    field: 'name',
     sortable: true,
   },
   {
-    name: "size",
+    name: 'size',
     required: true,
-    label: "Size",
-    align: "left",
-    field: "size",
+    label: 'Size',
+    align: 'left',
+    field: 'size',
     sortable: true,
   },
 
   {
-    name: "info",
+    name: 'info',
     required: true,
-    label: "Info",
-    align: "left",
-    field: "info",
+    label: 'Info',
+    align: 'left',
+    field: 'info',
     // field: (row) => row.meta.substr(0, 50),
     sortable: true,
   },
 
   {
-    name: "actions",
+    name: 'actions',
     required: true,
-    label: "Actions",
-    align: "left",
+    label: 'Actions',
+    align: 'left',
     field: (row) => row.id,
     sortable: false,
   },
-];
+]
 function wrapCsvValue(val, formatFn) {
-  let formatted = formatFn !== void 0 ? formatFn(val) : val;
-  formatted =
-    formatted === void 0 || formatted === null ? "" : String(formatted);
-  formatted = formatted.split('"').join('""');
-  return `"${formatted}"`;
+  let formatted = formatFn !== void 0 ? formatFn(val) : val
+  formatted = formatted === void 0 || formatted === null ? '' : String(formatted)
+  formatted = formatted.split('"').join('""')
+  return `"${formatted}"`
 }
 export default {
   setup() {
     useMeta({
-      title: "Upload Pages",
-    });
+      title: 'Upload Pages',
+    })
   },
   components: {
     TPagination,
   },
   data() {
     const pagination = ref({
-      sortBy: "desc",
+      sortBy: 'desc',
       descending: false,
       page: 1,
       rowsPerPage: 8,
-    });
+    })
     return {
       columns,
       selected: [],
@@ -346,13 +327,13 @@ export default {
       files: null,
       editstate: false,
       createstate: null,
-      spaceId: "",
+      spaceId: '',
       pagination,
-      filter: "",
-      curl: "",
-      separator: "",
-      mode: "list",
-      role: "fruitbay",
+      filter: '',
+      curl: '',
+      separator: '',
+      mode: 'list',
+      role: 'fruitbay',
       items: [],
       meta: {},
       links: {},
@@ -370,12 +351,12 @@ export default {
         deleteBtn: [],
         save: [],
       },
-    };
+    }
   },
 
   computed: {
     pagesNumber() {
-      return Math.ceil(this.rows.length / this.pagination.rowsPerPage);
+      return Math.ceil(this.rows.length / this.pagination.rowsPerPage)
     },
   },
 
@@ -383,176 +364,170 @@ export default {
     this.onRequest({
       pagination: this.pagination,
       filter: undefined,
-    });
+    })
   },
 
   methods: {
     setFile(prop) {
-      this.fruitbay.image = prop;
+      this.fruitbay.image = prop
     },
     setCategoryId(option) {
-      this.$refs._dh.toggleOption(option.opt);
-      this.fruitbay.fruit_bay_category_id = this.category.id;
+      this.$refs._dh.toggleOption(option.opt)
+      this.fruitbay.fruit_bay_category_id = this.category.id
     },
     onRequest(props) {
-      this.loading = true;
-      const url = `admin/spaces`;
-      this.curl = url;
+      this.loading = true
+      const url = `admin/spaces`
+      this.curl = url
       this.$api
         .get(url)
         .then((response) => {
-          console.log(response);
-          this.loading = false;
-          this.rows = response.data.data;
-          this.items = response.data.data;
-          this.links = response.data.links;
-          this.meta = response.data.meta;
+          console.log(response)
+          this.loading = false
+          this.rows = response.data.data
+          this.items = response.data.data
+          this.links = response.data.links
+          this.meta = response.data.meta
         })
         .catch(({ response }) => {
-          console.log(response);
-          this.loading = false;
-          this.rows = [];
-        });
+          console.log(response)
+          this.loading = false
+          this.rows = []
+        })
     },
 
     createSpace() {
-      this.editstate = false;
-      this.create_Page = true;
-      this.data = {};
+      this.editstate = false
+      this.create_Page = true
+      this.data = {}
     },
     createPage(e) {
-      e.preventDefault();
-      this.loading = true;
+      e.preventDefault()
+      this.loading = true
       this.$api
         .post(`admin/spaces`, this.data)
         .then(({ data }) => {
-          console.log("added", data);
-          this.refreshPage();
-          this.loading = false;
-          this.create_Page = false;
-          this.errors = [];
+          console.log('added', data)
+          this.refreshPage()
+          this.loading = false
+          this.create_Page = false
+          this.errors = []
           this.$q.notify({
             message: data.message,
-            color: "green",
-            position: "top",
-          });
+            color: 'green',
+            position: 'top',
+          })
         })
         .catch((e) => {
-          let error = this.$plugins.reader.error(e);
-          this.errors = error.errors || {};
-          this.loading = false;
+          let error = this.$plugins.reader.error(e)
+          this.errors = error.errors || {}
+          this.loading = false
 
-          this.$helper.notify(error.message || error, error.status || "error");
+          this.$helper.notify(error.message || error, error.status || 'error')
           this.$q.notify({
-            message: "Error",
-            color: "red",
-            position: "top",
-          });
-        });
+            message: 'Error',
+            color: 'red',
+            position: 'top',
+          })
+        })
     },
     EditFruitbay(manga) {
-      this.editstate = true;
-      this.create_Page = true;
-      console.log(manga);
-      let pageid = manga.id;
-      this.spaceId = pageid;
-      this.data.info = manga.info;
-      this.data.name = manga.name;
-      this.data.max_occupants = manga.max_occupants;
-      this.data.price = manga.price;
+      this.editstate = true
+      this.create_Page = true
+      let pageid = manga.id
+      this.spaceId = pageid
+      this.data.info = manga.info
+      this.data.name = manga.name
+      this.data.max_occupants = manga.max_occupants
+      this.data.price = manga.price
     },
 
     editedFunction(e) {
-      e.preventDefault();
-      let spaceId = this.spaceId;
-      this.editLoad = true;
+      e.preventDefault()
+      let spaceId = this.spaceId
+      this.editLoad = true
       this.$api
         .put(`admin/spaces/${spaceId}`, this.data)
         .then(({ data }) => {
-          console.log("edited", data);
-          this.refreshPage();
-          this.editLoad = false;
-          this.create_Page = false;
-          this.image = null;
-          this.errors = [];
+          console.log('edited', data)
+          this.refreshPage()
+          this.editLoad = false
+          this.create_Page = false
+          this.image = null
+          this.errors = []
         })
         .catch((e) => {
-          this.editLoad = false;
+          this.editLoad = false
 
-          this.errors = error.errors || {};
-          this.$helper.notify(error.message || error, error.status || "error");
-        });
+          this.errors = e.errors || {}
+          this.$helper.notify(e.message || e, e.status || 'error')
+        })
     },
     deleteFruitbays(id) {
-      console.log(id);
-      const ids =
-        (id && typeof id === "string") || typeof id === "number"
-          ? [id]
-          : this.selected.map((e) => e.id);
       this.$helper
         .notify(
-          "Are you sure you want to delete this fruitbay(s)? This action may be irreversible!",
-          "error",
+          'Are you sure you want to delete this fruitbay(s)? This action may be irreversible!',
+          'error',
           true,
-          "Yes, Delete!"
+          'Yes, Delete!',
         )
         .onOk(() => {
-          if (id) this.loaders.deleteBtn[id] = true;
-          this.loaders.delete = true;
+          if (id) this.loaders.deleteBtn[id] = true
+          this.loaders.delete = true
           this.$api
             .delete(`admin/spaces/${id}`)
             .then((response) => {
-              this.loaders.delete = false;
-              if (id) this.loaders.deleteBtn[id] = false;
+              this.loaders.delete = false
+              if (id) this.loaders.deleteBtn[id] = false
 
-              this.selected = [];
-              this.refreshPage();
+              this.selected = []
+              this.refreshPage()
             })
             .catch((response) => {
-              console.log(response);
-              this.loaders.delete = false;
-              if (id) this.loaders.deleteBtn[id] = false;
-            });
-        });
+              console.log(response)
+              this.loaders.delete = false
+              if (id) this.loaders.deleteBtn[id] = false
+            })
+        })
     },
 
     deletemultiple(id) {
       const ids =
-        (id && typeof id === "string") || typeof id === "number"
+        (id && typeof id === 'string') || typeof id === 'number'
           ? [id]
-          : this.selected.map((e) => e.id);
+          : this.selected.map((e) => e.id)
 
-      console.log(ids);
+      console.log(ids)
       this.$api
-        .delete("admin/spaces", { params: { items: ids } })
+        .delete('admin/spaces', { params: { items: ids } })
         .then((response) => {
-          this.loaders.delete = false;
-          if (id) this.loaders.deleteBtn[id] = false;
-          this.selected = [];
-          this.refreshPage();
+          this.loaders.delete = false
+          if (id) this.loaders.deleteBtn[id] = false
+          this.selected = []
+          this.refreshPage()
         })
         .catch((response) => {
-          console.log(response);
-          this.loaders.delete = false;
-          if (id) this.loaders.deleteBtn[id] = false;
-        });
+          console.log(response)
+          this.loaders.delete = false
+          if (id) this.loaders.deleteBtn[id] = false
+        })
     },
 
     refreshPage() {
-      if (this.curl !== "") {
-        this.loading = true;
+      if (this.curl !== '') {
+        this.loading = true
         this.$api
           .get(this.curl)
           .then(({ data }) => {
-            this.loading = false;
-            this.rows = data.data;
-            console.log(data);
+            this.loading = false
+            this.rows = data.data
+            console.log(data)
           })
           .catch(({ response }) => {
-            console.log(response);
-            this.loading = false;
-            this.rows = [];
-          });
+            console.log(response)
+            this.loading = false
+            this.rows = []
+          })
       }
     },
 
@@ -564,27 +539,27 @@ export default {
             this.columns
               .map((col) =>
                 wrapCsvValue(
-                  typeof col.field === "function"
+                  typeof col.field === 'function'
                     ? col.field(row)
                     : row[col.field === void 0 ? col.name : col.field],
-                  col.format
-                )
+                  col.format,
+                ),
               )
-              .join(",")
-          )
+              .join(','),
+          ),
         )
-        .join("\r\n");
-      const status = exportFile("fruitbay-management.csv", content, "text/csv");
+        .join('\r\n')
+      const status = exportFile('fruitbay-management.csv', content, 'text/csv')
       if (status !== true) {
         this.$q.notify({
-          message: "Browser denied file download...",
-          color: "negative",
-          icon: "warning",
-        });
+          message: 'Browser denied file download...',
+          color: 'negative',
+          icon: 'warning',
+        })
       }
     },
   },
-};
+}
 </script>
 
 <style scoped>

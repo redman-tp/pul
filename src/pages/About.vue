@@ -20,31 +20,25 @@
           <div class="about-us__data">
             <h2 class="section__title about-us__title">About Us</h2>
             <p class="about-us__description">
-              We are duly incorporated with the Nigerian Corperate Affairs
-              Commission(CAC) as Greysoft Technologies Limited with RC.1849896
-              under the Companies Allied Matters Act with a mission to help
-              people leverage technology for improved livelihood. We are a team
-              of innovators who have gained a reputation in delivering quality
-              services by delivering time critical solutions to solve urban and
-              rural problems, while continuously evolving to match the emerging
-              digital and creative trend. We have a dedicated team of
-              high-quality professionals who constantly work with diverse
-              industrial players in varied sectors like cyber security,
-              blockchain technology, health, agriculture, biometrics, education,
-              banking etc. We are also a foremost authority in digital literacy
-              (Certiport Certified) and as a result have trained several
-              individuals and institutions in partnership with academic
-              governing boards as well as private sectors. Our trainees are
-              usually provided with access to freelance platforms such as
-              Upwork, Wework, Fiverr, OneFive etc. to enable them earn a living
-              based on skills they have acquired. This is totally in line with
-              our global vision – “Helping people leverage technology for
-              improved livelihood”. As a collaborative partner, we also aid
-              organizations and their partners to adopt emerging technologies
-              like Machine learning, Cloud Computing, AR, VR, IoT, data science
-              & Artificial intelligence for improved efficiency and
-              effectiveness which customarily transcends to business expansion
-              and scaling as a result of the inevitable growth that naturally
+              We are duly incorporated with the Nigerian Corperate Affairs Commission(CAC) as
+              Greysoft Technologies Limited with RC.1849896 under the Companies Allied Matters Act
+              with a mission to help people leverage technology for improved livelihood. We are a
+              team of innovators who have gained a reputation in delivering quality services by
+              delivering time critical solutions to solve urban and rural problems, while
+              continuously evolving to match the emerging digital and creative trend. We have a
+              dedicated team of high-quality professionals who constantly work with diverse
+              industrial players in varied sectors like cyber security, blockchain technology,
+              health, agriculture, biometrics, education, banking etc. We are also a foremost
+              authority in digital literacy (Certiport Certified) and as a result have trained
+              several individuals and institutions in partnership with academic governing boards as
+              well as private sectors. Our trainees are usually provided with access to freelance
+              platforms such as Upwork, Wework, Fiverr, OneFive etc. to enable them earn a living
+              based on skills they have acquired. This is totally in line with our global vision –
+              “Helping people leverage technology for improved livelihood”. As a collaborative
+              partner, we also aid organizations and their partners to adopt emerging technologies
+              like Machine learning, Cloud Computing, AR, VR, IoT, data science & Artificial
+              intelligence for improved efficiency and effectiveness which customarily transcends to
+              business expansion and scaling as a result of the inevitable growth that naturally
               ensues.
             </p>
             <a href="about.html" class="button">Contact Us</a>
@@ -57,14 +51,12 @@
           <div class="about__data">
             <h2 class="section__title about__title">Digital Literacy</h2>
             <p class="about__description">
-              We are also a foremost authority in digital literacy (Certiport
-              Certified) and as a result have trained several individuals and
-              institutions in partnership with academic governing boards as well
-              as private sectors. Our trainees are usually provided with access
-              to freelance platforms such as Upwork, Wework, Fiverr, OneFive
-              etc. to enable them earn a living based on skills they have
-              acquired. This is totally in line with our global vision –
-              “Helping people leverage technology for improved livelihood”.
+              We are also a foremost authority in digital literacy (Certiport Certified) and as a
+              result have trained several individuals and institutions in partnership with academic
+              governing boards as well as private sectors. Our trainees are usually provided with
+              access to freelance platforms such as Upwork, Wework, Fiverr, OneFive etc. to enable
+              them earn a living based on skills they have acquired. This is totally in line with
+              our global vision – “Helping people leverage technology for improved livelihood”.
             </p>
           </div>
           <div class="about__img" data-aos="zoom-in">
@@ -81,12 +73,11 @@
           <div class="about__data">
             <h2 class="section__title about__title">Collaborative Partner</h2>
             <p class="about__description">
-              As a collaborative partner, we also aid organizations and their
-              partners to adopt emerging technologies like Machine learning,
-              Cloud Computing, AR, VR, IoT, data science & Artificial
-              intelligence for improved efficiency and effectiveness which
-              customarily transcends to business expansion and scaling as a
-              result of the inevitable growth that naturally ensues.
+              As a collaborative partner, we also aid organizations and their partners to adopt
+              emerging technologies like Machine learning, Cloud Computing, AR, VR, IoT, data
+              science & Artificial intelligence for improved efficiency and effectiveness which
+              customarily transcends to business expansion and scaling as a result of the inevitable
+              growth that naturally ensues.
             </p>
           </div>
         </div>
@@ -102,18 +93,13 @@
                 <i class="fas fa-eye fa-3x"></i>
 
                 <h2>Vision</h2>
-                <p>
-                  Increased access to digital opportunities for improved
-                  livelihood.
-                </p>
+                <p>Increased access to digital opportunities for improved livelihood.</p>
               </div>
               <div class="card">
                 <i class="fas fa-bullseye fa-3x"></i>
 
                 <h2>Mission</h2>
-                <p>
-                  Helping people leverage technology for improved livelihood.
-                </p>
+                <p>Helping people leverage technology for improved livelihood.</p>
               </div>
 
               <div class="card">
@@ -131,10 +117,9 @@
         <div class="team-members container">
           <h2>Our Team</h2>
           <p class="lead text-center">
-            We have a prolific team of experienced innovators who have
-            consistently turned challenges into opportunities creating
-            market-ready solutions that add value to the lives of the community
-            we serve.
+            We have a prolific team of experienced innovators who have consistently turned
+            challenges into opportunities creating market-ready solutions that add value to the
+            lives of the community we serve.
           </p>
 
           <div class="teams container">
@@ -152,25 +137,13 @@
                   <p>MD / CEO</p>
 
                   <div class="media">
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-facebook"></i>
                     </a>
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -190,25 +163,13 @@
                   <h4>Ogungbe Michael</h4>
                   <p>COO</p>
                   <div class="media">
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-facebook"></i>
                     </a>
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -228,25 +189,13 @@
                   <h4>Victor Peter</h4>
                   <p>CTO / MOC</p>
                   <div class="media">
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-facebook"></i>
                     </a>
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-twitter"></i>
                     </a>
-                    <a
-                      href="https://www.facebook.com"
-                      target="_blank"
-                      class="footer__social"
-                    >
+                    <a href="https://www.facebook.com" target="_blank" class="footer__social">
                       <i class="fab fa-instagram"></i>
                     </a>
                   </div>
@@ -257,17 +206,17 @@
         </div>
       </section>
     </main>
-    <Footer />
+    <FooterMain />
   </q-page>
 </template>
 
 <script>
-import Footer from "../components/FooterMain.vue";
+import FooterMain from '../components/FooterMain.vue'
 export default {
   components: {
-    Footer,
+    FooterMain,
   },
-};
+}
 </script>
 
 <style scoped>

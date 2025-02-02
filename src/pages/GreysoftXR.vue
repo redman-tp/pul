@@ -12,10 +12,7 @@
               extended reality in Africa.
             </h1>
             <p class="">Metaverse |VR|AR|MR| Games | Trainings</p>
-            <small
-              >Helping people leverage technology for improved
-              livelihood.</small
-            >
+            <small>Helping people leverage technology for improved livelihood.</small>
           </div>
         </div>
       </section>
@@ -31,19 +28,14 @@
               </h2>
               <!-- <h4>Dancing in the Metaverse</h4> -->
               <p class="about__description">
-                Don&#39;t miss your chance to be part of this exciting
-                opportunity! Sign up now to stay updated and secure your spot in
-                our highly anticipated training program. Dive into the immersive
-                world of XR development and gain the skills you need to succeed
-                in this fast-growing industry. Be the first to know when
-                enrollment opens and get exclusive access to early-bird
-                discounts.
+                Don&#39;t miss your chance to be part of this exciting opportunity! Sign up now to
+                stay updated and secure your spot in our highly anticipated training program. Dive
+                into the immersive world of XR development and gain the skills you need to succeed
+                in this fast-growing industry. Be the first to know when enrollment opens and get
+                exclusive access to early-bird discounts.
               </p>
 
-              <a
-                target="_blank"
-                href="https://forms.gle/UN4GGjH74Va6v3aV9"
-                class="button"
+              <a target="_blank" href="https://forms.gle/UN4GGjH74Va6v3aV9" class="button"
                 >Sign Up</a
               >
             </div>
@@ -83,18 +75,14 @@
               </Splide>
             </div>
             <div class="about__data">
-              <h2 class="section__title about__title">
-                Greysoft XR Bootcamp (January 2023)
-              </h2>
+              <h2 class="section__title about__title">Greysoft XR Bootcamp (January 2023)</h2>
               <p class="about__description">
-                Greysoft XR successfully organized a transformative bootcamp in
-                January 2023, bringing together a diverse group of 50 passionate
-                participants eager to delve into the world of extended reality.
-                This immersive program provided hands-on training, expert
-                mentorship, and invaluable networking opportunities. The
-                bootcamp culminated in an exhilarating hackathon, where
-                participants showcased their skills, creativity, and
-                problem-solving abilities.
+                Greysoft XR successfully organized a transformative bootcamp in January 2023,
+                bringing together a diverse group of 50 passionate participants eager to delve into
+                the world of extended reality. This immersive program provided hands-on training,
+                expert mentorship, and invaluable networking opportunities. The bootcamp culminated
+                in an exhilarating hackathon, where participants showcased their skills, creativity,
+                and problem-solving abilities.
                 <q-btn class="read" flat @click="read('bootcamp')">
                   Read More <i class="fa-solid q-ml-sm fa-arrow-right"></i
                 ></q-btn>
@@ -108,19 +96,16 @@
           <div class="about__container grid">
             <div class="about__data">
               <h2 class="section__title about__title">
-                Greysoft Pioneers Kaduna State Investment Summit 7.0 in the
-                Metaverse
+                Greysoft Pioneers Kaduna State Investment Summit 7.0 in the Metaverse
               </h2>
               <p class="about__description">
-                In September 2022, Greysoft achieved a remarkable milestone by
-                spearheading the transformation of the Kaduna State Investment
-                Summit (KADINVEST 7.0) into a groundbreaking virtual experience
-                within the metaverse. This pioneering initiative established
-                Kaduna state as the first subnational government worldwide to
-                host a major investment summit in the metaverse. Leveraging
-                cutting-edge extended reality technologies, Greysoft seamlessly
-                blended the physical and digital realms to create an immersive
-                and interactive platform for participants.
+                In September 2022, Greysoft achieved a remarkable milestone by spearheading the
+                transformation of the Kaduna State Investment Summit (KADINVEST 7.0) into a
+                groundbreaking virtual experience within the metaverse. This pioneering initiative
+                established Kaduna state as the first subnational government worldwide to host a
+                major investment summit in the metaverse. Leveraging cutting-edge extended reality
+                technologies, Greysoft seamlessly blended the physical and digital realms to create
+                an immersive and interactive platform for participants.
                 <q-btn class="read" flat @click="read('kadinvest')">
                   Read More <i class="fa-solid q-ml-sm fa-arrow-right"></i
                 ></q-btn>
@@ -141,19 +126,16 @@
             </div>
             <div class="about__data">
               <h2 class="section__title about__title">
-                Unlocking the Future of Extended Reality at Edo Innovates
-                Conference
+                Unlocking the Future of Extended Reality at Edo Innovates Conference
               </h2>
               <p class="about__description">
-                In November 2022, the Edo State Government recognized Greysoft
-                as a leading force in extended reality (XR) and invited them to
-                partner in the prestigious Edo Innovates Conference. The
-                conference aimed to showcase the transformative power of XR
-                technology and shed light on the multitude of opportunities it
-                presents across various sectors. Greysoft&#39;s participation in
-                the event included captivating presentations, interactive XR
-                demonstrations, and engaging discussions on the future of
-                immersive technologies.
+                In November 2022, the Edo State Government recognized Greysoft as a leading force in
+                extended reality (XR) and invited them to partner in the prestigious Edo Innovates
+                Conference. The conference aimed to showcase the transformative power of XR
+                technology and shed light on the multitude of opportunities it presents across
+                various sectors. Greysoft&#39;s participation in the event included captivating
+                presentations, interactive XR demonstrations, and engaging discussions on the future
+                of immersive technologies.
                 <q-btn class="read" flat @click="read('unlock')">
                   Read More <i class="fa-solid q-ml-sm fa-arrow-right"></i
                 ></q-btn>
@@ -166,23 +148,19 @@
       <section class="about section" id="about">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Dancing in the Metaverse
-            </h2>
+            <h2 class="section__title about__title">Dancing in the Metaverse</h2>
             <!-- <h4>Dancing in the Metaverse</h4> -->
             <p class="about__description">
-              Imagine hanging out with your friends without having to leave the
-              comfort of your home. Experience an immersive reunion with your
-              friends from all over the world; US, Canada, UK, Dubai… name it!
-              Greysoft is investing in the future of social connection by
-              creating virtual experiences for Africans to get first-hand value
-              and enjoyment from the virtual space.
+              Imagine hanging out with your friends without having to leave the comfort of your
+              home. Experience an immersive reunion with your friends from all over the world; US,
+              Canada, UK, Dubai… name it! Greysoft is investing in the future of social connection
+              by creating virtual experiences for Africans to get first-hand value and enjoyment
+              from the virtual space.
             </p>
 
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer set using Right-Left-Up-Down
-              Arrows.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer set using Right-Left-Up-Down Arrows.
             </p>
             <a
               target="_blank"
@@ -203,26 +181,19 @@
             <img src="/pe/space.jpg" alt="" />
           </div>
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Experience our Spaceship
-            </h2>
+            <h2 class="section__title about__title">Experience our Spaceship</h2>
             <!-- <h4>Experience our Spaceship</h4> -->
             <p class="about__description">
-              Did you ever think for once that you’ll get the opportunity to
-              enter into a spaceship in your lifetime? I don’t think so… At
-              Greysoft, we are giving you the opportunity to explore our ship. A
-              masterpiece of architectural finesse.
+              Did you ever think for once that you’ll get the opportunity to enter into a spaceship
+              in your lifetime? I don’t think so… At Greysoft, we are giving you the opportunity to
+              explore our ship. A masterpiece of architectural finesse.
             </p>
 
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer set using Right-Left-Up-Down
-              Arrows.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer set using Right-Left-Up-Down Arrows.
             </p>
-            <a
-              target="_blank"
-              href="https://app.theoverlay.io/location/sky-station"
-              class="button"
+            <a target="_blank" href="https://app.theoverlay.io/location/sky-station" class="button"
               >Experience</a
             >
           </div>
@@ -235,16 +206,11 @@
             <h2 class="section__title about__title">Create your own Avatar</h2>
             <!-- <h4>Create your own Avatar</h4> -->
             <p class="about__description">
-              We understand that not everyone likes a default avatar for
-              traversing the metaverse. With our partners “Ready Player Me” we
-              are giving you the power to personalize your avatar.
+              We understand that not everyone likes a default avatar for traversing the metaverse.
+              With our partners “Ready Player Me” we are giving you the power to personalize your
+              avatar.
             </p>
-            <a
-              target="_blank"
-              href="https://readyplayer.me/avatar"
-              class="button"
-              >Create</a
-            >
+            <a target="_blank" href="https://readyplayer.me/avatar" class="button">Create</a>
           </div>
 
           <div class="experience__img grid">
@@ -262,14 +228,13 @@
             <h2 class="section__title about__title">GreyHobb Virtual Tour</h2>
             <!-- <h4>GreyHobb Virtual Tour</h4> -->
             <p class="about__description">
-              Take the time to familiarize with our space where all the creative
-              juice flows from. We are currently working on projects to
-              implement virtual tourism across Africa as well as virtual
-              governance and Real Estate.
+              Take the time to familiarize with our space where all the creative juice flows from.
+              We are currently working on projects to implement virtual tourism across Africa as
+              well as virtual governance and Real Estate.
             </p>
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer by clicking the targets.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer by clicking the targets.
             </p>
             <a
               target="_blank"
@@ -286,12 +251,11 @@
             <h2 class="section__title about__title">VR Games from Greysoft</h2>
             <!-- <h4>VR Games from Greysoft</h4> -->
             <p class="about__description">
-              Our first attempt at Unreal Engine was to develop a VR Games Park,
-              which consisted of a 2 Player Basketball Game, together with a
-              Bull’s Eye Archery in same field. It also included a dragon
-              hovering over the field. Archers score points by hitting the
-              virtual Bull’s Eye or the dragon while basketball players score
-              points by picking up the virtual ball and throwing into the rim.
+              Our first attempt at Unreal Engine was to develop a VR Games Park, which consisted of
+              a 2 Player Basketball Game, together with a Bull’s Eye Archery in same field. It also
+              included a dragon hovering over the field. Archers score points by hitting the virtual
+              Bull’s Eye or the dragon while basketball players score points by picking up the
+              virtual ball and throwing into the rim.
             </p>
           </div>
           <div class="experience__img grid">
@@ -321,14 +285,12 @@
             ></iframe>
           </div>
           <div class="about__data">
-            <h2 class="section__title about__title">
-              VR Hand Tracking Interaction
-            </h2>
+            <h2 class="section__title about__title">VR Hand Tracking Interaction</h2>
             <!-- <h4>VR Hand Tracking Interaction</h4> -->
             <p class="about__description">
-              Our research for more realistic VR experience and interaction is
-              unbelievably super promising. Watch our newest model GreyXN to
-              follow our progress on the future of Virtual Reality.
+              Our research for more realistic VR experience and interaction is unbelievably super
+              promising. Watch our newest model GreyXN to follow our progress on the future of
+              Virtual Reality.
             </p>
           </div>
         </div>
@@ -337,20 +299,18 @@
       <section class="about section" id="about">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              VR Tour- Murtala Mohammed Square
-            </h2>
+            <h2 class="section__title about__title">VR Tour- Murtala Mohammed Square</h2>
             <!-- <h4>VR Hand Tracking Interaction</h4> -->
             <p class="about__description">
-              Experience the beauty of virtual tourism from the comfort of your
-              home. Greysoft provides a peep into this magnificent edifice right
-              in the hear of Kaduna metropolis. Murtala Mohammed Square has seen
-              various marmot crowd of people and spectacular events.
+              Experience the beauty of virtual tourism from the comfort of your home. Greysoft
+              provides a peep into this magnificent edifice right in the hear of Kaduna metropolis.
+              Murtala Mohammed Square has seen various marmot crowd of people and spectacular
+              events.
             </p>
 
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer by clicking the targets.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer by clicking the targets.
             </p>
             <a
               target="_blank"
@@ -407,15 +367,12 @@
           </div>
 
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Learn More About The Metaverse
-            </h2>
+            <h2 class="section__title about__title">Learn More About The Metaverse</h2>
             <!-- <h4>VR Hand Tracking Interaction</h4> -->
             <p class="about__description">
-              Everyone is blabbing about the metaverse. But what does this
-              future digital world look like? WSJ’s Joanna Stern checked into a
-              hotel and strapped on a virtual-reality headset for the day. She
-              went to work meetings, hung out with new avatar friends and
+              Everyone is blabbing about the metaverse. But what does this future digital world look
+              like? WSJ’s Joanna Stern checked into a hotel and strapped on a virtual-reality
+              headset for the day. She went to work meetings, hung out with new avatar friends and
               attended virtual shows
             </p>
           </div>
@@ -427,14 +384,11 @@
       <h2 class="section__title about__title">Follow our Works</h2>
 
       <p>
-        We have created our metaverse engine “GreyEngine” on which we are
-        implementing several out-of-the- box solutions. Our test modules hold
-        exciting promises for our future projects which includes; VR Games, AR
-        Games, AR for Fashion, VR for Education, VR Tourism, VR Governance, VR
-        Real Estate. <br />
-        <a class="demo" target="_blank" href="https://conjure.world/"
-          >Click to Demo Engine</a
-        >
+        We have created our metaverse engine “GreyEngine” on which we are implementing several
+        out-of-the- box solutions. Our test modules hold exciting promises for our future projects
+        which includes; VR Games, AR Games, AR for Fashion, VR for Education, VR Tourism, VR
+        Governance, VR Real Estate. <br />
+        <a class="demo" target="_blank" href="https://conjure.world/">Click to Demo Engine</a>
       </p>
 
       <div class="rowe">
@@ -476,18 +430,18 @@
       </q-card>
     </q-dialog>
 
-    <Footer />
+    <FooterMain />
   </q-page>
 </template>
 
 <script>
-import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import "@splidejs/vue-splide/css";
-import CardSlides from "components/CardSlides.vue";
-import Footer from "../components/FooterMain.vue";
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import '@splidejs/vue-splide/css'
+import CardSlides from 'components/CardSlides.vue'
+import FooterMain from '../components/FooterMain.vue'
 export default {
   components: {
-    Footer,
+    FooterMain,
     Splide,
     SplideSlide,
     CardSlides,
@@ -496,89 +450,89 @@ export default {
     return {
       xrImages: [
         {
-          img: "/images/xr1.jpeg",
+          img: '/images/xr1.jpeg',
         },
 
         {
-          img: "/images/xr2.jpeg",
+          img: '/images/xr2.jpeg',
         },
         {
-          img: "/images/xr3.jpeg",
+          img: '/images/xr3.jpeg',
         },
         {
-          img: "/images/xr4.jpeg",
+          img: '/images/xr4.jpeg',
         },
         {
-          img: "/images/xr5.jpeg",
+          img: '/images/xr5.jpeg',
         },
         {
-          img: "/images/xr6.jpeg",
+          img: '/images/xr6.jpeg',
         },
       ],
       kad7: [
         {
-          img: "/images/kad1.jpeg",
+          img: '/images/kad1.jpeg',
         },
 
         {
-          img: "/images/kad2.jpeg",
+          img: '/images/kad2.jpeg',
         },
         {
-          img: "/images/kad3.jpeg",
+          img: '/images/kad3.jpeg',
         },
         {
-          img: "/images/kad4.jpeg",
+          img: '/images/kad4.jpeg',
         },
         {
-          img: "/images/kad5.jpeg",
+          img: '/images/kad5.jpeg',
         },
         {
-          img: "/images/kad6.jpeg",
+          img: '/images/kad6.jpeg',
         },
         {
-          img: "/images/kad7.jpeg",
+          img: '/images/kad7.jpeg',
         },
         {
-          img: "/images/kad8.jpeg",
+          img: '/images/kad8.jpeg',
         },
         {
-          img: "/images/kad9.jpeg",
+          img: '/images/kad9.jpeg',
         },
         {
-          img: "/images/kad10.jpeg",
+          img: '/images/kad10.jpeg',
         },
         {
-          img: "/images/kad11.jpeg",
+          img: '/images/kad11.jpeg',
         },
         {
-          img: "/images/kad12.jpeg",
+          img: '/images/kad12.jpeg',
         },
       ],
       ulockImages: [
         {
-          img: "/images/edo1.jpeg",
+          img: '/images/edo1.jpeg',
         },
 
         {
-          img: "/images/edo2.jpeg",
+          img: '/images/edo2.jpeg',
         },
         {
-          img: "/images/edo3.jpeg",
+          img: '/images/edo3.jpeg',
         },
         {
-          img: "/images/edo4.jpeg",
+          img: '/images/edo4.jpeg',
         },
         {
-          img: "/images/edo6.jpeg",
+          img: '/images/edo6.jpeg',
         },
         {
-          img: "/images/edo5.jpeg",
+          img: '/images/edo5.jpeg',
         },
         {
-          img: "/images/edo8.jpeg",
+          img: '/images/edo8.jpeg',
         },
         {
-          img: "/images/edo9.jpeg",
+          img: '/images/edo9.jpeg',
         },
       ],
       options: {
@@ -588,30 +542,30 @@ export default {
       },
       fixed: false,
 
-      readmore: { desc: "" },
+      readmore: { desc: '' },
       xrBoot:
-        "Greysoft XR successfully organized a transformative bootcamp in January 2023, bringing together a diverse group of 50 passionate participants eager to delve into the world of extended reality. This immersive program provided hands-on training, expert mentorship, and invaluable networking opportunities. The bootcamp culminated in an exhilarating hackathon, where participants showcased their skills, creativity, and problem-solving abilities. The winning teams were rewarded with exciting prizes and the opportunity to secure internships with esteemed industry partners. Additionally, outstanding individuals received exclusive job placement offers, paving the way for promising careers in the XR field. The Greysoft XR Bootcamp set a new standard in industry-focused training, empowering participants to unlock their full potential and embark on a rewarding journey in the realm of extended reality.",
+        'Greysoft XR successfully organized a transformative bootcamp in January 2023, bringing together a diverse group of 50 passionate participants eager to delve into the world of extended reality. This immersive program provided hands-on training, expert mentorship, and invaluable networking opportunities. The bootcamp culminated in an exhilarating hackathon, where participants showcased their skills, creativity, and problem-solving abilities. The winning teams were rewarded with exciting prizes and the opportunity to secure internships with esteemed industry partners. Additionally, outstanding individuals received exclusive job placement offers, paving the way for promising careers in the XR field. The Greysoft XR Bootcamp set a new standard in industry-focused training, empowering participants to unlock their full potential and embark on a rewarding journey in the realm of extended reality.',
       kadInvest:
-        "In September 2022, Greysoft achieved a remarkable milestone by spearheading the transformation of the Kaduna State Investment Summit (KADINVEST 7.0) into a groundbreaking virtual experience within the metaverse. This pioneering initiative established Kaduna state as the first subnational government worldwide to host a major investment summit in the metaverse. Leveraging cutting-edge extended reality technologies, Greysoft seamlessly blended the physical and digital realms to create an immersive and interactive platform for participants. The virtual summit provided attendees with unprecedented access to engage with industry leaders, explore investment opportunities, and foster meaningful connections in a dynamic and futuristic environment. Greysoft&#39;s visionary collaboration with Kaduna state not only showcased the limitless potential of the metaverse but also solidified their position as a trailblazer in shaping the future of events and fostering economic growth.",
+        'In September 2022, Greysoft achieved a remarkable milestone by spearheading the transformation of the Kaduna State Investment Summit (KADINVEST 7.0) into a groundbreaking virtual experience within the metaverse. This pioneering initiative established Kaduna state as the first subnational government worldwide to host a major investment summit in the metaverse. Leveraging cutting-edge extended reality technologies, Greysoft seamlessly blended the physical and digital realms to create an immersive and interactive platform for participants. The virtual summit provided attendees with unprecedented access to engage with industry leaders, explore investment opportunities, and foster meaningful connections in a dynamic and futuristic environment. Greysoft&#39;s visionary collaboration with Kaduna state not only showcased the limitless potential of the metaverse but also solidified their position as a trailblazer in shaping the future of events and fostering economic growth.',
       unlock:
-        "In November 2022, the Edo State Government recognized Greysoft as a leading force in extended reality (XR) and invited them to partner in the prestigious Edo Innovates Conference. The conference aimed to showcase the transformative power of XR technology and shed light on the multitude of opportunities it presents across various sectors. Greysoft&#39;s participation in the event included captivating presentations, interactive XR demonstrations, and engaging discussions on the future of immersive technologies. By effectively highlighting the potential applications of XR, Greysoft not only inspired conference attendees but also fostered a greater understanding of the impact XR can have on industries such as education, healthcare, tourism, and more. The partnership with the Edo State Government solidified Greysoft&#39;s reputation as an industry leader and their commitment to driving innovation, collaboration, and economic growth through XR technologies.",
-    };
+        'In November 2022, the Edo State Government recognized Greysoft as a leading force in extended reality (XR) and invited them to partner in the prestigious Edo Innovates Conference. The conference aimed to showcase the transformative power of XR technology and shed light on the multitude of opportunities it presents across various sectors. Greysoft&#39;s participation in the event included captivating presentations, interactive XR demonstrations, and engaging discussions on the future of immersive technologies. By effectively highlighting the potential applications of XR, Greysoft not only inspired conference attendees but also fostered a greater understanding of the impact XR can have on industries such as education, healthcare, tourism, and more. The partnership with the Edo State Government solidified Greysoft&#39;s reputation as an industry leader and their commitment to driving innovation, collaboration, and economic growth through XR technologies.',
+    }
   },
 
   methods: {
     read(data) {
-      if (data === "bootcamp") {
-        this.readmore.desc = this.xrBoot;
-      } else if (data === "kadinvest") {
-        this.readmore.desc = this.kadInvest;
+      if (data === 'bootcamp') {
+        this.readmore.desc = this.xrBoot
+      } else if (data === 'kadinvest') {
+        this.readmore.desc = this.kadInvest
       } else {
-        this.readmore.desc = this.unlock;
+        this.readmore.desc = this.unlock
       }
 
-      this.fixed = true;
+      this.fixed = true
     },
   },
-};
+}
 </script>
 
 <style scoped>
@@ -710,7 +664,7 @@ p.control {
   /* object-position: 9%; */
 }
 .home::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: #000;
   background-blend-mode: multiply;
@@ -723,7 +677,7 @@ p.control {
 }
 @media screen and (min-height: 721px) {
   .home::before {
-    content: "";
+    content: '';
     position: absolute;
     background: #000000;
     background-blend-mode: multiply;

@@ -8,9 +8,7 @@
           <div class="home__data">
             <h1 class="home__data-title">GreyTech</h1>
 
-            <p class="home__data-title-d">
-              “Creating solutions for the African community.”
-            </p>
+            <p class="home__data-title-d">“Creating solutions for the African community.”</p>
           </div>
         </div>
       </section>
@@ -23,18 +21,15 @@
           <div class="about__data">
             <h2 class="section__title about__title">GreyTech</h2>
             <p class="about__description">
-              Step into the realm of cutting-edge technology with GreyTech, our
-              forward-thinking department dedicated to web and mobile
-              development, emerging technologies, and talent outsourcing. Our
-              team of industry professionals and creative experts is passionate
-              about crafting exceptional digital experiences through high-level
-              web and mobile app development. With expertise in emerging
-              technologies such as Extended Reality (Metaverse, VR, AR, MR),
-              Blockchain, Artificial Intelligence, and Internet of Things,
-              GreyTech stands at the forefront of innovation. Additionally, our
-              talent outsourcing services provide access to a pool of highly
-              skilled tech and creative professionals, ensuring that your
-              projects are executed with excellence and efficiency.
+              Step into the realm of cutting-edge technology with GreyTech, our forward-thinking
+              department dedicated to web and mobile development, emerging technologies, and talent
+              outsourcing. Our team of industry professionals and creative experts is passionate
+              about crafting exceptional digital experiences through high-level web and mobile app
+              development. With expertise in emerging technologies such as Extended Reality
+              (Metaverse, VR, AR, MR), Blockchain, Artificial Intelligence, and Internet of Things,
+              GreyTech stands at the forefront of innovation. Additionally, our talent outsourcing
+              services provide access to a pool of highly skilled tech and creative professionals,
+              ensuring that your projects are executed with excellence and efficiency.
             </p>
           </div>
         </div>
@@ -42,19 +37,15 @@
       <section class="about section" id="tour">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Web and Mobile Apps Development at GreyTech
-            </h2>
+            <h2 class="section__title about__title">Web and Mobile Apps Development at GreyTech</h2>
             <p class="about__description">
-              At Greysoft, we are passionate about crafting cutting-edge web and
-              mobile applications that drive innovation and elevate user
-              experiences. Our team of industry professionals and creative
-              experts work tirelessly to develop high-level web and mobile apps
-              that exceed expectations. With a focus on quality, usability, and
-              scalability, we collaborate closely with our clients to understand
-              their unique requirements and deliver tailor-made solutions. From
-              responsive websites to feature-rich mobile applications, Greysoft
-              combines technical expertise with creative flair to bring your
+              At Greysoft, we are passionate about crafting cutting-edge web and mobile applications
+              that drive innovation and elevate user experiences. Our team of industry professionals
+              and creative experts work tirelessly to develop high-level web and mobile apps that
+              exceed expectations. With a focus on quality, usability, and scalability, we
+              collaborate closely with our clients to understand their unique requirements and
+              deliver tailor-made solutions. From responsive websites to feature-rich mobile
+              applications, Greysoft combines technical expertise with creative flair to bring your
               digital vision to life.
             </p>
           </div>
@@ -69,21 +60,17 @@
             <img src="/images/kad12.jpeg" alt="" />
           </div>
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Emerging Technologies at GreyTech
-            </h2>
+            <h2 class="section__title about__title">Emerging Technologies at GreyTech</h2>
             <p class="about__description">
-              As a leading authority in web3 technologies, Greysoft is at the
-              forefront of innovation in Extended Reality (Metaverse, VR, AR,
-              MR), Blockchain, Artificial Intelligence, Internet of Things, and
-              more. We harness the power of emerging technologies to unlock new
-              possibilities for our clients and drive digital transformation.
-              Our team of experts stays ahead of the curve, continuously
-              exploring and implementing the latest advancements in these
-              fields. Whether it's creating immersive virtual reality
-              experiences, building decentralized applications, or leveraging AI
-              for data-driven insights, Greysoft empowers businesses to embrace
-              the future of technology.
+              As a leading authority in web3 technologies, Greysoft is at the forefront of
+              innovation in Extended Reality (Metaverse, VR, AR, MR), Blockchain, Artificial
+              Intelligence, Internet of Things, and more. We harness the power of emerging
+              technologies to unlock new possibilities for our clients and drive digital
+              transformation. Our team of experts stays ahead of the curve, continuously exploring
+              and implementing the latest advancements in these fields. Whether it's creating
+              immersive virtual reality experiences, building decentralized applications, or
+              leveraging AI for data-driven insights, Greysoft empowers businesses to embrace the
+              future of technology.
             </p>
           </div>
         </div>
@@ -91,21 +78,16 @@
       <section class="about section" id="tour">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Talent Outsourcing at GreyTech
-            </h2>
+            <h2 class="section__title about__title">Talent Outsourcing at GreyTech</h2>
             <p class="about__description">
-              At Greysoft, we understand the importance of access to top-tier
-              talent in today's competitive landscape. Through our Talent
-              Outsourcing services, we provide access to a pool of professional
-              tech and creative talent available on demand, both locally and
-              internationally. Our extensive talent pool is nurtured through our
-              industry-leading training programs at GreyAcademy, ensuring that
-              we can provide skilled professionals who are equipped to tackle
-              any project. Whether you need developers, designers, or other tech
-              specialists, Greysoft can seamlessly integrate our talent with
-              your team, enabling you to scale your operations efficiently and
-              effectively.
+              At Greysoft, we understand the importance of access to top-tier talent in today's
+              competitive landscape. Through our Talent Outsourcing services, we provide access to a
+              pool of professional tech and creative talent available on demand, both locally and
+              internationally. Our extensive talent pool is nurtured through our industry-leading
+              training programs at GreyAcademy, ensuring that we can provide skilled professionals
+              who are equipped to tackle any project. Whether you need developers, designers, or
+              other tech specialists, Greysoft can seamlessly integrate our talent with your team,
+              enabling you to scale your operations efficiently and effectively.
             </p>
           </div>
           <div class="about__img" data-aos="zoom-in">
@@ -121,12 +103,11 @@
           <div class="about__data">
             <h2 class="section__title about__title">Our Community</h2>
             <p class="about__description">
-              We are building a community of tech enthusiasts who practically
-              see a digital solution to every problem they come across. Africa
-              is vast and its challenges are unique. At GreyTech, we develop
-              solutions that are tailored for the Africa people, which include
-              the rural and urban communities, spanning across health,
-              education, entertainment and agricultural sector.
+              We are building a community of tech enthusiasts who practically see a digital solution
+              to every problem they come across. Africa is vast and its challenges are unique. At
+              GreyTech, we develop solutions that are tailored for the Africa people, which include
+              the rural and urban communities, spanning across health, education, entertainment and
+              agricultural sector.
             </p>
           </div>
         </div>
@@ -143,13 +124,12 @@
           <div class="about__data">
             <h2 class="section__title about__title">Our Focus</h2>
             <p class="about__description">
-              Our focus is the young people of Africa which constitute about 70
-              percent of the 1.4 billion African population. We believe that
-              opportunities abound throughout the continent and if the youth are
-              armed with the required knowledge, they can create innovations
-              that will transform every country in the continent into a
-              prosperous nation. Hence we have taken the challenge to increase
-              the level of digital literacy throughout the African continent.
+              Our focus is the young people of Africa which constitute about 70 percent of the 1.4
+              billion African population. We believe that opportunities abound throughout the
+              continent and if the youth are armed with the required knowledge, they can create
+              innovations that will transform every country in the continent into a prosperous
+              nation. Hence we have taken the challenge to increase the level of digital literacy
+              throughout the African continent.
             </p>
           </div>
         </div>
@@ -158,10 +138,9 @@
       <section class="code-samples">
         <h2>Work Environments</h2>
         <p>
-          We are familiar with various development platforms suitable for a
-          variety of objectives. Whether you are a frontend, backend,
-          blockchain, VR, AI, cloud infrastructure or game developer, we have
-          the right environment and work community to match your skillset.
+          We are familiar with various development platforms suitable for a variety of objectives.
+          Whether you are a frontend, backend, blockchain, VR, AI, cloud infrastructure or game
+          developer, we have the right environment and work community to match your skillset.
         </p>
         <div class="code-cards container">
           <div class="code-container container">
@@ -252,18 +231,18 @@
         </div>
       </section>
     </main>
-    <Footer />
+    <FooterMain />
   </q-page>
 </template>
 
 <script>
-import Footer from "../components/FooterMain.vue";
+import FooterMain from '../components/FooterMain.vue'
 
 export default {
   components: {
-    Footer,
+    FooterMain,
   },
-};
+}
 </script>
 
 <style scoped>
@@ -424,7 +403,9 @@ export default {
   border-right: 0.15em solid orange;
   white-space: nowrap;
   width: 0;
-  animation: typing 2s steps(30, end) forwards, blink 0.75s infinite;
+  animation:
+    typing 2s steps(30, end) forwards,
+    blink 0.75s infinite;
   animation-delay: 13.5s;
 }
 @keyframes typing {

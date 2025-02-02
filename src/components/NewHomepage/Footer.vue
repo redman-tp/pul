@@ -17,9 +17,7 @@
           <li><router-link to="/greytech"> GreyTech</router-link></li>
           <li><router-link to="greycreate"> GreyCreate</router-link></li>
           <li>
-            <router-link to="/kukah">
-              Kukah Prize for Young Innovators
-            </router-link>
+            <router-link to="/kukah"> Kukah Prize for Young Innovators </router-link>
           </li>
           <!-- <li><a> Product Managers</a></li> -->
         </ul>
@@ -45,6 +43,9 @@
               >Training courses</router-link
             >
           </li>
+          <li>
+            <a target="_blank" href="/gep.pdf"> Gender Equality Plan </a>
+          </li>
           <!-- <li><a> </a></li> -->
         </ul>
       </div>
@@ -53,11 +54,7 @@
         <ul>
           <li>
             <div>
-              <a
-                href="https://web.facebook.com/greysoftng"
-                target="_blank"
-                class="footer__social"
-              >
+              <a href="https://web.facebook.com/greysoftng" target="_blank" class="footer__social">
                 <i class="fab fa-facebook"></i>
               </a>
               <a
@@ -67,18 +64,10 @@
               >
                 <i class="fab fa-linkedin"></i>
               </a>
-              <a
-                href="https://twitter.com/greyhobb"
-                target="_blank"
-                class="footer__social"
-              >
+              <a href="https://twitter.com/greyhobb" target="_blank" class="footer__social">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a
-                href="https://www.instagram.com/greyhobb/"
-                target="_blank"
-                class="footer__social"
-              >
+              <a href="https://www.instagram.com/greyhobb/" target="_blank" class="footer__social">
                 <i class="fab fa-instagram"></i>
               </a>
               <a
@@ -97,15 +86,8 @@
     <div class="contact_container">
       <div class="left_side">
         <li class="row items-center">
-          <q-icon
-            name="fa-solid fa-envelope"
-            color="white"
-            size="1.8rem"
-            class="q-mr-lg"
-          />
-          <a href="mailto:hi@greysoft.ng" target="_blank"
-            ><p class="contact">hi@greysoft.ng</p></a
-          >
+          <q-icon name="fa-solid fa-envelope" color="white" size="1.8rem" class="q-mr-lg" />
+          <a href="mailto:hi@greysoft.ng" target="_blank"><p class="contact">hi@greysoft.ng</p></a>
         </li>
         <li class="row items-center">
           <q-icon name="phone" color="white" size="1.8rem" class="q-mr-lg" />
@@ -115,19 +97,12 @@
           </p>
         </li>
         <li class="row no-wrap items-center">
-          <q-icon
-            name="fa-solid fa-location-dot"
-            color="white"
-            size="1.8rem"
-            class="q-mr-lg"
-          />
+          <q-icon name="fa-solid fa-location-dot" color="white" size="1.8rem" class="q-mr-lg" />
           <p class="contact">31, Gwari Avenue Barnawa, Kaduna.</p>
         </li>
       </div>
       <div class="right_side">
-        <div class="text-subtitle1 text-bold be_first">
-          Be the first to know
-        </div>
+        <div class="text-subtitle1 text-bold be_first">Be the first to know</div>
         <q-btn flat class="bg-white">
           <div class="btn_text">JOIN OUR NEWSLETTER</div>
         </q-btn>
@@ -148,9 +123,7 @@
     </div>
 
     <div class="bottom">
-      <p class="bottom_text">
-        Copyright © {{ new Date().getFullYear() }} Greysoft Technologies
-      </p>
+      <p class="bottom_text">Copyright © {{ new Date().getFullYear() }} Greysoft Technologies</p>
       <!-- <div class="row terms">
         <p class="bottom_text">Terms & Condition</p>
         <p class="bottom_text">Privacy Policy</p>
@@ -164,7 +137,7 @@
 </template>
 
 <script>
-export default {};
+export default {}
 </script>
 
 <style scoped>
@@ -180,7 +153,7 @@ p {
   color: white;
   padding: 2% 10%;
   position: relative;
-  font-family: "Poppins";
+  font-family: 'Poppins';
 }
 .bottom_svg {
   position: absolute;
@@ -242,11 +215,7 @@ p {
   line-height: 20px;
   font-weight: 400;
   font-size: 0.5rem;
-  background: linear-gradient(
-    180deg,
-    #8d354a 21.35%,
-    rgba(171, 4, 44, 0.78) 83.85%
-  );
+  background: linear-gradient(180deg, #8d354a 21.35%, rgba(171, 4, 44, 0.78) 83.85%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -349,7 +318,7 @@ p {
     position: relative;
   }
   .links_container h6::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;

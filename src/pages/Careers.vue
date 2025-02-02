@@ -15,24 +15,24 @@
       <SecondSection />
     </div>
 
-    <Footer />
+    <FooterMain />
   </div>
 </template>
 
 <script>
-import firstSection from "../components/careers/FirstSection.vue";
-import SecondSection from "../components/careers/SecondSection.vue";
-import Footer from "../components/NewHomepage/Footer.vue";
+import firstSection from '../components/careers/FirstSection.vue'
+import SecondSection from '../components/careers/SecondSection.vue'
+import FooterMain from '../components/NewHomepage/Footer.vue'
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     firstSection,
     SecondSection,
-    Footer,
+    FooterMain,
     // GridedImages,
   },
-};
+}
 </script>
 
 <style>

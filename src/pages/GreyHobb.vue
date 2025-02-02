@@ -18,16 +18,14 @@
           <div class="about__data">
             <h2 class="section__title about__title">GreyHobb</h2>
             <p class="about__description">
-              Welcome to GreyHobb, our vibrant innovation hub where ideas come
-              to life and collaborations thrive. As a co-working space, we
-              provide a dynamic and inspiring environment for remote workers to
-              flourish, equipped with top-notch amenities, 24/7 electricity, and
-              high-speed internet access. Whether you're a freelancer,
-              entrepreneur, or remote team, GreyHobb offers the perfect setting
-              to fuel your productivity and connect with like-minded
-              individuals. Join our community of innovative minds, leverage our
-              supportive infrastructure, and unlock your full potential at
-              GreyHobb.
+              Welcome to GreyHobb, our vibrant innovation hub where ideas come to life and
+              collaborations thrive. As a co-working space, we provide a dynamic and inspiring
+              environment for remote workers to flourish, equipped with top-notch amenities, 24/7
+              electricity, and high-speed internet access. Whether you're a freelancer,
+              entrepreneur, or remote team, GreyHobb offers the perfect setting to fuel your
+              productivity and connect with like-minded individuals. Join our community of
+              innovative minds, leverage our supportive infrastructure, and unlock your full
+              potential at GreyHobb.
             </p>
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
@@ -50,13 +48,11 @@
               An Ecosystem of Creative and Innovative Minds!
             </h2>
             <p class="about__description">
-              We provide conducive and state-of-the-art co-working environment
-              for our users, which is inclusive of 24/7 high speed internet
-              service, electricity, open work area, access to kitchen and dining
-              gazebos, conference rooms, security assurance (police covering),
-              integrated taxing system, funding opportunities, incubation and
-              acceleration programs and access to professionals in the
-              technological and creative space.
+              We provide conducive and state-of-the-art co-working environment for our users, which
+              is inclusive of 24/7 high speed internet service, electricity, open work area, access
+              to kitchen and dining gazebos, conference rooms, security assurance (police covering),
+              integrated taxing system, funding opportunities, incubation and acceleration programs
+              and access to professionals in the technological and creative space.
             </p>
           </div>
         </div>
@@ -67,17 +63,14 @@
           <div class="about__data">
             <h2 class="section__title about__title">Co-working at GreyHobb</h2>
             <p class="about__description">
-              At GreyHobb, we provide a vibrant and conducive co-working space
-              for professionals seeking a productive and collaborative
-              environment. Our co-working space offers the perfect setting for
-              remote workers, freelancers, and entrepreneurs to thrive. With
-              24-hour electricity and high-speed internet service, you can focus
-              on your work without any interruptions. Our diverse community of
-              co-workers fosters networking opportunities and cross-industry
-              collaborations, allowing you to expand your network and tap into
-              new opportunities. Join GreyHobb and experience the synergy of
-              working alongside like-minded individuals in a dynamic and
-              inspiring atmosphere.
+              At GreyHobb, we provide a vibrant and conducive co-working space for professionals
+              seeking a productive and collaborative environment. Our co-working space offers the
+              perfect setting for remote workers, freelancers, and entrepreneurs to thrive. With
+              24-hour electricity and high-speed internet service, you can focus on your work
+              without any interruptions. Our diverse community of co-workers fosters networking
+              opportunities and cross-industry collaborations, allowing you to expand your network
+              and tap into new opportunities. Join GreyHobb and experience the synergy of working
+              alongside like-minded individuals in a dynamic and inspiring atmosphere.
             </p>
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
@@ -98,18 +91,15 @@
               Startup Incubation and Acceleration Program at GreyHobb
             </h2>
             <p class="about__description">
-              At GreyHobb, we are committed to nurturing and empowering startups
-              on their journey to success. Our Startup Incubation and
-              Acceleration Program offers comprehensive support to early-stage
-              ventures, providing them with the necessary tools, resources, and
-              mentorship to thrive in a competitive market. Through our business
-              clinics, we help startups structure their operations, refine their
-              business models, and develop investor-ready strategies. Our
-              experienced team of experts guides entrepreneurs through the
-              challenges of scaling their businesses, equipping them with the
-              knowledge and skills needed to attract funding and achieve
-              sustainable growth. Join our program and unlock the full potential
-              of your startup.
+              At GreyHobb, we are committed to nurturing and empowering startups on their journey to
+              success. Our Startup Incubation and Acceleration Program offers comprehensive support
+              to early-stage ventures, providing them with the necessary tools, resources, and
+              mentorship to thrive in a competitive market. Through our business clinics, we help
+              startups structure their operations, refine their business models, and develop
+              investor-ready strategies. Our experienced team of experts guides entrepreneurs
+              through the challenges of scaling their businesses, equipping them with the knowledge
+              and skills needed to attract funding and achieve sustainable growth. Join our program
+              and unlock the full potential of your startup.
             </p>
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
@@ -120,22 +110,17 @@
       <section class="about section" id="tour">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Community Building at GreyHobb
-            </h2>
+            <h2 class="section__title about__title">Community Building at GreyHobb</h2>
             <p class="about__description">
-              At GreyHobb, we believe in the power of community. We are
-              dedicated to building a vibrant ecosystem of innovative minds and
-              fostering connections that lead to meaningful collaborations. Our
-              community- building initiatives provide opportunities for
-              networking, knowledge-sharing, and skill development. From
-              interactive workshops and industry events to panel discussions and
-              networking sessions, GreyHobb brings together professionals from
-              various backgrounds and industries. Join our community and connect
-              with like-minded individuals, expand your horizons, and access a
-              wealth of opportunities. Whether you are looking for co-founders,
-              mentors, or potential clients, GreyHobb is the place to forge
-              valuable relationships and make a lasting impact.
+              At GreyHobb, we believe in the power of community. We are dedicated to building a
+              vibrant ecosystem of innovative minds and fostering connections that lead to
+              meaningful collaborations. Our community- building initiatives provide opportunities
+              for networking, knowledge-sharing, and skill development. From interactive workshops
+              and industry events to panel discussions and networking sessions, GreyHobb brings
+              together professionals from various backgrounds and industries. Join our community and
+              connect with like-minded individuals, expand your horizons, and access a wealth of
+              opportunities. Whether you are looking for co-founders, mentors, or potential clients,
+              GreyHobb is the place to forge valuable relationships and make a lasting impact.
             </p>
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
@@ -154,10 +139,9 @@
           <div class="about__data">
             <h2 class="section__title about__title">Our Goal</h2>
             <p class="about__description">
-              Our goal at the hub is to bring people together from all
-              backgrounds, with a wide range of skills and education to foster
-              an ecosystem of networking and knowledge-sharing, so they can
-              mutually benefit and learn from each other.
+              Our goal at the hub is to bring people together from all backgrounds, with a wide
+              range of skills and education to foster an ecosystem of networking and
+              knowledge-sharing, so they can mutually benefit and learn from each other.
             </p>
             <!-- <a href="#" class="button"
               >Join us <i class="fas fa-arrow-right"></i
@@ -177,12 +161,11 @@
           <div class="about__data">
             <h2 class="section__title about__title">Become a member</h2>
             <p class="about__description">
-              Becoming a member of this formidable community comes with a
-              truckload of advantages. Asides 24hr access to internet and
-              electricity, members have access to a community of innovators
-              where the solution to any challenge is only "an ask" away. An
-              ecosystem of creative minds - imagine a situation where your
-              payment gateway powers my app, amazing right?
+              Becoming a member of this formidable community comes with a truckload of advantages.
+              Asides 24hr access to internet and electricity, members have access to a community of
+              innovators where the solution to any challenge is only "an ask" away. An ecosystem of
+              creative minds - imagine a situation where your payment gateway powers my app, amazing
+              right?
             </p>
             <ul>
               <li>+ Membership Card</li>
@@ -275,10 +258,9 @@
             <div class="swiper-slide swiper-card">
               <h2>Virtual Office Plan</h2>
               <p>
-                We reserve a virtual office for you where your clients can send
-                their mails and correspondences. Our business relations officer
-                is well trained to handle high level correspondencs which are
-                filed and reported appropriately to you online.
+                We reserve a virtual office for you where your clients can send their mails and
+                correspondences. Our business relations officer is well trained to handle high level
+                correspondencs which are filed and reported appropriately to you online.
               </p>
               <h4>#35k/Month</h4>
               <a href="">Subscribe</a>
@@ -310,12 +292,11 @@
           <h4>Note</h4>
           <ul>
             <li>
-              - All Subscribed members are eligible to use the training hall for
-              2hours at #30,000.
+              - All Subscribed members are eligible to use the training hall for 2hours at #30,000.
             </li>
             <li>
-              - Request for private Office/Conference rooms should be made
-              36hours to time of intended use for appropriate booking.
+              - Request for private Office/Conference rooms should be made 36hours to time of
+              intended use for appropriate booking.
             </li>
             <li>- Our code of conduct applies to all subscribers.</li>
           </ul>
@@ -326,11 +307,10 @@
         <div class="codess container">
           <h2>Code of Conduct</h2>
           <p class="lead">
-            GreyHobb is dedicated to providing an ethical, safe, peaceful,
-            secure and enjoyable working environment for everyone; therefore,we
-            have adopted the following codes of conduct to address issues
-            relating to harassment, respect of workspace, cleanliness and noise
-            level.
+            GreyHobb is dedicated to providing an ethical, safe, peaceful, secure and enjoyable
+            working environment for everyone; therefore,we have adopted the following codes of
+            conduct to address issues relating to harassment, respect of workspace, cleanliness and
+            noise level.
           </p>
 
           <div class="codes-wrap">
@@ -342,17 +322,14 @@
               <div class="code-detail">
                 <h3>Harassment</h3>
                 <p>
-                  Harassment includes, but is not limited to, reasonably
-                  offensive verbal comments related to gender, disability,
-                  physical appearance, body size, ethnicity or religion; sexual
-                  images in public spaces; deliberate intimidation; stalking;
-                  following; harassing photography or recording; sustained
-                  disruption of talks or other events; inappropriate physical
-                  contact; and unwelcome sexual attention. Impact trumps
-                  intention. Members or co-workers are encouraged to contact the
-                  workspace manager, even if only witnessing harassment to
-                  another. Members asked to stop any harassing behavior are
-                  expected to comply immediately.
+                  Harassment includes, but is not limited to, reasonably offensive verbal comments
+                  related to gender, disability, physical appearance, body size, ethnicity or
+                  religion; sexual images in public spaces; deliberate intimidation; stalking;
+                  following; harassing photography or recording; sustained disruption of talks or
+                  other events; inappropriate physical contact; and unwelcome sexual attention.
+                  Impact trumps intention. Members or co-workers are encouraged to contact the
+                  workspace manager, even if only witnessing harassment to another. Members asked to
+                  stop any harassing behavior are expected to comply immediately.
                 </p>
               </div>
             </div>
@@ -365,17 +342,14 @@
               <div class="code-detail">
                 <h3>Neatness</h3>
                 <p>
-                  Harassment includes, but is not limited to, reasonably
-                  offensive verbal comments related to gender, disability,
-                  physical appearance, body size, ethnicity or religion; sexual
-                  images in public spaces; deliberate intimidation; stalking;
-                  following; harassing photography or recording; sustained
-                  disruption of talks or other events; inappropriate physical
-                  contact; and unwelcome sexual attention. Impact trumps
-                  intention. Members or co-workers are encouraged to contact the
-                  workspace manager, even if only witnessing harassment to
-                  another. Members asked to stop any harassing behavior are
-                  expected to comply immediately.
+                  Harassment includes, but is not limited to, reasonably offensive verbal comments
+                  related to gender, disability, physical appearance, body size, ethnicity or
+                  religion; sexual images in public spaces; deliberate intimidation; stalking;
+                  following; harassing photography or recording; sustained disruption of talks or
+                  other events; inappropriate physical contact; and unwelcome sexual attention.
+                  Impact trumps intention. Members or co-workers are encouraged to contact the
+                  workspace manager, even if only witnessing harassment to another. Members asked to
+                  stop any harassing behavior are expected to comply immediately.
                 </p>
               </div>
             </div>
@@ -388,17 +362,14 @@
               <div class="code-detail">
                 <h3>Etiquettes</h3>
                 <p>
-                  Harassment includes, but is not limited to, reasonably
-                  offensive verbal comments related to gender, disability,
-                  physical appearance, body size, ethnicity or religion; sexual
-                  images in public spaces; deliberate intimidation; stalking;
-                  following; harassing photography or recording; sustained
-                  disruption of talks or other events; inappropriate physical
-                  contact; and unwelcome sexual attention. Impact trumps
-                  intention. Members or co-workers are encouraged to contact the
-                  workspace manager, even if only witnessing harassment to
-                  another. Members asked to stop any harassing behavior are
-                  expected to comply immediately.
+                  Harassment includes, but is not limited to, reasonably offensive verbal comments
+                  related to gender, disability, physical appearance, body size, ethnicity or
+                  religion; sexual images in public spaces; deliberate intimidation; stalking;
+                  following; harassing photography or recording; sustained disruption of talks or
+                  other events; inappropriate physical contact; and unwelcome sexual attention.
+                  Impact trumps intention. Members or co-workers are encouraged to contact the
+                  workspace manager, even if only witnessing harassment to another. Members asked to
+                  stop any harassing behavior are expected to comply immediately.
                 </p>
               </div>
             </div>
@@ -411,12 +382,11 @@
               <div class="code-detail">
                 <h3>Photo Policy</h3>
                 <p>
-                  All event photographers will seek to obtain permission for
-                  reposting. Members are free to ask that photographs of
-                  themselves are withheld from any promotional materials. to
-                  maintain privacy and personal boundaries, all members must ask
-                  before taking any photographs that are clearly meant to
-                  highlight a small group or single person.
+                  All event photographers will seek to obtain permission for reposting. Members are
+                  free to ask that photographs of themselves are withheld from any promotional
+                  materials. to maintain privacy and personal boundaries, all members must ask
+                  before taking any photographs that are clearly meant to highlight a small group or
+                  single person.
                 </p>
               </div>
             </div>
@@ -429,16 +399,14 @@
               <div class="code-detail">
                 <h3>Enforcement</h3>
                 <p>
-                  If a members defaults in any of the above stated conducts, our
-                  Space Managers retain the right to take action in order to
-                  maintain a welcoming environment for other members. This
-                  includes warnings, expulsion from the environment without a
-                  refund, or other measures deemed appropriate. Space Managers
-                  are authorized to address anything designed to, or with the
-                  clear impact of, making the environment hostile for any
-                  member. We expect members to follow these rules at our
-                  co-working space and social activities, and we encourage
-                  members to follow these guidelines outside of GreyHobb.
+                  If a members defaults in any of the above stated conducts, our Space Managers
+                  retain the right to take action in order to maintain a welcoming environment for
+                  other members. This includes warnings, expulsion from the environment without a
+                  refund, or other measures deemed appropriate. Space Managers are authorized to
+                  address anything designed to, or with the clear impact of, making the environment
+                  hostile for any member. We expect members to follow these rules at our co-working
+                  space and social activities, and we encourage members to follow these guidelines
+                  outside of GreyHobb.
                 </p>
               </div>
             </div>
@@ -451,12 +419,10 @@
               <div class="code-detail">
                 <h3>Reporting</h3>
                 <p>
-                  If someone makes you or anyone else feel unsafe or unwelcome,
-                  we encourage you to report it as soon as possible. Space
-                  Managers will be identifiable by their attire or badges, and
-                  they have been instructed on how to respond to all issues. All
-                  claims are taken seriously and will be handled by a dedicated
-                  staff.
+                  If someone makes you or anyone else feel unsafe or unwelcome, we encourage you to
+                  report it as soon as possible. Space Managers will be identifiable by their attire
+                  or badges, and they have been instructed on how to respond to all issues. All
+                  claims are taken seriously and will be handled by a dedicated staff.
                 </p>
               </div>
             </div>
@@ -468,11 +434,10 @@
               <div class="code-detail">
                 <h3>Mediation</h3>
                 <p>
-                  If you feel you have been falsely or unfairly accused of
-                  violating this Code of Conduct, you should notify our Space
-                  Manager with a concise description of your grievance. Your
-                  grievance will be handled in accordance with GreyHobb’s
-                  existing governance policies.
+                  If you feel you have been falsely or unfairly accused of violating this Code of
+                  Conduct, you should notify our Space Manager with a concise description of your
+                  grievance. Your grievance will be handled in accordance with GreyHobb’s existing
+                  governance policies.
                 </p>
               </div>
             </div>
@@ -480,19 +445,19 @@
         </div>
       </section>
     </main>
-    <Footer />
+    <FooterMain />
   </q-page>
 </template>
 
 <script>
-import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import "@splidejs/vue-splide/css";
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import '@splidejs/vue-splide/css'
 
-import Footer from "../components/FooterMain.vue";
+import FooterMain from '../components/FooterMain.vue'
 
 export default {
   components: {
-    Footer,
+    FooterMain,
     Splide,
     SplideSlide,
   },
@@ -537,9 +502,9 @@ export default {
           },
         },
       },
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>

@@ -8,9 +8,9 @@
 // Configuration for your app
 // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js
 
-const { configure } = require("quasar/wrappers");
+import { defineConfig } from '#q-app/wrappers'
 
-module.exports = configure(function (ctx) {
+export default defineConfig(function (ctx) {
   return {
     eslint: {
       // fix: true,
@@ -49,7 +49,6 @@ module.exports = configure(function (ctx) {
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
       env: {
-        ...require("dotenv").config().parsed,
         site_name: "GreySoft Technologies",
         description: "GreySoft",
         keywords: "GreySoft",
@@ -85,7 +84,7 @@ module.exports = configure(function (ctx) {
       server: {
         type: "http",
       },
-      // port: 8080,
+      port: 9009,
       open: true, // opens browser window automatically
     },
     // devServer: {

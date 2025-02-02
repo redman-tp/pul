@@ -7,8 +7,7 @@
             <a class="nav__logo">
               <img src="pe/kuklogo.png" alt="" />
               <span class="q-mt-md q-ml-sm">
-                The<span class="text-green">Kukah</span
-                ><span class="ng">Prize</span></span
+                The<span class="text-green">Kukah</span><span class="ng">Prize</span></span
               ></a
             >
           </nav>
@@ -18,10 +17,7 @@
 
     <q-drawer v-model="leftDrawerOpen" bordered>
       <q-tabs class="column" active-color="primary">
-        <div
-          style="width: 100%"
-          class="column q-py-lg items-center side_bar justify-center"
-        >
+        <div style="width: 100%" class="column q-py-lg items-center side_bar justify-center">
           <q-route-tab
             class="q-my-sm text-dark addbor text-weight-bold"
             to="/"
@@ -41,45 +37,21 @@
             exact
           >
             <q-list>
-              <q-item
-                to="/our"
-                exact
-                clickable
-                v-close-popup
-                @click="onItemClick"
-              >
+              <q-item to="/our" exact clickable v-close-popup @click="onItemClick">
                 <q-item-section>
-                  <q-item-label class="text-weight-bold"
-                    >DAWIB INVESTMENT RESOURCES</q-item-label
-                  >
+                  <q-item-label class="text-weight-bold">DAWIB INVESTMENT RESOURCES</q-item-label>
                 </q-item-section>
               </q-item>
 
-              <q-item
-                to="/farms"
-                exact
-                clickable
-                v-close-popup
-                @click="onItemClick"
-              >
+              <q-item to="/farms" exact clickable v-close-popup @click="onItemClick">
                 <q-item-section>
-                  <q-item-label class="text-weight-bold"
-                    >DAWIB FARM LIMITED</q-item-label
-                  >
+                  <q-item-label class="text-weight-bold">DAWIB FARM LIMITED</q-item-label>
                 </q-item-section>
               </q-item>
 
-              <q-item
-                to="/rima"
-                exact
-                clickable
-                v-close-popup
-                @click="onItemClick"
-              >
+              <q-item to="/rima" exact clickable v-close-popup @click="onItemClick">
                 <q-item-section>
-                  <q-item-label class="text-weight-bold"
-                    >RIMA GUARDS
-                  </q-item-label>
+                  <q-item-label class="text-weight-bold">RIMA GUARDS </q-item-label>
                 </q-item-section>
               </q-item>
             </q-list>
@@ -125,27 +97,22 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
+import { defineComponent, ref } from 'vue'
 
 export default defineComponent({
-  name: "MainLayout",
-
-  components: {
-    EssentialLink,
-  },
+  name: 'MainLayout',
 
   setup() {
-    const leftDrawerOpen = ref(false);
+    const leftDrawerOpen = ref(false)
 
     return {
       leftDrawerOpen,
       toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value;
+        leftDrawerOpen.value = !leftDrawerOpen.value
       },
-    };
+    }
   },
-});
+})
 </script>
 <style scoped>
 .nav {

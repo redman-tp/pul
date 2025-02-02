@@ -8,9 +8,7 @@
           <div class="home__data">
             <h1 class="home__data-title">GreyCreate</h1>
 
-            <p class="home__data-title-d">
-              “Redefining the African Creative Industry.”
-            </p>
+            <p class="home__data-title-d">“Redefining the African Creative Industry.”</p>
           </div>
         </div>
       </section>
@@ -20,18 +18,15 @@
           <div class="about__data">
             <h2 class="section__title about__title">GreyCreate</h2>
             <p class="about__description">
-              Welcome to GreyCreate, where creativity knows no bounds. As a
-              multi-faceted department, we specialize in product design,
-              animation, user interface/user experience (UI/UX), digital
-              marketing, cinematography, and photography. Our talented team of
-              designers, animators, marketers, and visual storytellers work
-              collaboratively to bring ideas to life and create captivating
-              experiences. Whether it's designing stunning products, crafting
-              engaging animations, developing user-friendly interfaces,
-              executing successful digital marketing campaigns, or capturing
-              captivating moments through film and photography, GreyCreate is
-              dedicated to delivering outstanding creative solutions that make
-              an impact.
+              Welcome to GreyCreate, where creativity knows no bounds. As a multi-faceted
+              department, we specialize in product design, animation, user interface/user experience
+              (UI/UX), digital marketing, cinematography, and photography. Our talented team of
+              designers, animators, marketers, and visual storytellers work collaboratively to bring
+              ideas to life and create captivating experiences. Whether it's designing stunning
+              products, crafting engaging animations, developing user-friendly interfaces, executing
+              successful digital marketing campaigns, or capturing captivating moments through film
+              and photography, GreyCreate is dedicated to delivering outstanding creative solutions
+              that make an impact.
             </p>
           </div>
           <div class="about__img" data-aos="zoom-in">
@@ -45,20 +40,16 @@
             <img src="/images/prd.jpg" alt="" />
           </div>
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Product Design at GreyCreate
-            </h2>
+            <h2 class="section__title about__title">Product Design at GreyCreate</h2>
             <p class="about__description">
-              At GreyCreate, we specialize in crafting exceptional product
-              designs that not only captivate audiences but also drive business
-              success. Our talented team of designers combines creativity,
-              functionality, and user-centered principles to deliver innovative
-              solutions. Whether it's conceptualizing and prototyping new
-              products or redesigning existing ones, we collaborate closely with
-              our clients to understand their vision and translate it into
-              tangible designs. With a keen eye for detail and a passion for
-              problem- solving, GreyCreate transforms ideas into reality,
-              creating products that inspire and resonate with users.
+              At GreyCreate, we specialize in crafting exceptional product designs that not only
+              captivate audiences but also drive business success. Our talented team of designers
+              combines creativity, functionality, and user-centered principles to deliver innovative
+              solutions. Whether it's conceptualizing and prototyping new products or redesigning
+              existing ones, we collaborate closely with our clients to understand their vision and
+              translate it into tangible designs. With a keen eye for detail and a passion for
+              problem- solving, GreyCreate transforms ideas into reality, creating products that
+              inspire and resonate with users.
             </p>
           </div>
         </div>
@@ -68,15 +59,13 @@
           <div class="about__data">
             <h2 class="section__title about__title">Animation at GreyCreate</h2>
             <p class="about__description">
-              Animation is a powerful medium that brings stories to life, and at
-              GreyCreate, we are masters of this art. Our skilled animators
-              harness their creativity and technical expertise to deliver
-              compelling visual narratives for our clients. From captivating
-              explainer videos to engaging motion graphics, we create animations
-              that effectively communicate messages and captivate audiences.
-              With a keen understanding of storytelling techniques and a passion
-              for pushing boundaries, GreyCreate ensures that every animation
-              project leaves a lasting impact.
+              Animation is a powerful medium that brings stories to life, and at GreyCreate, we are
+              masters of this art. Our skilled animators harness their creativity and technical
+              expertise to deliver compelling visual narratives for our clients. From captivating
+              explainer videos to engaging motion graphics, we create animations that effectively
+              communicate messages and captivate audiences. With a keen understanding of
+              storytelling techniques and a passion for pushing boundaries, GreyCreate ensures that
+              every animation project leaves a lasting impact.
             </p>
           </div>
           <div class="about__img" data-aos="zoom-in">
@@ -100,15 +89,13 @@
               User Interface/User Experience (UI/UX) at GreyCreate
             </h2>
             <p class="about__description">
-              At GreyCreate, we understand that a seamless user experience is
-              paramount to the success of any digital product. Our UI/UX
-              designers specialize in translating complex ideas into intuitive
-              and visually appealing user interfaces. We meticulously craft
-              wireframes, prototypes, and interactive designs that optimize
-              usability, enhance engagement, and delight users. By considering
-              user behavior, conducting thorough research, and applying industry
-              best practices, GreyCreate creates user-centric designs that not
-              only meet business goals but also leave a lasting impression.
+              At GreyCreate, we understand that a seamless user experience is paramount to the
+              success of any digital product. Our UI/UX designers specialize in translating complex
+              ideas into intuitive and visually appealing user interfaces. We meticulously craft
+              wireframes, prototypes, and interactive designs that optimize usability, enhance
+              engagement, and delight users. By considering user behavior, conducting thorough
+              research, and applying industry best practices, GreyCreate creates user-centric
+              designs that not only meet business goals but also leave a lasting impression.
             </p>
           </div>
         </div>
@@ -116,21 +103,16 @@
       <section class="about section" id="tour">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Digital Marketing at GreyCreate
-            </h2>
+            <h2 class="section__title about__title">Digital Marketing at GreyCreate</h2>
             <p class="about__description">
-              In today's competitive digital landscape, effective marketing is
-              crucial for business growth, and GreyCreate is your trusted
-              partner in achieving success. Our digital marketing experts employ
-              comprehensive strategies to help businesses expand their reach,
-              increase brand visibility, and drive conversions. From search
-              engine optimization (SEO) and pay-per-click (PPC) advertising to
-              social media marketing and content creation, we develop tailored
-              campaigns that align with our clients' goals and target their
-              desired audience. With data-driven insights and a focus on
-              measurable results, GreyCreate helps businesses stand out and
-              thrive in the digital realm.
+              In today's competitive digital landscape, effective marketing is crucial for business
+              growth, and GreyCreate is your trusted partner in achieving success. Our digital
+              marketing experts employ comprehensive strategies to help businesses expand their
+              reach, increase brand visibility, and drive conversions. From search engine
+              optimization (SEO) and pay-per-click (PPC) advertising to social media marketing and
+              content creation, we develop tailored campaigns that align with our clients' goals and
+              target their desired audience. With data-driven insights and a focus on measurable
+              results, GreyCreate helps businesses stand out and thrive in the digital realm.
             </p>
           </div>
           <div class="about__img" data-aos="zoom-in">
@@ -151,15 +133,13 @@
               Cinematography and Photography at GreyCreate
             </h2>
             <p class="about__description">
-              At GreyCreate, we understand the power of visual storytelling, and
-              our cinematography and photography services bring moments to life
-              with creativity and expertise. Our experienced team captures
-              compelling films and videos, ranging from corporate profiles to
-              event coverage, with exceptional attention to detail and cinematic
-              flair. Additionally, our professional photographers skillfully
-              capture captivating images for individuals, products, and brands.
-              With a keen eye for composition, lighting, and storytelling,
-              GreyCreate transforms ordinary moments into extraordinary visuals,
+              At GreyCreate, we understand the power of visual storytelling, and our cinematography
+              and photography services bring moments to life with creativity and expertise. Our
+              experienced team captures compelling films and videos, ranging from corporate profiles
+              to event coverage, with exceptional attention to detail and cinematic flair.
+              Additionally, our professional photographers skillfully capture captivating images for
+              individuals, products, and brands. With a keen eye for composition, lighting, and
+              storytelling, GreyCreate transforms ordinary moments into extraordinary visuals,
               leaving a lasting impact on viewers.
             </p>
           </div>
@@ -170,11 +150,10 @@
           <div class="about__data">
             <h2 class="section__title about__title">Cultural Masterpieces</h2>
             <p class="about__description">
-              In the last five years, we have steadily partnered with Rabitz
-              Studios (www.rabitzstudios.com) to deliver state of the art native
-              and cultural events throughout Africa to showcase the beauty of
-              the African continent, exploring hidden stories and values, as
-              well as providing jobs for tons of women and youth and ensuring
+              In the last five years, we have steadily partnered with Rabitz Studios
+              (www.rabitzstudios.com) to deliver state of the art native and cultural events
+              throughout Africa to showcase the beauty of the African continent, exploring hidden
+              stories and values, as well as providing jobs for tons of women and youth and ensuring
               sustainability through constant training and mentorship programs.
             </p>
           </div>
@@ -205,17 +184,17 @@
         </div>
       </section>
     </main>
-    <Footer />
+    <FooterMain />
   </q-page>
 </template>
 
 <script>
-import Footer from "../components/FooterMain.vue";
+import FooterMain from '../components/FooterMain.vue'
 export default {
   components: {
-    Footer,
+    FooterMain,
   },
-};
+}
 </script>
 
 <style scoped>

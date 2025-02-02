@@ -1,4 +1,4 @@
-import { boot } from "quasar/wrappers";
+import { defineBoot } from '#q-app/wrappers'
 import axios from "axios";
 import reader from "../plugins/reader";
 import { watch } from "vue";
@@ -30,7 +30,7 @@ const api = axios.create({
 
 let token;
 
-export default boot(async ({ app, router, redirect }) => {
+export default defineBoot(async ({ app, router, redirect }) => {
   // for use inside Vue files (Options API) through this.$axios and this.$api
   app.config.globalProperties.$axios = axios;
   // ^ ^ ^ this will allow you to use this.$axios (for Vue Options API form)
@@ -166,15 +166,15 @@ export default boot(async ({ app, router, redirect }) => {
         // If the server responds with a data refresh we handle that here
         let refresh =
           response &&
-          response.data &&
-          response.data.data &&
-          typeof response.data.data.refresh === "object"
+            response.data &&
+            response.data.data &&
+            typeof response.data.data.refresh === "object"
             ? response.data.data.refresh
             : response &&
               response.data &&
               typeof response.data.refresh === "object"
-            ? response.data.refresh
-            : null;
+              ? response.data.refresh
+              : null;
 
         if (refresh) {
           const stores = {

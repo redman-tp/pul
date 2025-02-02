@@ -7,8 +7,9 @@
 </template>
 
 <script>
+import PaystackPop from '@paystack/inline-js'
 export default {
-  name: "TPaystack",
+  name: 'TPaystack',
   props: {
     data: {
       type: Object,
@@ -16,7 +17,7 @@ export default {
     },
     label: {
       type: String,
-      default: "Pay Now",
+      default: 'Pay Now',
     },
     tooltip: {
       type: String,
@@ -37,12 +38,12 @@ export default {
     },
   },
   setup() {
-    return {};
+    return {}
   },
   created() {},
   methods: {
     initializeNewPayment() {
-      this.$q.loading.show();
+      this.$q.loading.show()
 
       this.$api
         .post(`/payment/initialize`, {
@@ -51,28 +52,25 @@ export default {
         })
         .then(({ data }) => {
           if (this.$q.platform.is.mobile) {
-            this.$q.loading.hide();
-            return this.paystack(
-              data.data.amount,
-              data.data.payload.data.reference
-            ).openIframe();
+            this.$q.loading.hide()
+            return this.paystack(data.data.amount, data.data.payload.data.reference).openIframe()
           } else {
             setTimeout((e) => {
-              this.$q.loading.hide();
-              window.location.href = data.data.payload.data.authorization_url;
-            }, 10000);
+              this.$q.loading.hide()
+              window.location.href = data.data.payload.data.authorization_url
+            }, 10000)
           }
         })
         .catch((e) => {
-          this.$q.loading.hide();
-          let error = this.$plugins.reader.error(e);
-          this.$helper.notify(error.message || error, error.status || "error");
-        });
+          this.$q.loading.hide()
+          let error = this.$plugins.reader.error(e)
+          this.$helper.notify(error.message || error, error.status || 'error')
+        })
     },
     paystack(amount = 0, ref = null) {
-      let helper = this.$helper;
-      let router = this.$router;
-      const api = this.$api;
+      let helper = this.$helper
+      let router = this.$router
+      const api = this.$api
       return PaystackPop.setup({
         key: this.$boot.settings.paystack_public_key, // Replace with your public key
         email: this.$user.email,
@@ -80,22 +78,22 @@ export default {
         ref: ref,
         label: this.$user.fullname,
         onClose: function () {
-          helper.notify("Transaction cancelled.", "error");
-          api.delete("/payment/terminate", {
+          helper.notify('Transaction cancelled.', 'error')
+          api.delete('/payment/terminate', {
             data: { reference: ref },
-          });
+          })
         },
         callback: function (response) {
           router.push({
-            name: "user.payment.verify.ref",
+            name: 'user.payment.verify.ref',
             params: {
               ref: response.reference,
               reference: response.reference,
             },
-          });
+          })
         },
-      });
+      })
     },
   },
-};
+}
 </script>

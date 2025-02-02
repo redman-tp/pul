@@ -28,11 +28,7 @@
           </div>
 
           <div>
-            <a
-              href="https://web.facebook.com/greysoftng"
-              target="_blank"
-              class="footer__social"
-            >
+            <a href="https://web.facebook.com/greysoftng" target="_blank" class="footer__social">
               <i class="fab fa-facebook"></i>
             </a>
             <a
@@ -42,18 +38,10 @@
             >
               <i class="fab fa-linkedin"></i>
             </a>
-            <a
-              href="https://twitter.com/greyhobb"
-              target="_blank"
-              class="footer__social"
-            >
+            <a href="https://twitter.com/greyhobb" target="_blank" class="footer__social">
               <i class="fab fa-twitter"></i>
             </a>
-            <a
-              href="https://www.instagram.com/greyhobb/"
-              target="_blank"
-              class="footer__social"
-            >
+            <a href="https://www.instagram.com/greyhobb/" target="_blank" class="footer__social">
               <i class="fab fa-instagram"></i>
             </a>
             <a
@@ -117,8 +105,7 @@
 
       <div class="footer__rights">
         <p class="footer__copy">
-          &#169; hi@greysoft.ng {{ new Date().getFullYear() }} Greysoft. All
-          rights reserved.
+          &#169; hi@greysoft.ng {{ new Date().getFullYear() }} Greysoft. All rights reserved.
         </p>
         <div class="footer__terms">
           <a href="#" class="footer__terms-link">Terms & Agreements</a>
@@ -163,7 +150,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  name: 'FooterMain',
+}
 </script>
 
 <style scoped></style>

@@ -1,9 +1,6 @@
 <template>
   <div class="q-pa-md sub">
-    <div
-      v-if="message"
-      class="text-h5 q-pa-sm q-my-lg text-white text-center bg-green"
-    >
+    <div v-if="message" class="text-h5 q-pa-sm q-my-lg text-white text-center bg-green">
       {{ message }} <q-btn to="login" class="no_acc">Login</q-btn>
     </div>
 
@@ -64,7 +61,7 @@
           v-if="mode === 'list'"
         >
           <q-tooltip :disable="$q.platform.is.mobile">
-            {{ props.inFullscreen ? "Exit Fullscreen" : "Toggle Fullscreen" }}
+            {{ props.inFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen' }}
           </q-tooltip>
         </q-btn>
 
@@ -74,13 +71,13 @@
           dense
           :icon="mode === 'grid' ? 'list' : 'grid_on'"
           @click="
-            mode = mode === 'grid' ? 'list' : 'grid';
-            separator = mode === 'grid' ? 'none' : 'horizontal';
+            mode = mode === 'grid' ? 'list' : 'grid'
+            separator = mode === 'grid' ? 'none' : 'horizontal'
           "
           v-if="!props.inFullscreen"
         >
           <q-tooltip :disable="$q.platform.is.mobile">{{
-            mode === "grid" ? "List" : "Grid"
+            mode === 'grid' ? 'List' : 'Grid'
           }}</q-tooltip>
         </q-btn>
 
@@ -180,83 +177,82 @@
 </template>
 
 <script>
-import { ref, computed } from "vue";
-import { exportFile, useMeta } from "quasar";
+import { ref, computed } from 'vue'
+import { exportFile, useMeta } from 'quasar'
 const columns = [
   {
-    name: "id",
+    name: 'id',
     required: true,
-    label: "ID",
-    align: "left",
-    field: "id",
+    label: 'ID',
+    align: 'left',
+    field: 'id',
     sortable: true,
   },
   {
-    name: "email",
+    name: 'email',
     required: true,
-    label: "Email",
-    align: "left",
-    field: "email",
+    label: 'Email',
+    align: 'left',
+    field: 'email',
     sortable: true,
   },
   {
-    name: "firstname",
+    name: 'firstname',
     required: true,
-    label: "Firstname",
-    align: "left",
-    field: "firstname",
+    label: 'Firstname',
+    align: 'left',
+    field: 'firstname',
     sortable: true,
   },
   {
-    name: "lastname",
+    name: 'lastname',
     required: true,
-    label: "Lastname",
-    align: "left",
-    field: "lastname",
-    sortable: true,
-  },
-
-  {
-    name: "gender",
-    required: true,
-    label: "Gender",
-    align: "left",
-    field: "gender",
+    label: 'Lastname',
+    align: 'left',
+    field: 'lastname',
     sortable: true,
   },
 
   {
-    name: "actions",
+    name: 'gender',
     required: true,
-    label: "Actions",
-    align: "left",
+    label: 'Gender',
+    align: 'left',
+    field: 'gender',
+    sortable: true,
+  },
+
+  {
+    name: 'actions',
+    required: true,
+    label: 'Actions',
+    align: 'left',
     field: (row) => row.id,
     sortable: false,
   },
-];
+]
 function wrapCsvValue(val, formatFn) {
-  let formatted = formatFn !== void 0 ? formatFn(val) : val;
-  formatted =
-    formatted === void 0 || formatted === null ? "" : String(formatted);
-  formatted = formatted.split('"').join('""');
-  return `"${formatted}"`;
+  let formatted = formatFn !== void 0 ? formatFn(val) : val
+  formatted = formatted === void 0 || formatted === null ? '' : String(formatted)
+  formatted = formatted.split('"').join('""')
+  return `"${formatted}"`
 }
 export default {
   setup() {
     useMeta({
-      title: "Upload Pages",
-    });
+      title: 'Upload Pages',
+    })
   },
   data() {
     const pagination = ref({
-      sortBy: "desc",
+      sortBy: 'desc',
       descending: false,
       page: 1,
       rowsPerPage: 8,
-    });
+    })
     return {
       columns,
-      message: "",
+      message: '',
       selected: [],
       dataUsers: [],
       category: null,
@@ -265,24 +261,24 @@ export default {
       errors: [],
       fruitbay: {},
       image: null,
-      page: "",
-      pageid: "",
-      chapter_id: "",
-      content_id: "",
+      page: '',
+      pageid: '',
+      chapter_id: '',
+      content_id: '',
       files: null,
       editstate: false,
       createstate: null,
-      testMales: "",
-      meta: "",
+      testMales: '',
+      meta: '',
       pagination,
-      filter: "",
-      curl: "",
-      separator: "",
-      mode: "list",
-      role: "fruitbay",
-      maleStats: "",
-      femaleStats: "",
-      others: "",
+      filter: '',
+      curl: '',
+      separator: '',
+      mode: 'list',
+      role: 'fruitbay',
+      maleStats: '',
+      femaleStats: '',
+      others: '',
       new_fruitbay: false,
       loading: false,
       create_fruitbay: false,
@@ -292,35 +288,41 @@ export default {
         deleteBtn: [],
         save: [],
       },
-    };
+    }
   },
+  watch: {
+    dataUsers: {
+      handler(dataUsers) {
+        let male = []
+        let female = []
+        let others = []
 
+        dataUsers.map((item) => {
+          let keys = Object.values(item)
+          keys.find((ele) => {
+            if (ele === 'male') {
+              male.push(ele)
+            } else if (ele === 'female') {
+              female.push(ele)
+            } else if (ele === 'other') {
+              others.push(ele)
+            }
+          })
+
+          this.maleStats = male.length
+          this.femaleStats = female.length
+          this.others = others.length
+        })
+      },
+      immediate: true,
+    },
+  },
   computed: {
     pagesNumber() {
-      return Math.ceil(this.rows.length / this.pagination.rowsPerPage);
+      return Math.ceil(this.rows.length / this.pagination.rowsPerPage)
     },
     getSt() {
-      let male = [];
-      let female = [];
-      let others = [];
-
-      this.dataUsers.map((item) => {
-        let keys = Object.values(item);
-        keys.find((ele) => {
-          if (ele === "male") {
-            male.push(ele);
-          } else if (ele === "female") {
-            female.push(ele);
-          } else if (ele === "other") {
-            others.push(ele);
-          }
-        });
-        console.log(keys[4]);
-        console.log(male.length);
-        this.maleStats = male.length;
-        this.femaleStats = female.length;
-        this.others = others.length;
-      });
+      return [this.maleStats, this.femaleStats, this.others]
     },
   },
 
@@ -328,105 +330,105 @@ export default {
     this.onRequest({
       pagination: this.pagination,
       filter: undefined,
-    });
+    })
   },
 
   methods: {
     reload() {
-      location.reload();
+      location.reload()
     },
     onRequest(props) {
-      this.loading = true;
-      const url = `admin/form-data/all`;
-      this.curl = url;
+      this.loading = true
+      const url = `admin/form-data/all`
+      this.curl = url
       this.$api
         .get(url)
         .then(({ data }) => {
-          console.log(data.data);
-          this.loading = false;
-          this.rows = data.data;
-          this.dataUsers = data.data;
+          console.log(data.data)
+          this.loading = false
+          this.rows = data.data
+          this.dataUsers = data.data
         })
         .catch(({ response }) => {
-          console.log(response);
-          this.message = response.data.message;
-          this.loading = false;
-          this.rows = [];
-        });
+          console.log(response)
+          this.message = response.data.message
+          this.loading = false
+          this.rows = []
+        })
     },
 
     refreshPage() {
-      if (this.curl !== "") {
-        this.loading = true;
+      if (this.curl !== '') {
+        this.loading = true
         this.$api
           .get(this.curl)
           .then(({ data }) => {
-            this.loading = false;
-            this.rows = data.data;
-            console.log(data);
+            this.loading = false
+            this.rows = data.data
+            console.log(data)
           })
           .catch(({ response }) => {
-            console.log(response);
-            this.message = response.data.message;
-            this.loading = false;
-            this.rows = [];
-          });
+            console.log(response)
+            this.message = response.data.message
+            this.loading = false
+            this.rows = []
+          })
       }
     },
 
     deleteUser(id) {
       this.$helper
         .notify(
-          "Are you sure you want to delete this food(s)? This action may be irreversible!",
-          "error",
+          'Are you sure you want to delete this food(s)? This action may be irreversible!',
+          'error',
           true,
-          "Yes, Delete!"
+          'Yes, Delete!',
         )
         .onOk(() => {
           this.$api
             .delete(`admin/users/${id}`)
             .then((response) => {
-              console.log(response);
+              console.log(response)
 
-              this.refreshPage();
+              this.refreshPage()
             })
             .catch((response) => {
-              console.log(response);
-            });
-        });
+              console.log(response)
+            })
+        })
     },
     deletemultiple(id) {
       const ids =
-        (id && typeof id === "string") || typeof id === "number"
+        (id && typeof id === 'string') || typeof id === 'number'
           ? [id]
-          : this.selected.map((e) => e.id);
-      console.log(ids);
+          : this.selected.map((e) => e.id)
+      console.log(ids)
       this.$helper
         .notify(
-          "Are you sure you want to delete this food(s)? This action may be irreversible!",
-          "error",
+          'Are you sure you want to delete this food(s)? This action may be irreversible!',
+          'error',
           true,
-          "Yes, Delete!"
+          'Yes, Delete!',
         )
         .onOk(() => {
-          if (id) this.loaders.deleteBtn[id] = true;
-          this.loaders.delete = true;
+          if (id) this.loaders.deleteBtn[id] = true
+          this.loaders.delete = true
           this.$api
-            .delete("admin/users", { params: { users: ids } })
+            .delete('admin/users', { params: { users: ids } })
             .then((response) => {
-              console.log(response);
-              this.loaders.delete = false;
-              if (id) this.loaders.deleteBtn[id] = false;
-              this.selected = [];
+              console.log(response)
+              this.loaders.delete = false
+              if (id) this.loaders.deleteBtn[id] = false
+              this.selected = []
 
-              this.refreshPage();
+              this.refreshPage()
             })
             .catch((response) => {
-              console.log(response);
-              this.loaders.delete = false;
-              if (id) this.loaders.deleteBtn[id] = false;
-            });
-        });
+              console.log(response)
+              this.loaders.delete = false
+              if (id) this.loaders.deleteBtn[id] = false
+            })
+        })
     },
 
     exportTable() {
@@ -437,27 +439,27 @@ export default {
             this.columns
               .map((col) =>
                 wrapCsvValue(
-                  typeof col.field === "function"
+                  typeof col.field === 'function'
                     ? col.field(row)
                     : row[col.field === void 0 ? col.name : col.field],
-                  col.format
-                )
+                  col.format,
+                ),
               )
-              .join(",")
-          )
+              .join(','),
+          ),
         )
-        .join("\r\n");
-      const status = exportFile("fruitbay-management.csv", content, "text/csv");
+        .join('\r\n')
+      const status = exportFile('fruitbay-management.csv', content, 'text/csv')
       if (status !== true) {
         this.$q.notify({
-          message: "Browser denied file download...",
-          color: "negative",
-          icon: "warning",
-        });
+          message: 'Browser denied file download...',
+          color: 'negative',
+          icon: 'warning',
+        })
       }
     },
   },
-};
+}
 </script>
 
 <style scoped>

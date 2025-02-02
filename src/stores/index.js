@@ -1,5 +1,5 @@
-import { store } from "quasar/wrappers";
 import { createPinia } from "pinia";
+import { defineStore } from '#q-app/wrappers'
 import { persist } from "pinia-persists";
 
 /*
@@ -10,7 +10,7 @@ import { persist } from "pinia-persists";
  * async/await or return a Promise which resolves
  * with the Store instance.
  */
-export default store((/* { ssrContext } */) => {
+export default defineStore((/* { ssrContext } */) => {
   const pinia = createPinia();
   pinia.use(persist({}));
 

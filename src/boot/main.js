@@ -1,14 +1,11 @@
-import { boot } from "quasar/wrappers";
+import { defineBoot } from '#q-app/wrappers'
 import helpers from "src/plugins/helpers";
-import plugins from "src/plugins";
 import loadStore from "stores/loader";
-import * as fa from "src/plugins/fa.pro";
-// require("/icons.js");
-// require("../plugins/fa.pro.js");
+import plugins from "src/plugins";
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
-export default boot(async ({ app, router }) => {
+export default defineBoot(async ({ app, router }) => {
   app.config.globalProperties = {
     ...app.config.globalProperties,
     $h: helpers,

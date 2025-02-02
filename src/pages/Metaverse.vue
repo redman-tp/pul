@@ -16,10 +16,7 @@
               extended reality in Africa.
             </h1>
             <p class="">Metaverse |VR|AR|MR| Games | Trainings</p>
-            <small
-              >Helping people leverage technology for improved
-              livelihood.</small
-            >
+            <small>Helping people leverage technology for improved livelihood.</small>
           </div>
         </div>
       </section>
@@ -27,23 +24,19 @@
       <section class="about section" id="about">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Dancingg in the Metaverse
-            </h2>
+            <h2 class="section__title about__title">Dancingg in the Metaverse</h2>
             <!-- <h4>Dancing in the Metaverse</h4> -->
             <p class="about__description">
-              Imagine hanging out with your friends without having to leave the
-              comfort of your home. Experience an immersive reunion with your
-              friends from all over the world; US, Canada, UK, Dubai… name it!
-              Greysoft is investing in the future of social connection by
-              creating virtual experiences for Africans to get first-hand value
-              and enjoyment from the virtual space.
+              Imagine hanging out with your friends without having to leave the comfort of your
+              home. Experience an immersive reunion with your friends from all over the world; US,
+              Canada, UK, Dubai… name it! Greysoft is investing in the future of social connection
+              by creating virtual experiences for Africans to get first-hand value and enjoyment
+              from the virtual space.
             </p>
 
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer set using Right-Left-Up-Down
-              Arrows.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer set using Right-Left-Up-Down Arrows.
             </p>
             <a
               target="_blank"
@@ -64,26 +57,19 @@
             <img src="/pe/space.jpg" alt="" />
           </div>
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Experience our Spaceship
-            </h2>
+            <h2 class="section__title about__title">Experience our Spaceship</h2>
             <!-- <h4>Experience our Spaceship</h4> -->
             <p class="about__description">
-              Did you ever think for once that you’ll get the opportunity to
-              enter into a spaceship in your lifetime? I don’t think so… At
-              Greysoft, we are giving you the opportunity to explore our ship. A
-              masterpiece of architectural finesse.
+              Did you ever think for once that you’ll get the opportunity to enter into a spaceship
+              in your lifetime? I don’t think so… At Greysoft, we are giving you the opportunity to
+              explore our ship. A masterpiece of architectural finesse.
             </p>
 
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer set using Right-Left-Up-Down
-              Arrows.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer set using Right-Left-Up-Down Arrows.
             </p>
-            <a
-              target="_blank"
-              href="https://app.theoverlay.io/location/sky-station"
-              class="button"
+            <a target="_blank" href="https://app.theoverlay.io/location/sky-station" class="button"
               >Experience</a
             >
           </div>
@@ -96,16 +82,11 @@
             <h2 class="section__title about__title">Create your own Avatar</h2>
             <!-- <h4>Create your own Avatar</h4> -->
             <p class="about__description">
-              We understand that not everyone likes a default avatar for
-              traversing the metaverse. With our partners “Ready Player Me” we
-              are giving you the power to personalize your avatar.
+              We understand that not everyone likes a default avatar for traversing the metaverse.
+              With our partners “Ready Player Me” we are giving you the power to personalize your
+              avatar.
             </p>
-            <a
-              target="_blank"
-              href="https://readyplayer.me/avatar"
-              class="button"
-              >Create</a
-            >
+            <a target="_blank" href="https://readyplayer.me/avatar" class="button">Create</a>
           </div>
 
           <div class="experience__img grid">
@@ -123,14 +104,13 @@
             <h2 class="section__title about__title">GreyHobb Virtual Tour</h2>
             <!-- <h4>GreyHobb Virtual Tour</h4> -->
             <p class="about__description">
-              Take the time to familiarize with our space where all the creative
-              juice flows from. We are currently working on projects to
-              implement virtual tourism across Africa as well as virtual
-              governance and Real Estate.
+              Take the time to familiarize with our space where all the creative juice flows from.
+              We are currently working on projects to implement virtual tourism across Africa as
+              well as virtual governance and Real Estate.
             </p>
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer by clicking the targets.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer by clicking the targets.
             </p>
             <a
               target="_blank"
@@ -147,12 +127,11 @@
             <h2 class="section__title about__title">VR Games from Greysoft</h2>
             <!-- <h4>VR Games from Greysoft</h4> -->
             <p class="about__description">
-              Our first attempt at Unreal Engine was to develop a VR Games Park,
-              which consisted of a 2 Player Basketball Game, together with a
-              Bull’s Eye Archery in same field. It also included a dragon
-              hovering over the field. Archers score points by hitting the
-              virtual Bull’s Eye or the dragon while basketball players score
-              points by picking up the virtual ball and throwing into the rim.
+              Our first attempt at Unreal Engine was to develop a VR Games Park, which consisted of
+              a 2 Player Basketball Game, together with a Bull’s Eye Archery in same field. It also
+              included a dragon hovering over the field. Archers score points by hitting the virtual
+              Bull’s Eye or the dragon while basketball players score points by picking up the
+              virtual ball and throwing into the rim.
             </p>
           </div>
           <div class="experience__img grid">
@@ -182,14 +161,12 @@
             ></iframe> -->
           </div>
           <div class="about__data">
-            <h2 class="section__title about__title">
-              VR Hand Tracking Interaction
-            </h2>
+            <h2 class="section__title about__title">VR Hand Tracking Interaction</h2>
             <!-- <h4>VR Hand Tracking Interaction</h4> -->
             <p class="about__description">
-              Our research for more realistic VR experience and interaction is
-              unbelievably super promising. Watch our newest model GreyXN to
-              follow our progress on the future of Virtual Reality.
+              Our research for more realistic VR experience and interaction is unbelievably super
+              promising. Watch our newest model GreyXN to follow our progress on the future of
+              Virtual Reality.
             </p>
           </div>
         </div>
@@ -198,20 +175,18 @@
       <section class="about section" id="about">
         <div class="about__container container grid">
           <div class="about__data">
-            <h2 class="section__title about__title">
-              VR Tour- Murtala Mohammed Square
-            </h2>
+            <h2 class="section__title about__title">VR Tour- Murtala Mohammed Square</h2>
             <!-- <h4>VR Hand Tracking Interaction</h4> -->
             <p class="about__description">
-              Experience the beauty of virtual tourism from the comfort of your
-              home. Greysoft provides a peep into this magnificent edifice right
-              in the hear of Kaduna metropolis. Murtala Mohammed Square has seen
-              various marmot crowd of people and spectacular events.
+              Experience the beauty of virtual tourism from the comfort of your home. Greysoft
+              provides a peep into this magnificent edifice right in the hear of Kaduna metropolis.
+              Murtala Mohammed Square has seen various marmot crowd of people and spectacular
+              events.
             </p>
 
             <p class="control">
-              For immersive experience you need an oculus headset. Otherwise
-              experience it from your computer by clicking the targets.
+              For immersive experience you need an oculus headset. Otherwise experience it from your
+              computer by clicking the targets.
             </p>
             <a
               target="_blank"
@@ -268,15 +243,12 @@
           </div>
 
           <div class="about__data">
-            <h2 class="section__title about__title">
-              Learn More About The Metaverse
-            </h2>
+            <h2 class="section__title about__title">Learn More About The Metaverse</h2>
             <!-- <h4>VR Hand Tracking Interaction</h4> -->
             <p class="about__description">
-              Everyone is blabbing about the metaverse. But what does this
-              future digital world look like? WSJ’s Joanna Stern checked into a
-              hotel and strapped on a virtual-reality headset for the day. She
-              went to work meetings, hung out with new avatar friends and
+              Everyone is blabbing about the metaverse. But what does this future digital world look
+              like? WSJ’s Joanna Stern checked into a hotel and strapped on a virtual-reality
+              headset for the day. She went to work meetings, hung out with new avatar friends and
               attended virtual shows
             </p>
           </div>
@@ -288,14 +260,11 @@
       <h2 class="section__title about__title">Follow our Works</h2>
 
       <p>
-        We have created our metaverse engine “GreyEngine” on which we are
-        implementing several out-of-the- box solutions. Our test modules hold
-        exciting promises for our future projects which includes; VR Games, AR
-        Games, AR for Fashion, VR for Education, VR Tourism, VR Governance, VR
-        Real Estate. <br />
-        <a class="demo" target="_blank" href="https://conjure.world/"
-          >Click to Demo Engine</a
-        >
+        We have created our metaverse engine “GreyEngine” on which we are implementing several
+        out-of-the- box solutions. Our test modules hold exciting promises for our future projects
+        which includes; VR Games, AR Games, AR for Fashion, VR for Education, VR Tourism, VR
+        Governance, VR Real Estate. <br />
+        <a class="demo" target="_blank" href="https://conjure.world/">Click to Demo Engine</a>
       </p>
 
       <div class="rowe">
@@ -314,17 +283,17 @@
       </div>
     </div>
 
-    <Footer />
+    <FooterMain />
   </q-page>
 </template>
 
 <script>
-import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import "@splidejs/vue-splide/css";
-import Footer from "../components/FooterMain.vue";
+import { Splide, SplideSlide } from '@splidejs/vue-splide'
+import '@splidejs/vue-splide/css'
+import FooterMain from '../components/FooterMain.vue'
 export default {
   components: {
-    Footer,
+    FooterMain,
     Splide,
     SplideSlide,
   },
@@ -335,9 +304,9 @@ export default {
         arrows: false,
         perPage: 1,
       },
-    };
+    }
   },
-};
+}
 </script>
 
 <style scoped>
@@ -404,7 +373,7 @@ p.control {
 }
 @media screen and (min-height: 721px) {
   .home::before {
-    content: "";
+    content: '';
     position: absolute;
     background: #000000;
     background-blend-mode: multiply;
