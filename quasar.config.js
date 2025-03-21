@@ -27,34 +27,34 @@ export default defineConfig(function (ctx) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://v2.quasar.dev/quasar-cli/boot-files
-    boot: ["axios", "main", "components", "bootstrap"],
+    boot: ['axios', 'main', 'components', 'bootstrap'],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
-    css: ["app.scss"],
+    css: ['app.scss', 'footer.scss'],
 
     // https://github.com/quasarframework/quasar/tree/dev/extras
     extras: [
       // 'ionicons-v4',
       // 'mdi-v5',
-      "fontawesome-v6",
+      'fontawesome-v6',
       // 'eva-icons',
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
 
-      "roboto-font", // optional, you are not bound to it
-      "material-icons", // optional, you are not bound to it
+      'roboto-font', // optional, you are not bound to it
+      'material-icons', // optional, you are not bound to it
     ],
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
       env: {
-        site_name: "GreySoft Technologies",
-        description: "GreySoft",
-        keywords: "GreySoft",
+        site_name: 'GreySoft Technologies',
+        description: 'GreySoft',
+        keywords: 'GreySoft',
       },
 
-      vueRouterMode: "history", // available values: 'hash', 'history'
+      vueRouterMode: 'history', // available values: 'hash', 'history'
       // vueRouterBase,
       // vueDevtools,
       // vueOptionsAPI: false,
@@ -82,7 +82,7 @@ export default defineConfig(function (ctx) {
     devServer: {
       // port: ctx.mode.spa ? 8000 : ctx.mode.pwa ? 9000 : 9090,
       server: {
-        type: "http",
+        type: 'http',
       },
       port: 9009,
       open: true, // opens browser window automatically
@@ -105,7 +105,7 @@ export default defineConfig(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: ["Dialog", "Notify", "BottomSheet", "Loading"],
+      plugins: ['Dialog', 'Notify', 'BottomSheet', 'Loading'],
     },
 
     // animations: 'all', // --- includes all animations
@@ -141,16 +141,16 @@ export default defineConfig(function (ctx) {
       // (gets superseded if process.env.PORT is specified at runtime)
 
       middlewares: [
-        "render", // keep this as last one
+        'render', // keep this as last one
       ],
     },
 
     // https://v2.quasar.dev/quasar-cli/developing-pwa/configuring-pwa
     pwa: {
-      workboxMode: "generateSW", // or 'injectManifest'
+      workboxMode: 'generateSW', // or 'injectManifest'
       injectPwaMetaTags: true,
-      swFilename: "sw.js",
-      manifestFilename: "manifest.json",
+      swFilename: 'sw.js',
+      manifestFilename: 'manifest.json',
       useCredentialsForManifestTag: false,
       // extendGenerateSWOptions (cfg) {}
       // extendInjectManifestOptions (cfg) {},
@@ -175,7 +175,7 @@ export default defineConfig(function (ctx) {
 
       inspectPort: 5858,
 
-      bundler: "packager", // 'packager' or 'builder'
+      bundler: 'packager', // 'packager' or 'builder'
 
       packager: {
         // https://github.com/electron-userland/electron-packager/blob/master/docs/api.md#options
@@ -191,16 +191,16 @@ export default defineConfig(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: "greysoft-website",
+        appId: 'greysoft-website',
       },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/developing-browser-extensions/configuring-bex
     bex: {
-      contentScripts: ["my-content-script"],
+      contentScripts: ['my-content-script'],
 
       // extendBexScriptsConf (esbuildConf) {}
       // extendBexManifestJson (json) {}
     },
-  };
-});
+  }
+})

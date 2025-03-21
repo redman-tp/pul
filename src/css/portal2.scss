@@ -84,6 +84,7 @@ article {
 
 ::-webkit-scrollbar-thumb {
   background-color: hsl(0, 0%, 80%);
+  color: rgb(233, 236, 239);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -176,7 +177,7 @@ i {
 .has-before::before,
 .has-after::after {
   position: absolute;
-  content: "";
+  content: '';
 }
 
 .btn::before {
@@ -632,7 +633,7 @@ i {
 }
 
 .course-card .card-meta-item:not(:last-child)::after {
-  content: "|";
+  content: '|';
   display: inline-block;
   color: var(--platinum);
   padding-inline: 10px;

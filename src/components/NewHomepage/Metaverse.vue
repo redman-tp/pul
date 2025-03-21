@@ -1,353 +1,513 @@
 <template>
-  <div class="metaverse">
-    <p class="our_focus">Our Focus Area</p>
-    <img src="controller.svg" class="top_image" alt="VR Controller image" />
-    <div class="q-px-none">
+  <section class="metaverse-section" data-aos="fade-up" data-aos-duration="1000">
+    <div class="floating-element">
+      <img src="/controllar2.png" class="floating-image" alt="VR Controller image" />
+    </div>
+    <div class="section-header" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="section-title">Our Focus Area</h3>
+    </div>
+
+    <div class="carousel-wrapper" data-aos="fade-up" data-aos-delay="300">
       <q-carousel
         animated
         v-model="slide"
         infinite
-        :autoplay="true"
-        transition-prev="slide-right"
-        transition-next="slide-left"
+        :autoplay="autoplay"
+        transition-prev="fade"
+        transition-next="fade"
         @mouseenter="autoplay = false"
         @mouseleave="autoplay = true"
-        class="main_carousel"
+        class="main-carousel"
+        swipeable
+        navigation-position="none"
+        arrows="false"
       >
-        <q-carousel-slide class="q-px-none carousel_item" :name="1">
-          <div class="carousel_heading">The Metaverse</div>
-          <div class="carousel">
-            <div class="left_side">
-              <div class="section_image q-mt-lg">
-                <img src="/metaverse1.svg" alt="WOman holding VR Controller" />
+        <!-- Metaverse Slide -->
+        <q-carousel-slide class="carousel-slide" :name="1">
+          <div class="slide-content content-right">
+            <div class="slide-image-container">
+              <div class="image-frame">
+                <img src="/metaverse1.svg" alt="Woman holding VR Controller" class="slide-image" />
+                <div class="title-overlay">
+                  <h2 class="slide-title">The Metaverse</h2>
+                  <div class="title-underline"></div>
+                </div>
+                <div class="glow-effect"></div>
               </div>
             </div>
-            <div class="right_side">
+
+            <div class="slide-text">
               <p>
-                We’ve joined in creating a world where you get to meet,
-                collaborate, play games, organize and attend concerts without
-                actually being there in person. Going beyond the restriction of
-                your device regions, the Metaverse offers you a combination of
-                extended-XR (augmented, mixed, and virtual technologies) and
-                physical reality in a resolute and shared virtual space.
+                We've joined in creating a world where you get to meet, collaborate, play games,
+                organize and attend concerts without actually being there in person. Going beyond
+                the restriction of your device regions, the Metaverse offers you a combination of
+                extended-XR (augmented, mixed, and virtual technologies) and physical reality in a
+                resolute and shared virtual space.
               </p>
               <p>
-                Kaduna State is the first sub-national government in Nigeria
-                leveraging the metaverse. We made it happen!
+                Kaduna State is the first sub-national government in Nigeria leveraging the
+                metaverse. We made it happen!
               </p>
 
               <q-btn
                 flat
-                text-color="white"
-                class="view_portfolio"
-                label="View "
+                class="view-more-btn"
+                label="Explore Metaverse"
                 to="/metaverse"
                 no-caps
                 icon-right="fa-solid fa-arrow-right"
-                size="1.1rem"
               />
             </div>
           </div>
         </q-carousel-slide>
-        <!-- <q-carousel-slide class="q-px-none carousel_item" :name="2">
-          <div class="carousel_heading">Co-Working Space</div>
-          <div class="carousel">
-            <div class="left_side">
-              <div class="section_image q-mt-lg">
-                <img src="guy.svg" alt="A guy operating a Laptop" />
+
+        <!-- AgriTech Slide -->
+        <q-carousel-slide class="carousel-slide" :name="2">
+          <div class="slide-content content-left">
+            <div class="slide-image-container">
+              <div class="image-frame">
+                <img src="/images/adfarm.png" alt="AgriTech" class="slide-image" />
+                <div class="title-overlay">
+                  <h2 class="slide-title">Agritech</h2>
+                  <div class="title-underline"></div>
+                </div>
+                <div class="glow-effect"></div>
               </div>
             </div>
-            <div class="right_side">
+
+            <div class="slide-text">
               <p>
-                We are a team of innovators who have gained a reputation in
-                delivering quality services by delivering time critical
-                solutions to solve urban and rural problems.
+                We are driving a transformative shift in Africa’s agricultural sector by developing
+                forward-thinking policies and implementing cutting-edge technological solutions. Our
+                mission is to enhance productivity, promote sustainable farming practices, and
+                create seamless access to local and global markets.
               </p>
               <p>
-                We are a team of innovators who have gained a reputation in
-                delivering quality services by delivering time critical
-                solutions to solve urban and rural problems.
+                By empowering farmers with innovative tools, data-driven insights, and strategic
+                policy support, we are fostering a resilient agricultural ecosystem that ensures
+                food security, economic growth, and long-term sustainability across the continent.
               </p>
 
               <q-btn
                 flat
-                text-color="white"
-                class="view_portfolio"
-                label="View Portfolio"
-                no-caps
-                icon-right="mdi-chevron-down"
-                size="1.1rem"
-              />
-            </div>
-          </div>
-        </q-carousel-slide> -->
-        <q-carousel-slide class="q-px-none carousel_item" :name="2">
-          <div class="carousel_heading">Content Creation</div>
-          <div class="carousel">
-            <div class="left_side">
-              <div class="section_image q-mt-lg">
-                <img
-                  src="/images/greyc.jpg"
-                  alt="WOman holding VR Controller"
-                />
-              </div>
-            </div>
-            <div class="right_side">
-              <p>
-                “Redefining the African Creative Industry”, our mantra for
-                content creation motivates our belief in the fact that
-                everything can be created.
-              </p>
-              <p>
-                By letting our creative light bulbs flick on, we are a
-                sustainable and inspirational community that explores and
-                creates amazing stuff from brands, content, music, art, films,
-                etc.
-              </p>
-
-              <q-btn
-                flat
-                text-color="white"
-                class="view_portfolio"
-                label="View"
+                class="view-more-btn"
+                label="Explore AgriTech"
                 to="/greycreate"
                 no-caps
                 icon-right="fa-solid fa-arrow-right"
-                size="1.1rem"
               />
             </div>
           </div>
         </q-carousel-slide>
-        <q-carousel-slide class="q-px-none carousel_item" :name="3">
-          <div class="carousel_heading">Tech Education</div>
-          <div class="carousel">
-            <div class="left_side">
-              <div class="section_image q-mt-lg">
-                <img
-                  src="/images/teched.png"
-                  alt="WOman holding VR Controller"
-                />
+
+        <!-- Tech Education Slide -->
+        <q-carousel-slide class="carousel-slide" :name="3">
+          <div class="slide-content content-right">
+            <div class="slide-image-container">
+              <div class="image-frame">
+                <img src="/images/teched.png" alt="Tech Education" class="slide-image" />
+                <div class="title-overlay">
+                  <h2 class="slide-title">Tech Education/TVET</h2>
+                  <div class="title-underline"></div>
+                </div>
+                <div class="glow-effect"></div>
               </div>
             </div>
-            <div class="right_side">
+
+            <div class="slide-text">
               <p>
-                Talk about training the next set of solution-birthers. Through
-                our academy’s training, we teach the skills needed to create,
-                develop, execute, or operate in-demand technologies.
+                Talk about training the next set of solution-birthers. Through our academy's
+                training, we teach the skills needed to create, develop, execute, or operate
+                in-demand technologies.
               </p>
               <p>
-                Our GreyAcademy is a community space led by Greysoft
-                technologies that provide training programs, interview prep
-                coaching, and free webinars to you if you are looking to upskill
-                and land your dream jobs.
+                Our GreyAcademy is a community space led by Greysoft technologies that provide
+                training programs, interview prep coaching, and free webinars to you if you are
+                looking to upskill and land your dream jobs.
               </p>
 
               <q-btn
                 flat
-                text-color="white"
-                class="view_portfolio"
-                label="View"
+                class="view-more-btn"
+                label="Explore Tech Education"
                 to="/greyacademy"
                 no-caps
                 icon-right="fa-solid fa-arrow-right"
-                size="1.1rem"
               />
             </div>
           </div>
         </q-carousel-slide>
       </q-carousel>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref } from 'vue'
+
 export default {
-  data() {
+  setup() {
+    const slide = ref(1)
+    const autoplay = ref(true)
+
     return {
-      slide: ref(1),
-    };
+      slide,
+      autoplay,
+    }
   },
-};
+}
 </script>
 
-<style scoped>
-p {
-  margin: 0;
-}
-.metaverse {
-  padding: 5% 0;
+<style lang="scss" scoped>
+.metaverse-section {
   position: relative;
-  font-family: "Poppins";
-}
-.our_focus {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #8d354a;
-  padding-left: 10%;
-  margin: 0.2% 0;
-}
-.carousel_item {
-  margin: 0;
-}
-.carousel_heading {
-  font-size: 3.2rem;
-  /* margin: 1% 0; */
-  padding-left: 10%;
-  font-weight: 900;
-  color: #000000 !important;
-}
-.top_image {
-  position: absolute;
-  right: 0;
-  top: -20%;
-  width: 22%;
-  z-index: 3;
-}
-p {
-  color: #000000 !important;
-}
-.main_carousel {
-  height: fit-content !important;
-  padding: 0;
-}
-.carousel_item {
-  transition: 1s ease !important;
+  padding: 5rem 0 0;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/grid-pattern.png') repeat;
+    opacity: 0.05;
+    z-index: 0;
+  }
 }
 
-.section_image img {
+.section-header {
+  position: relative;
+  margin-bottom: 2rem;
+  max-width: 1400px;
+  margin: 0 5% 2rem;
+}
+
+.section-title {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  line-height: 1.2;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--q-primary);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100px;
+  }
+}
+
+.section-subtitle {
+  display: none;
+}
+
+.floating-element {
+  position: absolute;
+  right: -60px;
+  top: 10px;
+  width: 35%;
+  max-width: 450px;
+  min-width: 280px;
+  animation: float 8s ease-in-out infinite;
+  transform-origin: bottom right;
+  z-index: 10;
+  cursor: pointer;
+  &:hover {
+    z-index: 10;
+    .floating-image {
+      transform: scale(1.05) rotate(10deg);
+    }
+  }
+}
+
+.floating-image {
+  width: 100%;
+  filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.2));
+  transition: transform 0.5s ease;
+  display: block;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05) rotate(10deg);
+  }
+}
+
+.carousel-wrapper {
+  position: relative;
   width: 100%;
 }
-.carousel {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 40px;
+
+.main-carousel {
+  height: auto;
+  width: 100%;
+  background: transparent;
+
+  :deep(.q-carousel__slide) {
+    padding: 0;
+  }
 }
-.carousel .right_side {
-  padding-right: 30%;
+
+.carousel-slide {
+  padding: 0;
+  overflow: hidden;
 }
-.carousel .right_side p {
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: justify;
-  margin: 1%;
+
+.slide-content {
+  display: flex;
+  width: 100%;
+  height: 600px;
+
+  &.content-right {
+    flex-direction: row-reverse;
+
+    .slide-text {
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+  }
+
+  &.content-left {
+    flex-direction: row;
+
+    .slide-text {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
 }
-.view_portfolio {
+
+.slide-image-container {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  &:hover {
+    .glow-effect {
+      opacity: 1;
+    }
+
+    .slide-image {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 2;
+}
+
+.slide-title {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0;
+  color: white;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-underline {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--q-primary) 0%, #f0d043 100%);
+  border-radius: 2px;
+  margin-top: 10px;
+}
+
+.glow-effect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(207, 2, 187, 0.2) 0%,
+    rgba(211, 172, 31, 0.2) 50%,
+    rgba(240, 13, 67, 0.2) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.slide-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+}
+
+.view-more-btn {
+  align-self: flex-start;
   background: linear-gradient(
     285.19deg,
     rgba(207, 2, 187, 0.94) -17.8%,
     rgba(211, 172, 31, 0.94) 67.55%,
     rgba(240, 13, 67, 0.94) 152.9%
   );
-  border-radius: 2px;
-  margin: 7% 0;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+
+    :deep(.q-icon) {
+      transform: translateX(5px);
+    }
+  }
+
+  :deep(.q-icon) {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+  }
 }
-@media screen and (max-width: 1270px) {
-  .carousel_item .carousel_heading {
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .slide-title {
     font-size: 2.5rem;
-    margin: 0;
   }
-  .our_focus {
-    font-size: 1.3rem;
-    margin: 0;
+
+  .slide-content {
+    height: 500px;
   }
-  .carousel_item {
-    padding: 0 !important;
+}
+
+@media (max-width: 992px) {
+  .metaverse-section {
+    padding: 4rem 0 0;
   }
-  .carousel .right_side p {
+
+  .slide-text p {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 1150px) {
-  .section_image {
-    margin-top: 1% !important;
+
+@media (max-width: 768px) {
+  .slide-content {
+    flex-direction: column !important;
+    height: auto;
+
+    &.content-right .slide-text,
+    &.content-left .slide-text {
+      padding: 2rem 5%;
+    }
   }
-  .carousel .right_side p {
-    font-size: 1rem;
+
+  .slide-image-container,
+  .slide-text {
+    width: 100%;
   }
-  .view_portfolio {
-    font-size: 0.9rem !important;
+
+  .slide-image-container {
+    height: 350px;
   }
-}
-@media screen and (max-width: 1100px) {
-  .our_focus,
-  .carousel_item .carousel_heading {
-    padding-left: 6%;
-  }
-  .carousel .right_side {
-    padding-right: 30%;
-  }
-  .carousel {
-    gap: 30px;
-  }
-  .carousel_item .carousel_heading {
-    font-size: 2rem;
-    margin: 0;
-  }
-  .our_focus {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 940px) {
-  .carousel .right_side p {
-    font-size: 1rem;
-  }
-  .view_portfolio {
-    font-size: 0.85rem !important;
-  }
-}
-@media screen and (max-width: 860px) {
-  .carousel .right_side {
-    padding-right: 20%;
-  }
-  .our_focus {
-    font-size: 1.05rem;
-  }
-  .carousel_item .carousel_heading {
-    font-size: 1.7rem;
-  }
-}
-@media screen and (max-width: 770px) {
-  .carousel {
-    grid-template-columns: 1fr;
-    padding: 0 6%;
-    gap: 15px;
-  }
-  .top_image {
+
+  .floating-element {
     display: none;
   }
-  .carousel .right_side {
-    padding-right: 5%;
+
+  .title-overlay {
+    padding: 1.5rem;
   }
-  .carousel .right_side p {
-    text-align: left;
-    font-size: 1.1rem;
-    margin: 2% 0;
-  }
-  .view_portfolio {
-    font-size: 0.9rem !important;
-    margin: 3% 0;
+
+  .slide-title {
+    font-size: 2rem;
   }
 }
-@media screen and (max-width: 580px) {
-  .our_focus {
+
+@media (max-width: 480px) {
+  .metaverse-section {
+    padding: 3rem 0 0;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+  }
+
+  .slide-image-container {
+    height: 250px;
+  }
+
+  .title-overlay {
+    padding: 1rem;
+  }
+
+  .slide-title {
+    font-size: 1.8rem;
+  }
+
+  .slide-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .view-more-btn {
     font-size: 0.9rem;
-    margin: 0;
-  }
-  .carousel_item .carousel_heading {
-    font-size: 1.4rem;
-    height: fit-content;
-  }
-  .carousel .right_side p {
-    font-size: 1rem;
-  }
-  .carousel .right_side {
-    padding-right: 0;
-  }
-  .view_portfolio {
-    font-size: 0.85rem !important;
-    margin: 3% 0;
+    padding: 8px 16px;
   }
 }
 </style>

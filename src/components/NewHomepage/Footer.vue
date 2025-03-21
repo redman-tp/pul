@@ -1,363 +1,735 @@
 <template>
-  <div class="footer">
-    <div class="top">
-      <h6>Greysoft Technologies</h6>
-      <p>
-        Increased access to digital opportunities <br />
-        for improved livelihood.
-      </p>
+  <footer class="footer-section">
+    <div class="tech-background">
+      <div class="tech-element tech-circle"></div>
+      <div class="tech-element tech-dots"></div>
+      <div class="tech-element tech-wave"></div>
+      <div class="tech-element tech-grid"></div>
+      <div class="tech-element tech-circuit"></div>
     </div>
 
-    <div class="footer_links">
-      <div class="links_container">
-        <h6>About Us</h6>
-        <ul>
-          <li><router-link to="/about"> Clients</router-link></li>
-          <li><router-link to="/greyhobb"> GreyHobb</router-link></li>
-          <li><router-link to="/greytech"> GreyTech</router-link></li>
-          <li><router-link to="greycreate"> GreyCreate</router-link></li>
-          <li>
-            <router-link to="/kukah"> Kukah Prize for Young Innovators </router-link>
-          </li>
-          <!-- <li><a> Product Managers</a></li> -->
-        </ul>
-      </div>
-      <div class="links_container">
-        <h6>Company</h6>
-        <ul>
-          <li><router-link to="/team"> Team</router-link></li>
-          <li><router-link to="/greyacademy"> GreyAcademy</router-link></li>
-          <li>
-            <router-link
-              :to="{
-                name: 'training',
-              }"
-              >AI Training</router-link
+    <div class="footer-container">
+      <!-- Top Section with Logo and Mission -->
+      <div class="footer-top">
+        <div class="brand-section">
+          <h2 class="brand-name">Greysoft Technologies</h2>
+          <p class="brand-tagline">Helping people leverage technology for improved livelihood.</p>
+
+          <div class="social-links">
+            <a
+              href="https://web.facebook.com/greysoftng"
+              target="_blank"
+              class="social-icon"
+              aria-label="Facebook"
             >
-          </li>
-          <li>
-            <router-link
-              :to="{
-                name: 'courses',
-              }"
-              >Training courses</router-link
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/greysoft-tech/mycompany/"
+              target="_blank"
+              class="social-icon"
+              aria-label="LinkedIn"
             >
-          </li>
-          <li>
-            <a target="_blank" href="/gep.pdf"> Gender Equality Plan </a>
-          </li>
-          <!-- <li><a> </a></li> -->
-        </ul>
-      </div>
-      <div class="links_container">
-        <h6>Follow Us</h6>
-        <ul>
-          <li>
-            <div>
-              <a href="https://web.facebook.com/greysoftng" target="_blank" class="footer__social">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a
-                href="https://www.linkedin.com/company/greysoft-tech/mycompany/"
-                target="_blank"
-                class="footer__social"
-              >
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="https://twitter.com/greyhobb" target="_blank" class="footer__social">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="https://www.instagram.com/greyhobb/" target="_blank" class="footer__social">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a
-                href="https://youtube.com/@greysofttechnologies"
-                target="_blank"
-                class="footer__social"
-              >
-                <i class="fab fa-youtube"></i>
-              </a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="https://twitter.com/greyhobb"
+              target="_blank"
+              class="social-icon"
+              aria-label="Twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/greyhobb/"
+              target="_blank"
+              class="social-icon"
+              aria-label="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://youtube.com/@greysofttechnologies"
+              target="_blank"
+              class="social-icon"
+              aria-label="YouTube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
 
-    <div class="contact_container">
-      <div class="left_side">
-        <li class="row items-center">
-          <q-icon name="fa-solid fa-envelope" color="white" size="1.8rem" class="q-mr-lg" />
-          <a href="mailto:hi@greysoft.ng" target="_blank"><p class="contact">hi@greysoft.ng</p></a>
-        </li>
-        <li class="row items-center">
-          <q-icon name="phone" color="white" size="1.8rem" class="q-mr-lg" />
-          <p class="contact">
-            <a href="tel:+2347060998702" target="_blank">07060998702</a>,
-            <a href="tel:+2347025467470" target="_blank">07025467470</a>
-          </p>
-        </li>
-        <li class="row no-wrap items-center">
-          <q-icon name="fa-solid fa-location-dot" color="white" size="1.8rem" class="q-mr-lg" />
-          <p class="contact">31, Gwari Avenue Barnawa, Kaduna.</p>
-        </li>
-      </div>
-      <div class="right_side">
-        <div class="text-subtitle1 text-bold be_first">Be the first to know</div>
-        <q-btn flat class="bg-white">
-          <div class="btn_text">JOIN OUR NEWSLETTER</div>
-        </q-btn>
-        <br />
-        <q-btn
-          class="q-mt-sm text-white"
-          no-caps
-          small
-          outline
-          icon="mail"
-          type="a"
-          href="https://www.greysoft.ng/webmail/"
-          target="_blank"
-        >
-          <span class="q-pl-sm">Check Mail</span>
-        </q-btn>
-      </div>
-    </div>
+        <div class="newsletter-section">
+          <h3 class="section-title">Stay Connected</h3>
+          <p class="section-subtitle">Join our newsletter for updates and insights</p>
 
-    <div class="bottom">
-      <p class="bottom_text">Copyright © {{ new Date().getFullYear() }} Greysoft Technologies</p>
-      <!-- <div class="row terms">
-        <p class="bottom_text">Terms & Condition</p>
-        <p class="bottom_text">Privacy Policy</p>
-      </div> -->
-    </div>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" />
+            <button class="newsletter-button">Subscribe</button>
+          </div>
+        </div>
+      </div>
 
-    <div class="bottom_svg">
-      <img src="footer_curves.svg" alt="" />
+      <!-- Middle Section with Links -->
+      <div class="footer-middle">
+        <div class="footer-nav">
+          <!-- About Us Column -->
+          <div class="footer-column">
+            <h3 class="category-title">About Us</h3>
+            <ul class="nav-links">
+              <!-- <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/team">Team</router-link>
+              </li> -->
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/greytransform">GreyTransform</router-link>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/greyhobb">GreyHobb</router-link>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/greytech">GreyTech</router-link>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/greyacademy">GreyAcademy</router-link>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/greyacademy">VR Tour</router-link>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Programs Column -->
+          <div class="footer-column">
+            <h3 class="category-title">Quick Links</h3>
+            <ul class="nav-links">
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <a href="https://agritech.greysoft.ng/">Greysoft Agritech</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <a href="https://greysoft.ng/greysoftxr">Greysoft Extended Reality</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <router-link to="/careers">Careers</router-link>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <a href="#" @click.prevent="showPolicyDialog = true">Policy Contributions</a>
+              </li>
+              <li>
+                <i class="fas fa-chevron-right nav-icon"></i>
+                <a target="_blank" href="/gep.pdf">Gender Equality Plan</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Us Column -->
+          <div class="footer-column">
+            <h3 class="category-title">Contact Us</h3>
+            <ul class="contact-links">
+              <li class="contact-item">
+                <i class="fas fa-envelope contact-icon"></i>
+                <a href="mailto:hi@greysoft.ng" target="_blank">hi@greysoft.ng</a>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-phone-alt contact-icon"></i>
+                <div class="phone-numbers">
+                  <a href="tel:+2348148729708" target="_blank">+234 814 872 9708</a>
+                  <a href="tel:+2348035356090" target="_blank">+234 803 535 6090</a>
+                </div>
+              </li>
+              <li class="contact-item">
+                <i class="fas fa-map-marker-alt contact-icon"></i>
+                <span>31, Gwari Avenue Barnawa, Kaduna, Nigeria</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="webmail-container">
+          <q-btn
+            class="webmail-btn"
+            no-caps
+            outline
+            icon="mail"
+            type="a"
+            href="https://www.greysoft.ng/webmail/"
+            target="_blank"
+          >
+            <span>Check Mail</span>
+          </q-btn>
+        </div>
+      </div>
+
+      <!-- Bottom Section with Copyright -->
+      <div class="footer-bottom">
+        <div class="copyright">
+          <p>&copy; {{ new Date().getFullYear() }} Greysoft Technologies. All rights reserved.</p>
+        </div>
+        <div class="footer-legal">
+          <a href="#" class="legal-link">Terms & Conditions</a>
+          <a href="#" class="legal-link">Privacy Policy</a>
+        </div>
+      </div>
     </div>
-  </div>
+    <PolicyDialog v-model="showPolicyDialog" />
+  </footer>
 </template>
 
 <script>
-export default {}
+import { ref } from 'vue'
+import PolicyDialog from '../Dialogs/PolicyDialog.vue'
+
+export default {
+  name: 'FooterComponent',
+  components: {
+    PolicyDialog,
+  },
+  setup() {
+    const showPolicyDialog = ref(false)
+
+    return {
+      showPolicyDialog,
+    }
+  },
+}
 </script>
 
-<style scoped>
-a {
-  color: white;
-  text-decoration: none;
-}
-p {
-  margin: 0;
-}
-.footer {
-  background: linear-gradient(180deg, #ab042c 0%, #550619 100%);
-  color: white;
-  padding: 2% 10%;
+<style lang="scss" scoped>
+@use 'sass:color';
+
+// Variables
+$primary-color: var(--q-primary, #8d354a);
+$secondary-color: #f0d043;
+$gradient-start: #ab042c;
+$gradient-end: #2c0f3a;
+$accent-color: #f0d043;
+$text-color: #ffffff;
+$heading-color: #f8f9fa;
+$transition-speed: 0.3s;
+
+// Main Footer Styles
+.footer-section {
   position: relative;
-  font-family: 'Poppins';
-}
-.bottom_svg {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-.bottom_svg img {
-  width: 100%;
-}
-.footer .top {
-  width: 40%;
-  margin-bottom: 3%;
-}
-.top h6 {
-  margin: 3% 0;
-  font-size: 2rem;
-  font-weight: 900;
-}
-.top p {
-  font-size: 1rem;
+  background: linear-gradient(135deg, $gradient-start 0%, $gradient-end 100%);
+  color: $text-color;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  padding: 5rem 0 2rem;
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.mail {
-  padding: 0.75rem;
-  border: 1px solid white;
-  display: inline-block;
+// Tech Background Elements
+.tech-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  opacity: 0.7;
+  z-index: 0;
+}
+
+.tech-element {
+  position: absolute;
+  opacity: 0.6;
+}
+
+.tech-circle {
+  width: 300px;
+  height: 300px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  top: -100px;
+  right: -100px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    top: 50px;
+    left: 50px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    top: 100px;
+    left: 100px;
+  }
+}
+
+.tech-dots {
+  width: 200px;
+  height: 200px;
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 1px, transparent 1px);
+  background-size: 15px 15px;
+  bottom: 50px;
+  left: 50px;
+}
+
+.tech-wave {
+  width: 400px;
+  height: 100px;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 5px,
+    rgba(255, 255, 255, 0.15) 5px,
+    rgba(255, 255, 255, 0.15) 10px
+  );
+  transform: rotate(-30deg);
+  top: 30%;
+  right: 10%;
+}
+
+.tech-grid {
+  width: 300px;
+  height: 300px;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 20px 20px;
+  top: 20%;
+  left: 5%;
+}
+
+.tech-circuit {
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  bottom: 10%;
+  right: 15%;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  &::before {
+    width: 100%;
+    height: 1px;
+    top: 50%;
+    left: 0;
+  }
+
+  &::after {
+    width: 1px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+  }
+}
+
+// Container
+.footer-container {
   position: relative;
-  z-index: 2;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 5%;
+  z-index: 1;
 }
-.footer_links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
+
+// Top Section
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
 }
-.links_container h6 {
-  margin: 2% 0;
-  border-bottom: 1px solid white;
-  font-size: 1.5rem;
-  padding-bottom: 3.5%;
+
+.brand-section {
+  max-width: 400px;
 }
-.links_container ul {
-  margin: 5% 0 0;
-  list-style: none;
-  padding: 0;
-}
-.links_container li {
-  margin: 1% 0;
-  font-size: 1.25rem;
-  font-weight: 400;
-}
-.links_container li a i {
-  margin: 1% 0;
-  font-size: 1.85rem;
-  font-weight: 400;
-}
-.btn_text {
-  letter-spacing: 0.305em;
-  line-height: 20px;
-  font-weight: 400;
-  font-size: 0.5rem;
-  background: linear-gradient(180deg, #8d354a 21.35%, rgba(171, 4, 44, 0.78) 83.85%);
+
+.brand-name {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  background: linear-gradient(90deg, #ffffff, $accent-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
-}
-.contact_container {
-  margin: 2% 0 1.5%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-.contact_container li {
-  margin: 6% 0;
-}
-.contact,
-.bottom_text {
-  font-size: 1.15rem;
-}
-.footer .bottom {
-  display: flex;
-  justify-content: space-between;
-  margin: 3% 0 3%;
-}
-.terms {
-  gap: 40px;
+  text-shadow: 0 2px 10px rgba(255, 107, 107, 0.2);
 }
 
-.right_side {
+.brand-tagline {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  color: $text-color;
+  font-size: 1.2rem;
+  transition: all $transition-speed ease;
+
+  &:hover {
+    background: $accent-color;
+    color: $gradient-start;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(240, 208, 67, 0.3);
+  }
+}
+
+.newsletter-section {
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem;
+  color: $heading-color;
+  letter-spacing: 0.5px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #d0d0d0;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.newsletter-input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  outline: none;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.newsletter-button {
+  padding: 0.8rem 1.5rem;
+  background: $accent-color;
+  color: $gradient-start;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  transition: all $transition-speed ease;
+
+  &:hover {
+    background: color.scale($accent-color, $lightness: 5%);
+    box-shadow: 0 5px 15px rgba(240, 208, 67, 0.3);
+  }
+}
+
+// Middle Section
+.footer-middle {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.footer-column {
+  margin-bottom: 0;
+}
+
+.category-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0 0 1.5rem;
   position: relative;
-  z-index: 5;
-}
-@media screen and (max-width: 1150px) {
-  .footer .top {
-    width: 60%;
-  }
-  .top h6,
-  .links_container h6 {
-    font-size: 1.5rem;
-  }
-  .top p,
-  .links_container li {
-    font-size: 1rem;
-  }
-  .contact,
-  .bottom_text {
-    font-size: 0.85rem;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .footer {
-    padding: 2% 6%;
-  }
-}
-@media screen and (max-width: 960px) {
-  .top h6,
-  .links_container h6 {
-    font-size: 1.1rem;
-  }
-  .top p,
-  .links_container li {
-    font-size: 1.05rem;
-  }
-  .contact,
-  .bottom_text {
-    font-size: 1rem;
-  }
-  .btn_text {
-    letter-spacing: 0.15em;
-  }
-}
-@media screen and (max-width: 860px) {
-  .top h6,
-  .links_container h6 {
-    font-size: 1.15rem;
-  }
-  .links_container h6 {
-    padding-bottom: 2.5%;
-  }
-  .top p,
-  .links_container li {
-    font-size: 0.95rem;
-  }
-  .contact,
-  .bottom_text {
-    font-size: 0.5rem;
-  }
-}
-@media screen and (max-width: 770px) {
-  .footer_links {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-  .contact_container {
-    margin: 7% 0 3%;
-    display: grid;
-    gap: 25px;
-  }
-  .links_container h6 {
-    border: none;
-    position: relative;
-  }
-  .links_container h6::after {
+  padding-bottom: 0.8rem;
+  color: $heading-color;
+  letter-spacing: 0.5px;
+
+  &::after {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 50px;
+    height: 2px;
+    background: $accent-color;
+    transition: width $transition-speed ease;
+  }
+
+  &:hover::after {
+    width: 80px;
+  }
+}
+
+.nav-links,
+.contact-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: baseline;
+}
+
+.nav-icon {
+  font-size: 0.8rem;
+  color: $accent-color;
+  margin-right: 0.5rem;
+  transition: transform $transition-speed ease;
+}
+
+.nav-links a {
+  color: #d0d0d0;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all $transition-speed ease;
+  position: relative;
+  display: inline-block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
     height: 1px;
-    background: white;
-    width: 60%;
+    background: $accent-color;
+    transition: width $transition-speed ease;
   }
-  .be_first {
-    margin-bottom: 1%;
-  }
-  .terms {
-    gap: 20px;
-  }
-  .bottom_text {
-    font-size: 0.85rem;
-  }
-}
-@media screen and (max-width: 620px) {
-  .footer .bottom {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin: 7% 0 6%;
-    gap: 10px;
+
+  &:hover {
+    color: white;
+    padding-left: 5px;
+
+    &::after {
+      width: 100%;
+    }
   }
 }
-@media screen and (max-width: 560px) {
-  .links_container h6::after {
+
+.nav-links li:hover .nav-icon {
+  transform: translateX(3px);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.contact-icon {
+  margin-right: 1rem;
+  font-size: 1.2rem;
+  color: $accent-color;
+}
+
+.contact-links a {
+  color: #d0d0d0;
+  text-decoration: none;
+  transition: color $transition-speed ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.webmail-container {
+  margin-top: 1.5rem;
+  align-self: flex-end;
+}
+
+.webmail-btn {
+  color: #e0e0e0;
+  border-color: rgba(255, 255, 255, 0.3);
+  transition: all $transition-speed ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: $accent-color;
+    color: white;
+  }
+}
+
+// Bottom Section
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+}
+
+.copyright p {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin: 0;
+}
+
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.legal-link {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color $transition-speed ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+// Responsive Styles
+@media (max-width: 1200px) {
+  .footer-section {
+    padding: 4rem 0 2rem;
+  }
+
+  .brand-name {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-section {
+    padding: 3.5rem 0 2rem;
+  }
+
+  .brand-name {
+    font-size: 2rem;
+  }
+
+  .brand-tagline {
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.3rem;
+  }
+
+  .footer-nav {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 3rem 0 1.5rem;
+  }
+
+  .footer-top {
+    margin-bottom: 3rem;
+  }
+
+  .footer-middle {
+    margin-bottom: 3rem;
+  }
+
+  .category-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-nav {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-section {
+    padding: 2.5rem 0 1.5rem;
+  }
+
+  .brand-name {
+    font-size: 1.8rem;
+  }
+
+  .social-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    border-radius: 4px;
+    margin-bottom: 0.8rem;
+  }
+
+  .newsletter-button {
+    border-radius: 4px;
     width: 100%;
-  }
-  .footer .top {
-    width: 100%;
-  }
-  .terms {
-    gap: 25px;
-  }
-  .right_side {
-    margin: 2% 0 4%;
   }
 }
 </style>
