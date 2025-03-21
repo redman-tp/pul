@@ -3,7 +3,7 @@ services:
     name: greysoft-website
     env: static
     buildCommand: npm install && npm run build
-    staticPublishPath: ./dist
+    staticPublishPath: ./dist/spa
     pullRequestPreviewsEnabled: true
     envVars:
       - key: NODE_VERSION
