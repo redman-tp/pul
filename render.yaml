@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: greysoft-website
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    pullRequestPreviewsEnabled: true
+    envVars:
+      - key: NODE_VERSION
+        value: 16
+    headers:
+      - path: /*
+        name: Cache-Control
+        value: public, max-age=31536000
+      - path: /index.html
+        name: Cache-Control
+        value: no-cache
