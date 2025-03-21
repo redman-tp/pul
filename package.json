@@ -12,7 +12,8 @@
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build",
-    "deploy": "quasar build && gh-pages -d dist/spa -f"
+    "deploy": "quasar build && gh-pages -d dist/spa -f",
+    "render-build": "rm -rf node_modules package-lock.json && npm install --no-audit --no-fund && quasar build"
   },
   "dependencies": {
     "@paystack/inline-js": "^2.22.1",
