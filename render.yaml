@@ -2,7 +2,6 @@ services:
   - type: web
     name: greysoft-website
     env: static
-    buildCommand: npm run render-build
     staticPublishPath: ./dist/spa
     pullRequestPreviewsEnabled: true
     envVars:
