@@ -1,0 +1,1 @@
+import{d as e}from"./index-B0iSiuEa.js";import{r as s,h as o,l as t}from"./loader-CDdcSzrA.js";const a={helpers:o,reader:s},p=e(async({app:r,router:l})=>{r.config.globalProperties={...r.config.globalProperties,$h:o,$helper:o,$store:t,$plugins:a}});export{p as default};
